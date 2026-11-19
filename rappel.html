@@ -1,0 +1,2952 @@
+<!doctype html>
+<!-- Page des rappels de cours : fiches de révision par matière -->
+<html lang="fr">
+  <!-- En-tête : métadonnées, titre de l'onglet et feuille de style commune -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête de page : navigation principale commune à toutes les pages -->
+    <header>
+      <!-- Barre de navigation : logo UNCHK et liens vers les sections du site -->
+      <nav>
+        <img
+          src="image/logo UNCHK.png"
+          class="logo-unchk"
+          id="logo-unchk"
+          alt="logo unchk"
+        />
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="revision.html">Révision</a></li>
+          <li><a href="assistant.html">Assistant de révision</a></li>
+          <li><a href="rappel.html">Rappel de cours</a></li>
+          <li><a href="projet.html">Projet</a></li>
+          <li><a href="espace-etudiant.html">Espace étudiant</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Contenu principal : fiches de rappel repliables, une par matière -->
+    <main>
+      <h1>Rappel de cours</h1>
+      <p>Bienvenue dans la section de rappel de cours !</p>
+      <p>
+            Cette section contient des rappels de cours sur différents sujets
+            liés à l'informatique et à la programmation. Vous pouvez cliquer sur
+            les titres pour développer les sections et accéder aux informations
+            détaillées.
+          </p>
+        <div class="rappel">
+            <h4>Algorithme</h4>
+          
+      <!-- Fiche repliable : rappel de cours sur l'algorithmique -->
+      <details id="rappel-algorithme">
+        <summary>Algorithme — Introduction à l'algorithmique</summary>
+        <div class="rappel">
+         
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Définir un algorithme et citer ses propriétés</li>
+            <li>Distinguer un algorithme d'un programme</li>
+            <li>Décrire les quatre phases d'élaboration d'un algorithme</li>
+            <li>Déclarer des variables et des constantes avec leur type</li>
+            <li>Utiliser l'affectation, Lire, Ecrire et les opérateurs</li>
+            <li>Écrire et dérouler à la main un algorithme complet</li>
+          </ul>
+          <h3>1. La notion d'algorithme</h3>
+          <p>
+            Le mot vient du nom d'un mathématicien arabe du IXe siècle (écrit «
+            El Khawrismi » dans le cours). Des mathématiciens grecs comme
+            Euclide ou Archimède en sont des précurseurs : calcul du PGCD de
+            deux nombres, calcul du nombre π.
+          </p>
+          <p>
+            Un ordinateur ne peut résoudre un problème que si on lui dit, de
+            façon précise et détaillée, comment faire. Il faut donc décomposer
+            la résolution en un nombre fini d'étapes élémentaires (par exemple
+            additionner ou comparer deux nombres). Ce procédé de résolution
+            s'appelle un <strong>algorithme</strong>.
+          </p>
+          <p>
+            <strong>Définition.</strong> Un algorithme est une suite de règles,
+            de raisonnements ou d'opérations qui transforment des données
+            d'entrée (input) en données de sortie (output).
+          </p>
+          <p>
+            <strong
+              >Exemple : Un algorithme du quotidien : trier un jeu de cartes par
+              couleur</strong
+            >
+          </p>
+          <p>
+            Les algorithmes décrivent aussi des tâches de tous les jours. Ici,
+            on sépare les cartes rouges des autres.
+          </p>
+          <pre><code>1. Prendre la première carte
+2. La carte est-elle rouge ?
+   Si oui, la poser sur le premier tas
+   Sinon, la poser sur le second tas
+3. Reste-t-il des cartes ?
+   Si oui, prendre la carte suivante et continuer à l'étape 2
+   Sinon, fin du tri</code></pre>
+          <h3>2. Propriétés d'un algorithme</h3>
+          <p>Un algorithme doit être :</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Propriété</th>
+                <th>Ce que ça veut dire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Précis</td>
+                <td>
+                  Il indique l'ordre des étapes, quand arrêter une action, quand
+                  en commencer une autre, et comment choisir entre plusieurs
+                  possibilités.
+                </td>
+              </tr>
+              <tr>
+                <td>Déterministe</td>
+                <td>
+                  Avec les mêmes données, une suite d'exécutions produit
+                  toujours les mêmes résultats.
+                </td>
+              </tr>
+              <tr>
+                <td>Fini dans le temps</td>
+                <td>Il s'arrête au bout d'un temps fini.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Exemple : Résoudre A·X + B = 0</strong></p>
+          <p>
+            Il faut prévoir tous les cas : si A est non nul, on divise ; si A
+            est nul, il y a deux cas selon B. Un algorithme qui oublierait un de
+            ces cas ne serait pas précis.
+          </p>
+          <pre><code>Lire A, B
+Si A est non nul alors
+   X ← -B / A
+   Ecrire(X)
+Sinon
+   Si B est nul alors
+      Ecrire("tout réel est solution")
+   Sinon
+      Ecrire("pas de solution")
+   Finsi
+Finsi</code></pre>
+          <h3>3. Règles pour concevoir un algorithme</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Règle</th>
+                <th>Explication</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Entrée</td>
+                <td>
+                  On définit exactement les données auxquelles l'algorithme
+                  s'applique (l'ensemble peut être vide).
+                </td>
+              </tr>
+              <tr>
+                <td>Sortie</td>
+                <td>
+                  Il produit une ou plusieurs données de sortie, reliées
+                  exactement aux données d'entrée.
+                </td>
+              </tr>
+              <tr>
+                <td>Terminaison</td>
+                <td>Il se termine après un nombre fini de pas.</td>
+              </tr>
+              <tr>
+                <td>Clarté</td>
+                <td>
+                  Tous les détails et tous les cas sont prévus ; l'ordre des
+                  règles n'est jamais ambigu.
+                </td>
+              </tr>
+              <tr>
+                <td>Efficacité</td>
+                <td>
+                  Chaque opération est assez simple, et le nombre d'opérations
+                  est fini et raisonnable.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Exemple : Pourquoi la clarté compte</strong></p>
+          <p>
+            Quelqu'un indique un itinéraire à un étranger : « Tourner à droite
+            au magasin, aller jusqu'au prochain croisement, puis prendre la
+            troisième rue à gauche… ». À quel magasin tourner ? L'étranger peut
+            poser la question, pas l'ordinateur. Chaque opération doit donc être
+            définie de façon précise. Cette tâche s'appelle l'affinement
+            progressif (ou conception descendante).
+          </p>
+          <h3>4. De l'algorithme au programme</h3>
+          <p>
+            Pour être exécuté par un ordinateur, un algorithme doit être exprimé
+            dans un langage de programmation. Le <strong>programme</strong> est
+            le codage d'un algorithme dans un langage donné.
+          </p>
+          <p>
+            Écrire le programme n'est qu'une étape du processus : problème réel
+            → analyse → algorithme → codage (traduction) → programme → exécution
+            → résultats.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Type d'erreur</th>
+                <th>Signe</th>
+                <th>Que faire ?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Syntaxique</td>
+                <td>Signalée à l'exécution</td>
+                <td>Correction en général simple : retour au programme.</td>
+              </tr>
+              <tr>
+                <td>Sémantique</td>
+                <td>
+                  Aucun message, mais les résultats ne sont pas ceux attendus
+                </td>
+                <td>
+                  Plus difficile à trouver : retour à l'analyse (à
+                  l'algorithme).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>5. Les quatre phases d'élaboration</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Phase</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Analyse du problème</td>
+                <td>
+                  Bien comprendre l'énoncé. Il est inutile et dangereux de
+                  passer à la suite sans avoir bien discerné le problème.
+                </td>
+              </tr>
+              <tr>
+                <td>2. Solution en langage courant</td>
+                <td>
+                  Quelques lignes en français suffisent pour vérifier qu'on est
+                  sur la bonne voie. Elles serviront de support.
+                </td>
+              </tr>
+              <tr>
+                <td>3. Solution en pseudo-langage</td>
+                <td>
+                  Plusieurs solutions peuvent exister : on choisit la plus
+                  judicieuse et on reste cohérent jusqu'au bout.
+                </td>
+              </tr>
+              <tr>
+                <td>4. Tests et vérification</td>
+                <td>
+                  On vérifie que l'algorithme répond à toutes les demandes de
+                  l'énoncé. Sinon, retour à la phase 1.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>6. Types, variables et constantes</h3>
+          <p>
+            Un objet manipulé par un algorithme a un <strong>type</strong> :
+            l'ensemble des valeurs qu'il peut prendre et les actions autorisées
+            sur lui.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Type</th>
+                <th>Valeurs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Entier</td>
+                <td>
+                  Un sous-ensemble des entiers relatifs ; chaque élément a un
+                  successeur et un prédécesseur.
+                </td>
+              </tr>
+              <tr>
+                <td>Réel</td>
+                <td>
+                  Un sous-ensemble des réels décimaux signés ; pas de successeur
+                  ni de prédécesseur.
+                </td>
+              </tr>
+              <tr>
+                <td>Caractère</td>
+                <td>Un caractère de la table ASCII.</td>
+              </tr>
+              <tr>
+                <td>Chaîne de caractères</td>
+                <td>Une suite de caractères.</td>
+              </tr>
+              <tr>
+                <td>Booléen</td>
+                <td>VRAI ou FAUX.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Chaque objet est désigné par un <strong>identificateur</strong> : il
+            commence par une lettre et ne contient pas d'espace. On choisit des
+            noms explicites (prix_total plutôt que x) pour faciliter la
+            relecture.
+          </p>
+          <p>
+            Une <strong>variable</strong> stocke provisoirement une valeur, qui
+            peut changer. Il faut la <strong>déclarer</strong> avant de
+            l'utiliser : lui donner un nom et un type. Une
+            <strong>constante</strong> est un objet dont la valeur ne change
+            jamais pendant l'algorithme.
+          </p>
+          <p><strong>Exemple : Déclarations</strong></p>
+          <p>On déclare d'abord ses constantes, puis ses variables.</p>
+          <pre><code>Constante
+   PI = 3,14
+Variable
+   x : Entier
+   v1, Y : Réel
+   c : char
+   S : chaine
+   Ok : Booléen</code></pre>
+          <h3>7. Opérateurs et expressions</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Opérateur</th>
+                <th>Notation</th>
+                <th>Opérandes</th>
+                <th>Résultat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Multiplication</td>
+                <td>*</td>
+                <td>entier ou réel</td>
+                <td>entier ou réel</td>
+              </tr>
+              <tr>
+                <td>Division entière</td>
+                <td>DIV</td>
+                <td>entier</td>
+                <td>entier</td>
+              </tr>
+              <tr>
+                <td>Division</td>
+                <td>/</td>
+                <td>entier ou réel</td>
+                <td>réel</td>
+              </tr>
+              <tr>
+                <td>Reste (modulo)</td>
+                <td>MOD</td>
+                <td>entier</td>
+                <td>entier</td>
+              </tr>
+              <tr>
+                <td>Addition, soustraction</td>
+                <td>+ -</td>
+                <td>entier ou réel</td>
+                <td>entier ou réel</td>
+              </tr>
+              <tr>
+                <td>Comparaison</td>
+                <td>&lt; &lt;= &gt; &gt;= = &lt;&gt;</td>
+                <td>tout type</td>
+                <td>booléen</td>
+              </tr>
+              <tr>
+                <td>ET, OU logiques</td>
+                <td>ET OU</td>
+                <td>booléen</td>
+                <td>booléen</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Exemple : DIV et MOD</strong></p>
+          <p>
+            DIV donne le quotient de la division entière et MOD le reste. Avec
+            17 et 5 : 17 = 5 × 3 + 2.
+          </p>
+          <pre><code>17 DIV 5  →  3
+17 MOD 5  →  2
+7 / 2     →  3,5</code></pre>
+          <p>
+            Une <strong>expression</strong> est un ensemble de valeurs reliées
+            par des opérateurs, équivalent à une seule valeur typée : 12+5 ou
+            A+2. La multiplication est prioritaire sur l'addition : 2*3+5 vaut
+            11.
+          </p>
+          <h3>8. L'affectation</h3>
+          <p>
+            L'affectation attribue à un objet une valeur, résultat d'une
+            évaluation. Le symbole est <strong>←</strong>. La valeur doit être
+            compatible avec le type de l'objet à gauche.
+          </p>
+          <p><strong>Exemple : Exemples d'affectations</strong></p>
+          <p>
+            Si nb_kg est un entier et prix_du_kg un réel, le produit est un réel
+            : prix_total doit donc être réel.
+          </p>
+          <pre><code>X ← 1                       X prend la valeur 1
+X ← 2*3+5                   X prend la valeur 11
+D ← D+1                     D augmente de 1
+prix_total ← nb_kg * prix_du_kg</code></pre>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Ne confonds pas « ← » (on donne une
+              valeur) et « = » (on compare deux valeurs). Et l'ancienne valeur
+              de la variable est perdue.
+            </p>
+          </blockquote>
+          <p><strong>Exemple : Échanger deux variables</strong></p>
+          <p>
+            Avec A = 3 et B = 5, les deux instructions « A ← B puis B ← A »
+            donnent A = 5 et B = 5 : la valeur 3 est perdue. Il faut une
+            variable temporaire.
+          </p>
+          <pre><code>temp ← A
+A ← B
+B ← temp</code></pre>
+          <h3>9. Lecture et écriture</h3>
+          <p>
+            Pour dialoguer avec l'utilisateur, on utilise
+            <strong>Lire</strong> (l'utilisateur saisit une valeur au clavier)
+            et <strong>Ecrire</strong> (le programme affiche une valeur à
+            l'écran).
+          </p>
+          <p><strong>Exemple : Syntaxes</strong></p>
+          <p>
+            Avant un Lire, on écrit un libellé pour dire à l'utilisateur quoi
+            saisir.
+          </p>
+          <pre><code>Lire(nomVariable)
+Lire(nomVariable1, nomVariable2)
+Ecrire("chaine constante")
+Ecrire("Chaine constante", prix_total)
+
+Ecrire("saisir une valeur")
+Lire(nomVariable)</code></pre>
+          <p>
+            Un <strong>commentaire</strong> est une suite de caractères placée
+            entre les symboles % et %. Il n'est pas exécuté : il sert à
+            documenter l'algorithme pour un lecteur. Exemple : (% ceci est un
+            commentaire %).
+          </p>
+          <h3>10. Structure générale et exemple complet</h3>
+          <p><strong>Exemple : Structure d'un algorithme</strong></p>
+          <p>
+            Le nom, les déclarations (constantes, types, variables,
+            sous-programmes), puis le corps entre Début et Fin.
+          </p>
+          <pre><code>Algorithme NomAlgorithme
+   Constante   (% déclaration des constantes %)
+   Type        (% création des types %)
+   Variable    (% déclaration des variables %)
+   (% définition des sous-programmes %)
+Début
+   Instructions
+Fin</code></pre>
+          <p><strong>Exemple : Exemple complet : la facture</strong></p>
+          <p>
+            Cet algorithme demande le prix d'un kilogramme de choux et le nombre
+            de kilogrammes, puis affiche le prix total.
+          </p>
+          <pre><code>ALGORITHME facture
+VARIABLE
+   prix_total, prix_du_kg : REEL
+   nb_kg : ENTIER
+DEBUT
+   Ecrire("Entrez le prix d'un kilogramme de choux")
+   Lire(prix_du_kg)
+   Ecrire("Entrez le nombre de kilogrammes de choux : ")
+   Lire(nb_kg)
+   prix_total ← prix_du_kg * nb_kg
+   Ecrire("Le prix total de l'achat est : ", prix_total)
+FIN</code></pre>
+          <p><strong>Exemple : Déroulement à la main</strong></p>
+          <p>
+            Si l'utilisateur saisit 250 pour le prix et 3 pour le nombre de
+            kilogrammes :
+          </p>
+          <pre><code>prix_du_kg = 250
+nb_kg = 3
+prix_total = 250 * 3 = 750
+Affichage : Le prix total de l'achat est : 750</code></pre>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Un algorithme est précis, déterministe et fini dans le temps.
+            </li>
+            <li>
+              Un programme est le codage d'un algorithme dans un langage de
+              programmation.
+            </li>
+            <li>
+              Quatre phases : analyse, langage courant, pseudo-langage, tests
+              (et retour à la phase 1 si besoin).
+            </li>
+            <li>
+              Une erreur syntaxique se corrige dans le programme ; une erreur
+              sémantique oblige à revenir à l'analyse.
+            </li>
+            <li>
+              Toute variable se déclare avec un nom et un type ; une constante
+              ne change jamais.
+            </li>
+            <li>
+              DIV donne le quotient entier, MOD le reste, / donne un réel.
+            </li>
+            <li>
+              ← affecte, = compare ; avant un Lire, on écrit un libellé avec
+              Ecrire.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>
+              A ← B puis B ← A écrase la valeur de A : utiliser une variable
+              temporaire pour échanger.
+            </li>
+            <li>
+              Oublier un cas (A nul dans A·X + B = 0) rend l'algorithme
+              imprécis.
+            </li>
+            <li>
+              Un nom de variable ne commence pas par un chiffre et ne contient
+              pas d'espace.
+            </li>
+            <li>
+              Multiplier un entier par un réel donne un réel : la variable qui
+              reçoit le résultat doit être réelle.
+            </li>
+            <li>
+              Un programme sans message d'erreur peut quand même donner des
+              résultats faux (erreur sémantique).
+            </li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>
+            Le quiz et le TD de ce module (introduction) travaillent ces
+            notions.
+          </p>
+        </div>
+      </details>
+
+      </div>
+      <div class="rappel">
+        <h4>Initiation à la programmation</h4>
+      <!-- Fiche repliable : initiation à la programmation avec Scratch -->
+      <details id="rappel-initiation-programmation">
+        <summary>
+          Initiation à la programmation — À la découverte de la programmation
+          interactive (Scratch)
+        </summary>
+        <div class="rappel">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Installer le logiciel Scratch et reconnaître son interface</li>
+            <li>Manipuler le langage Scratch</li>
+            <li>
+              Écrire des instructions élémentaires : mouvement, son, répétition,
+              parole
+            </li>
+            <li>Gérer lutins, costumes, sons et arrière-plans</li>
+          </ul>
+          <h3>1. L'informatique créative</h3>
+          <p>
+            Ce cours est tiré du support officiel d'informatique créative de
+            l'université de Harvard. L'informatique créative repose sur trois
+            axes :
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Axe</th>
+                <th>Idée</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Créativité</td>
+                <td>
+                  S'appuyer sur la créativité, l'imagination et les centres
+                  d'intérêt de l'apprenant pour l'aider à développer un lien
+                  personnel avec l'informatique.
+                </td>
+              </tr>
+              <tr>
+                <td>Autonomisation</td>
+                <td>
+                  Mettre l'accent sur les compétences, les pratiques et les
+                  connaissances fondamentales dont les jeunes ont besoin pour
+                  créer les supports multimédias, dynamiques et interactifs
+                  qu'ils apprécient au quotidien.
+                </td>
+              </tr>
+              <tr>
+                <td>Informatique</td>
+                <td>
+                  Préparer à bien plus qu'une carrière de programmeur :
+                  développer la pensée informatique, pour faire appel à ses
+                  concepts et à ses points de vue dans toutes les situations.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>2. Scratch, c'est quoi ?</h3>
+          <p>
+            <strong>Scratch</strong> est un langage de programmation libre et
+            visuel, développé par des chercheurs du MIT. Il permet de créer
+            facilement des animations, des histoires interactives, des jeux
+            vidéo, des créations musicales et artistiques.
+          </p>
+          <p>
+            On l'installe en téléchargeant une version hors ligne depuis
+            scratch.mit.edu/download (les fichiers sont aussi donnés dans le
+            dossier Ressources du cours). Pour créer un nouveau projet, on
+            clique sur <strong>Créer</strong> ; avec un compte Scratch, on se
+            connecte pour sauvegarder son projet.
+          </p>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Le cours dit que Scratch a été «
+              créé en mai 2017 » : c'est erroné. Scratch 2.0 date de 2013, et
+              Scratch 3 a remplacé Scratch 2 depuis 2019. Les notions de ce
+              module (lutin, blocs, scripts, boucle) restent valables, mais
+              l'interface a changé.
+            </p>
+          </blockquote>
+          <h3>3. L'interface de Scratch</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Zone</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Palette de blocs</td>
+                <td>
+                  Les blocs de commande, rangés par catégories (mouvement,
+                  apparence, sons, événements…). On les fait glisser vers l'aire
+                  des scripts.
+                </td>
+              </tr>
+              <tr>
+                <td>Aire des scripts</td>
+                <td>
+                  L'endroit où l'on assemble les blocs pour construire un
+                  programme.
+                </td>
+              </tr>
+              <tr>
+                <td>Scène</td>
+                <td>
+                  L'espace où évolue le lutin ; on y voit le résultat du
+                  programme.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Chaque objet de Scratch s'appelle un <strong>lutin</strong> (en
+            anglais <em>sprite</em>). Au départ, c'est le chat. Un lutin peut
+            avoir plusieurs <strong>costumes</strong>, et la scène peut avoir un
+            <strong>arrière-plan</strong>.
+          </p>
+          <p>
+            Les blocs s'assemblent en <strong>pile</strong> : on les colle les
+            uns sous les autres. On peut cliquer sur n'importe quel bloc pour
+            lancer l'exécution de toute la pile. Pour déplacer une pile, on
+            l'attrape par le bloc du dessus.
+          </p>
+          <h3>4. Pas à pas : « Pour bien commencer »</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Étape</th>
+                <th>Bloc ou action</th>
+                <th>Effet</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1. Lance-toi</td>
+                <td>AVANCER (catégorie Mouvement)</td>
+                <td>Le chat avance de 10 pas quand on clique sur le bloc</td>
+              </tr>
+              <tr>
+                <td>2. Ajoute des sons</td>
+                <td>JOUER DU TAMBOUR</td>
+                <td>
+                  On l'accroche sous AVANCER et on choisit le tambour dans le
+                  menu
+                </td>
+              </tr>
+              <tr>
+                <td>3. Crée une danse</td>
+                <td>Un 2e AVANCER avec un signe moins devant le nombre</td>
+                <td>Le chat recule ; on ajoute un autre JOUER DU TAMBOUR</td>
+              </tr>
+              <tr>
+                <td>4. Encore et encore</td>
+                <td>RÉPÉTER, placé sur le dessus de la pile</td>
+                <td>
+                  Sa « bouche » entoure les blocs à répéter ; on règle le nombre
+                  de fois
+                </td>
+              </tr>
+              <tr>
+                <td>5. Dis quelque chose</td>
+                <td>DIRE (catégorie Apparence)</td>
+                <td>Le lutin affiche un texte</td>
+              </tr>
+              <tr>
+                <td>6. Le drapeau vert</td>
+                <td>Bloc « quand drapeau vert pressé »</td>
+                <td>
+                  Chaque clic sur le drapeau lance le script ; le bouton Stop
+                  l'arrête
+                </td>
+              </tr>
+              <tr>
+                <td>7. Change les couleurs</td>
+                <td>AJOUTER À L'EFFET</td>
+                <td>Modifie les couleurs du lutin</td>
+              </tr>
+              <tr>
+                <td>8. Appuie sur une touche</td>
+                <td>Bloc « quand [espace] est pressé »</td>
+                <td>Le script se lance avec la touche choisie dans le menu</td>
+              </tr>
+              <tr>
+                <td>9. Arrière-plan</td>
+                <td>
+                  Choisir un arrière-plan dans la bibliothèque (ex.
+                  Spotlight-stage)
+                </td>
+                <td>Un nouveau décor apparaît sur la scène</td>
+              </tr>
+              <tr>
+                <td>10. Ajoute un lutin</td>
+                <td>
+                  Bouton Nouveau lutin : bibliothèque, dessin, fichier ou photo
+                  (webcam)
+                </td>
+                <td>Un nouveau personnage, déplaçable à la souris</td>
+              </tr>
+              <tr>
+                <td>11. Découvre</td>
+                <td>Onglets Sons et Costumes</td>
+                <td>
+                  Importer un son (MP3, AIF ou WAV), changer de costume, animer
+                  en alternant les costumes
+                </td>
+              </tr>
+              <tr>
+                <td>12. Des conseils !</td>
+                <td>Donner un nom au projet ; fenêtre Conseils</td>
+                <td>Exemples de scripts et explication de chaque bloc</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>5. Notions à retenir pour programmer</h3>
+          <p><strong>Exemple : Un script qui danse</strong></p>
+          <p>
+            Voici, en texte, un programme construit avec les étapes 1 à 6 (un
+            bloc par ligne, le retrait montre ce qui est dans la boucle). Le
+            bloc DIRE est placé au-dessus de la pile.
+          </p>
+          <pre><code>quand drapeau vert pressé
+dire « Bonjour ! »
+répéter 10 fois      (nombre au choix)
+   avancer de 10 pas
+   jouer du tambour
+   avancer de -10 pas
+   jouer du tambour</code></pre>
+          <p>
+            <strong>Commencer et finir un script.</strong> Un script commence
+            par un bloc de déclenchement (drapeau vert, touche pressée…). Les
+            instructions s'exécutent dans l'ordre, de haut en bas. Le bloc
+            RÉPÉTER permet d'éviter de recopier plusieurs fois les mêmes blocs.
+          </p>
+          <p>
+            <strong>Animer un lutin.</strong> On crée un script qui bascule
+            entre ses costumes.
+          </p>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Scratch est un langage de programmation libre et visuel, développé
+              par des chercheurs du MIT.
+            </li>
+            <li>Trois zones : palette de blocs, aire des scripts, scène.</li>
+            <li>
+              Un objet s'appelle un lutin ; il peut avoir plusieurs costumes ;
+              la scène a un arrière-plan.
+            </li>
+            <li>
+              Les blocs s'assemblent en pile ; un clic sur un bloc exécute toute
+              la pile.
+            </li>
+            <li>
+              RÉPÉTER entoure les blocs à répéter ; le drapeau vert lance le
+              script, Stop l'arrête.
+            </li>
+            <li>On importe des sons au format MP3, AIF ou WAV.</li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>
+              Croire qu'un clic sur un bloc au milieu de la pile n'exécute que
+              ce bloc : toute la pile s'exécute.
+            </li>
+            <li>
+              Oublier de placer le bloc RÉPÉTER au-dessus des blocs à répéter
+              (il doit les entourer).
+            </li>
+            <li>
+              Penser que « AVANCER » ne peut aller que vers l'avant : un nombre
+              négatif fait reculer.
+            </li>
+            <li>Attendre un son alors que le son de l'ordinateur est coupé.</li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+      </div>
+        <div class="rappel">
+            <h4>JavaScript</h4>
+      <!-- Fiche repliable : rappel de cours sur JavaScript -->
+      <details id="rappel-javascript">
+        <summary>JavaScript — Le langage JavaScript</summary>
+        <div class="rappel">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Situer JavaScript dans la triade HTML, CSS, JavaScript</li>
+            <li>Insérer du JavaScript dans une page web de trois façons</li>
+            <li>
+              Déclarer et utiliser des variables, des chaînes et des nombres
+            </li>
+            <li>Comprendre la portée des variables</li>
+            <li>
+              Utiliser les conditions (if, switch) et les boucles (while,
+              do/while, for)
+            </li>
+          </ul>
+          <h3>1. Généralités</h3>
+          <p>
+            <strong>JavaScript</strong> (JS) est le langage de programmation du
+            Web. La majorité des sites web modernes l'utilisent, et tous les
+            navigateurs modernes (ordinateurs, consoles, tablettes, téléphones)
+            le comprennent et l'interprètent.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Langage</th>
+                <th>Il spécifie…</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>le contenu des pages web</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>la présentation des pages web</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>le comportement des pages web</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            À l'origine, JavaScript était un langage côté client, standardisé
+            par l'ECMA sous le nom <strong>ECMAScript</strong>. Depuis 2009, son
+            usage a beaucoup évolué, côté client comme côté serveur (avec
+            l'engouement autour de Node.js). Une nouvelle version, l'ECMAScript
+            2015 (ES6), a été ratifiée en juin 2015. À la rédaction du cours,
+            ES5 était la version la mieux supportée par la plupart des
+            navigateurs.
+          </p>
+          <p>
+            C'est un langage de <strong>script</strong>,
+            <strong>orienté objet</strong>,
+            <strong>interprété par le navigateur</strong>. Un script est, par
+            opposition à un langage compilé, un langage qui s'interprète : ici,
+            l'interprète est le navigateur du visiteur (le client).
+          </p>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> JavaScript est différent du langage
+              de programmation Java.
+            </p>
+          </blockquote>
+          <h3>2. Débuter : insérer du JavaScript dans une page</h3>
+          <p>
+            Pour débuter, il suffit d'un éditeur de texte (le Bloc-notes suffit
+            ; le cours utilise Visual Studio Code, qui offre la coloration
+            syntaxique) et d'un navigateur. Il y a
+            <strong>trois méthodes</strong> pour insérer du JavaScript dans une
+            page web.
+          </p>
+          <p>
+            <strong
+              >Exemple : Méthode 1 : directement dans une balise (gestionnaire
+              d'événements)</strong
+            >
+          </p>
+          <p>
+            La propriété porte le nom de l'événement qui déclenche le script
+            (ici onclick) et contient le script à exécuter. Le # évite de
+            changer de page.
+          </p>
+          <pre><code>&lt;a href="#" onclick="alert('Bonjour !');"&gt;lien&lt;/a&gt;</code></pre>
+          <p>
+            <strong
+              >Exemple : Méthode 2 : entre les balises &lt;script&gt; et
+              &lt;/script&gt;</strong
+            >
+          </p>
+          <p>
+            On les place dans l'en-tête (head) ou dans le corps (body). On
+            précise le type du script.
+          </p>
+          <pre><code>&lt;head&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;script type="text/javascript"&gt;
+  /* votre code JavaScript se trouve ici : pratique pour plusieurs lignes */
+&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+          <p><strong>Exemple : Méthode 3 : dans un fichier externe</strong></p>
+          <p>
+            Comme pour le CSS : le fichier a l'extension .js et on l'indique
+            avec la propriété src (comme pour les images).
+          </p>
+          <pre><code>&lt;head&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+          <h3>3. Valeurs et variables</h3>
+          <p>
+            Un programme manipule des <strong>valeurs</strong> (le nombre 3.14,
+            le texte « Hello World »). Ce qu'un langage peut représenter
+            s'appelle ses <strong>types</strong>. Pour conserver une valeur, le
+            programme l'attribue à une <strong>variable</strong>, un nom
+            symbolique pour une valeur. JavaScript sépare les instructions par
+            un point-virgule (<code>;</code>), qu'on peut généralement omettre
+            si les instructions sont sur des lignes distinctes.
+          </p>
+          <p>
+            <strong>Règles pour le nom d'une variable</strong> : il peut
+            contenir les lettres de l'alphabet (majuscules et minuscules), les
+            chiffres et le underscore, mais
+            <strong>ne doit pas commencer par un chiffre</strong>. Les mots-clés
+            du langage sont interdits (« break », « case », « continue », «
+            delete », « new »…). JavaScript est
+            <strong>sensible à la casse</strong> : <code>nom</code>,
+            <code>Nom</code> et <code>NOM</code> sont trois variables
+            différentes.
+          </p>
+          <p><strong>Exemple : Déclarer et affecter</strong></p>
+          <p>
+            On déclare avec var (jusqu'à ES5), puis on modifie la valeur avec le
+            symbole d'affectation =.
+          </p>
+          <pre><code>var annee;
+var message;
+annee = 2006;
+message = "Bonjour, visiteur";</code></pre>
+          <p>
+            <strong>ES6</strong> ajoute <code>let</code> et <code>const</code>.
+            <code>const</code> déclare une variable à assignation unique, dont
+            la portée est le bloc.
+          </p>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Le cours donne une liste de « mots
+              interdits » où figurent char, double, final, long, public et
+              super. Certains ne sont plus réservés dans le JavaScript récent :
+              retiens surtout qu'on évite les mots-clés du langage.
+            </p>
+          </blockquote>
+          <h3>4. Les chaînes de caractères</h3>
+          <p>
+            Une chaîne est une suite de caractères ordonnée, délimitée par des
+            guillemets (<code>"</code>) ou des apostrophes (<code>'</code>).
+            <strong>Concaténer</strong>, c'est mettre bout à bout plusieurs
+            chaînes avec l'opérateur <code>+</code>.
+          </p>
+          <p><strong>Exemple : Afficher « Vous avez 18 ans »</strong></p>
+          <p>
+            Trois morceaux : « Vous avez », la variable age, « ans ». Attention
+            aux espaces après « avez » et avant « ans ».
+          </p>
+          <pre><code>var age = 18;
+alert("Vous avez " + age + " ans");</code></pre>
+          <h3>5. Les nombres</h3>
+          <p>
+            Les nombres s'écrivent sans guillemets. On distingue les entiers
+            (valeurs exactes) et les nombres à virgule, où l'on utilise un
+            <strong>point</strong> comme séparateur (<code>1.234</code>).
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Opérateur</th>
+                <th>Rôle</th>
+                <th>Exemple</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>+</td>
+                <td>addition</td>
+                <td>52 + 19 = 71</td>
+              </tr>
+              <tr>
+                <td>-</td>
+                <td>soustraction</td>
+                <td>52 - 19 = 33</td>
+              </tr>
+              <tr>
+                <td>*</td>
+                <td>multiplication</td>
+                <td>5 * 19 = 95</td>
+              </tr>
+              <tr>
+                <td>/</td>
+                <td>division</td>
+                <td>5 / 3 = 1,666…</td>
+              </tr>
+              <tr>
+                <td>%</td>
+                <td>modulo : reste de la division de a par b</td>
+                <td>52 % 19 = 14 (car 52 = 19×2 + 14)</td>
+              </tr>
+              <tr>
+                <td>+= -= *= /= %=</td>
+                <td>
+                  raccourcis : resultat += X équivaut à resultat = resultat + X
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>++ --</td>
+                <td>incrémenter, décrémenter de 1</td>
+                <td>compteur++</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Pour convertir une chaîne en nombre :
+            <code>parseInt(chaine)</code> (entier) et
+            <code>parseFloat(chaine)</code> (décimal). Si la chaîne n'est pas un
+            nombre, la conversion échoue et donne <strong>NaN</strong> (Not a
+            Number).
+          </p>
+          <h3>6. La portée des variables</h3>
+          <p>
+            La <strong>portée</strong> d'une variable est la région du code où
+            elle est définie. Une <strong>variable globale</strong> est définie
+            partout. Une <strong>variable locale</strong> (déclarée dans une
+            fonction, ou paramètre de fonction) n'existe que dans le corps de la
+            fonction. Une variable locale est prioritaire sur une globale de
+            même nom : elle la <strong>masque</strong>.
+          </p>
+          <p><strong>Exemple : Masquage</strong></p>
+          <p>La fonction retourne la variable locale, pas la globale.</p>
+          <pre><code>var scope = "global";
+function checkscope() {
+  var scope = "local";
+  return scope;
+}
+checkscope()   // =&gt; "local"</code></pre>
+          <h3>7. Les conditions</h3>
+          <p>
+            Par défaut, l'interpréteur exécute les instructions dans l'ordre.
+            Les <strong>conditions</strong> (if, switch) font exécuter ou
+            ignorer des instructions selon la valeur d'une expression.
+          </p>
+          <p><strong>Exemple : if, else, else if</strong></p>
+          <p>
+            if (!username) est vrai quand username vaut null, undefined, false,
+            0, "" ou NaN.
+          </p>
+          <pre><code>if (n == 1) {
+  console.log("Vous avez 1 nouveau message.");
+} else if (n == 2) {
+  console.log("Vous avez 2 nouveaux messages.");
+} else {
+  console.log("Vous avez " + n + " nouveaux messages.");
+}</code></pre>
+          <p><strong>Exemple : switch</strong></p>
+          <p>
+            Quand toutes les branches dépendent de la valeur d'une même
+            expression. S'il n'y a ni case correspondant ni bloc default, le
+            switch ignore complètement le bloc de code.
+          </p>
+          <pre><code>switch (typeof x) {
+  case 'number': return x.toString(16);
+  case 'string': return '"' + x + '"';
+  default: return String(x);
+}</code></pre>
+          <h3>8. Les boucles</h3>
+          <p>
+            Les boucles répètent des instructions. JavaScript a quatre
+            instructions en boucle : <code>while</code>, <code>do/while</code>,
+            <code>for</code> et <code>for/in</code>.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Boucle</th>
+                <th>Particularité</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>while</td>
+                <td>
+                  Teste l'expression avant chaque tour : le corps peut ne jamais
+                  s'exécuter. while (true) fait une boucle infinie.
+                </td>
+              </tr>
+              <tr>
+                <td>do/while</td>
+                <td>
+                  Teste l'expression en bas de la boucle : le corps est exécuté
+                  au moins une fois.
+                </td>
+              </tr>
+              <tr>
+                <td>for</td>
+                <td>
+                  Regroupe initialisation, test et incrémentation sur une seule
+                  ligne.
+                </td>
+              </tr>
+              <tr>
+                <td>for/in</td>
+                <td>Parcourt les propriétés d'un objet.</td>
+              </tr>
+            </tbody>
+          </table>
+          <p><strong>Exemple : Afficher les nombres de 0 à 9</strong></p>
+          <p>
+            Les deux boucles sont équivalentes : la boucle for regroupe
+            l'initialisation, le test et l'incrémentation.
+          </p>
+          <pre><code>var count = 0;
+while (count &lt; 10) {
+  console.log(count);
+  count++;
+}
+
+for (var count = 0; count &lt; 10; count++) {
+  console.log(count);
+}</code></pre>
+          <p><strong>Exemple : for/in</strong></p>
+          <p>La boucle s'exécute une fois pour chaque propriété de l'objet.</p>
+          <pre><code>var person = {fname:"John", lname:"Doe", age:25};
+var text = "";
+var x;
+for (x in person) {
+  text += person[x] + " ";
+}
+// text vaut : John Doe 25</code></pre>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Dans une boucle while, une variable
+              doit évoluer à chaque tour. Sinon la condition reste vraie et la
+              boucle ne se termine jamais. L'exemple du cours pour do/while
+              contient une accolade manquante : retiens simplement sa syntaxe do
+              { … } while (expression);
+            </p>
+          </blockquote>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              JavaScript spécifie le comportement des pages (HTML : contenu, CSS
+              : présentation). Il est interprété par le navigateur et ne se
+              confond pas avec Java.
+            </li>
+            <li>
+              Trois méthodes d'insertion : gestionnaire d'événements, balise
+              &lt;script&gt;, fichier externe .js (propriété src).
+            </li>
+            <li>
+              Le nom d'une variable ne commence pas par un chiffre ; JavaScript
+              est sensible à la casse.
+            </li>
+            <li>
+              Concaténer : mettre des chaînes bout à bout avec +. % donne le
+              reste de la division.
+            </li>
+            <li>
+              parseInt et parseFloat convertissent ; NaN signale une conversion
+              impossible.
+            </li>
+            <li>Une variable locale masque une globale de même nom.</li>
+            <li>
+              do/while exécute le corps au moins une fois ; for regroupe
+              initialisation, test et incrémentation.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>Confondre JavaScript et Java.</li>
+            <li>
+              Écrire des guillemets autour d'un nombre : il devient une chaîne.
+            </li>
+            <li>
+              Oublier de modifier la variable dans une boucle while : boucle
+              infinie.
+            </li>
+            <li>Croire que nom, Nom et NOM désignent la même variable.</li>
+            <li>
+              Oublier les espaces autour des morceaux lors d'une concaténation.
+            </li>
+            <li>
+              Oublier le cas par défaut dans un switch : si rien ne correspond,
+              tout est ignoré.
+            </li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+        </div>
+        <div class="rappel">
+            <h4>HTML/CSS</h4>
+      <!-- Fiche repliable : introduction à HTML et CSS -->
+      <details id="rappel-html-css">
+        <summary>HTML/CSS — Introduction à HTML et CSS</summary>
+        <div class="rappel">
+          <p class="rappel-lecture"><em>Lecture : environ 8 minutes</em></p>
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Retracer l'historique de HTML et de CSS</li>
+            <li>Définir les concepts de base liés à HTML</li>
+            <li>Reconnaître la structure d'un document HTML</li>
+            <li>Installer un éditeur et un serveur web local</li>
+            <li>Lancer une page HTML depuis un navigateur</li>
+          </ul>
+          <h3>1. HTML et CSS : qui fait quoi ?</h3>
+          <p>
+            <strong>HTML</strong> (HyperText Markup Language) est le langage de
+            balisage standard pour créer des pages web. Il décrit la
+            <strong>structure</strong> des pages avec du balisage. Il permet de
+            formater du texte, d'ajouter des graphiques, de créer des liens, des
+            formulaires, des blocs, etc., et d'enregistrer le tout dans un
+            fichier texte qu'un navigateur peut lire et afficher.
+          </p>
+          <p>
+            <strong>CSS</strong> (Cascading Style Sheets, feuilles de style en
+            cascade) est un langage qui décrit la
+            <strong>présentation</strong> des documents HTML et XML.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Langage</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>La structure et le contenu des pages</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>La présentation (couleurs, mise en page…)</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>2. Un peu d'histoire</h3>
+          <p>
+            Selon le cours, Tim Berners-Lee, physicien du CERN, développe les
+            protocoles du World Wide Web, puis crée le HTML. Ce langage est issu
+            d'un sous-ensemble du SGML et s'appuie sur les travaux de Ted
+            Nelson, à l'origine du terme <strong>hypertexte</strong> (1965).
+          </p>
+          <p>
+            En 1993, l'explosion d'Internet a lieu avec la sortie du navigateur
+            (browser) <strong>Mosaic</strong> du NCSA. Les feuilles de style CSS
+            sont développées par le <strong>W3C</strong> (World Wide Web
+            Consortium), qui lance la version initiale le 17 décembre 1996. On
+            est actuellement à la version 5 pour HTML et à la version 3 pour
+            CSS.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Version</th>
+                <th>Année</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>1991</td>
+              </tr>
+              <tr>
+                <td>HTML 2.0</td>
+                <td>1995</td>
+              </tr>
+              <tr>
+                <td>HTML 3.2</td>
+                <td>1997</td>
+              </tr>
+              <tr>
+                <td>HTML 4.01</td>
+                <td>1999</td>
+              </tr>
+              <tr>
+                <td>XHTML</td>
+                <td>2000</td>
+              </tr>
+              <tr>
+                <td>HTML5</td>
+                <td>2014</td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Les dates varient selon les sources
+              : le cours d'Introduction au web place les travaux de Tim
+              Berners-Lee vers 1990, celui-ci en 1992. Retiens surtout les noms
+              et l'ordre des événements.
+            </p>
+          </blockquote>
+          <h3>3. Structure d'un document HTML</h3>
+          <p><strong>Exemple : Un premier document</strong></p>
+          <p>Voici la page minimale utilisée en TP.</p>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Titre de la page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Ma premiere entête&lt;/h1&gt;
+&lt;p&gt;Mon premier paragraphe.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <table>
+            <thead>
+              <tr>
+                <th>Élément</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;!DOCTYPE html&gt;</td>
+                <td>Déclare que le document est du HTML5</td>
+              </tr>
+              <tr>
+                <td>&lt;html&gt;</td>
+                <td>Élément racine de la page</td>
+              </tr>
+              <tr>
+                <td>&lt;head&gt;</td>
+                <td>Contient des méta-informations sur le document</td>
+              </tr>
+              <tr>
+                <td>&lt;title&gt;</td>
+                <td>Spécifie le titre du document (affiché dans l'onglet)</td>
+              </tr>
+              <tr>
+                <td>&lt;body&gt;</td>
+                <td>Contient le contenu visible de la page</td>
+              </tr>
+              <tr>
+                <td>&lt;h1&gt;</td>
+                <td>Définit un gros titre</td>
+              </tr>
+              <tr>
+                <td>&lt;p&gt;</td>
+                <td>Définit un paragraphe</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>4. Les balises HTML</h3>
+          <p>
+            Les balises HTML sont des noms d'éléments entourés de chevrons.
+            Syntaxe :
+            <code>&lt;nomelement&gt; le contenu &lt;/nomelement&gt;</code>.
+            Elles vont normalement par paire, comme <code>&lt;b&gt;</code> et
+            <code>&lt;/b&gt;</code> : la première est la
+            <strong>balise de début</strong>, la seconde la
+            <strong>balise de fin</strong>. La balise de fin s'écrit comme celle
+            de début, avec une barre oblique avant le nom.
+          </p>
+          <p>
+            Un <strong>document HTML</strong> est un fichier d'extension
+            <code>.htm</code> ou <code>.html</code>, qui contient des balises
+            HTML et du texte brut. On l'appelle aussi une
+            <strong>page web</strong>. Le but d'un navigateur est de lire ces
+            documents et de les afficher : il
+            <strong>n'affiche pas les balises</strong>, il les utilise pour
+            interpréter le contenu.
+          </p>
+          <h3>5. La déclaration DOCTYPE</h3>
+          <p>
+            La déclaration <code>&lt;!DOCTYPE&gt;</code> représente le type de
+            document et aide les navigateurs à afficher correctement les pages.
+            Elle ne doit apparaître qu'<strong>une seule fois</strong>, tout en
+            haut de la page, avant les balises HTML, et n'est
+            <strong>pas sensible à la casse</strong>. Pour HTML5, c'est
+            <code>&lt;!DOCTYPE html&gt;</code>.
+          </p>
+          <h3>6. Éditeurs, serveur et navigateur</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Outil</th>
+                <th>À retenir</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Éditeurs professionnels</td>
+                <td>
+                  Dreamweaver, Visual Studio… Éditeurs WYSIWYG (« What You See
+                  Is What You Get ») : BlueGriffon, Dreamweaver.
+                </td>
+              </tr>
+              <tr>
+                <td>Éditeurs simples</td>
+                <td>
+                  Notepad++, TextEdit (Mac), Sublime Text. Le cours recommande
+                  un simple éditeur de texte pour apprendre.
+                </td>
+              </tr>
+              <tr>
+                <td>Serveur web local</td>
+                <td>
+                  XAMPP : un serveur web local (Apache), un serveur FTP et un
+                  serveur de messagerie. Libre, téléchargeable sur
+                  apachefriends.org.
+                </td>
+              </tr>
+              <tr>
+                <td>Navigateur</td>
+                <td>
+                  Lit et affiche les documents HTML : Chrome, Firefox, Internet
+                  Explorer…
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Une page HTML créée en local peut être vue avec n'importe quel
+            navigateur, sans serveur web. Mais travailler avec un serveur local
+            vous rapproche de la réalité.
+          </p>
+          <h3>7. En pratique (TP 1)</h3>
+          <p><strong>Exemple : Installer XAMPP et tester une page</strong></p>
+          <p>Les étapes du TP :</p>
+          <pre><code>1. Télécharger et installer XAMPP
+2. Démarrer le serveur Apache
+3. Créer un dossier « monsite » dans le dossier htdocs de XAMPP
+4. Y placer la page exple1.html
+5. Ouvrir http://localhost/monsite dans le navigateur</code></pre>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Le TP écrit « c:\xampp\hdocs » : le
+              dossier s'appelle htdocs.
+            </p>
+          </blockquote>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              HTML décrit la structure des pages, CSS décrit leur présentation.
+            </li>
+            <li>
+              Un document HTML est un fichier .html contenant du texte et des
+              balises ; le navigateur interprète les balises sans les afficher.
+            </li>
+            <li>
+              Structure minimale : DOCTYPE, html, head (avec title), body.
+            </li>
+            <li>
+              Les balises vont par paire : la balise de fin porte une barre
+              oblique avant le nom.
+            </li>
+            <li>
+              DOCTYPE : une seule fois, en haut de page, pas sensible à la casse
+              ; &lt;!DOCTYPE html&gt; pour HTML5.
+            </li>
+            <li>
+              XAMPP donne un serveur web local ; on peut aussi tester sans
+              serveur.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>
+              Ne pas mettre le gros titre visible (h1) dans le head : il va dans
+              le body.
+            </li>
+            <li>
+              Le title du head n'est pas le gros titre de la page : c'est le
+              titre affiché dans l'onglet.
+            </li>
+            <li>Oublier la barre oblique de la balise de fin.</li>
+            <li>Confondre HTML (structure) et CSS (présentation).</li>
+            <li>
+              Croire qu'un serveur web est obligatoire pour afficher une page
+              HTML locale.
+            </li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+        </div>
+        <div class="rappel">
+            <h4>Réseau</h4>
+      <!-- Fiche repliable : présentation des réseaux et d'Internet -->
+      <details id="rappel-reseau">
+        <summary>
+          Réseau — Présentation des réseaux : connexion à Internet
+        </summary>
+        <div class="rappel">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>
+              Connaître la connexion physique qui relie un ordinateur à Internet
+            </li>
+            <li>Identifier les principaux composants d'un ordinateur</li>
+            <li>Décrire le rôle de la carte réseau et du modem</li>
+            <li>Expliquer ce que sont TCP/IP et un protocole</li>
+            <li>Utiliser la commande ping pour tester une connexion</li>
+          </ul>
+          <h3>1. Éléments requis pour une connexion à Internet</h3>
+          <p>
+            Internet est le plus important réseau de données au monde : une
+            multitude de réseaux de tailles variées, reliés entre eux. Les
+            ordinateurs personnels (PC) en sont les sources et les destinations
+            d'information. Une connexion à Internet comprend
+            <strong>trois éléments</strong>.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Élément</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Connexion physique</td>
+                <td>
+                  Relie une carte d'interface du PC (modem ou carte réseau) à un
+                  réseau. Elle assure le transfert des signaux entre les PC d'un
+                  réseau local (LAN) et les équipements distants du réseau
+                  Internet.
+                </td>
+              </tr>
+              <tr>
+                <td>Connexion logique</td>
+                <td>
+                  Utilise des normes appelées <strong>protocoles</strong> :
+                  ensemble formel de règles et de conventions régissant la
+                  communication entre unités réseau. Les protocoles TCP/IP sont
+                  les plus utilisés ; ils forment un ensemble qui assure la
+                  transmission des données.
+                </td>
+              </tr>
+              <tr>
+                <td>Applications</td>
+                <td>
+                  Programmes qui interprètent les données et les affichent de
+                  façon compréhensible, en utilisant les protocoles pour envoyer
+                  et recevoir des données.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Pour afficher du code HTML sous forme de page web, il faut un
+            <strong>navigateur</strong> (Internet Explorer, Netscape…). Le
+            protocole <strong>FTP</strong> (File Transfer Protocol) permet de
+            télécharger des fichiers et des programmes depuis Internet. Les
+            navigateurs peuvent utiliser des modules d'extension pour afficher
+            des films ou des animations Flash.
+          </p>
+          <h3>2. Notions de base sur les PC</h3>
+          <p>
+            Les ordinateurs sont des éléments importants d'un réseau, et de
+            nombreux équipements réseau sont des ordinateurs à usage déterminé,
+            contenant des composants identiques à ceux d'un PC. On peut
+            considérer les composants internes d'un PC comme un réseau
+            d'équipements tous reliés au <strong>bus</strong> système.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Composant</th>
+                <th>Définition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Processeur</td>
+                <td>
+                  Unité de contrôle et de calcul : interprète et exécute les
+                  instructions, effectue les opérations logiques et
+                  mathématiques.
+                </td>
+              </tr>
+              <tr>
+                <td>Microprocesseur</td>
+                <td>
+                  Processeur de très petite taille, sur une puce de silicium.
+                </td>
+              </tr>
+              <tr>
+                <td>Carte mère</td>
+                <td>
+                  Principale carte de circuits imprimés : contient le bus, le
+                  microprocesseur et les circuits de contrôle des périphériques.
+                </td>
+              </tr>
+              <tr>
+                <td>Bus</td>
+                <td>
+                  Ensemble de lignes électriques sur la carte mère, qui
+                  transfèrent données et signaux de synchronisation entre les
+                  éléments de l'ordinateur.
+                </td>
+              </tr>
+              <tr>
+                <td>Mémoire vive (RAM)</td>
+                <td>
+                  Mémoire en lecture/écriture ; elle perd toutes ses données si
+                  l'ordinateur est mis hors tension.
+                </td>
+              </tr>
+              <tr>
+                <td>Mémoire morte (ROM)</td>
+                <td>
+                  Données préenregistrées, accessibles uniquement en lecture et
+                  impossibles à supprimer.
+                </td>
+              </tr>
+              <tr>
+                <td>Unité centrale</td>
+                <td>
+                  Partie principale du PC : châssis, microprocesseur, mémoire
+                  centrale, bus et ports (clavier, moniteur et périphériques
+                  externes n'en font pas partie).
+                </td>
+              </tr>
+              <tr>
+                <td>Emplacement d'extension</td>
+                <td>
+                  Fente de la carte mère pour insérer une carte : PCI (connexion
+                  rapide pour cartes réseau, modems internes, cartes vidéo) ou
+                  AGP (graphique).
+                </td>
+              </tr>
+              <tr>
+                <td>Fond de panier</td>
+                <td>
+                  Carte offrant des circuits et connecteurs pour des cartes
+                  supplémentaires ; dans un ordinateur, souvent synonyme de
+                  carte mère.
+                </td>
+              </tr>
+              <tr>
+                <td>Carte réseau</td>
+                <td>
+                  Carte d'extension qui connecte l'ordinateur à un réseau.
+                </td>
+              </tr>
+              <tr>
+                <td>Disque dur</td>
+                <td>Dispositif de stockage à plateaux magnétisés.</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <th>Port</th>
+                <th>À retenir</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Port série</td>
+                <td>Ne transmet qu'un seul bit à la fois</td>
+              </tr>
+              <tr>
+                <td>Port parallèle</td>
+                <td>
+                  Transfère plusieurs bits à la fois ; sert à connecter des
+                  imprimantes
+                </td>
+              </tr>
+              <tr>
+                <td>Port USB</td>
+                <td>
+                  Connecte facilement et rapidement une souris ou une imprimante
+                </td>
+              </tr>
+              <tr>
+                <td>Firewire</td>
+                <td>
+                  Interface série à haut débit, pour des données en temps réel
+                </td>
+              </tr>
+              <tr>
+                <td>Port souris</td>
+                <td>Connecte une souris</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>3. La carte réseau</h3>
+          <p>
+            Une carte réseau, aussi appelée adaptateur réseau, est nécessaire à
+            l'ordinateur pour envoyer des informations au réseau et en recevoir.
+            Dans un ordinateur de bureau, c'est une carte de circuits imprimés
+            insérée dans un emplacement de la carte mère. Dans un portable, elle
+            est généralement intégrée, ou prend la forme d'une
+            <strong>carte PCMCIA</strong> (taille d'une carte de crédit). Tout
+            équipement d'un réseau doit en avoir une.
+          </p>
+          <p>
+            La carte communique avec le <strong>réseau</strong> via une
+            connexion <strong>série</strong>, et avec l'<strong
+              >ordinateur</strong
+            >
+            par son <strong>bus interne</strong>. Pour dialoguer avec le système
+            d'exploitation, elle utilise une demande d'interruption (IRQ), une
+            adresse d'entrée/sortie (E/S) et de l'espace en mémoire haute.
+          </p>
+          <p>
+            Une valeur d'<strong>IRQ</strong> (Interrupt Request) désigne une
+            adresse utilisée par un périphérique pour interrompre le processeur
+            et lui envoyer des signaux. Exemple du cours : quand une imprimante
+            termine un travail, elle envoie un signal d'interruption. Il faut
+            une <strong>valeur d'IRQ unique</strong> par périphérique, pour
+            éviter la confusion.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Critère de choix d'une carte réseau</th>
+                <th>Exemples</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Protocole</td>
+                <td>Ethernet, Token Ring, FDDI</td>
+              </tr>
+              <tr>
+                <td>Type de média</td>
+                <td>Câble à paires torsadées, câble coaxial, fibre optique</td>
+              </tr>
+              <tr>
+                <td>Type de bus système</td>
+                <td>PCI, ISA</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>4. Le modem et l'installation des cartes</h3>
+          <p>
+            Le <strong>modem</strong> (modulateur-démodulateur) est l'équipement
+            nécessaire pour relier l'ordinateur à une ligne téléphonique. Il
+            <strong>convertit les signaux numériques</strong> des données de
+            l'ordinateur en <strong>signaux analogiques</strong> compatibles
+            avec une ligne téléphonique standard ; le modem de l'ordinateur
+            récepteur les démodule, c'est-à-dire les retransforme en données
+            numériques. Il peut être interne ou externe.
+          </p>
+          <p>
+            Une carte réseau doit être installée quand : un PC n'en a pas
+            encore, quand elle est endommagée, pour passer de 10 Mbits/s à
+            10/100/1000 Mbits/s, pour installer un autre type de carte (sans fil
+            par exemple), ou pour ajouter une carte de secours. Ces opérations
+            peuvent demander de connaître la configuration de l'adaptateur, de
+            disposer d'outils de diagnostic et de savoir résoudre des conflits
+            entre ressources matérielles.
+          </p>
+          <h3>5. TCP/IP</h3>
+          <p>
+            <strong>TCP/IP</strong> (Transmission Control Protocol / Internet
+            Protocol) désigne un ensemble de protocoles et de règles mis au
+            point pour permettre aux ordinateurs de partager les ressources d'un
+            réseau. On le configure avec les outils du système d'exploitation ;
+            le processus diffère très peu entre Windows, Macintosh et Linux.
+          </p>
+          <h3>6. Tester une connexion avec la commande ping</h3>
+          <p>
+            La commande <strong>ping</strong> vérifie l'existence d'une adresse
+            IP et son accessibilité. Elle fonctionne sur le modèle du sonar et
+            tire son nom du bruit émis par cet appareil. Elle envoie des
+            <strong>datagrammes ICMP</strong> (Internet Control Message
+            Protocol), des messages de demande d'écho, à une destination. Chaque
+            paquet envoyé équivaut à une demande de réponse. La réponse indique
+            le <strong>taux de réussite</strong> et le
+            <strong>temps de parcours aller-retour</strong>.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Commande</th>
+                <th>Ce qu'elle teste</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ping 127.0.0.1</td>
+                <td>
+                  La boucle locale interne : vérifie la configuration réseau
+                  TCP/IP de la machine
+                </td>
+              </tr>
+              <tr>
+                <td>ping adresse IP d'un hôte</td>
+                <td>
+                  La configuration TCP/IP de cet hôte et la connectivité avec
+                  lui
+                </td>
+              </tr>
+              <tr>
+                <td>ping adresse IP de la passerelle par défaut</td>
+                <td>
+                  Que le routeur qui relie le réseau local aux autres réseaux
+                  est accessible
+                </td>
+              </tr>
+              <tr>
+                <td>ping adresse IP d'un hôte distant</td>
+                <td>La connectivité avec un hôte distant</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>7. Travaux pratiques associés</h3>
+          <p>
+            Les travaux pratiques du cours portent sur : le matériel de
+            l'ordinateur (1.1.2), la configuration des paramètres TCP/IP
+            (1.1.6), l'utilisation de ping et tracert (1.1.7) et la démarche
+            élémentaire de dépannage d'un PC ou d'un réseau (1.1.9).
+          </p>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Ce cours date de 2018 mais s'appuie
+              sur du matériel plus ancien : disquettes, cédéroms, bus ISA, Token
+              Ring, FDDI, Netscape, Flash. Les concepts restent valables, le
+              matériel a évolué.
+            </p>
+          </blockquote>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Une connexion à Internet = connexion physique + connexion logique
+              (protocoles) + applications.
+            </li>
+            <li>
+              Un protocole est un ensemble formel de règles régissant la
+              communication entre unités réseau ; TCP/IP est le plus utilisé.
+            </li>
+            <li>
+              La carte réseau relie l'ordinateur au réseau : série côté réseau,
+              bus interne côté ordinateur.
+            </li>
+            <li>
+              Le modem convertit les signaux numériques en signaux analogiques,
+              et inversement.
+            </li>
+            <li>RAM : perd ses données hors tension. ROM : lecture seule.</li>
+            <li>
+              ping 127.0.0.1 teste la boucle locale ; ping vers la passerelle
+              teste le routeur ; ping utilise des datagrammes ICMP.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>Confondre la RAM (volatile) et la ROM (lecture seule).</li>
+            <li>
+              Confondre port série (un bit à la fois) et port parallèle
+              (plusieurs bits).
+            </li>
+            <li>
+              Penser que ping teste Internet : ping 127.0.0.1 teste seulement la
+              machine elle-même.
+            </li>
+            <li>
+              Attribuer la même valeur d'IRQ à deux périphériques : elle doit
+              être unique.
+            </li>
+            <li>Oublier que le modem convertit numérique ↔ analogique.</li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+        </div>
+        <div class="rappel">
+            <h4>Intro au Web</h4>
+      <!-- Fiche repliable : réseau informatique et Internet -->
+      <details id="rappel-intro-web">
+        <summary>Intro au Web — Réseau informatique et Internet</summary>
+        <div class="rappel">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Comprendre ce qu'est un réseau informatique</li>
+            <li>Décrire les types de réseaux informatiques</li>
+            <li>Définir Internet</li>
+            <li>Retracer l'historique d'Internet</li>
+            <li>Décrire les applications d'Internet les plus connues</li>
+          </ul>
+          <h3>1. Le cours d'Introduction au web</h3>
+          <p>
+            Ce cours est une introduction générale au Web, un prélude au cours
+            d'Introduction aux langages HTML et CSS. Il fait un survol non
+            exhaustif des concepts, technologies, langages et outils relatifs au
+            World Wide Web. À la fin, l'apprenant doit avoir une compréhension
+            claire du web et de son fonctionnement, un aperçu global des métiers
+            du web, et pouvoir décrire les étapes de la création d'un site, de
+            son implémentation à sa mise en ligne, en passant par les noms de
+            domaine.
+          </p>
+          <h3>2. Qu'est-ce qu'un réseau informatique ?</h3>
+          <p>
+            Un <strong>réseau</strong> est un ensemble d'éléments informatiques
+            (ordinateur, imprimante, hub, modem…) connectés les uns aux autres
+            pour échanger des informations.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Type de connexion</th>
+                <th>Exemple</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Connexion physique (filaire)</td>
+                <td>Prise Ethernet</td>
+              </tr>
+              <tr>
+                <td>Connexion sans fil</td>
+                <td>Ondes radio, wifi</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Deux ordinateurs reliés entre eux constituent déjà un
+            <strong>mini-réseau</strong>. On parle de
+            <strong>réseau local</strong> pour désigner l'installation de ces
+            périphériques dans un espace défini (maison, entreprise…). Ce réseau
+            local peut être connecté à un réseau externe, comme Internet, par un
+            <strong>routeur</strong> ou une <strong>box</strong>.
+          </p>
+          <p>
+            Un réseau informatique permet de partager des données, des
+            documents, des applications et des imprimantes.
+          </p>
+          <h3>3. Qu'est-ce qu'Internet ?</h3>
+          <p>
+            Le terme « Internet », d'origine américaine, vient du concept d'<em
+              >internetting</em
+            >
+            : <strong>interconnecter des réseaux</strong>.
+          </p>
+          <p>
+            <strong>Définition.</strong> Internet est le réseau informatique
+            mondial qui rend accessibles au public des services comme le
+            courrier électronique et le World Wide Web. Ses utilisateurs sont
+            les <strong>internautes</strong>. Techniquement, Internet se définit
+            comme le réseau public mondial utilisant le protocole de
+            communication <strong>IP</strong> (Internet Protocol).
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Réseau</th>
+                <th>Caractéristique</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Internet</td>
+                <td>Réseau public mondial</td>
+              </tr>
+              <tr>
+                <td>Intranet</td>
+                <td>
+                  Réseau privé au sein d'une entreprise, d'une administration…
+                </td>
+              </tr>
+              <tr>
+                <td>Extranet</td>
+                <td>Interconnexion d'intranets, pouvant emprunter Internet</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            La différence tient à la <strong>confidentialité</strong> des
+            communications.
+          </p>
+          <h3>4. Historique d'Internet</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Idée clé</th>
+                <th>Ce que dit le cours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Un réseau « indestructible »</td>
+                <td>
+                  L'US Air Force demande à un petit groupe de chercheurs de
+                  créer un réseau de communication (ARPANET) qui résiste à une
+                  attaque nucléaire. Le concept repose sur un système
+                  décentralisé : si une ou plusieurs machines sont détruites, le
+                  réseau continue à fonctionner. Réseau purement militaire à
+                  l'origine.
+                </td>
+              </tr>
+              <tr>
+                <td>La commutation de paquets</td>
+                <td>
+                  Dans les années 60 apparaissent les réseaux qui divisent les
+                  données en paquets, avec un en-tête pour le routage. Le
+                  premier est créé par Donald Davies au Royaume-Uni.
+                </td>
+              </tr>
+              <tr>
+                <td>ARPANET</td>
+                <td>
+                  « Advanced Research Projects Agency Network », créé par le US
+                  Department of Defense. Premier réseau à utiliser TCP/IP, créé
+                  par Robert Kahn et Vint Cerf.
+                </td>
+              </tr>
+              <tr>
+                <td>L'ouverture</td>
+                <td>
+                  De plus en plus d'universités se connectent. Les premiers
+                  fournisseurs d'accès émergent à la fin des années 80 : tout
+                  cela avant le web !
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Le cours donne des dates qui se
+              contredisent (1962, octobre 1972 pour le mot internetting, 1977
+              pour ARPANET). Le cours de Réseau situe ARPANET en 1969. Retiens
+              les idées (réseau décentralisé, commutation de paquets, TCP/IP)
+              plutôt que ces dates.
+            </p>
+          </blockquote>
+          <h3>5. Les applications d'Internet</h3>
+          <p>Internet propose plusieurs applications. Les plus populaires :</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Application</th>
+                <th>Exemple d'usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Le Web</td>
+                <td>Consulter des pages avec un navigateur</td>
+              </tr>
+              <tr>
+                <td>La messagerie électronique</td>
+                <td>Envoyer et recevoir du courrier</td>
+              </tr>
+              <tr>
+                <td>La messagerie instantanée</td>
+                <td>Discuter en direct</td>
+              </tr>
+              <tr>
+                <td>Le partage de fichiers poste à poste (P2P)</td>
+                <td>Échanger des fichiers entre utilisateurs</td>
+              </tr>
+              <tr>
+                <td>Le transfert de fichiers (FTP)</td>
+                <td>Envoyer des fichiers vers un serveur</td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Internet a été popularisé par
+              l'apparition du World Wide Web : le public non averti confond
+              parfois les deux. Le Web n'est qu'une application d'Internet.
+            </p>
+          </blockquote>
+          <h3>6. Organismes cités en référence</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Organisme</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>W3C (World Wide Web Consortium)</td>
+                <td>Standards du web</td>
+              </tr>
+              <tr>
+                <td>ICANN</td>
+                <td>Organisation qui coordonne les noms de domaine</td>
+              </tr>
+              <tr>
+                <td>AfriNIC</td>
+                <td>Registre régional d'adresses IP pour l'Afrique</td>
+              </tr>
+              <tr>
+                <td>NIC Sénégal</td>
+                <td>Comité de gestion des noms de domaine .SN</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Un réseau relie des éléments informatiques (filaire ou sans fil)
+              pour échanger des informations et partager des ressources.
+            </li>
+            <li>
+              Un réseau local est connecté à Internet par un routeur ou une box.
+            </li>
+            <li>
+              Internet = réseau public mondial utilisant le protocole IP ; ses
+              utilisateurs sont les internautes.
+            </li>
+            <li>
+              Intranet : réseau privé ; extranet : intranets interconnectés,
+              pouvant emprunter Internet.
+            </li>
+            <li>
+              ARPANET : réseau décentralisé, commutation de paquets (Donald
+              Davies), TCP/IP (Kahn et Cerf).
+            </li>
+            <li>
+              Le Web est une application d'Internet, parmi d'autres (messagerie,
+              messagerie instantanée, P2P, FTP).
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>Confondre le Web et Internet.</li>
+            <li>Confondre Internet (public) et intranet (privé).</li>
+            <li>
+              Attribuer TCP/IP à Tim Berners-Lee : il est de Robert Kahn et Vint
+              Cerf (Berners-Lee a créé le Web).
+            </li>
+            <li>Se fier aux dates précises du cours, qui se contredisent.</li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+        </div>
+        <div class="rappel">
+            <h4>Développement mobile</h4>
+      <!-- Fiche repliable : développement mobile et génie logiciel -->
+      <details id="rappel-developpement-mobile">
+        <summary>
+          Développement mobile — Introduction au génie logiciel mobile
+        </summary>
+        <div class="rappel">
+          <p class="rappel-lecture"><em>Lecture : environ 9 minutes</em></p>
+          <h3>Objectifs</h3>
+          <ul>
+            <li>
+              Situer le marché des smartphones et leurs systèmes d'exploitation
+            </li>
+            <li>
+              Citer les contraintes matérielles et ergonomiques du développement
+              mobile
+            </li>
+            <li>Définir l'expérience utilisateur (UX)</li>
+            <li>Comparer les modes de monétisation d'une application</li>
+            <li>Distinguer applications natives, web et hybrides</li>
+            <li>Citer les tendances mobiles identifiées par Gartner</li>
+          </ul>
+          <h3>1. État de l'art des applications mobiles</h3>
+          <p>
+            Le cours (chiffres de fin 2014) donne l'ordre de grandeur du marché
+            mobile :
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Indicateur</th>
+                <th>Valeur</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Terminaux mobiles vendus fin 2014</td>
+                <td>6,9 milliards</td>
+              </tr>
+              <tr>
+                <td>Couverture de la population mondiale</td>
+                <td>environ 95 %</td>
+              </tr>
+              <tr>
+                <td>Utilisateurs de smartphones</td>
+                <td>1,76 milliard (+23 % par rapport à 2013)</td>
+              </tr>
+              <tr>
+                <td>Données transférées</td>
+                <td>395 millions de Go (+48 % par rapport à 2013)</td>
+              </tr>
+              <tr>
+                <td>Cartes SIM vendues en Tunisie</td>
+                <td>plus de 12,63 millions (taux de pénétration de 115 %)</td>
+              </tr>
+              <tr>
+                <td>Abonnés tunisiens ayant un smartphone</td>
+                <td>12 %</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong>D'où vient le smartphone ?</strong> Le téléphone portable
+            apparaît en 1983 (Motorola). Les assistants numériques personnels
+            (PDA) apparaissent en 1990 : agenda, carnet d'adresses, bloc-notes
+            et synchronisation des données avec un PC. Un
+            <strong>smartphone = téléphone portable + PDA</strong> : c'est un
+            mini-ordinateur portable sur lequel on télécharge des applications.
+            Selon le cours, le premier est lancé en 2001 par Sagem, et l'essor
+            date de 2005 avec la sortie de l'iPhone et le rachat d'Android par
+            Google.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Génération</th>
+                <th>Systèmes d'exploitation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ancienne génération</td>
+                <td>
+                  Symbian (Nokia), Blackberry OS (RIM), Windows Mobile
+                  (Microsoft), Bada (Samsung)
+                </td>
+              </tr>
+              <tr>
+                <td>OS tactiles</td>
+                <td>
+                  iOS (Apple), Android (Google), Windows Phone 7 (Microsoft)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Le graphique du cours sur les parts de marché entre 2009 et 2016
+            montre un basculement net : Symbian pèse environ 47 % en 2009 et
+            disparaît presque en 2016, alors qu'Android atteint environ 84,8 %
+            en 2016 (iOS environ 14,4 %).
+          </p>
+          <h3>2. Contraintes matérielles et ergonomiques</h3>
+          <p>
+            Développer pour un mobile oblige à tenir compte des limites de
+            l'appareil cible.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Contrainte</th>
+                <th>Ce qu'il faut faire</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mémoire limitée, processeur lent</td>
+                <td>
+                  Éviter les traitements complexes et gourmands en mémoire, et
+                  bien cibler le public. Même si les hauts de gamme atteignent 3
+                  Go de RAM, la plupart des smartphones ont un temps de
+                  chargement long.
+                </td>
+              </tr>
+              <tr>
+                <td>Stockage limité</td>
+                <td>
+                  Certains modèles d'entrée de gamme n'ont que 4 Go (la majorité
+                  16 Go) : s'orienter vers le stockage sur le cloud.
+                </td>
+              </tr>
+              <tr>
+                <td>Autonomie</td>
+                <td>
+                  Éviter les applications gourmandes en énergie (la caméra vidéo
+                  pour la réalité augmentée, par exemple).
+                </td>
+              </tr>
+              <tr>
+                <td>Écran réduit et variable</td>
+                <td>
+                  Exploiter l'espace de façon optimale avec le responsive design
+                  ; choisir des IHM qui facilitent la navigation (header fixe,
+                  icônes à la place des mots).
+                </td>
+              </tr>
+              <tr>
+                <td>Clavier tactile</td>
+                <td>
+                  Minimiser les champs de texte, favoriser les champs
+                  préremplis, l'auto-complétion et la correction d'orthographe.
+                </td>
+              </tr>
+              <tr>
+                <td>Clics invalides (« fat finger »)</td>
+                <td>
+                  Soigner la taille et la proximité des éléments cliquables ;
+                  prévoir un bouton « Annuler » un peu partout.
+                </td>
+              </tr>
+              <tr>
+                <td>Pas d'effet de survol (hover)</td>
+                <td>
+                  Prévoir plus de liens et de boutons ; utiliser les conventions
+                  mobiles comme le balayage (swipe) ou la secousse (shake).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>3. L'expérience utilisateur (UX)</h3>
+          <p>
+            L'<strong>expérience utilisateur</strong> est le comportement,
+            l'attitude et les émotions d'un utilisateur quand il manipule un
+            produit, un système ou un service. Elle inclut les aspects
+            pratiques, expérimentaux et affectifs de l'interaction
+            homme-machine, et concerne l'utilité, la facilité d'utilisation et
+            l'efficacité du produit.
+          </p>
+          <p>
+            C'est une notion <strong>subjective</strong> (elle dépend de la
+            personne) et <strong>dynamique</strong> (elle évolue avec le
+            changement des circonstances d'usage, des habitudes et des
+            systèmes). Le cours invite à réfléchir aux situations d'usage du
+            smartphone : partout, du lit au transport en commun, ce qui impose
+            des interfaces simples.
+          </p>
+          <h3>4. Monétisation d'une application</h3>
+          <p>
+            Vendre l'application sur un store (App Store, Google Play) n'est pas
+            la seule manière d'en tirer des revenus.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Mode</th>
+                <th>À retenir</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Application payante</td>
+                <td>
+                  Moyen classique. Les applications peu chères (moins d'un euro)
+                  ont un grand succès ; le prix varie selon l'OS (répercussion
+                  du coût de portage). Certains utilisateurs, surtout sur
+                  Android, sont réticents à payer.
+                </td>
+              </tr>
+              <tr>
+                <td>Version d'essai</td>
+                <td>
+                  Version limitée qui donne une idée de la qualité ; bien
+                  adaptée aux jeux, mais pose un problème de maintenabilité pour
+                  les développeurs.
+                </td>
+              </tr>
+              <tr>
+                <td>Publicité</td>
+                <td>
+                  Bandeau ou interstitiel ; rémunération en général au clic,
+                  donc revenu difficile à estimer ; peut altérer l'UX (lenteur,
+                  appui par erreur) et doit être bien ciblée.
+                </td>
+              </tr>
+              <tr>
+                <td>Sponsoring</td>
+                <td>
+                  Inciter l'utilisateur à effectuer une action en échange d'un
+                  bien virtuel ; bien adapté aux jeux, car le public est bien
+                  ciblé.
+                </td>
+              </tr>
+              <tr>
+                <td>Freemium</td>
+                <td>
+                  Proposer du contenu virtuel contre de l'argent : in-app
+                  purchase chez Apple, in-app billing chez Google. Possible dans
+                  une application payante ou gratuite.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Pour réussir un freemium : l'application doit donner envie d'y
+            revenir, le contenu virtuel doit valoir son prix, l'achat doit être
+            simple et rapide (le moins de clics possible), et l'expérience
+            gratuite doit rester limitée sans frustrer l'utilisateur.
+          </p>
+          <h3>5. Technologies mobiles : natif, web, hybride</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Catégorie</th>
+                <th>Principe</th>
+                <th>Avantages</th>
+                <th>Inconvénients</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Native</td>
+                <td>
+                  Écrite dans le langage d'une plateforme (Objective C pour iOS,
+                  Java pour Android)
+                </td>
+                <td>
+                  Performance, fiabilité, accès aux fonctions du téléphone
+                  (caméra, contacts), utilisable hors connexion, interface
+                  cohérente avec l'appareil
+                </td>
+                <td>
+                  Développement coûteux ; code ni réutilisable ni portable entre
+                  plateformes
+                </td>
+              </tr>
+              <tr>
+                <td>Web</td>
+                <td>
+                  Site adapté au mobile, accessible par le navigateur, sans
+                  installation (HTML, JavaScript, CSS)
+                </td>
+                <td>
+                  Création rapide, coût bas, vraiment multiplateforme,
+                  modification à un seul endroit
+                </td>
+                <td>
+                  Pas d'accès aux fonctions du téléphone, UX purement web, pas
+                  distribuée par les stores donc peu visible
+                </td>
+              </tr>
+              <tr>
+                <td>Hybride</td>
+                <td>
+                  Développée en HTML, JavaScript, CSS puis enveloppée dans une
+                  application native, installable
+                </td>
+                <td>
+                  Sans navigateur, développement raisonnable, accès aux
+                  fonctions du téléphone, publiable sur les stores
+                </td>
+                <td>
+                  Accès un peu limité ; rendu pas toujours identique selon les
+                  navigateurs
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>6. Tendances mobiles (étude Gartner citée par le cours)</h3>
+          <p>
+            Selon le cours, Internet mobile est devenu le moyen de communication
+            privilégié entre les entreprises et leurs clients et collaborateurs.
+            Dix tendances sont citées :
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Tendance</th>
+                <th>Idée</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Outils de développement multiplateformes</td>
+                <td>
+                  3 OS (Android, iOS, Windows Phone) et 3 architectures (natif,
+                  hybride, web) : il faut maîtriser plusieurs outils
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Langage HTML5</td>
+                <td>
+                  Gagnera en importance pour les applications multiplateformes
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Expérience utilisateur</td>
+                <td>
+                  Les mobinautes sont vite distraits : toujours maintenir leur
+                  attention
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Géolocalisation</td>
+                <td>
+                  Contenu contextualisé, par exemple des promotions pour les
+                  mobinautes proches
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Smartphones</td>
+                <td>
+                  Ils deviennent le centre (hub) du réseau personnel et
+                  dialoguent avec tous les gadgets
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Nouvelles normes Wi-Fi</td>
+                <td>Performances multipliées par 3 ou 4</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Gestion des mobiles d'entreprise</td>
+                <td>
+                  Terminaux, applications, synchronisation, partage de fichiers
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Internet of Things</td>
+                <td>En 2020, on vivra autour d'objets connectés</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>LTE et LTE-Advanced</td>
+                <td>
+                  Débits jusqu'à 1 Gbit/s : la 4G progresse vers le très haut
+                  débit
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Outils de monitoring</td>
+                <td>
+                  Suivi des performances et du comportement des internautes
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Ce cours date de 2018 et ses
+              chiffres de 2014 à 2016 ne sont plus actuels : retiens surtout les
+              idées (contraintes, UX, modes de monétisation, natif / web /
+              hybride).
+            </p>
+          </blockquote>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Smartphone = téléphone portable + PDA ; Android et iOS dominent
+              largement en 2016.
+            </li>
+            <li>
+              Contraintes mobiles : mémoire, processeur, stockage, autonomie,
+              écran réduit, clavier tactile, fat finger, pas de survol.
+            </li>
+            <li>
+              L'UX est subjective (dépend de la personne) et dynamique (évolue
+              dans le temps).
+            </li>
+            <li>
+              Monétisation : payante, essai, publicité (au clic), sponsoring,
+              freemium (in-app purchase chez Apple, in-app billing chez Google).
+            </li>
+            <li>
+              Native = performante mais coûteuse ; web = rapide et peu coûteuse
+              mais sans accès aux fonctions du téléphone ; hybride = web
+              enveloppé dans une application native.
+            </li>
+            <li>
+              Le responsive design adapte l'interface aux tailles d'écran
+              variables.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>
+              Ne pas confondre les 1,76 milliard d'utilisateurs de smartphones
+              avec les 6,9 milliards de terminaux mobiles vendus.
+            </li>
+            <li>
+              Le freemium s'appelle in-app purchase chez Apple mais in-app
+              billing chez Google.
+            </li>
+            <li>
+              L'absence de survol sur un écran tactile impose plus de liens et
+              de boutons, pas moins.
+            </li>
+            <li>
+              Une application web n'est pas distribuée par les stores : elle est
+              peu visible.
+            </li>
+            <li>
+              Une application hybride n'est pas une application native pure :
+              son accès aux fonctions du téléphone reste un peu limité.
+            </li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+        </div>
+        <div class="rappel">
+            <h4>Environnement mobile</h4>
+      <!-- Fiche repliable : environnements et technologies mobiles -->
+      <details id="rappel-environnement-mobile">
+        <summary>
+          Environnement mobile — Introduction aux technologies mobiles
+        </summary>
+        <div class="rappel">
+          <h3>Objectifs</h3>
+          <ul>
+            <li>Définir un environnement mobile</li>
+            <li>Distinguer les App Stores les plus utilisés</li>
+            <li>Dresser le panorama de l'écosystème mobile en 2016</li>
+            <li>Expliquer les enjeux financiers de l'environnement mobile</li>
+          </ul>
+          <h3>1. Qu'est-ce qu'un environnement mobile ?</h3>
+          <p>
+            Un <strong>environnement mobile</strong> est l'ensemble des éléments
+            qui entourent le mobile et qui contribuent à maintenir son
+            écosystème. Un téléphone ne vit pas seul : il dépend de son système,
+            de ses applications, de la façon dont on les crée et du marché qui
+            les achète.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Élément de l'environnement</th>
+                <th>Ce que ça recouvre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Périphériques mobiles</td>
+                <td>Smartphones, tablettes et autres appareils mobiles</td>
+              </tr>
+              <tr>
+                <td>Systèmes d'exploitation mobiles</td>
+                <td>
+                  Le logiciel qui fait fonctionner l'appareil (Android et iOS,
+                  par exemple)
+                </td>
+              </tr>
+              <tr>
+                <td>Applications mobiles</td>
+                <td>Les logiciels conçus pour ces appareils</td>
+              </tr>
+              <tr>
+                <td>Approches de développement</td>
+                <td>
+                  Les façons de créer une application (natif, web, hybride…,
+                  vues dans les séquences suivantes)
+                </td>
+              </tr>
+              <tr>
+                <td>Marché du mobile</td>
+                <td>Les acteurs, les investissements, les revenus</td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> L'application n'est qu'un des cinq
+              éléments : un environnement mobile est plus large qu'une simple
+              application.
+            </p>
+          </blockquote>
+          <h3>2. Applications mobiles et App Stores</h3>
+          <p>
+            Les <strong>applications mobiles</strong> sont des applications
+            logicielles conçues pour fonctionner sur les smartphones, les
+            tablettes et d'autres appareils mobiles. Elles sont disponibles par
+            le biais de plateformes de distribution natives : typiquement des
+            <strong>App Stores</strong> (magasins d'applications), exploités par
+            les propriétaires du système d'exploitation mobile.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Magasin</th>
+                <th>Exploité par</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>App Store</td>
+                <td>Apple (iOS)</td>
+              </tr>
+              <tr>
+                <td>Google Play</td>
+                <td>Google (Android)</td>
+              </tr>
+              <tr>
+                <td>Windows Phone Store</td>
+                <td>Microsoft (Windows Phone)</td>
+              </tr>
+              <tr>
+                <td>BlackBerry App World</td>
+                <td>BlackBerry (BlackBerry OS)</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            <strong
+              >Exemple : Que faire pour toucher les utilisateurs d'iPhone et
+              d'Android ?</strong
+            >
+          </p>
+          <p>
+            Chaque système a son magasin : un éditeur qui vise les deux publics
+            doit publier sur l'App Store et sur Google Play.
+          </p>
+          <p>
+            Le cours note une évolution : la variété de solutions mobiles a
+            favorisé des environnements fragmentés au départ, mais qui se
+            résument de plus en plus à ceux qui tournent autour d'<strong
+              >Android</strong
+            >
+            et d'<strong>iOS</strong>.
+          </p>
+          <h3>3. Les enjeux financiers (chiffres de 2016)</h3>
+          <p>D'après un article du journal Le Monde cité dans le cours :</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Chiffre 2016</th>
+                <th>Ce qu'il mesure</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Plus de 90 milliards</td>
+                <td>
+                  Nouvelles applications téléchargées sur l'App Store et Google
+                  Play
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  35 milliards de dollars (19 444 milliards de francs CFA)
+                </td>
+                <td>
+                  Revenus rapportés aux éditeurs par les stores de Google et
+                  d'Apple (jeux, messageries, outils, sites d'information…)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <blockquote>
+            <p>
+              ⚠️ <strong>Attention.</strong> Ne confonds pas ces deux chiffres :
+              90 milliards sont des téléchargements, 35 milliards sont des
+              revenus en dollars.
+            </p>
+          </blockquote>
+          <h3>4. Panorama de l'écosystème mobile en 2016</h3>
+          <p>
+            L'écosystème mobile se développe très vite et devient de plus en
+            plus complexe à suivre : une multitude d'intervenants, de
+            prestataires, de supports et d'outils analytiques. Le panorama du
+            cours chiffre cet écosystème :
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Élément</th>
+                <th>Valeur 2016</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sociétés</td>
+                <td>plus de 350</td>
+              </tr>
+              <tr>
+                <td>Investissement</td>
+                <td>28 milliards de dollars</td>
+              </tr>
+              <tr>
+                <td>Valorisation estimée</td>
+                <td>405 milliards de dollars</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Le schéma du cours (« Mobile Foundations Landscape ») classe les
+            acteurs en domaines. Nombre d'acteurs lus sur la diapo :
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Domaine</th>
+                <th>Acteurs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>User Acquisition</td>
+                <td>81</td>
+              </tr>
+              <tr>
+                <td>Monetization</td>
+                <td>78</td>
+              </tr>
+              <tr>
+                <td>Development</td>
+                <td>76</td>
+              </tr>
+              <tr>
+                <td>User Engagement</td>
+                <td>68</td>
+              </tr>
+              <tr>
+                <td>Analytics</td>
+                <td>62</td>
+              </tr>
+              <tr>
+                <td>UX</td>
+                <td>34</td>
+              </tr>
+              <tr>
+                <td>Geolocation</td>
+                <td>26</td>
+              </tr>
+              <tr>
+                <td>API Layer</td>
+                <td>21</td>
+              </tr>
+              <tr>
+                <td>Attribution</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Monitoring</td>
+                <td>7</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Un même acteur peut intervenir dans plusieurs domaines à la fois :
+            c'est pourquoi la somme des acteurs des domaines dépasse 350.
+          </p>
+          <h3>À retenir</h3>
+          <ul>
+            <li>
+              Un environnement mobile = périphériques, systèmes d'exploitation,
+              applications, approches de développement et marché.
+            </li>
+            <li>
+              Les applications sont distribuées par des App Stores exploités par
+              les propriétaires de l'OS : App Store, Google Play, Windows Phone
+              Store, BlackBerry App World.
+            </li>
+            <li>
+              En 2016 : plus de 90 milliards de téléchargements et 35 milliards
+              de dollars de revenus via l'App Store et Google Play.
+            </li>
+            <li>
+              L'écosystème compte plus de 350 sociétés, 28 milliards de dollars
+              d'investissement et 405 milliards de dollars de valorisation.
+            </li>
+            <li>
+              Les environnements fragmentés au départ se résument de plus en
+              plus à Android et iOS.
+            </li>
+          </ul>
+          <h3>Pièges fréquents</h3>
+          <ul>
+            <li>
+              Confondre téléchargements (90 milliards), revenus (35 milliards de
+              dollars), investissement (28 milliards) et valorisation (405
+              milliards).
+            </li>
+            <li>
+              Croire qu'un environnement mobile se limite aux applications.
+            </li>
+            <li>
+              Oublier que chaque propriétaire d'OS exploite son propre magasin
+              d'applications.
+            </li>
+          </ul>
+          <h3>Pour s'entraîner</h3>
+          <p>Le quiz et le TD de ce module travaillent ces notions.</p>
+        </div>
+      </details>
+    </main>
+
+    <!-- Pied de page : logo Dijadev et mentions légales -->
+    <footer>
+      <img
+        src="image/logo dijadev.png"
+        alt="logo dijadev"
+        class="logo-dijadev"
+        id="logo-dijadev"
+      />
+      <p>&copy; 2026 Révision P13 IDA-Tous droits réservés.</p>
+    </footer>
+    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
