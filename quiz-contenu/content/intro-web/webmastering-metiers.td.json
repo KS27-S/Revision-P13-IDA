@@ -1,0 +1,37 @@
+{
+  "matiere": "intro-web",
+  "module": "webmastering-metiers",
+  "titre": "TD – Webmastering : transfert de site et édition WYSIWYG",
+  "exercices": [
+    {
+      "id": "web-s4-td-01",
+      "type": "exercice",
+      "titre": "Mettre un site en ligne avec FileZilla",
+      "source": "Travaux Dirigés_4.pdf – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe le client FTP FileZilla, mets en ligne le site créé auparavant avec les paramètres de ton hébergeur, puis vérifie avec un ami qu'il est visible sur Internet.",
+      "indices": [
+        "Il te faut le nom du serveur, l'identifiant et le mot de passe de l'hébergeur.",
+        "Tu copies les fichiers de ton ordinateur vers le serveur."
+      ],
+      "solution": "1. Télécharger et installer FileZilla (client FTP).\n2. Ouvrir FileZilla et saisir les paramètres reçus de l'hébergeur : hôte (nom du serveur), identifiant, mot de passe (et le port, 21 en général).\n3. Cliquer sur « Connexion rapide » : le panneau de droite affiche les dossiers du serveur.\n4. Dans le panneau de gauche, ouvrir le dossier du site sur l'ordinateur.\n5. Glisser les fichiers (index.html, images…) vers le dossier du serveur indiqué par l'hébergeur.\n6. Ouvrir l'adresse du site dans un navigateur, puis la faire tester par un ami.",
+      "explication_simple": "FTP sert à copier des fichiers entre ton ordinateur et le serveur. Une fois les fichiers sur le serveur, tout le monde peut voir le site avec son adresse.",
+      "attention": "Le port 21 et le dossier cible varient selon l'hébergeur (notions hors support) : suis les indications reçues par e-mail."
+    },
+    {
+      "id": "web-s4-td-02",
+      "type": "exercice",
+      "titre": "Créer un site avec l'éditeur WYSIWYG Dreamweaver",
+      "source": "Travaux Dirigés_4.pdf – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe Dreamweaver, crée un site, crée une page HTML en mode Design, regarde-la dans un navigateur, puis mets le site en ligne depuis Dreamweaver avec les paramètres de ton hébergeur.",
+      "indices": [
+        "Un éditeur WYSIWYG montre la page telle qu'elle apparaîtra.",
+        "Dreamweaver peut aussi envoyer les fichiers par FTP."
+      ],
+      "solution": "1. Installer Dreamweaver.\n2. Créer un site : menu Site > Nouveau site, donner un nom et choisir le dossier local.\n3. Créer une page : Fichier > Nouveau > HTML.\n4. Passer en mode Création (Design) et taper un titre et un paragraphe : Dreamweaver écrit le code HTML à ta place (on peut le voir en mode Code).\n5. Enregistrer, puis aperçu dans le navigateur (touche F12).\n6. Configurer le serveur distant (FTP) avec les paramètres de l'hébergeur, puis envoyer les fichiers.",
+      "explication_simple": "Le mode Design te laisse construire la page visuellement ; le mode Code montre le HTML généré. Dreamweaver a aussi un client FTP intégré.",
+      "attention": "Les noms de menus varient selon la version de Dreamweaver (logiciel payant d'Adobe) : adapte-les à ta version."
+    }
+  ]
+}

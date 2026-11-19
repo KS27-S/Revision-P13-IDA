@@ -1,0 +1,270 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "plateformes-os-mobiles",
+  "titre": "Plateformes et systèmes d'exploitation mobiles",
+  "sources": [
+    "DWMG1142_Séquence 4_Plateformes et Applications mobiles.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un système d'exploitation mobile ?",
+      "choix": [
+        "Une application de messagerie",
+        "Un logiciel qui gère un appareil mobile intelligent comme un smartphone ou une tablette",
+        "Un magasin d'applications",
+        "Un composant matériel de l'écran"
+      ],
+      "reponse": 1,
+      "explication": "Les OS mobiles modernes combinent les caractéristiques d'un OS de PC avec d'autres fonctionnalités propres au mobile.",
+      "id": "envmob-os-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles sont les principales plateformes mobiles citées dans le cours ?",
+      "choix": [
+        "Android, iOS, Windows Phone et BlackBerry OS",
+        "Linux, Windows, macOS et Unix",
+        "Chrome OS, Fedora, Ubuntu et Debian",
+        "Java, C#, Swift et Objective-C"
+      ],
+      "reponse": 0,
+      "explication": "Ce sont les plateformes de la diapo « Stratégies mobiles : quelles plateformes ? ».",
+      "id": "envmob-os-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel système est distribué exclusivement sur du matériel Apple ?",
+      "choix": [
+        "Android",
+        "Windows Phone",
+        "BlackBerry OS",
+        "iOS"
+      ],
+      "reponse": 3,
+      "explication": "iOS, dévoilé en 2007 pour l'iPhone, est un système fermé construit sur le noyau open source Darwin.",
+      "id": "envmob-os-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fournit une plateforme mobile ?",
+      "choix": [
+        "Uniquement un OS",
+        "Uniquement un store",
+        "Un OS de base, un environnement de développement et un market pour publier les applications",
+        "Uniquement un émulateur"
+      ],
+      "reponse": 2,
+      "explication": "Pour développer des applications, il faut comprendre ces trois éléments de la plateforme.",
+      "id": "envmob-os-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que dit le cours sur la part d'Android parmi les smartphones ?",
+      "choix": [
+        "Android équipe 1 smartphone sur 10",
+        "Android équipe près de 9 smartphones sur 10",
+        "Android équipe la moitié des smartphones",
+        "Android a disparu au profit de Windows"
+      ],
+      "reponse": 1,
+      "explication": "« Android et iOS règnent », « Android sur près de 9 smartphones sur 10 », « Windows fait naufrage ».",
+      "id": "envmob-os-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle entreprise a racheté Android en 2005 ?",
+      "choix": [
+        "Google",
+        "Apple",
+        "Samsung",
+        "Microsoft"
+      ],
+      "reponse": 0,
+      "explication": "Anecdote du cours : la société Android est d'abord allée voir Samsung, qui l'a renvoyée gentiment. Google l'a ensuite rachetée et a lancé son propre OS mobile.",
+      "id": "envmob-os-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi le cours attribue-t-il principalement le succès d'Android ?",
+      "choix": [
+        "À son code fermé et propriétaire",
+        "À son exclusivité sur un matériel unique",
+        "À son langage Objective-C",
+        "À sa licence open source et à un environnement de développement basé sur Java"
+      ],
+      "reponse": 3,
+      "explication": "Android, lancé fin 2008, a été rapidement adopté par de nombreux fabricants.",
+      "id": "envmob-os-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels paramètres le cours cite-t-il pour choisir une plateforme ?",
+      "choix": [
+        "Le prix du téléphone, la couleur et le poids",
+        "La marque de l'ordinateur du développeur uniquement",
+        "Le public cible, le marché et les caractéristiques spécifiques de la plateforme",
+        "Le nombre de lignes de code"
+      ],
+      "reponse": 2,
+      "explication": "Public cible : viser la plateforme dominante. Marché : comparer les parts de marché. Caractéristiques spécifiques : gain de temps de développement, meilleure sécurité…",
+      "id": "envmob-os-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle structure est responsable de l'évolution d'Android ?",
+      "choix": [
+        "La Fondation Apache",
+        "L'Open Handset Alliance (OHA)",
+        "Le W3C",
+        "La GSMA"
+      ],
+      "reponse": 1,
+      "explication": "L'OHA est un consortium de dizaines d'entreprises : opérateurs, fabricants de téléphones, fabricants de semi-conducteurs, éditeurs logiciels et distributeurs.",
+      "id": "envmob-os-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont les coûts de publication cités pour le Play Store et pour iOS ?",
+      "choix": [
+        "25 € à vie pour Android, 100 € par an pour iOS",
+        "100 € par an pour Android, 25 € à vie pour iOS",
+        "Gratuit pour les deux",
+        "25 € par an pour Android, 100 € à vie pour iOS"
+      ],
+      "reponse": 0,
+      "explication": "Le coût est un argument en faveur d'Android dans le cours.",
+      "id": "envmob-os-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que faut-il pour développer une application iOS ?",
+      "choix": [
+        "Un PC Windows suffit",
+        "Un PC Linux avec Android Studio",
+        "Uniquement un navigateur web",
+        "Un Mac (l'environnement de développement n'existe que sur macOS) et un appareil iOS"
+      ],
+      "reponse": 3,
+      "explication": "Le cours précise que la dernière version de macOS est généralement indispensable. L'IDE est Xcode.",
+      "id": "envmob-os-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels langages sont associés à iOS ?",
+      "choix": [
+        "Java depuis le début, Kotlin depuis 2014",
+        "C# depuis le début, F# depuis 2014",
+        "Objective-C depuis le début, Swift depuis 2014",
+        "Swift depuis le début, Objective-C depuis 2014"
+      ],
+      "reponse": 2,
+      "explication": "Objective-C est le langage historique ; Swift est arrivé en 2014.",
+      "id": "envmob-os-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pour Windows Phone, quel IDE et quel langage le cours indique-t-il ?",
+      "choix": [
+        "Xcode et Objective-C",
+        "Visual Studio et C#",
+        "Android Studio et Java",
+        "Eclipse et PHP"
+      ],
+      "reponse": 1,
+      "explication": "Dans la comparaison : Windows Phone → IDE Visual Studio, langage C#. Inconvénients : peu d'utilisateurs et compatibilité limitée à la marque Lumia.",
+      "id": "envmob-os-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel nom porte la version 6.0 d'Android dans le cours ?",
+      "choix": [
+        "Marshmallow",
+        "Lollipop",
+        "KitKat",
+        "Nougat"
+      ],
+      "reponse": 0,
+      "explication": "Dans la diapo des versions : KitKat 4.4.x, Lollipop 5.0, Marshmallow 6.0, Nougat 7.0.",
+      "id": "envmob-os-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "De bas en haut, quel est l'ordre des couches de l'architecture du framework Android ?",
+      "choix": [
+        "Applications, framework applicatif, runtime Android, librairies, noyau Linux",
+        "Noyau Linux, applications, framework applicatif, runtime Android, librairies",
+        "Runtime Android, noyau Linux, applications, librairies, framework applicatif",
+        "Noyau Linux, librairies, runtime Android, framework applicatif, applications"
+      ],
+      "reponse": 3,
+      "explication": "Le noyau Linux est la couche inférieure et fournit les principaux services. Android est un stack logiciel qui inclut un système d'exploitation, du middleware et des applications clés.",
+      "id": "envmob-os-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle liste correspond aux quatre couches d'abstraction d'iOS ?",
+      "choix": [
+        "Kernel, Libraries, Runtime, Applications",
+        "BaseBand, BootLoader, Firmware, SeckPack",
+        "Core OS, Core Services, Media, Cocoa",
+        "Activity, Service, Provider, Receiver"
+      ],
+      "reponse": 2,
+      "explication": "iOS dérive de macOS (noyau hybride XNU basé sur le micronoyau Mach). BaseBand, BootLoader, Firmware et SeckPack décrivent plutôt l'architecture logicielle de l'iPhone.",
+      "id": "envmob-os-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est le rôle principal du BootLoader sur l'iPhone ?",
+      "choix": [
+        "Gérer l'écran et le clavier tactile",
+        "Assurer le démarrage, contrôler l'activation et la compatibilité avec la carte SIM insérée",
+        "Stocker les informations de verrouillage",
+        "Distribuer les applications"
+      ],
+      "reponse": 1,
+      "explication": "Le BootLoader est une partie du BaseBand, qui peut être considéré comme le BIOS de l'iPhone. Le Firmware gère l'écran et le clavier tactile.",
+      "id": "envmob-os-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'est-ce que le SeckPack ?",
+      "choix": [
+        "Une partie de la mémoire flash contenant notamment les informations de verrouillage de l'appareil",
+        "Le logiciel interne gérant l'écran",
+        "Le noyau hybride XNU",
+        "Un magasin d'applications"
+      ],
+      "reponse": 0,
+      "explication": "Le cours le compare à un mot de passe.",
+      "id": "envmob-os-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Un étudiant n'a qu'un PC Windows et veut publier une première application au moindre coût. Quel choix correspond au cours ?",
+      "choix": [
+        "iOS, car Xcode fonctionne sur Windows",
+        "iOS, car la licence coûte 25 € à vie",
+        "BlackBerry, car l'OS est en plein développement",
+        "Android : développement possible depuis Windows et licence à 25 € à vie"
+      ],
+      "reponse": 3,
+      "explication": "Android se développe depuis Mac OS X, Windows, Linux ou Android. iOS impose un Mac et une licence de 100 € par an.",
+      "id": "envmob-os-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'a annoncé Microsoft le 9 octobre 2017, selon le cours ?",
+      "choix": [
+        "Le lancement de Windows Phone 11",
+        "Le rachat de BlackBerry",
+        "La fin du développement de Windows Phone, avec seulement des mises à jour de sécurité",
+        "L'ouverture du code de Windows Phone"
+      ],
+      "reponse": 2,
+      "explication": "Windows Phone (lancé en octobre 2010, code fermé) avait la 3e base installée de smartphones. BlackBerry OS, dont la part était passée sous 1 % fin 2014, n'est plus qu'en maintenance.",
+      "id": "envmob-os-20"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "matiere": "algorithmique",
+  "module": "tableaux-structures",
+  "titre": "Les tableaux, les chaînes de caractères et les structures",
+  "sources": [
+    "Sequence4-Tableau.pdf",
+    "seq3_algo.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Un tableau est…",
+      "choix": [
+        "une collection d'éléments de types différents",
+        "une collection séquentielle d'éléments de même type",
+        "une suite d'instructions",
+        "une variable qui ne peut contenir qu'une valeur"
+      ],
+      "reponse": 1,
+      "explication": "Tous les éléments d'un tableau ont le même type et chacun est repéré par sa position. Pour regrouper des types différents, on utilise une structure.",
+      "id": "algo-tableaux-structures-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on la position d'un élément dans un tableau ?",
+      "choix": [
+        "L'indice",
+        "La borne",
+        "Le type",
+        "L'identificateur"
+      ],
+      "reponse": 0,
+      "explication": "L'indice repère un élément : t[3] est l'élément d'indice 3. Les bornes sont l'indice minimal et l'indice maximal.",
+      "id": "algo-tableaux-structures-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Pour déclarer un tableau, il faut donner…",
+      "choix": [
+        "seulement son nom",
+        "uniquement sa taille",
+        "son nom et la valeur de ses éléments",
+        "son nom, ses bornes (indice minimum et maximum) et le type de ses éléments"
+      ],
+      "reponse": 3,
+      "explication": "Exemple : variable t : tableau[1..10] de réels (nom t, bornes 1 et 10, type réel).",
+      "id": "algo-tableaux-structures-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que représente t[5] ?",
+      "choix": [
+        "Le tableau t à la 5e dimension",
+        "Les cinq premiers éléments de t",
+        "L'élément du tableau t situé à l'indice 5",
+        "La valeur 5"
+      ],
+      "reponse": 2,
+      "explication": "t[I] désigne l'élément n° I et peut être traité comme une variable du type des éléments.",
+      "id": "algo-tableaux-structures-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment les éléments d'un tableau sont-ils stockés en mémoire centrale ?",
+      "choix": [
+        "De façon aléatoire",
+        "De façon linéaire, dans des zones contiguës",
+        "Dans des fichiers séparés",
+        "Seulement sur le disque dur"
+      ],
+      "reponse": 1,
+      "explication": "Les cases d'un tableau se suivent dans la mémoire, les unes à côté des autres.",
+      "id": "algo-tableaux-structures-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment affiche-t-on un tableau ?",
+      "choix": [
+        "On le parcourt avec une boucle et on affiche les éléments un à un",
+        "Avec un seul Ecrire(t) qui affiche tout",
+        "On ne peut pas afficher un tableau",
+        "On affiche seulement le premier élément"
+      ],
+      "reponse": 0,
+      "explication": "Pour i := 1 à 10 faire Ecrire(t[i]) Fpour : afficher un tableau revient à afficher ses éléments un par un.",
+      "id": "algo-tableaux-structures-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Avec variable t : tableau[1..10] de réels, quelle est la taille de t ?",
+      "choix": [
+        "9",
+        "11",
+        "1",
+        "10"
+      ],
+      "reponse": 3,
+      "explication": "Les indices vont de 1 à 10 inclus, donc le tableau contient 10 éléments.",
+      "id": "algo-tableaux-structures-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pour calculer la somme des éléments d'un tableau, par quelle valeur initialise-t-on S avant la boucle ?",
+      "choix": [
+        "1",
+        "n",
+        "0",
+        "t[1]"
+      ],
+      "reponse": 2,
+      "explication": "0 est l'élément neutre de l'addition. Initialiser à t[1] ferait compter le premier élément deux fois.",
+      "id": "algo-tableaux-structures-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pour chercher le minimum d'un tableau, on initialise min à…",
+      "choix": [
+        "0",
+        "t[1], le premier élément",
+        "la somme des éléments",
+        "l'indice 1"
+      ],
+      "reponse": 1,
+      "explication": "En partant d'un élément réel du tableau, min est toujours une valeur présente. Avec 0, on se tromperait si tous les éléments étaient positifs.",
+      "id": "algo-tableaux-structures-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Une variable de type chaîne a une taille prédéfinie comprise entre…",
+      "choix": [
+        "1 et 255",
+        "0 et 255",
+        "0 et 128",
+        "1 et 100"
+      ],
+      "reponse": 0,
+      "explication": "Dans le cours, une chaîne a une taille prédéfinie entre 1 et 255 caractères (255 sont réservés par défaut).",
+      "id": "algo-tableaux-structures-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que retourne longueur(\"Bonjour\") ?",
+      "choix": [
+        "6",
+        "8",
+        "1",
+        "7"
+      ],
+      "reponse": 3,
+      "explication": "longueur(s) donne la longueur courante de s. « Bonjour » compte 7 caractères : B-o-n-j-o-u-r.",
+      "id": "algo-tableaux-structures-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que retourne pos(\"jour\", \"Bonjour\") ?",
+      "choix": [
+        "1",
+        "3",
+        "4",
+        "0"
+      ],
+      "reponse": 2,
+      "explication": "pos renvoie la position du premier caractère de la sous-chaîne dans la chaîne : « jour » commence au 4e caractère (B-o-n-j). Si la sous-chaîne est absente, pos renvoie 0.",
+      "id": "algo-tableaux-structures-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre un tableau et une structure (enregistrement) ?",
+      "choix": [
+        "Un tableau regroupe des éléments de types différents, une structure des éléments de même type",
+        "Une structure regroupe des éléments de types différents, un tableau des éléments de même type",
+        "Il n'y a aucune différence",
+        "Une structure ne peut avoir qu'un seul champ"
+      ],
+      "reponse": 1,
+      "explication": "Une structure est composée de champs (ch1 : type1, ch2 : type2…) qui peuvent avoir des types différents. Un tableau impose un type unique.",
+      "id": "algo-tableaux-structures-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "P est une variable de type Point, dont les champs sont abs et ord. Comment accède-t-on à l'abscisse ?",
+      "choix": [
+        "P.abs",
+        "abs.P",
+        "P[abs]",
+        "Point.abs"
+      ],
+      "reponse": 0,
+      "explication": "On accède à un champ avec le nom de la variable de type structure, suivi d'un point et du nom du champ : T.chj. Point est le type, P est la variable.",
+      "id": "algo-tableaux-structures-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans un tableau à deux dimensions Cases[i,j], que représentent i et j ?",
+      "choix": [
+        "i est le numéro de colonne et j le numéro de ligne",
+        "i est la valeur et j l'indice",
+        "i et j sont deux numéros de ligne",
+        "i est le numéro de ligne et j le numéro de colonne"
+      ],
+      "reponse": 3,
+      "explication": "Cases[i,j] représente la case à la ligne i, colonne j. Un tableau Cases[L,C] réserve L × C éléments.",
+      "id": "algo-tableaux-structures-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que retourne copier(\"Bonjour\", 1, 3) ?",
+      "choix": [
+        "Bonj",
+        "onj",
+        "Bon",
+        "jour"
+      ],
+      "reponse": 2,
+      "explication": "copier(s, p, l) renvoie l caractères à partir de la position p. Ici : 3 caractères à partir de la position 1 → « Bon ».",
+      "id": "algo-tableaux-structures-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Avec t = [4, 9, 2, 7], que contient min à la fin ?",
+      "code": "min ← t[1]\nPour i ← 1 à n faire\n   Si t[i] < min Alors\n      min ← t[i]\n   Finsi\nFpour",
+      "choix": [
+        "4",
+        "2",
+        "7",
+        "9"
+      ],
+      "reponse": 1,
+      "explication": "min démarre à 4. On compare chaque élément : 9 n'est pas plus petit, 2 < 4 donc min ← 2, 7 n'est pas plus petit que 2. Résultat : 2.",
+      "id": "algo-tableaux-structures-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Avec t = [3, 5, 2] et n = 3, que vaut S à la fin ?",
+      "code": "S ← 0\nPour i ← 1 à n faire\n   S ← S + t[i]\nFpour",
+      "choix": [
+        "10",
+        "30",
+        "8",
+        "5"
+      ],
+      "reponse": 0,
+      "explication": "S cumule les éléments : 0 + 3 + 5 + 2 = 10. Le produit (30) n'est pas calculé ici.",
+      "id": "algo-tableaux-structures-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le test d'appartenance d'un élément x à un tableau, pourquoi utiliser Tant que ou Répéter plutôt que Pour ?",
+      "choix": [
+        "Parce que Pour ne peut pas parcourir un tableau",
+        "Parce que Tant que est toujours plus court à écrire",
+        "Parce qu'on doit parcourir le tableau à l'envers",
+        "Pour pouvoir arrêter la recherche dès que x est trouvé"
+      ],
+      "reponse": 3,
+      "explication": "Avec Pour, on parcourt toutes les cases même après avoir trouvé x. Tant que ou Répéter permet de s'arrêter dès que t[i] = x, ce qui évite des itérations inutiles. Si x est trouvé, i contient son indice.",
+      "id": "algo-tableaux-structures-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pour tester si un mot de longueur n est un palindrome (ANNA), on compare le caractère i avec…",
+      "choix": [
+        "le caractère i + 1",
+        "le caractère n + i",
+        "le caractère n − i + 1",
+        "le caractère i − 1"
+      ],
+      "reponse": 2,
+      "explication": "Le 1er caractère se compare au dernier (n), le 2e à l'avant-dernier (n−1), etc. Pour ANNA (n = 4) : 1 ↔ 4, 2 ↔ 3. Il suffit de comparer jusqu'à la moitié du mot.",
+      "id": "algo-tableaux-structures-20"
+    }
+  ]
+}

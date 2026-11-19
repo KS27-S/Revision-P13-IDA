@@ -1,0 +1,272 @@
+{
+  "matiere": "initiation-programmation",
+  "module": "decouverte-scratch",
+  "titre": "À la découverte de la programmation interactive (Scratch)",
+  "sources": [
+    "Sequence1_A la découverte de la programmation interactive.pdf",
+    "Getting-Started-Guide-Scratch2.pdf",
+    "4776-scratch-en-technologie.pdf (complément)"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce que Scratch ?",
+      "choix": [
+        "Un logiciel de traitement de texte",
+        "Un langage de programmation libre et visuel pour créer des animations, des histoires et des jeux",
+        "Un système d'exploitation",
+        "Un navigateur web"
+      ],
+      "reponse": 1,
+      "explication": "Scratch permet de créer facilement des histoires interactives, des jeux vidéo, des animations, des créations musicales et artistiques.",
+      "id": "prog-s1-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Par qui Scratch a-t-il été développé ?",
+      "choix": [
+        "Par des chercheurs du MIT",
+        "Par Microsoft",
+        "Par l'UVS",
+        "Par Google"
+      ],
+      "reponse": 0,
+      "explication": "Le support complémentaire précise : le groupe de recherche Lifelong Kindergarten du laboratoire Média du MIT.",
+      "id": "prog-s1-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on chaque objet (personnage) dans Scratch ?",
+      "choix": [
+        "Une scène",
+        "Un costume",
+        "Un bloc",
+        "Un lutin (en anglais : sprite)"
+      ],
+      "reponse": 3,
+      "explication": "Le chat qui apparaît au départ est un lutin. On peut en ajouter d'autres.",
+      "id": "prog-s1-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que se passe-t-il quand on clique sur le drapeau vert ?",
+      "choix": [
+        "Le projet est supprimé",
+        "Le lutin change automatiquement de costume",
+        "Les scripts qui commencent par le bloc « quand drapeau vert pressé » sont lancés",
+        "Le son de l'ordinateur est coupé"
+      ],
+      "reponse": 2,
+      "explication": "Chaque fois qu'on clique sur le drapeau vert, le script est lancé. Pour l'arrêter, on clique sur Stop.",
+      "id": "prog-s1-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel bouton arrête l'exécution d'un script ?",
+      "choix": [
+        "Le drapeau vert",
+        "Le bouton Stop",
+        "Le bouton Créer",
+        "Le bouton Conseils"
+      ],
+      "reponse": 1,
+      "explication": "Le bouton Stop (rond rouge) est à côté du drapeau vert.",
+      "id": "prog-s1-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où dépose-t-on les blocs pour construire un programme ?",
+      "choix": [
+        "Dans l'aire des scripts",
+        "Dans la scène",
+        "Dans l'onglet Sons",
+        "Dans la bibliothèque de lutins"
+      ],
+      "reponse": 0,
+      "explication": "On fait glisser les blocs de commande depuis la palette vers l'aire des scripts.",
+      "id": "prog-s1-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où voit-on le résultat du programme (le lutin qui bouge, qui parle…) ?",
+      "choix": [
+        "Dans l'aire des scripts",
+        "Dans l'onglet Costumes",
+        "Dans le menu Fichier",
+        "Sur la scène"
+      ],
+      "reponse": 3,
+      "explication": "La scène est l'espace où le lutin évolue et où s'affichent les effets du programme.",
+      "id": "prog-s1-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont les trois axes de l'informatique créative ?",
+      "choix": [
+        "Le calcul, la mémoire et le réseau",
+        "La lecture, l'écriture et l'arithmétique",
+        "La créativité, l'autonomisation et l'informatique",
+        "Le jeu, la vidéo et la musique"
+      ],
+      "reponse": 2,
+      "explication": "Créativité : s'appuyer sur l'imagination et les centres d'intérêt. Autonomisation : donner aux jeunes les compétences pour créer. Informatique : développer la pensée informatique.",
+      "id": "prog-s1-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait le bloc AVANCER dans sa configuration de départ ?",
+      "choix": [
+        "Il fait avancer le lutin de 100 pas",
+        "Il fait avancer le lutin de 10 pas",
+        "Il fait tourner le lutin de 10 degrés",
+        "Il fait attendre le lutin 10 secondes"
+      ],
+      "reponse": 1,
+      "explication": "Dans le guide, un clic sur le bloc fait avancer le chat de 10 pas.",
+      "id": "prog-s1-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment faire reculer le lutin avec le bloc AVANCER ?",
+      "choix": [
+        "En ajoutant un signe moins devant le nombre de pas",
+        "En changeant la couleur du bloc",
+        "En cliquant deux fois sur le bloc",
+        "En le plaçant sous un bloc DIRE"
+      ],
+      "reponse": 0,
+      "explication": "Dans le guide : « Clique à l'intérieur du bloc et ajoute un signe moins ».",
+      "id": "prog-s1-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment fonctionne le bloc RÉPÉTER ?",
+      "choix": [
+        "Il répète seulement le bloc placé au-dessus de lui",
+        "Il répète toujours exactement 10 fois",
+        "Il ne fonctionne qu'avec les sons",
+        "Sa « bouche » entoure les blocs à répéter, et on règle le nombre de répétitions"
+      ],
+      "reponse": 3,
+      "explication": "On place le bloc RÉPÉTER sur le dessus de la pile : il entoure les autres blocs.",
+      "id": "prog-s1-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans quelle catégorie de blocs trouve-t-on le bloc DIRE ?",
+      "choix": [
+        "Mouvement",
+        "Sons",
+        "Apparence",
+        "Événements"
+      ],
+      "reponse": 2,
+      "explication": "Le guide : « Clique sur la catégorie APPARENCE et déplace le bloc DIRE ».",
+      "id": "prog-s1-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait le bloc AJOUTER À L'EFFET (couleur) ?",
+      "choix": [
+        "Il ajoute un son",
+        "Il modifie les couleurs du lutin",
+        "Il déplace le lutin",
+        "Il supprime le lutin"
+      ],
+      "reponse": 1,
+      "explication": "C'est l'étape « Change les couleurs » du guide Pour bien commencer.",
+      "id": "prog-s1-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment animer un lutin à l'aide de ses costumes ?",
+      "choix": [
+        "En créant un script qui alterne entre ses costumes",
+        "En le déplaçant à la souris uniquement",
+        "En changeant l'arrière-plan",
+        "En important un fichier son"
+      ],
+      "reponse": 0,
+      "explication": "Chaque lutin peut avoir plusieurs costumes ; en alternant entre eux, on l'anime.",
+      "id": "prog-s1-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels formats de fichier son peut-on importer dans Scratch 2, d'après le guide ?",
+      "choix": [
+        "MP4, AVI ou MOV",
+        "DOC, PDF ou TXT",
+        "PNG, JPG ou GIF",
+        "MP3, AIF ou WAV"
+      ],
+      "reponse": 3,
+      "explication": "Dans l'onglet SONS, on peut enregistrer son propre son ou importer un fichier. Le bloc JOUER LE SON le joue ensuite.",
+      "id": "prog-s1-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles options le bouton « Nouveau lutin » propose-t-il ?",
+      "choix": [
+        "Écrire du code Java, importer un tableur, imprimer ou envoyer par mail",
+        "Choisir un costume, un son, un arrière-plan ou un script",
+        "Choisir dans la bibliothèque, dessiner, importer un fichier ou prendre une photo avec la webcam",
+        "Copier, coller, couper ou supprimer"
+      ],
+      "reponse": 2,
+      "explication": "Exemple du guide : dans la catégorie Gens, choisir « Cassy Danse ».",
+      "id": "prog-s1-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que se passe-t-il quand on clique sur un bloc d'une pile de blocs ?",
+      "choix": [
+        "Seul ce bloc est exécuté, rien d'autre",
+        "Toute la pile est exécutée",
+        "La pile est supprimée",
+        "La pile est copiée"
+      ],
+      "reponse": 1,
+      "explication": "Dans le guide : « Clique sur n'importe quel bloc pour lancer l'exécution de la pile ».",
+      "id": "prog-s1-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment déplace-t-on toute une pile de blocs ?",
+      "choix": [
+        "En l'attrapant par le bloc du dessus",
+        "En l'attrapant par le dernier bloc",
+        "En cliquant d'abord sur Stop",
+        "C'est impossible : il faut déplacer chaque bloc séparément"
+      ],
+      "reponse": 0,
+      "explication": "Pour déplacer la pile, on l'attrape par le bloc de dessus.",
+      "id": "prog-s1-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quoi, selon le support complémentaire, le nom « Scratch » fait-il référence ?",
+      "choix": [
+        "Au grattage d'un ticket de jeu",
+        "À une abréviation de « Script Cat »",
+        "À une rayure sur un disque dur",
+        "À l'art de mélanger des sons avec des tables de mixage et à la possibilité de réutiliser des objets"
+      ],
+      "reponse": 3,
+      "explication": "Source : « Petit guide des possibilités d'utilisation du logiciel Scratch en technologie », document complémentaire.",
+      "id": "prog-s1-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quoi sert la fenêtre « Conseils » ?",
+      "choix": [
+        "À sauvegarder le projet",
+        "À partager le projet sur le web",
+        "À présenter des exemples de scripts et à expliquer ce que fait chaque bloc",
+        "À régler le volume du son"
+      ],
+      "reponse": 2,
+      "explication": "Elle s'ouvre dans l'étape « Des conseils ! » du guide.",
+      "id": "prog-s1-20"
+    }
+  ]
+}

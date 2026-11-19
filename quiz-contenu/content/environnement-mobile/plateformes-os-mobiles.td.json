@@ -1,0 +1,179 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "plateformes-os-mobiles",
+  "titre": "TD – Plateformes et applications mobiles",
+  "exercices": [
+    {
+      "id": "envmob-os-td-01",
+      "type": "exercice",
+      "titre": "Définir un système d'exploitation mobile",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'est-ce qu'un système d'exploitation mobile ?",
+      "indices": [
+        "Il « gère » l'appareil."
+      ],
+      "solution": "Un système d'exploitation mobile (ou système mobile) est un logiciel qui gère un appareil mobile intelligent comme une tablette ou un smartphone. Il combine les caractéristiques d'un OS de PC avec d'autres fonctionnalités propres au mobile.",
+      "explication_simple": "C'est le « chef d'orchestre » du téléphone : il fait fonctionner le matériel et les applications."
+    },
+    {
+      "id": "envmob-os-td-02",
+      "type": "exercice",
+      "titre": "Plateformes, environnement de développement et market",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quel lien y a-t-il entre une plateforme mobile, un environnement de développement et un market ?",
+      "indices": [
+        "Une plateforme offre trois choses."
+      ],
+      "solution": "Une plateforme mobile offre à la fois l'OS de base, un environnement de développement et un market pour publier les applications. Exemple : Android → Android Studio → Google Play ; iOS → Xcode → App Store.",
+      "explication_simple": "Un même propriétaire fournit le système, l'outil pour programmer et la boutique pour vendre."
+    },
+    {
+      "id": "envmob-os-td-03",
+      "type": "exercice",
+      "titre": "Critères de choix d'une plateforme",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quels critères permettent de choisir une plateforme pour développer ?",
+      "indices": [
+        "Pense à qui vise l'application, à la taille du marché et aux fonctions spécifiques."
+      ],
+      "solution": "Le public cible (viser la plateforme dominante), le marché (comparer les parts de marché) et les caractéristiques spécifiques de chaque plateforme (gain de temps, meilleure sécurité…).",
+      "explication_simple": "On choisit la plateforme là où sont les utilisateurs et où les outils sont adaptés au projet."
+    },
+    {
+      "id": "envmob-os-td-04",
+      "type": "exercice",
+      "titre": "Principales plateformes mobiles en 2017",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quelles sont les principales plateformes mobiles en 2017 ?",
+      "indices": [
+        "Il y en a quatre."
+      ],
+      "solution": "Android (Google), iOS (Apple), Windows Phone (Microsoft) et BlackBerry OS (BlackBerry).",
+      "explication_simple": "Android et iOS règnent ; Windows Phone et BlackBerry déclinent."
+    },
+    {
+      "id": "envmob-os-td-05",
+      "type": "exercice",
+      "titre": "Situation début 2017 de chaque OS",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Décris brièvement la situation de chaque OS mobile début 2017.",
+      "indices": [
+        "Dates de lancement, base installée, état du développement."
+      ],
+      "solution": "Android : publié en septembre 2008, open source, près de 9 smartphones sur 10. iOS : dévoilé en 2007, fermé, deuxième base installée. Windows Phone : lancé en octobre 2010, code fermé, troisième base installée ; le 9 octobre 2017, Microsoft annonce la fin du développement. BlackBerry OS : App Store lancé en avril 2009, part de marché inférieure à 1 % fin 2014, OS en maintenance seulement.",
+      "explication_simple": "Deux grands (Android, iOS) et deux qui ont disparu ou presque (Windows Phone, BlackBerry)."
+    },
+    {
+      "id": "envmob-os-td-06",
+      "type": "exercice",
+      "titre": "Pourquoi Windows Phone et BlackBerry ont-ils échoué ?",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'est-ce qui explique l'échec de Windows Phone et de BlackBerry ?",
+      "indices": [
+        "Pense au nombre d'utilisateurs, aux marques compatibles et aux applications disponibles."
+      ],
+      "solution": "D'après le cours : peu d'utilisateurs, compatibilité limitée à la marque Lumia pour Windows Phone, code fermé, part de marché de BlackBerry tombée sous 1 % fin 2014. D'après l'article cité (dont le titre indique que de grands noms des applis les ont abandonnés), le manque d'applications a aussi pesé.",
+      "explication_simple": "Sans utilisateurs, pas de développeurs ; sans applications, encore moins d'utilisateurs : un cercle vicieux.",
+      "attention": "L'article de ZDNet n'a pas pu être consulté : à compléter après sa lecture."
+    },
+    {
+      "id": "envmob-os-td-07",
+      "type": "exercice",
+      "titre": "Comment sont distribuées les applications mobiles ?",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Comment les applications mobiles sont-elles distribuées ?",
+      "indices": [
+        "Pense aux stores."
+      ],
+      "solution": "Surtout depuis des plateformes de téléchargement, parfois contrôlées par les fabricants : App Store (Apple), Play Store (Google/Android) et Windows Phone Store (Microsoft).",
+      "explication_simple": "On les télécharge depuis la boutique du système du téléphone."
+    },
+    {
+      "id": "envmob-os-td-08",
+      "type": "exercice",
+      "titre": "Qui a créé Android ? Sous quelle licence ? Qui gère son évolution ?",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quelle entreprise a créé Android ? Sous quelle licence est-il distribué ? Quelle structure gère son évolution ?",
+      "indices": [
+        "Une société nommée Android a été rachetée en 2005.",
+        "Open Handset Alliance."
+      ],
+      "solution": "Android a été créé par la société Android, rachetée par Google en 2005, qui a lancé son propre OS mobile. Il est distribué sous licence open source (projet AOSP). Son évolution est gérée par l'Open Handset Alliance (OHA), un consortium d'opérateurs, de fabricants, d'éditeurs de logiciels et de distributeurs.",
+      "explication_simple": "Google dirige le projet, mais une alliance d'entreprises décide de son évolution."
+    },
+    {
+      "id": "envmob-os-td-09",
+      "type": "exercice",
+      "titre": "Dernière version d'Android",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quelle est la dernière version de l'OS Android ?",
+      "indices": [
+        "Regarde la diapo « Évolution des versions »."
+      ],
+      "solution": "Dans le support (2017) : Nougat, Android 7.0. Ordre des versions : Cupcake 1.5, Donut 1.6, Eclair 2.0/2.1, Froyo 2.2, Gingerbread 2.3, Honeycomb 3.x, Ice Cream Sandwich 4.0, Jelly Bean 4.1, KitKat 4.4, Lollipop 5.0, Marshmallow 6.0, Nougat 7.0.",
+      "explication_simple": "Les versions portent des noms de desserts, dans l'ordre alphabétique.",
+      "attention": "Ce support date de 2017 : Android a évolué depuis, la réponse n'est plus d'actualité."
+    },
+    {
+      "id": "envmob-os-td-10",
+      "type": "exercice",
+      "titre": "Architecture du framework Android",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Décris l'architecture du framework Android.",
+      "indices": [
+        "Il y a des couches, du bas vers le haut."
+      ],
+      "solution": "Android est un stack logiciel (OS, middleware, applications clés) organisé en couches : le noyau Linux (couche inférieure, services principaux), les librairies de classe, le runtime d'exécution Android, le framework applicatif et les applications.",
+      "explication_simple": "On construit de bas en haut : le noyau Linux sert de base, les applications sont au sommet."
+    },
+    {
+      "id": "envmob-os-td-11",
+      "type": "exercice",
+      "titre": "Comparer iOS, Android et Windows Phone",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Compare les trois plateformes.",
+      "indices": [
+        "Prix de la licence, IDE, langage, avantages, inconvénients."
+      ],
+      "solution": "iOS : applications vérifiées (moins de virus) ; licence 100 €/an ; Mac nécessaire ; IDE Xcode ; Objective-C et Swift. Android : grande communauté ; licence 25 € à vie ; compatibilité non assurée pour les anciennes versions ; IDE Android Studio, Eclipse ou NetBeans ; Java (le cours cite aussi HTML5/CSS3/JavaScript). Windows Phone : peu d'utilisateurs ; compatible uniquement avec la marque Lumia ; IDE Visual Studio ; C#.",
+      "explication_simple": "iOS est plus contrôlé mais plus coûteux ; Android est plus ouvert et moins cher ; Windows Phone est resté marginal."
+    },
+    {
+      "id": "envmob-os-td-12",
+      "type": "exercice",
+      "titre": "Qu'est-ce qui motiverait le choix d'Android ou d'iOS ?",
+      "source": "TD 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'est-ce qui peut pousser à choisir Android ou iOS ?",
+      "indices": [
+        "Pense au coût, au matériel nécessaire, au public visé."
+      ],
+      "solution": "Android : open source (AOSP), large documentation, plus gros store, 25 € à vie, développement depuis Mac OS X, Windows, Linux ou Android. iOS : applications vérifiées, public ciblé sur le matériel Apple ; mais Mac et licence annuelle obligatoires.",
+      "explication_simple": "Le choix dépend des moyens (matériel, budget) et du public à atteindre."
+    },
+    {
+      "id": "envmob-os-td-13",
+      "type": "exercice",
+      "titre": "Qu'est-ce qui fait le succès d'Android ?",
+      "source": "Séquence 4 – Plateformes et applications mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Pourquoi Android a-t-il eu autant de succès ?",
+      "indices": [
+        "Licence et langage."
+      ],
+      "solution": "Principalement sa licence open source et un environnement de développement basé sur le langage Java. Il a aussi été rapidement adopté par de nombreux fabricants.",
+      "explication_simple": "Gratuit, ouvert et basé sur un langage très répandu : tout le monde pouvait s'en servir."
+    }
+  ]
+}

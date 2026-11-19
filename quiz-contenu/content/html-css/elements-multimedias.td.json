@@ -1,0 +1,67 @@
+{
+  "matiere": "html-css",
+  "module": "elements-multimedias",
+  "titre": "TD – Les éléments multimédias en HTML",
+  "exercices": [
+    {
+      "id": "htmlcss-s6-td-01",
+      "type": "exercice",
+      "titre": "Liens hypertextes et signets",
+      "source": "TP 06 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais un long document avec une liste d'universités. Chaque titre porte un signet ; un menu en haut et un menu en bas permettent d'y aller.",
+      "indices": [
+        "Un signet = un id sur le titre.",
+        "Le lien du menu = href=\"#id\"."
+      ],
+      "solution": "<h1>Liste des universités du Sénégal</h1>\n<div style=\"border:1px dotted red; width:300px;\">\n<b>Menu</b>\n<ol>\n<li><a href=\"#ucad\">Université Cheikh Anta Diop de Dakar</a></li>\n<li><a href=\"#ugb\">Université Gaston Berger de Saint-Louis</a></li>\n<li><a href=\"#uvs\">Université Virtuelle du Sénégal</a></li>\n<li><a href=\"#uasz\">Université Assane Seck de Ziguinchor</a></li>\n</ol>\n</div>\n\n<h2 id=\"ucad\">Université Cheikh Anta Diop de Dakar</h2>\n<p>…</p>\n<h2 id=\"ugb\">Université Gaston Berger de Saint-Louis</h2>\n<p>…</p>\n<h2 id=\"uvs\">Université Virtuelle du Sénégal</h2>\n<p>…</p>\n<h2 id=\"uasz\">Université Assane Seck de Ziguinchor</h2>\n<p>…</p>\n\n<!-- Même menu recopié ici, en bas du document -->",
+      "explication_simple": "Un clic sur un lien du menu fait défiler la page jusqu'à l'élément dont l'id correspond. Le menu en bas évite de remonter à la main.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s6-td-02",
+      "type": "exercice",
+      "titre": "Afficher une image à droite du paragraphe",
+      "source": "TP 06 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Reprends l'exercice 1 et affiche le logo de chaque université à droite du paragraphe correspondant.",
+      "indices": [
+        "La balise est <img>.",
+        "float:right place l'image à droite du texte."
+      ],
+      "solution": "<h2 id=\"ucad\">Université Cheikh Anta Diop de Dakar</h2>\n<p>\n<img src=\"images/ucad.jpg\" alt=\"Logo de l'UCAD\" style=\"float:right; width:100px;\">\nL'université Cheikh-Anta-Diop (UCAD) est la principale université de Dakar…\n</p>",
+      "explication_simple": "L'image est placée dans le paragraphe, avant le texte : float:right la pousse à droite et le texte l'entoure. N'oublie pas alt.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s6-td-03",
+      "type": "exercice",
+      "titre": "Intégrer une vidéo YouTube",
+      "source": "TP 06 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Sous le paragraphe de chaque université, affiche une vidéo YouTube sur cette université.",
+      "indices": [
+        "Sur YouTube : Partager > Intégrer, puis copier le code.",
+        "Le code d'intégration est une iframe."
+      ],
+      "solution": "<iframe width=\"420\" height=\"315\" src=\"https://www.youtube.com/embed/ID_DE_LA_VIDEO\"></iframe>",
+      "explication_simple": "On laisse YouTube gérer les formats vidéo : on se contente d'afficher la vidéo avec une iframe.",
+      "attention": "Remplace ID_DE_LA_VIDEO par l'identifiant de la vidéo que tu as choisie."
+    },
+    {
+      "id": "htmlcss-s6-td-04",
+      "type": "exercice",
+      "titre": "Découper le document avec des iframes",
+      "source": "TP 06 – exercice 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Découpe la page en plusieurs pages (une par université). Un menu en haut affiche chaque page dans une iframe, sous le menu.",
+      "indices": [
+        "La cible du lien doit avoir le même nom que l'iframe : target = name.",
+        "Donne des dimensions à l'iframe."
+      ],
+      "solution": "<!-- index.html -->\n<h1>Liste des universités du Sénégal</h1>\n<ol>\n<li><a href=\"ucad.html\" target=\"contenu\">Université Cheikh Anta Diop de Dakar</a></li>\n<li><a href=\"ugb.html\" target=\"contenu\">Université Gaston Berger de Saint-Louis</a></li>\n<li><a href=\"uvs.html\" target=\"contenu\">Université Virtuelle du Sénégal</a></li>\n<li><a href=\"uasz.html\" target=\"contenu\">Université Assane Seck de Ziguinchor</a></li>\n</ol>\n<iframe name=\"contenu\" src=\"ucad.html\" width=\"100%\" height=\"400\"></iframe>\n\n<!-- ucad.html, ugb.html, uvs.html, uasz.html : une page par université (titre, paragraphe, logo, vidéo) -->",
+      "explication_simple": "Un clic sur un lien ouvre la page dans l'iframe nommée « contenu », sans quitter la page principale. Il n'y a qu'une seule iframe : un seul name « contenu ».",
+      "attention": "Ne mets pas le même name sur plusieurs iframes : le lien ne saurait pas laquelle viser."
+    }
+  ]
+}

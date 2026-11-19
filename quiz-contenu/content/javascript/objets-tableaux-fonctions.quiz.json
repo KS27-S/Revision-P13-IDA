@@ -1,0 +1,276 @@
+{
+  "matiere": "javascript",
+  "module": "objets-tableaux-fonctions",
+  "titre": "Les objets, les tableaux et les fonctions",
+  "sources": [
+    "Chapitre2.pdf",
+    "td2.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le type de données fondamental de JavaScript ?",
+      "choix": [
+        "Le nombre entier",
+        "L'objet",
+        "La chaîne de caractères",
+        "Le booléen"
+      ],
+      "reponse": 1,
+      "explication": "Un objet est une valeur composite qui agrège plusieurs valeurs.",
+      "id": "js-s2-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un objet JavaScript ?",
+      "choix": [
+        "Une collection non ordonnée de propriétés, chacune ayant un nom et une valeur",
+        "Une liste ordonnée d'éléments",
+        "Une fonction sans paramètre",
+        "Un fichier externe"
+      ],
+      "reponse": 0,
+      "explication": "Les noms de propriétés sont des chaînes : les objets associent des chaînes à des valeurs.",
+      "id": "js-s2-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment crée-t-on un objet littéral ?",
+      "choix": [
+        "Avec des crochets : var point = [x: 0, y: 0];",
+        "Avec des parenthèses : var point = (x: 0, y: 0);",
+        "Avec des chevrons : var point = <x: 0, y: 0>;",
+        "Avec des accolades : var point = {x: 0, y: 0};"
+      ],
+      "reponse": 3,
+      "explication": "Des associations nom: valeur séparées par des virgules, entre accolades.",
+      "id": "js-s2-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment crée-t-on un tableau littéral ?",
+      "choix": [
+        "Avec des accolades : var primes = {2, 3, 5, 7, 11};",
+        "Avec des guillemets : var primes = \"2, 3, 5\";",
+        "Avec des crochets : var primes = [2, 3, 5, 7, 11];",
+        "Avec des parenthèses : var primes = (2, 3, 5);"
+      ],
+      "reponse": 2,
+      "explication": "Les éléments sont séparés par des virgules.",
+      "id": "js-s2-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un tableau ?",
+      "choix": [
+        "Une collection non ordonnée de propriétés nommées",
+        "Une collection ordonnée de valeurs, chacune repérée par un index",
+        "Une fonction",
+        "Un type de variable numérique"
+      ],
+      "reponse": 1,
+      "explication": "Les tableaux JavaScript ne sont pas typés : les éléments peuvent être de types différents.",
+      "id": "js-s2-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété donne le nombre d'éléments d'un tableau ?",
+      "choix": [
+        "length",
+        "size",
+        "count",
+        "elements"
+      ],
+      "reponse": 0,
+      "explication": "length vaut l'indice le plus élevé plus un.",
+      "id": "js-s2-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel mot-clé permet de définir une fonction ?",
+      "choix": [
+        "def",
+        "fn",
+        "method",
+        "function"
+      ],
+      "reponse": 3,
+      "explication": "Une fonction est un bloc de code défini une fois, qu'on peut exécuter autant de fois que nécessaire.",
+      "id": "js-s2-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment obtient-on la valeur d'une propriété d'un objet ?",
+      "choix": [
+        "Uniquement avec les parenthèses",
+        "Uniquement avec les accolades",
+        "Avec l'opérateur point (book.author) ou les crochets (author[\"surname\"])",
+        "Uniquement avec le mot get"
+      ],
+      "reponse": 2,
+      "explication": "On peut aussi créer ou modifier une propriété en les plaçant à gauche d'une affectation.",
+      "id": "js-s2-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert une fonction constructeur utilisée avec new ?",
+      "code": "function person(first, last, age, eye) {\n  this.firstName = first;\n  this.lastName = last;\n  this.age = age;\n  this.eyeColor = eye;\n}\nvar myFather = new person(\"John\", \"Doe\", 50, \"blue\");",
+      "choix": [
+        "À supprimer un objet",
+        "À initialiser un objet nouvellement créé",
+        "À copier un tableau",
+        "À convertir une chaîne en nombre"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : var myFather = new person(\"John\", \"Doe\", 50, \"blue\"); avec this.firstName = first.",
+      "id": "js-s2-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un prototype ?",
+      "choix": [
+        "Un second objet associé à chaque objet, dont le premier hérite des propriétés",
+        "Une copie du fichier HTML",
+        "Un type de boucle",
+        "Une propriété qui supprime l'objet"
+      ],
+      "reponse": 0,
+      "explication": "Object.create() crée un objet en utilisant son premier argument comme prototype. Object.prototype est l'un des rares objets sans prototype.",
+      "id": "js-s2-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi servent JSON.stringify() et JSON.parse() ?",
+      "choix": [
+        "À trier un tableau, puis à le mélanger",
+        "À afficher un message, puis à le masquer",
+        "À créer une boucle, puis à l'arrêter",
+        "À sérialiser un objet en chaîne, puis à le restaurer"
+      ],
+      "reponse": 3,
+      "explication": "JSON signifie JavaScript Object Notation. stringify convertit en chaîne ; parse en reconstruit l'objet.",
+      "id": "js-s2-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre push() et unshift() ?",
+      "choix": [
+        "push() ajoute au début ; unshift() ajoute à la fin",
+        "Aucune",
+        "push() ajoute à la fin du tableau ; unshift() insère au début",
+        "push() supprime ; unshift() ajoute"
+      ],
+      "reponse": 2,
+      "explication": "Pousser une valeur revient à l'affecter à a[a.length].",
+      "id": "js-s2-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que vaut ['a','b','c'].length ?",
+      "choix": [
+        "2",
+        "3",
+        "4",
+        "0"
+      ],
+      "reponse": 1,
+      "explication": "L'indice le plus élevé est 2 ; la longueur est donc 3.",
+      "id": "js-s2-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'une méthode ?",
+      "choix": [
+        "Une fonction stockée dans une propriété d'un objet",
+        "Une boucle spéciale",
+        "Un type de tableau",
+        "Un commentaire"
+      ],
+      "reponse": 0,
+      "explication": "Dans o.m(), l'objet o devient le contexte d'invocation et le corps de la fonction peut y faire référence avec this.",
+      "id": "js-s2-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que renvoie par défaut la méthode toString() d'un objet comme {x:1, y:1} ?",
+      "choix": [
+        "La chaîne « x:1, y:1 »",
+        "Le nombre 2",
+        "undefined",
+        "Une chaîne « [object Object] » peu informative"
+      ],
+      "reponse": 3,
+      "explication": "Le cours l'écrit « [objet objet] ». De nombreuses classes définissent leur propre version de toString().",
+      "id": "js-s2-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que vaut a.length après ces instructions ?",
+      "code": "a = [1,2,3];\ndelete a[1];\na.length",
+      "choix": [
+        "2",
+        "1",
+        "3",
+        "0"
+      ],
+      "reponse": 2,
+      "explication": "delete supprime l'élément mais n'affecte pas length et ne décale pas les autres éléments.",
+      "id": "js-s2-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que contient a après a.length = 3 ?",
+      "code": "a = [1,2,3,4,5];\na.length = 3;",
+      "choix": [
+        "[1, 2, 3, 4, 5]",
+        "[1, 2, 3]",
+        "[4, 5]",
+        "[]"
+      ],
+      "reponse": 1,
+      "explication": "Si on affecte à length un entier plus petit, les éléments d'indice supérieur ou égal sont supprimés.",
+      "id": "js-s2-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "De quelles quatre manières une fonction JavaScript peut-elle être invoquée ?",
+      "choix": [
+        "Comme fonction, comme méthode, comme constructeur, ou indirectement via call() et apply()",
+        "Comme boucle, comme condition, comme tableau, comme objet",
+        "Uniquement comme fonction",
+        "Uniquement avec new"
+      ],
+      "reponse": 0,
+      "explication": "Le corps d'une fonction n'est exécuté que lorsqu'elle est invoquée, pas lorsqu'elle est définie.",
+      "id": "js-s2-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que retourne factorial(5) ?",
+      "code": "function factorial(x) {\n  if (x <= 1) return 1;\n  return x * factorial(x - 1);\n}",
+      "choix": [
+        "25",
+        "15",
+        "24",
+        "120"
+      ],
+      "reponse": 3,
+      "explication": "Fonction récursive : 5 × 4 × 3 × 2 × 1 = 120.",
+      "id": "js-s2-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que contient person.firstName après person.fullName = 'Jack Franklin' ?",
+      "code": "var person = {\n  firstName: 'Jimmy',\n  lastName: 'Smith',\n  get fullName() { return this.firstName + ' ' + this.lastName; },\n  set fullName(name) {\n    var words = name.toString().split(' ');\n    this.firstName = words[0] || '';\n    this.lastName = words[1] || '';\n  }\n};\nperson.fullName = 'Jack Franklin';",
+      "choix": [
+        "\"Jack Franklin\"",
+        "\"Franklin\"",
+        "\"Jack\" (le setter découpe le nom complet)",
+        "undefined"
+      ],
+      "reponse": 2,
+      "explication": "Un setter est une méthode appelée quand on affecte la propriété. Ici il sépare la chaîne sur l'espace : words[0] pour le prénom et words[1] pour le nom.",
+      "id": "js-s2-20"
+    }
+  ]
+}

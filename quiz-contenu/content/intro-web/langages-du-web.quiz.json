@@ -1,0 +1,271 @@
+{
+  "matiere": "intro-web",
+  "module": "langages-du-web",
+  "titre": "Les langages du web",
+  "sources": [
+    "Séquence 5_Les langages du web.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Comment répartit-on les langages du web ?",
+      "choix": [
+        "Selon leur couleur",
+        "Selon qu'ils s'exécutent côté client ou côté serveur",
+        "Selon leur prix",
+        "Selon la taille du fichier"
+      ],
+      "reponse": 1,
+      "explication": "Deux groupes : langages web côté client et côté serveur.",
+      "id": "web-s5-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où s'exécutent les langages web côté client ?",
+      "choix": [
+        "Sur la machine cliente",
+        "Sur le serveur",
+        "Dans le câble réseau",
+        "Chez l'hébergeur uniquement"
+      ],
+      "reponse": 0,
+      "explication": "Ils constituent la partie visible du site.",
+      "id": "web-s5-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où s'exécutent les langages web côté serveur ?",
+      "choix": [
+        "Dans le navigateur",
+        "Sur le téléphone du visiteur",
+        "Dans le routeur",
+        "Au niveau du serveur, qui envoie ensuite le résultat au client"
+      ],
+      "reponse": 3,
+      "explication": "Ils constituent la partie invisible du site web.",
+      "id": "web-s5-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage décrit la structure des pages web ?",
+      "choix": [
+        "CSS",
+        "SQL",
+        "HTML",
+        "PHP"
+      ],
+      "reponse": 2,
+      "explication": "HTML est le langage de balisage standard pour la création de pages web.",
+      "id": "web-s5-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage décrit la présentation des documents HTML ?",
+      "choix": [
+        "SQL",
+        "CSS",
+        "XML",
+        "JSP"
+      ],
+      "reponse": 1,
+      "explication": "CSS décrit comment les éléments HTML doivent être affichés (écran, papier…).",
+      "id": "web-s5-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert JavaScript ?",
+      "choix": [
+        "À programmer le comportement des pages web",
+        "À stocker les données du site",
+        "À définir la couleur de fond",
+        "À héberger les fichiers"
+      ],
+      "reponse": 0,
+      "explication": "C'est l'un des trois langages que tout développeur web doit apprendre, avec HTML et CSS.",
+      "id": "web-s5-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on les développeurs côté client ?",
+      "choix": [
+        "Des développeurs Back End",
+        "Des webmarketeurs",
+        "Des hébergeurs",
+        "Des développeurs Front End"
+      ],
+      "reponse": 3,
+      "explication": "Les développeurs côté serveur sont les développeurs Back End.",
+      "id": "web-s5-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "De quels types de langages sont constitués les langages côté client ?",
+      "choix": [
+        "Langages de requête (SQL) et de script (PHP)",
+        "Langages de description (XML) et de requête (SQL)",
+        "Langages de description (HTML), de présentation (CSS) et de script (JavaScript)",
+        "Langages d'hébergement et de messagerie"
+      ],
+      "reponse": 2,
+      "explication": "Les pages reçues au final par le client sont faites avec ces langages.",
+      "id": "web-s5-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels langages le cours cite-t-il comme langages côté serveur ?",
+      "choix": [
+        "HTML, CSS, JavaScript",
+        "PHP, Node.js, SQL, etc.",
+        "Photoshop, Gimp, Fireworks",
+        "Filezilla, CuteFTP"
+      ],
+      "reponse": 1,
+      "explication": "Ce sont des langages de script et de requête qui s'exécutent dans le serveur.",
+      "id": "web-s5-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel inconvénient présente la technologie CGI ?",
+      "choix": [
+        "Elle nécessite de lancer un nouveau processus à chaque requête",
+        "Elle ne fonctionne qu'avec HTML",
+        "Elle est réservée au Sénégal",
+        "Elle interdit les bases de données"
+      ],
+      "reponse": 0,
+      "explication": "FastCGI ne lance le programme CGI qu'une seule fois.",
+      "id": "web-s5-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que signifie PHP, et quel est son rôle ?",
+      "choix": [
+        "Personal Home Page Printer ; un langage de style",
+        "PHP Hypertext Presentation ; un navigateur",
+        "Public Host Provider ; un hébergeur",
+        "PHP Hypertext Preprocessor ; un langage de script côté serveur pour créer des pages dynamiques"
+      ],
+      "reponse": 3,
+      "explication": "PHP est open source, largement utilisé, et présenté comme une alternative à l'ASP de Microsoft.",
+      "id": "web-s5-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que signifie JSP et quelle est l'extension des fichiers JSP ?",
+      "choix": [
+        "JavaScript Pages ; .js",
+        "Java Style Pages ; .css",
+        "Java Server Pages ; .jsp",
+        "Joint Server Protocol ; .html"
+      ],
+      "reponse": 2,
+      "explication": "JSP permet d'utiliser toute la puissance de Java pour créer des pages web dynamiques.",
+      "id": "web-s5-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert XML ?",
+      "choix": [
+        "À afficher des pages en couleur",
+        "À transporter et stocker des données, pas à les afficher",
+        "À héberger des sites",
+        "À chiffrer les mots de passe"
+      ],
+      "reponse": 1,
+      "explication": "Les balises XML ne sont pas prédéfinies : on les définit soi-même.",
+      "id": "web-s5-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que signifie SQL et à quoi sert-il ?",
+      "choix": [
+        "Structured Query Language ; accéder aux bases de données et les manipuler",
+        "Simple Query Layout ; dessiner des pages",
+        "Server Query Link ; héberger un site",
+        "Standard Quick List ; trier des images"
+      ],
+      "reponse": 0,
+      "explication": "SQL est le langage standard pour les bases de données.",
+      "id": "web-s5-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "De quoi a-t-on besoin pour construire un site qui affiche les données d'une base de données ?",
+      "choix": [
+        "Seulement HTML",
+        "Seulement CSS",
+        "Seulement un navigateur",
+        "Un SGBD comme MySQL, un langage serveur comme PHP, du SQL et HTML/CSS pour l'affichage"
+      ],
+      "reponse": 3,
+      "explication": "Chaque technologie joue son rôle : stockage, traitement, requête, affichage.",
+      "id": "web-s5-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est l'intérêt de FastCGI par rapport à CGI ?",
+      "choix": [
+        "Il est écrit en HTML",
+        "Il fonctionne sans serveur",
+        "Il ne lance le programme qu'une seule fois, et non à chaque requête",
+        "Il remplace la base de données"
+      ],
+      "reponse": 2,
+      "explication": "FastCGI est une évolution basée sur CGI.",
+      "id": "web-s5-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle extension portent les feuilles de style externes ?",
+      "choix": [
+        ".html",
+        ".css",
+        ".php",
+        ".xml"
+      ],
+      "reponse": 1,
+      "explication": "Les feuilles de style CSS permettent de contrôler la mise en page de plusieurs pages en même temps.",
+      "id": "web-s5-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait <p><?php echo \"Hello World!\";?></p> dans une page PHP ?",
+      "code": "<html>\n<head>\n<title>Page PHP.</title>\n</head>\n<body>\n<p><?php echo \"Hello World!\";?></p>\n</body>\n</html>",
+      "choix": [
+        "Le serveur exécute le code PHP et envoie « Hello World! » dans la page",
+        "Le navigateur exécute le code PHP",
+        "Le code PHP s'affiche tel quel",
+        "Il crée une feuille de style"
+      ],
+      "reponse": 0,
+      "explication": "Le code PHP s'exécute sur le serveur : le client ne reçoit que le résultat.",
+      "id": "web-s5-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi dit-on que les langages côté serveur forment la « partie invisible » d'un site ?",
+      "choix": [
+        "Parce qu'ils sont secrets",
+        "Parce qu'ils ne s'affichent jamais à l'écran du serveur",
+        "Parce qu'ils ne produisent aucun résultat",
+        "Parce qu'ils s'exécutent dans le serveur et que seul leur résultat est envoyé au client"
+      ],
+      "reponse": 3,
+      "explication": "Le visiteur ne voit pas le code PHP : il voit le HTML produit.",
+      "id": "web-s5-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels sont les trois langages que tout développeur web doit apprendre, selon le cours ?",
+      "choix": [
+        "HTML, SQL et Java",
+        "PHP, ASP et JSP",
+        "HTML, CSS et JavaScript",
+        "XML, FTP et HTTP"
+      ],
+      "reponse": 2,
+      "explication": "JavaScript est l'un des langages de programmation les plus populaires au monde.",
+      "id": "web-s5-20"
+    }
+  ]
+}

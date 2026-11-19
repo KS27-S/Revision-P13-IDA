@@ -1,0 +1,72 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "ide-mobile",
+  "titre": "TD – Environnements de développement intégré pour le mobile",
+  "exercices": [
+    {
+      "id": "envmob-ide-td-01",
+      "type": "exercice",
+      "titre": "Qu'est-ce qu'un IDE pour le mobile ?",
+      "source": "TD 6 – Environnements de développement intégré pour le mobile",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'est-ce qu'un IDE pour le mobile ?",
+      "indices": [
+        "IDE = environnement de développement intégré. Que contient-il ?"
+      ],
+      "solution": "Un IDE (environnement de développement intégré) pour le mobile est un outil qui regroupe ce qu'il faut pour développer une application : éditeur, outils de test et de profilage, intégration SCM (Git, SVN, CVS), émulateurs et accès aux capteurs (GPS, accéléromètre). Il peut être ouvert (Eclipse, Android Studio) ou propriétaire (Xcode, MS Visual Studio).",
+      "explication_simple": "C'est l'« atelier » du développeur : tout est au même endroit."
+    },
+    {
+      "id": "envmob-ide-td-02",
+      "type": "exercice",
+      "titre": "Trois IDE caractérisés selon l'approche",
+      "source": "TD 6 – Environnements de développement intégré pour le mobile",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite trois exemples d'IDE et dis à quelle approche ils correspondent.",
+      "indices": [
+        "Natif, multiplateforme, hybride."
+      ],
+      "solution": "Xcode : natif iOS (Objective-C). Xamarin : multiplateforme (C#, 75 % de code partagé). PhoneGap / Apache Cordova : hybride/web (HTML, JavaScript, CSS dans une WebView). Autres : Titanium (JavaScript, interface native), Windev Mobile (WLangage).",
+      "explication_simple": "Chaque IDE correspond à une façon de construire l'application."
+    },
+    {
+      "id": "envmob-ide-td-03",
+      "type": "exercice",
+      "titre": "Langages associés aux IDE",
+      "source": "TD 6 – Environnements de développement intégré pour le mobile",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite les langages associés aux IDE.",
+      "indices": [
+        "Un langage par outil."
+      ],
+      "solution": "Android Studio / Eclipse / NetBeans : Java. Xcode : Objective-C (Cocoa : Objective-C, AppleScript, Java ; Carbon : C et C++). BlackBerry JDE : Java. Visual Studio / Xamarin : C#. PhoneGap : HTML, JavaScript, CSS. Titanium : JavaScript. Windev Mobile : WLangage.",
+      "explication_simple": "Un même langage peut fonctionner dans plusieurs outils (Java dans Android Studio, Eclipse, NetBeans)."
+    },
+    {
+      "id": "envmob-ide-td-04",
+      "type": "exercice",
+      "titre": "Les IDE de l'approche web",
+      "source": "TD 6 – Environnements de développement intégré pour le mobile",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quels IDE sont associés à l'approche web ?",
+      "indices": [
+        "Basés sur HTML5."
+      ],
+      "solution": "Les IDE basés sur HTML5 : PhoneGap, NS Basic, RedFoundry. Ils n'utilisent qu'un composant natif, une WebView, et souffrent des défauts des Web Apps : stabilité, interfaces lourdes, animations saccadées.",
+      "explication_simple": "Une application « web » dans un habillage natif."
+    },
+    {
+      "id": "envmob-ide-td-05",
+      "type": "exercice",
+      "titre": "Résumé des IDE selon les approches",
+      "source": "TD 6 – Environnements de développement intégré pour le mobile",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Résume les IDE selon les approches de développement.",
+      "indices": [
+        "Natif, multiplateforme, hybride/web, interface native."
+      ],
+      "solution": "Natif : Android Studio, Eclipse, NetBeans (Java) ; Xcode (Objective-C) ; BlackBerry JDE (Java) ; Visual Studio (C#). Multiplateforme : Xamarin (C#). Hybride/web : PhoneGap, NS Basic, RedFoundry, Windev Mobile. Interface native via un seul langage : Titanium, Rhomobile, Corona.",
+      "explication_simple": "Plus on se rapproche du natif, plus on gagne en performance ; plus on se rapproche du web, plus on gagne en portabilité."
+    }
+  ]
+}

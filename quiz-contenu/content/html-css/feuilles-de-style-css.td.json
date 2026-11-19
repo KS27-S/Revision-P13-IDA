@@ -1,0 +1,67 @@
+{
+  "matiere": "html-css",
+  "module": "feuilles-de-style-css",
+  "titre": "TD – Les feuilles de style CSS",
+  "exercices": [
+    {
+      "id": "htmlcss-s5-td-01",
+      "type": "exercice",
+      "titre": "Les concepts de base de CSS",
+      "source": "TP 05 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Pour le code CSS du TP, liste les règles, leurs sélecteurs, leurs déclarations, puis les propriétés et valeurs.",
+      "indices": [
+        "Une règle = sélecteur + déclaration.",
+        "Une déclaration = propriété : valeur."
+      ],
+      "solution": "Code :\nbody {background-color: powderblue;}\nh1 {color: blue;}\np {color: red;}\n\n3 règles :\n1) sélecteur body ; déclaration background-color: powderblue → propriété background-color, valeur powderblue.\n2) sélecteur h1 ; déclaration color: blue → propriété color, valeur blue.\n3) sélecteur p ; déclaration color: red → propriété color, valeur red.",
+      "explication_simple": "Le sélecteur dit « à qui » on applique le style. La déclaration dit « quoi » appliquer."
+    },
+    {
+      "id": "htmlcss-s5-td-02",
+      "type": "exercice",
+      "titre": "Feuille de style interne avec rgb",
+      "source": "TP 05 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise la page avec une feuille de style interne : un titre rouge-orangé et un paragraphe de la même couleur, semi-transparent.",
+      "indices": [
+        "Place un <style> dans le head.",
+        "rgba pour la transparence du paragraphe."
+      ],
+      "solution": "<head>\n<meta charset=\"UTF-8\">\n<style>\nh2 { background-color: rgb(255,99,71); }\np  { background-color: rgba(255,99,71,0.5); }\n</style>\n</head>\n<body>\n<h2>Université Cheikh Anta Diop de Dakar</h2>\n<p>L'université Cheikh-Anta-Diop (UCAD) est la principale université de Dakar.</p>\n</body>",
+      "explication_simple": "Les styles sont écrits une seule fois et s'appliquent à tous les h2 et tous les p de la page.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s5-td-03",
+      "type": "exercice",
+      "titre": "Feuille de style externe",
+      "source": "TP 05 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise la page jaune avec une feuille de style externe : un fichier styles.css lié à la page.",
+      "indices": [
+        "Crée deux fichiers : index.html et styles.css.",
+        "Lie-les avec <link rel=\"stylesheet\" href=\"styles.css\">."
+      ],
+      "solution": "<!-- index.html -->\n<head>\n<meta charset=\"UTF-8\">\n<link rel=\"stylesheet\" href=\"styles.css\">\n</head>\n<body>\n<h1>Liste des universités du Sénégal</h1>\n<hr />\n<h2 class=\"vert\">Université Cheikh Anta Diop de Dakar</h2>\n<p>…</p>\n<h2 class=\"bleu\">Université Gaston Berger de Saint-Louis</h2>\n<p>…</p>\n<h2 class=\"rouge\">Université Virtuelle du Sénégal</h2>\n<p>…</p>\n</body>\n\n/* styles.css */\nbody { background-color: yellow; border: 1px solid black; }\n.vert  { color: green; }\n.bleu  { color: blue; }\n.rouge { color: red; }",
+      "explication_simple": "Avantage de l'externe : le même fichier CSS peut servir à toutes les pages du site.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s5-td-04",
+      "type": "exercice",
+      "titre": "Propriétés CSS : titre noir et paragraphe encadré",
+      "source": "TP 05 – exercice 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise : un titre blanc sur fond noir, centré ; puis un paragraphe rosé avec une bordure noire en tirets et une première lettre plus grande.",
+      "indices": [
+        "border-style : dashed.",
+        "text-align : center.",
+        "La grande lettre est un effet : ::first-letter."
+      ],
+      "solution": "h1 { background-color: black; color: white; text-align: center; }\np  { background-color: #ffb3a7; border: 4px dashed black; font-size: 120%; }\np::first-letter { font-size: 250%; float: left; }",
+      "explication_simple": "Chaque propriété agit sur un aspect : fond, texte, bordure, taille.",
+      "attention": "::first-letter n'est pas vu dans le cours (hors cours). Le reste utilise uniquement des propriétés étudiées."
+    }
+  ]
+}

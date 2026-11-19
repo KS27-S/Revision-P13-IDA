@@ -1,0 +1,276 @@
+{
+  "matiere": "initiation-programmation",
+  "module": "programmer-avec-scratch",
+  "titre": "Programmer avec Scratch 2 : algorithmes, variables, tests et boucles",
+  "sources": [
+    "Sequence2_Programmer avec Scratch2.pdf",
+    "TD_Séquence2.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Que veut dire « coder » ?",
+      "choix": [
+        "Chiffrer un message secret",
+        "Donner à l'ordinateur des instructions qu'il doit exécuter pour obtenir les résultats voulus",
+        "Dessiner un lutin",
+        "Installer un logiciel"
+      ],
+      "reponse": 1,
+      "explication": "Avec les blocs de Scratch, on donne des instructions à l'ordinateur pour qu'il fasse agir le chat.",
+      "id": "prog-s2-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un algorithme ?",
+      "choix": [
+        "Une liste ordonnée et logique d'instructions permettant de résoudre un problème",
+        "Un langage de programmation",
+        "Un ordinateur très puissant",
+        "Un fichier son"
+      ],
+      "reponse": 0,
+      "explication": "C'est une série d'actions ordonnées en séquence.",
+      "id": "prog-s2-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "De quelles trois grandes parties un algorithme se compose-t-il ?",
+      "choix": [
+        "Le titre, le résumé et la conclusion",
+        "Le lutin, la scène et le costume",
+        "Le clavier, l'écran et la souris",
+        "Les informations de départ, la succession d'instructions et la réponse à l'arrivée"
+      ],
+      "reponse": 3,
+      "explication": "Exemple : addition de deux nombres. Départ : A et B ; instructions : calculer A+B ; arrivée : la somme.",
+      "id": "prog-s2-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un programme ?",
+      "choix": [
+        "Un algorithme écrit en français",
+        "Un résultat affiché à l'écran",
+        "Un algorithme traduit en instructions écrites dans un langage de programmation",
+        "Un type de variable"
+      ],
+      "reponse": 2,
+      "explication": "Ici, le langage de programmation est Scratch 2. D'autres existent : C, Java, PHP…",
+      "id": "prog-s2-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'une variable ?",
+      "choix": [
+        "Une instruction qui répète",
+        "Une information contenue dans une « boîte » repérée par son nom",
+        "Un type de lutin",
+        "Un bloc de couleur"
+      ],
+      "reponse": 1,
+      "explication": "Pour accéder au contenu de la boîte, il suffit de la désigner par son nom.",
+      "id": "prog-s2-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie « affecter » une valeur à une variable ?",
+      "choix": [
+        "Lui donner une valeur",
+        "La supprimer",
+        "La comparer à une autre",
+        "L'afficher à l'écran"
+      ],
+      "reponse": 0,
+      "explication": "Exemples : A ← 4 et Mot ← « coucou ».",
+      "id": "prog-s2-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert un test conditionnel ?",
+      "choix": [
+        "À répéter une action",
+        "À créer une variable",
+        "À jouer un son",
+        "À choisir une action suivant une condition"
+      ],
+      "reponse": 3,
+      "explication": "Structure : Si condition alors action1 FinSi, ou Si condition alors action1 Sinon action2 FinSi.",
+      "id": "prog-s2-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle est la correspondance entre les parties d'un algorithme et celles d'un programme ?",
+      "choix": [
+        "Informations de départ = sorties ; instructions = entrées ; réponse = traitement",
+        "Informations de départ = traitement ; instructions = sorties ; réponse = entrées",
+        "Informations de départ = entrées (lecture) ; instructions = traitement ; réponse = sorties (écriture)",
+        "Il n'y a aucune correspondance"
+      ],
+      "reponse": 2,
+      "explication": "Les trois parties d'un programme : entrées, traitement, sorties.",
+      "id": "prog-s2-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Du point de vue du programme, que signifie « lire » ?",
+      "choix": [
+        "Afficher un résultat à l'écran",
+        "Obtenir une entrée (clavier, souris, fichier, capteur) ; le programme s'arrête et attend l'action de l'usager",
+        "Imprimer un document",
+        "Sauvegarder dans un fichier"
+      ],
+      "reponse": 1,
+      "explication": "À l'inverse, « écrire » une sortie, c'est afficher à l'écran, sur une imprimante ou dans un fichier.",
+      "id": "prog-s2-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle étape transforme l'algorithme en programme ?",
+      "choix": [
+        "Le codage (la traduction dans un langage de programmation)",
+        "L'analyse du problème réel",
+        "L'exécution",
+        "L'affichage des résultats"
+      ],
+      "reponse": 0,
+      "explication": "Processus : problème réel → analyse → algorithme → codage (traduction) → programme → exécution → résultats.",
+      "id": "prog-s2-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels types de variables le cours cite-t-il ?",
+      "choix": [
+        "Seulement entier et réel",
+        "Image, son et vidéo",
+        "Lutin, scène et costume",
+        "Numérique (entier, réel), texte (caractère, chaîne) et booléen"
+      ],
+      "reponse": 3,
+      "explication": "Certains langages n'utilisent pas de déclaration de type : c'est le cas de Scratch.",
+      "id": "prog-s2-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels opérateurs s'appliquent à des variables booléennes ?",
+      "choix": [
+        "+, -, *, /",
+        "& et +",
+        "et, ou, non",
+        "<, > et ="
+      ],
+      "reponse": 2,
+      "explication": "Pour les numériques : +, -, *, /, ^. Pour le texte : & ou + (concaténation).",
+      "id": "prog-s2-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait « mot ← mot2 & « oui » » ?",
+      "choix": [
+        "Il additionne deux nombres",
+        "Il met dans mot le texte de mot2 suivi de « oui » (concaténation)",
+        "Il compare mot2 et « oui »",
+        "Il supprime « oui » de mot2"
+      ],
+      "reponse": 1,
+      "explication": "En Scratch, le bloc correspondant s'appelle « regroupe ».",
+      "id": "prog-s2-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment éviter qu'un algorithme répète plusieurs fois la même série d'instructions ?",
+      "choix": [
+        "En utilisant des boucles ou des fonctions/procédures",
+        "En supprimant des instructions au hasard",
+        "En ajoutant des variables",
+        "En le traduisant en Scratch"
+      ],
+      "reponse": 0,
+      "explication": "Règle de clarté du cours : éviter de comporter plusieurs fois la même série d'instructions.",
+      "id": "prog-s2-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que vaut A à la fin de ce programme ?",
+      "code": "mettre A à 4\nmettre A à (A + 2)\nmettre A à (A × A)",
+      "choix": [
+        "12",
+        "8",
+        "6",
+        "36"
+      ],
+      "reponse": 3,
+      "explication": "A vaut 4, puis 4 + 2 = 6, puis 6 × 6 = 36.",
+      "id": "prog-s2-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi utilise-t-on une boucle « Tant que » pour demander « 3 fois 2 = ? » jusqu'à la bonne réponse ?",
+      "choix": [
+        "Parce que Tant que est plus rapide que Pour",
+        "Parce que Pour ne fonctionne pas avec les nombres",
+        "Parce qu'on ne sait pas à l'avance combien d'essais seront nécessaires",
+        "Parce que Pour exige un lutin"
+      ],
+      "reponse": 2,
+      "explication": "Avec Pour, on connaît le nombre de répétitions ; avec Tant que, on répète jusqu'à ce qu'une condition se réalise.",
+      "id": "prog-s2-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "On exécute cet algorithme avec A = 0 et B = 5. Qu'affiche-t-il ?",
+      "code": "lire A et B\nSi A n'est pas nul\nalors\n   diviser B par A\n   écrire B\nSinon\n   écrire « impossible »\nFinsi",
+      "choix": [
+        "0",
+        "« impossible »",
+        "5",
+        "L'infini"
+      ],
+      "reponse": 1,
+      "explication": "A est nul : on passe au Sinon et on écrit « impossible » (on ne peut pas diviser par zéro).",
+      "id": "prog-s2-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans l'algorithme « 3 fois 2 », que se passe-t-il si l'utilisateur répond 5 puis 6 ?",
+      "code": "N ← 0\nTant que N ≠ 6 :\n   lire N\n   Si N ≠ 6\n      Afficher « erreur »\n   fin de si\nFin tant que",
+      "choix": [
+        "« erreur » est affiché une fois, puis la boucle s'arrête quand la réponse est 6",
+        "« erreur » est affiché deux fois",
+        "La boucle ne s'arrête jamais",
+        "Rien n'est affiché"
+      ],
+      "reponse": 0,
+      "explication": "N est initialisé à 0. Réponse 5 : N ≠ 6, on affiche « erreur ». Réponse 6 : pas d'erreur, la condition N ≠ 6 devient fausse et on sort de la boucle.",
+      "id": "prog-s2-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Si la variable a vaut 0 au départ, que calcule ce programme ?",
+      "code": "quand drapeau vert pressé\nmettre s à 1\nrépéter 5 fois\n   mettre a à (a + 1)\n   mettre s à (s × a)\nafficher la variable s",
+      "choix": [
+        "La somme 1+2+3+4+5 = 15",
+        "Le carré de 5 : 25",
+        "2 puissance 5 : 32",
+        "La factorielle de 5 : il affiche 120"
+      ],
+      "reponse": 3,
+      "explication": "a prend 1, 2, 3, 4, 5 et s vaut successivement 1, 2, 6, 24, 120. Attention : a n'est pas réinitialisé ; si on relance le programme sans remettre a à 0, le résultat change.",
+      "id": "prog-s2-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que calcule cet algorithme ?",
+      "code": "Initialisation : s = 0\npour i de 1 jusqu'à 10 faire\n   s = s + 1\nfin\nSortie : afficher s",
+      "choix": [
+        "La somme des entiers de 1 à 10 : 55",
+        "Le produit des entiers de 1 à 10",
+        "Il compte le nombre de répétitions : s vaut 10 à la fin",
+        "Rien : s reste à 0"
+      ],
+      "reponse": 2,
+      "explication": "À chaque tour, s augmente de 1 (et non de i). Après 10 tours, s = 10.",
+      "id": "prog-s2-20"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "matiere": "algorithmique",
+  "module": "sous-programmes",
+  "titre": "Les sous-programmes (fonctions et procédures)",
+  "sources": [
+    "seq2_algo.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert un sous-programme ?",
+      "choix": [
+        "À stocker des valeurs en mémoire",
+        "À associer un nom à une suite d'instructions pour la réutiliser à plusieurs endroits du programme",
+        "À déclarer des constantes",
+        "À afficher des résultats uniquement"
+      ],
+      "reponse": 1,
+      "explication": "Quand une même suite d'instructions revient plusieurs fois, on lui donne un nom et on l'appelle chaque fois que nécessaire.",
+      "id": "algo-sous-programmes-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quels sont les deux types de sous-programmes ?",
+      "choix": [
+        "Les fonctions et les procédures",
+        "Les variables et les constantes",
+        "Les tableaux et les structures",
+        "Les boucles et les tests"
+      ],
+      "reponse": 0,
+      "explication": "En algorithmique, un sous-programme est soit une fonction, soit une procédure.",
+      "id": "algo-sous-programmes-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Combien de valeurs une fonction retourne-t-elle ?",
+      "choix": [
+        "Aucune",
+        "Autant qu'elle veut",
+        "Au moins deux",
+        "Une seule"
+      ],
+      "reponse": 3,
+      "explication": "Une fonction fonctionne comme une fonction mathématique y = f(x, y, …) : elle renvoie un seul résultat, dont le type est le type de la fonction.",
+      "id": "algo-sous-programmes-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Une procédure renvoie…",
+      "choix": [
+        "une seule valeur",
+        "deux valeurs",
+        "aucune valeur",
+        "toujours un booléen"
+      ],
+      "reponse": 2,
+      "explication": "Une procédure exécute un traitement mais ne renvoie pas de valeur. Elle peut cependant modifier des paramètres passés en sortie.",
+      "id": "algo-sous-programmes-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle instruction précise la valeur renvoyée par une fonction ?",
+      "choix": [
+        "Ecrire",
+        "retourner",
+        "Lire",
+        "Fin"
+      ],
+      "reponse": 1,
+      "explication": "La valeur de retour d'une fonction est indiquée par l'instruction retourner, présente au moins une fois dans la fonction.",
+      "id": "algo-sous-programmes-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on le sous-programme qui en utilise un autre ?",
+      "choix": [
+        "Le sous-programme appelant",
+        "Le sous-programme appelé",
+        "Le sous-programme formel",
+        "Le sous-programme effectif"
+      ],
+      "reponse": 0,
+      "explication": "Quand A appelle B, A est le sous-programme appelant. « Formel » et « effectif » qualifient les paramètres, pas les sous-programmes.",
+      "id": "algo-sous-programmes-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Un sous-programme est obligatoirement caractérisé par…",
+      "choix": [
+        "un chiffre",
+        "un nombre fixe de lignes",
+        "un tableau",
+        "un nom (identifiant) unique"
+      ],
+      "reponse": 3,
+      "explication": "Le nom unique permet de l'appeler ensuite comme une nouvelle instruction dans d'autres (sous-)programmes.",
+      "id": "algo-sous-programmes-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un paramètre formel ?",
+      "choix": [
+        "La valeur donnée lors de l'appel",
+        "Le résultat retourné par la fonction",
+        "Une variable locale, avec un type, déclarée dans l'en-tête du sous-programme",
+        "Un commentaire qui décrit le sous-programme"
+      ],
+      "reponse": 2,
+      "explication": "Le paramètre formel est le « récepteur » défini quand on écrit le sous-programme. Le paramètre effectif est ce qu'on lui donne au moment de l'appel.",
+      "id": "algo-sous-programmes-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un paramètre effectif (ou argument) ?",
+      "choix": [
+        "Une variable locale déclarée dans le sous-programme",
+        "La variable ou la constante fournie par l'appelant lors de l'appel",
+        "Le nom de la fonction",
+        "Le type de la valeur retournée"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : dans cube(x), x est le paramètre effectif ; il est associé au paramètre formel défini dans la fonction.",
+      "id": "algo-sous-programmes-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment les paramètres formels et effectifs sont-ils associés lors de l'appel ?",
+      "choix": [
+        "Suivant leur ordre",
+        "Suivant leur nom",
+        "Suivant leur valeur",
+        "Au hasard"
+      ],
+      "reponse": 0,
+      "explication": "Le 1er paramètre effectif est associé au 1er paramètre formel, le 2e au 2e, etc. L'ordre compte donc.",
+      "id": "algo-sous-programmes-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Les paramètres formel et effectif associés doivent être…",
+      "choix": [
+        "de même nom",
+        "de même valeur",
+        "tous les deux constants",
+        "de même type"
+      ],
+      "reponse": 3,
+      "explication": "Les noms peuvent différer, mais les types doivent être identiques (ou compatibles) pour que l'association ait un sens.",
+      "id": "algo-sous-programmes-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel passage de paramètres une fonction utilise-t-elle ?",
+      "choix": [
+        "Uniquement en sortie",
+        "En entrée/sortie",
+        "Uniquement en entrée",
+        "Les trois, au choix"
+      ],
+      "reponse": 2,
+      "explication": "Pour une fonction, le passage est uniquement en entrée (il n'est donc pas précisé). Une fonction peut recevoir des variables, des constantes ou même des résultats d'autres fonctions.",
+      "id": "algo-sous-programmes-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que signifient les préfixes E, S et E/S devant les paramètres d'une procédure ?",
+      "choix": [
+        "Entier, Réel, Chaîne",
+        "Entrée, Sortie, Entrée/Sortie",
+        "Exécution, Stockage, Écriture",
+        "Erreur, Statut, État"
+      ],
+      "reponse": 1,
+      "explication": "Ils indiquent le sens du passage : E (la procédure reçoit une valeur), S (elle renvoie une valeur à l'appelant), E/S (les deux).",
+      "id": "algo-sous-programmes-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lequel est un avantage de la modularité cité dans le cours ?",
+      "choix": [
+        "Une maintenance et une mise au point facilitées",
+        "Le programme n'a plus besoin d'être testé",
+        "Les variables n'ont plus besoin d'être déclarées",
+        "Le programme principal devient inutile"
+      ],
+      "reponse": 0,
+      "explication": "Le cours cite : meilleure qualité, code plus court, mise au point rapide, maintenance facilitée, intégration de modules, et centralisation autour d'un programme principal (qui reste donc utile).",
+      "id": "algo-sous-programmes-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "On définit la fonction suivante. Que retourne cube(3) ?",
+      "code": "fonction cube(n : Entier) : Entier\ndebut\n   retourner n * n * n\nfin",
+      "choix": [
+        "9",
+        "6",
+        "81",
+        "27"
+      ],
+      "reponse": 3,
+      "explication": "Le paramètre n reçoit 3 : 3 × 3 × 3 = 27.",
+      "id": "algo-sous-programmes-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans cette procédure, quels paramètres sont passés en sortie ?",
+      "code": "procédure calculerMinMax3 ( E a,b,c : Entier ; S m,M : Entier )\ndebut\n   m ← minimum3(a,b,c)\n   M ← maximum3(a,b,c)\nfin",
+      "choix": [
+        "a, b et c",
+        "a et m",
+        "m et M",
+        "Tous les paramètres"
+      ],
+      "reponse": 2,
+      "explication": "Les paramètres préfixés par E sont en entrée (a, b, c) ; ceux préfixés par S sont en sortie (m et M) : la procédure y écrit les résultats pour l'appelant.",
+      "id": "algo-sous-programmes-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi calculerMinMax3 est-elle écrite comme une procédure plutôt que comme une fonction ?",
+      "choix": [
+        "Parce qu'une procédure s'exécute plus vite",
+        "Parce qu'elle doit produire deux résultats et qu'une fonction n'en renvoie qu'un",
+        "Parce qu'une fonction ne peut pas avoir de paramètres",
+        "Parce qu'une fonction ne peut pas utiliser retourner"
+      ],
+      "reponse": 1,
+      "explication": "Deux résultats (le minimum et le maximum) → deux paramètres en sortie, ce qu'une procédure permet. Une fonction renvoie une seule valeur.",
+      "id": "algo-sous-programmes-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "On définit la fonction suivante. Que retourne fact(5) ?",
+      "code": "fonction fact(n : Entier) : Entier\nVariables i, r : Entier\ndebut\n   r ← 1\n   Pour i := 1 à n faire\n      r ← r * i\n   Fpour\n   retourner r\nfin",
+      "choix": [
+        "120",
+        "25",
+        "15",
+        "60"
+      ],
+      "reponse": 0,
+      "explication": "fact(5) = 1 × 2 × 3 × 4 × 5 = 120. La variable r démarre à 1 (élément neutre de la multiplication) et est multipliée par chaque i.",
+      "id": "algo-sous-programmes-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Avec la fonction cube du cours, que vaut cube(cube(2)) ?",
+      "choix": [
+        "64",
+        "16",
+        "8",
+        "512"
+      ],
+      "reponse": 3,
+      "explication": "On peut utiliser un résultat de fonction comme paramètre effectif. cube(2) = 8, puis cube(8) = 8 × 8 × 8 = 512.",
+      "id": "algo-sous-programmes-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment appelle-t-on une fonction lireNote qui n'a aucun paramètre ?",
+      "choix": [
+        "lireNote",
+        "lireNote(0)",
+        "lireNote() : les parenthèses sont toujours présentes",
+        "appeler lireNote"
+      ],
+      "reponse": 2,
+      "explication": "Règle du cours : les parenthèses sont toujours présentes lors de l'appel, même lorsqu'il n'y a pas de paramètre effectif.",
+      "id": "algo-sous-programmes-20"
+    }
+  ]
+}

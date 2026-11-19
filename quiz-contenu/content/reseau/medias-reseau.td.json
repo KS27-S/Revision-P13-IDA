@@ -1,0 +1,23 @@
+{
+  "matiere": "reseau",
+  "module": "medias-reseau",
+  "titre": "TD – Les médias réseau : prise en main de Packet Tracer",
+  "exercices": [
+    {
+      "id": "reseau-s4-td-01",
+      "type": "exercice",
+      "titre": "Installer et prendre en main Packet Tracer",
+      "source": "TP 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Télécharge et installe Packet Tracer, lis le guide de prise en main, puis construis un petit schéma (placer du matériel et des connexions).",
+      "indices": [
+        "Place-toi dans l'onglet Logical.",
+        "On choisit un type de matériel, puis un modèle, puis on clique dans l'espace de travail.",
+        "Pour relier deux équipements : outil de câblage, type de connexion, puis les deux équipements."
+      ],
+      "solution": "1. Télécharger et installer Packet Tracer (le TP donne un lien de téléchargement ; Packet Tracer est un logiciel de Cisco).\n2. Ouvrir le logiciel : barre de menu, barre d'outils principale, barre d'outils à droite et boîtes à outils (type de matériel, modèle, résultats).\n3. Onglet LOGICAL : choisir un type de matériel (ordinateur, commutateur, routeur…), choisir le modèle, cliquer dans l'espace de travail pour le placer.\n4. Outil de câblage : choisir le type de connexion, cliquer sur le 1er équipement, choisir le connecteur, cliquer sur le 2e équipement.\n5. Vérifier l'état des liaisons grâce aux points de couleur (rouge, orange, vert).\n6. Annoter avec l'outil Note (adresses IP, adresse du réseau).\n7. Tester : outil Add Simple PDU pour un ping (ICMP), ou Desktop > Command Prompt pour ping, ipconfig, tracert…",
+      "explication_simple": "Packet Tracer permet de simuler un réseau sans matériel réel : on place les équipements, on les câble et on observe les échanges.",
+      "attention": "Le lien de téléchargement du TP (filehorse.com) est ancien : utilise la source officielle indiquée par ton enseignant."
+    }
+  ]
+}

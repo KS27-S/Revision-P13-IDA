@@ -1,0 +1,40 @@
+{
+  "matiere": "html-css",
+  "module": "formulaires",
+  "titre": "TD – Les formulaires HTML",
+  "exercices": [
+    {
+      "id": "htmlcss-s9-td-01",
+      "type": "exercice",
+      "titre": "Un formulaire mis en page avec un tableau",
+      "source": "TP 09 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise le formulaire : civilité (3 boutons radio, Madame coché), nom/prénom, adresse (zone de texte), n° postal et localité (« Dakar »), pays (liste, « Senegal »), plateformes (3 cases, Windows et Macintosh cochées), boutons « Soumettre formulaire » et « Effacer ». Mets tous les champs dans un tableau.",
+      "indices": [
+        "radio : même name pour les 3 boutons.",
+        "textarea pour l'adresse.",
+        "select + option pour le pays.",
+        "checkbox pour les plateformes ; checked pour pré-cocher."
+      ],
+      "solution": "<form action=\"#\" method=\"post\">\n<table>\n<tr><td><b>Civilité</b></td>\n<td><input type=\"radio\" name=\"civ\" value=\"Mlle\">Mademoiselle\n<input type=\"radio\" name=\"civ\" value=\"Mme\" checked>Madame\n<input type=\"radio\" name=\"civ\" value=\"M\">Monsieur</td></tr>\n<tr><td><b>Nom / Prénom</b></td><td><input type=\"text\" name=\"nom\" size=\"40\"></td></tr>\n<tr><td><b>Adresse</b></td><td><textarea name=\"adresse\" rows=\"4\" cols=\"40\">Rue No\nBoîte postale</textarea></td></tr>\n<tr><td><b>No postal / Localité</b></td>\n<td><input type=\"text\" name=\"cp\" size=\"5\"> <input type=\"text\" name=\"localite\" value=\"Dakar\"></td></tr>\n<tr><td><b>Pays</b></td>\n<td><select name=\"pays\"><option value=\"sn\" selected>Senegal</option><option value=\"fr\">France</option></select></td></tr>\n<tr><td><b>Plateforme(s)</b></td>\n<td><input type=\"checkbox\" name=\"pf\" value=\"windows\" checked>Windows\n<input type=\"checkbox\" name=\"pf\" value=\"mac\" checked>Macintosh\n<input type=\"checkbox\" name=\"pf\" value=\"unix\">Unix</td></tr>\n<tr><td></td><td><input type=\"submit\" value=\"Soumettre formulaire\"> <input type=\"reset\" value=\"Effacer\"></td></tr>\n</table>\n</form>",
+      "explication_simple": "Le tableau aligne les intitulés (colonne de gauche) et les champs (colonne de droite). Les trois radios partagent le même name : un seul peut être choisi.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s9-td-02",
+      "type": "exercice",
+      "titre": "Un formulaire d'inscription avec div et CSS",
+      "source": "TP 09 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise un formulaire d'inscription du type Facebook (prénom et nom côte à côte, e-mail, mot de passe, date de naissance, sexe, bouton « Inscription ») avec des div et du CSS.",
+      "indices": [
+        "Un div autour du formulaire, avec une largeur fixe.",
+        "Des input avec display:block ou width.",
+        "Prénom et nom côte à côte : width:48 % et float:left."
+      ],
+      "solution": "<style>\n.insc { width:320px; font-family:Arial, sans-serif; }\n.insc input[type=text], .insc input[type=password] { width:100%; padding:8px; margin:5px 0; box-sizing:border-box; }\n.ligne { overflow:hidden; }\n.ligne input { width:48% !important; float:left; margin-right:2%; }\n.insc .btn { background-color:#42a52f; color:white; border:0; padding:10px 20px; font-weight:bold; }\n</style>\n<div class=\"insc\">\n<h2>Inscription</h2>\n<p>C'est gratuit (et ça le restera toujours).</p>\n<form action=\"#\" method=\"post\">\n<div class=\"ligne\">\n<input type=\"text\" name=\"prenom\" placeholder=\"Prénom\">\n<input type=\"text\" name=\"nom\" placeholder=\"Nom de famille\">\n</div>\n<input type=\"text\" name=\"mail\" placeholder=\"Adresse e-mail ou mobile\">\n<input type=\"text\" name=\"mail2\" placeholder=\"Confirmer l'adresse e-mail\">\n<input type=\"password\" name=\"mdp\" placeholder=\"Nouveau mot de passe\">\n<p>Date de naissance <input type=\"date\" name=\"naissance\"></p>\n<p><input type=\"radio\" name=\"sexe\" value=\"F\"> Femme <input type=\"radio\" name=\"sexe\" value=\"H\"> Homme</p>\n<input type=\"submit\" class=\"btn\" value=\"Inscription\">\n</form>\n</div>",
+      "explication_simple": "Les div servent à regrouper et mettre en forme ; le CSS donne l'apparence. L'attribut placeholder affiche un texte d'aide dans le champ vide (hors cours).",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP. Les attributs placeholder, type=\"date\" (HTML5) et la sélection par attribut sont des notions hors cours."
+    }
+  ]
+}

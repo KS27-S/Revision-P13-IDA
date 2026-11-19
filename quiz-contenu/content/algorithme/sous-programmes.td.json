@@ -1,0 +1,79 @@
+{
+  "matiere": "algorithmique",
+  "module": "sous-programmes",
+  "titre": "TD – Les sous-programmes",
+  "exercices": [
+    {
+      "id": "algo-sous-programmes-td-01",
+      "titre": "Fonction : le cube d'un entier",
+      "source": "Exercices de Travaux Dirigés 2",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une fonction qui reçoit un entier et renvoie son cube.",
+      "indices": [
+        "Une fonction renvoie une seule valeur avec retourner.",
+        "Cube = n × n × n."
+      ],
+      "solution": "fonction cube(n : Entier) : Entier\ndebut\n   retourner n * n * n\nfin",
+      "explication_simple": "cube(3) renvoie 27. Le type après les deux-points (Entier) est celui de la valeur renvoyée.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-sous-programmes-td-02",
+      "titre": "Fonction : le maximum de deux entiers",
+      "source": "Exercices de Travaux Dirigés 2",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une fonction qui reçoit deux entiers et renvoie le plus grand.",
+      "indices": [
+        "Compare a et b avec un Si.",
+        "Tu peux écrire retourner dans les deux branches du Si."
+      ],
+      "solution": "fonction maximum2(a, b : Entier) : Entier\ndebut\n   Si a > b Alors\n      retourner a\n   Sinon\n      retourner b\n   Finsi\nfin",
+      "explication_simple": "maximum2(4, 9) renvoie 9. Si a et b sont égaux, on renvoie b, qui vaut a : le résultat est correct.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-sous-programmes-td-03",
+      "titre": "Fonction : factorielle",
+      "source": "Exercices de Travaux Dirigés 2",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une fonction factorielle qui renvoie n! (par exemple 1! = 1 et 5! = 120).",
+      "indices": [
+        "Démarre un résultat à 1.",
+        "Multiplie-le par chaque entier de 1 à n."
+      ],
+      "solution": "fonction factorielle(n : Entier) : Entier\nVariables i, r : Entier\ndebut\n   r ← 1\n   Pour i ← 1 à n faire\n      r ← r * i\n   Fpour\n   retourner r\nfin",
+      "explication_simple": "Les variables i et r sont locales : elles n'existent que dans la fonction.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-sous-programmes-td-04",
+      "titre": "Partie entière d'un nombre positif",
+      "source": "Exercices de Travaux Dirigés 2",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une fonction qui renvoie la partie entière d'un nombre positif (la partie entière de 7,8 est 7).",
+      "indices": [
+        "Compte combien d'entiers « tiennent » dans x.",
+        "Avance un compteur n tant que n + 1 reste inférieur ou égal à x."
+      ],
+      "solution": "fonction partieEntiere(x : Réel) : Entier\nVariable n : Entier\ndebut\n   n ← 0\n   Tant que (n + 1) <= x faire\n      n ← n + 1\n   Ftantque\n   retourner n\nfin",
+      "explication_simple": "Pour x = 7,8 : n monte à 7 ; (7+1) = 8 n'est pas ≤ 7,8, la boucle s'arrête. Le résultat est un entier, d'où le type Entier pour la fonction.",
+      "attention": "Beaucoup de langages offrent déjà une fonction toute faite pour la partie entière. Ici, l'exercice demande de la reconstruire.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-sous-programmes-td-05",
+      "titre": "Procédure : table de multiplication",
+      "source": "Exercices de Travaux Dirigés 2",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une procédure qui affiche la table de multiplication d'un entier positif x (de 1 à 10).",
+      "indices": [
+        "Une procédure ne renvoie rien : elle affiche directement.",
+        "Une boucle Pour de 1 à 10 suffit."
+      ],
+      "solution": "procédure tableMultiplication( E x : Entier )\nVariable i : Entier\ndebut\n   Pour i ← 1 à 10 faire\n      Ecrire(x, \" × \", i, \" = \", x * i)\n   Fpour\nfin",
+      "explication_simple": "x est passé en entrée (E) : la procédure le reçoit mais ne le modifie pas. Elle n'a pas de retourner, car elle ne renvoie aucune valeur.",
+      "attention": "L'exercice 3 de la fiche est incomplet dans le support (« Écrire une procédure qui permet… ») : il n'a pas été repris ici.",
+      "type": "exercice"
+    }
+  ]
+}

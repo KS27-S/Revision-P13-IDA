@@ -1,0 +1,24 @@
+{
+  "id": "javascript",
+  "titre": "JavaScript",
+  "modules": [
+    {
+      "id": "langage-javascript",
+      "titre": "Le langage JavaScript",
+      "quiz": "langage-javascript.quiz.json",
+      "td": "langage-javascript.td.json"
+    },
+    {
+      "id": "objets-tableaux-fonctions",
+      "titre": "Les objets, les tableaux et les fonctions",
+      "quiz": "objets-tableaux-fonctions.quiz.json",
+      "td": "objets-tableaux-fonctions.td.json"
+    },
+    {
+      "id": "javascript-navigateurs",
+      "titre": "JavaScript et les navigateurs : DOM, CSS et événements",
+      "quiz": "javascript-navigateurs.quiz.json",
+      "td": null
+    }
+  ]
+}

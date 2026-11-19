@@ -1,0 +1,18 @@
+{
+  "id": "initiation-programmation",
+  "titre": "Initiation à la programmation",
+  "modules": [
+    {
+      "id": "decouverte-scratch",
+      "titre": "À la découverte de la programmation interactive (Scratch)",
+      "quiz": "decouverte-scratch.quiz.json",
+      "td": "decouverte-scratch.td.json"
+    },
+    {
+      "id": "programmer-avec-scratch",
+      "titre": "Programmer avec Scratch 2 : algorithmes, variables, tests et boucles",
+      "quiz": "programmer-avec-scratch.quiz.json",
+      "td": "programmer-avec-scratch.td.json"
+    }
+  ]
+}

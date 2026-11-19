@@ -1,0 +1,53 @@
+{
+  "matiere": "javascript",
+  "module": "langage-javascript",
+  "titre": "TD – Le langage JavaScript",
+  "exercices": [
+    {
+      "id": "js-s1-td-01",
+      "type": "exercice",
+      "titre": "Ma première boîte de dialogue (balise script, puis fichier externe)",
+      "source": "td 1.pdf – exercice 1.1",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe Visual Studio Code. Crée exo111.html qui affiche la boîte de dialogue « Je viens de débuter le cours de JS » avec la balise script. Refais-le avec exo112.html et exo112.js.",
+      "indices": [
+        "alert() affiche une boîte de dialogue.",
+        "Pour le fichier externe : <script src=\"exo112.js\"></script>."
+      ],
+      "solution": "<!-- exo111.html -->\n<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>Exercice 1.1</title>\n<script type=\"text/javascript\">\n  alert(\"Je viens de débuter le cours de JS\");\n</script>\n</head>\n<body>\n</body>\n</html>\n\n<!-- exo112.html -->\n<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n<meta charset=\"UTF-8\">\n<title>Exercice 1.1 (fichier externe)</title>\n<script type=\"text/javascript\" src=\"exo112.js\"></script>\n</head>\n<body>\n</body>\n</html>\n\n// exo112.js\nalert(\"Je viens de débuter le cours de JS\");",
+      "explication_simple": "Dans le premier cas, le code est écrit entre les balises <script>. Dans le second, il est dans un fichier .js séparé, relié par l'attribut src.",
+      "attention": "Si la boîte de dialogue ne s'affiche pas avec le fichier externe, vérifie que exo112.js est dans le même dossier que exo112.html."
+    },
+    {
+      "id": "js-s1-td-02",
+      "type": "exercice",
+      "titre": "Découvrir la console du navigateur",
+      "source": "td 1.pdf – exercice 1.3",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Ouvre la console de développement de Chrome et essaie quelques instructions.",
+      "indices": [
+        "Raccourci : Ctrl+Shift+J.",
+        "Ou : clic droit sur la page > Inspecter > onglet Console."
+      ],
+      "solution": "1. Ouvrir Chrome, puis faire Ctrl+Shift+J (ou clic droit > Inspecter > Console).\n2. Taper quelques instructions et appuyer sur Entrée après chacune :\n   52 % 19            // 14\n   \"Bonjour \" + \"JS\"  // \"Bonjour JS\"\n   var age = 18\n   console.log(\"Vous avez \" + age + \" ans\")\n   parseInt(\"abc\")    // NaN\n3. Observer l'auto-complétion en tapant « console. ».",
+      "explication_simple": "La console permet d'entrer des instructions à la volée, de consulter les données en mémoire et d'explorer les fonctions et variables disponibles.",
+      "attention": "L'énoncé de l'exercice 1.3 ne contient aucune consigne, juste une présentation de la console : les essais proposés ici sont à titre d'exemple. Le document d'origine porte aussi une note « Proposer ici quelques exercices types de TD » restée dans le texte."
+    },
+    {
+      "id": "js-s1-td-03",
+      "type": "exercice",
+      "titre": "Demander un nombre et répéter un affichage",
+      "source": "td 1.pdf – exercice 1.4",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Avec prompt(), demande un nombre entre 1 et 10. S'il n'est pas dans cet intervalle, affiche un message avec alert(). Sinon, fais une boucle de 1 au nombre saisi et affiche dans la console « affichage no 1 : ceci est un exercice » (en changeant le numéro). À la fin, affiche « Affichage terminé » dans une boîte de dialogue.",
+      "indices": [
+        "prompt() renvoie du texte : convertis-le avec parseInt().",
+        "Vérifie le nombre avec if et les opérateurs < et >.",
+        "Boucle for de 1 à n."
+      ],
+      "solution": "var n = parseInt(prompt(\"Entrez un nombre compris entre 1 et 10 :\"));\nif (isNaN(n) || n < 1 || n > 10) {\n  alert(\"Nombre invalide : il doit être compris entre 1 et 10.\");\n} else {\n  for (var i = 1; i <= n; i++) {\n    console.log(\"affichage no \" + i + \" : ceci est un exercice\");\n  }\n  alert(\"Affichage terminé\");\n}",
+      "explication_simple": "On convertit la réponse en nombre, on vérifie qu'elle est bien comprise entre 1 et 10, puis on répète n fois l'affichage avec une boucle for. Le message final est affiché après la boucle.",
+      "attention": "isNaN(n) traite le cas où l'utilisateur tape du texte (parseInt renvoie alors NaN)."
+    }
+  ]
+}

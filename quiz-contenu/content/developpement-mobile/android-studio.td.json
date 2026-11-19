@@ -1,0 +1,51 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "android-studio",
+  "titre": "TD – Prise en main d'Android Studio",
+  "exercices": [
+    {
+      "id": "devmob-studio-td-01",
+      "type": "exercice",
+      "titre": "Android Studio : questions de base",
+      "source": "Travaux Dirigés 2.pdf",
+      "statut_corrige": "corrigé rédigé à partir du cours (les points marqués « hors cours » viennent de connaissances générales : à valider)",
+      "enonce_simple": "a) Quelle différence entre Android Studio et Eclipse ?\nb) Quelles conditions faut-il remplir pour installer Android Studio ?\nc) Peut-on l'installer sur Linux ou sur Mac ?\nd) À quoi sert le SDK Manager ?",
+      "indices": [
+        "a) Souviens-toi de ce qui s'est passé en décembre 2014.",
+        "b) Pense à ce qu'il faut installer avant (Java) et à l'ordre des étapes.",
+        "d) Il s'occupe des versions d'Android et des outils installés."
+      ],
+      "solution": "a) Eclipse (avec son module ADT) a pris sa retraite en décembre 2014 pour laisser place à Android Studio, un environnement plus complet qui embarque l'IDE, le SDK Android et un émulateur.\nb) Installer le JDK (après avoir désinstallé d'anciennes versions), puis télécharger et installer Android Studio, et enfin le configurer (SDK Manager : mises à jour, System Image pour l'émulateur, SDK Tools).\nc) Oui (hors cours) : Android Studio existe pour Windows, macOS et Linux.\nd) Le SDK Manager affiche la version du SDK installée et ses mises à jour, la version d'API et l'OS visé. On y installe les mises à jour, au moins un System Image pour l'émulateur, et les SDK Tools (Build Tools, Platform Tools, Support Library, Google Repository, Google Play Services…).",
+      "explication_simple": "Android Studio, c'est « tout-en-un » : l'éditeur, les outils Android (SDK) et un téléphone virtuel pour tester. Le SDK Manager est le magasin d'outils où l'on installe ce dont on a besoin."
+    },
+    {
+      "id": "devmob-studio-td-02",
+      "type": "exercice",
+      "titre": "Structure d'un projet Android",
+      "source": "Travaux Dirigés 2.pdf",
+      "statut_corrige": "corrigé rédigé à partir du cours",
+      "enonce_simple": "Résume la structure d'un projet Android sous Android Studio. Quels sont les sous-dossiers de res ? Où est le code Java ? Que contient drawable ?",
+      "indices": [
+        "Pense aux grandes parties : manifests, java, res, Gradle.",
+        "res = tout ce qui touche à l'interface."
+      ],
+      "solution": "Structure : manifests (AndroidManifest.xml, obligatoire), java (les classes, dont MainActivity), res (ressources), Gradle Scripts (build.gradle du projet et du module).\nSous-dossiers de res : layout, drawable (plusieurs dossiers selon la résolution), menu, mipmap, values.\nCode Java : dans le dossier java, sous le dossier du package.\nDrawable : tout ce qui peut être dessiné à l'écran (images, de préférence PNG, formes, animations, transitions), avec des dossiers ldpi, mdpi, hdpi, xhdpi, xxhdpi pour s'adapter à la résolution.",
+      "explication_simple": "Une règle simple : le comportement est dans java, l'apparence est dans res, l'identité de l'application (manifeste) et la fabrication (Gradle) sont à part."
+    },
+    {
+      "id": "devmob-studio-td-03",
+      "type": "exercice",
+      "titre": "Créer un projet Android avec Android Studio",
+      "source": "Travaux Dirigés 2.pdf",
+      "statut_corrige": "corrigé rédigé à partir du cours",
+      "enonce_simple": "Quelles sont les étapes pour créer un projet Android avec Android Studio comme IDE ?",
+      "indices": [
+        "Quick Start > Start a new Android Studio Project.",
+        "Application name, Company domain, Package name.",
+        "Quel type d'activité choisir au début ?"
+      ],
+      "solution": "1. Dans Quick Start, choisir « Start a new Android Studio Project ».\n2. Renseigner Application name, Company domain et Package name, puis Next.\n3. Choisir le type d'activité (Empty Activity), puis Next.\n4. Renseigner le nom de l'activité et de son layout (fragments facultatifs).\n5. Cliquer sur Finish : le projet est créé.\n6. Créer un AVD (AVD Manager > Create Virtual Device), puis lancer l'application avec Run.",
+      "explication_simple": "On nomme l'application, on choisit un écran de départ (activité vide), on laisse Android Studio créer les fichiers, puis on teste sur un téléphone virtuel."
+    }
+  ]
+}

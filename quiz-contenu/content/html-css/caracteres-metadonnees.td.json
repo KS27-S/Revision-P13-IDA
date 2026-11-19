@@ -1,0 +1,79 @@
+{
+  "matiere": "html-css",
+  "module": "caracteres-metadonnees",
+  "titre": "TD – Jeux de caractères, symboles et métadonnées",
+  "exercices": [
+    {
+      "id": "htmlcss-s3-td-01",
+      "type": "exercice",
+      "titre": "Afficher des caractères réservés avec des entités",
+      "source": "TP 03 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Reproduis la page qui explique les entités, en affichant réellement les signes <, > et le texte « &entity_name; ».",
+      "indices": [
+        "Pour < écris &lt; ; pour > écris &gt; ; pour & écris &amp;.",
+        "Un <pre> garde les sauts de ligne."
+      ],
+      "solution": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Entités</title>\n</head>\n<body>\n<h1>Liste des universités du Sénégal</h1>\n<pre>\nCertains caractères sont réservés en HTML. Il n'est pas possible d'utiliser le signe inférieur (&lt;) ou supérieur (&gt;) dans votre texte, parce que le navigateur les prendra pour des balises.\n\nSyntaxe d'une entité : &amp;entity_name; ou &amp;#entity_number;\n\nExemple : pour afficher le signe inférieur (&lt;) il faut écrire : &amp;lt; ou &amp;#60;\n</pre>\n</body>\n</html>",
+      "explication_simple": "Si tu écris < directement, le navigateur croit commencer une balise. Avec &lt; il affiche le signe. Et pour afficher « &lt; » tel quel, il faut écrire &amp;lt;."
+    },
+    {
+      "id": "htmlcss-s3-td-02",
+      "type": "exercice",
+      "titre": "Tableau des symboles monétaires",
+      "source": "TP 03 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée un document en UTF-8 avec le tableau des devises (CFA, livre, yen, yuan, euro, dollar) et leurs symboles.",
+      "indices": [
+        "Place <meta charset=\"UTF-8\"> dans le head.",
+        "£ = &pound;, ¥ = &yen;, € = &euro;, ¢ = &cent;."
+      ],
+      "solution": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Symboles monétaires</title>\n<style>\ntable { border-collapse: collapse; }\nth, td { border: 1px solid #000; padding: 4px; }\nth { background-color: grey; color: white; }\ntr:nth-child(even) td { background-color: #eee; }\n</style>\n</head>\n<body>\n<table>\n<tr><th>Pays/Région</th><th>Devise</th><th>Symbole</th></tr>\n<tr><td>Zone franc CFA</td><td>CFA</td><td>XOF</td></tr>\n<tr><td>Royaume-Uni</td><td>Livre sterling</td><td>&pound; (livre)</td></tr>\n<tr><td>Japon</td><td>Yen japonais</td><td>&yen;</td></tr>\n<tr><td>Chine</td><td>Yuan chinois (renminbi)</td><td>&yen;</td></tr>\n<tr><td>Zone euro</td><td>Euro</td><td>&euro; (Euro), &cent; (centime d'euro)</td></tr>\n<tr><td>États-Unis</td><td>Dollar</td><td>$ (Dollar), &cent; (cent)</td></tr>\n</table>\n</body>\n</html>",
+      "explication_simple": "Avec UTF-8, les accents s'affichent correctement. Les entités permettent d'écrire les symboles sans les taper au clavier."
+    },
+    {
+      "id": "htmlcss-s3-td-03",
+      "type": "exercice",
+      "titre": "Écrire des formules mathématiques",
+      "source": "TP 03 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Avec UTF-8 et les bonnes balises, écris des formules : x = (−b ± √(b² − 4ac)) / 2a ; a² + 2ab + b² = (a+b)² ; S1 + … + Sn = ΣSi.",
+      "indices": [
+        "Exposant : <sup>. Indice : <sub>.",
+        "√ = &radic;, ± = &plusmn;, − = &minus;, Σ = &sum;, ⋯ = &ctdot;."
+      ],
+      "solution": "<meta charset=\"UTF-8\">\n…\n<p>x = (&minus;b &plusmn; &radic;(b<sup>2</sup> &minus; 4ac)) / 2a</p>\n<p>a<sup>2</sup> + 2ab + b<sup>2</sup> = (a+b)<sup>2</sup></p>\n<p>S<sub>1</sub> + &ctdot; + S<sub>n</sub> = &sum; S<sub>i</sub></p>",
+      "explication_simple": "Les entités fournissent les symboles ; <sup> et <sub> placent les exposants et les indices.",
+      "attention": "La formule exacte de l'énoncé n'est pas lisible dans le PDF : ces formules sont des exemples typiques de la même technique."
+    },
+    {
+      "id": "htmlcss-s3-td-04",
+      "type": "exercice",
+      "titre": "Les balises de métadonnées et le viewport",
+      "source": "TP 03 – exercice 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Dans le code du TP : quelles balises décrivent des métadonnées ? Y en a-t-il d'autres possibles ? Comment adapter la page à l'écran de l'appareil ?",
+      "indices": [
+        "Elles sont toutes dans <head>.",
+        "Il existe une meta spéciale pour la fenêtre : viewport."
+      ],
+      "solution": "1) Dans le code : <title> et <meta charset=\"UTF-8\">.\n2) Autres balises de métadonnées : <style> (styles de la page), <link> (lien vers une feuille de style externe), <script> (scripts), <base> (adresse de base des liens), et d'autres <meta> (description, keywords, author, refresh).\n3) Pour adapter la page à l'écran, ajouter dans le head :\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "explication_simple": "Le viewport indique au navigateur de mobile d'utiliser la largeur réelle de l'écran au lieu de dessiner la page comme sur un grand écran puis de la rétrécir."
+    },
+    {
+      "id": "htmlcss-s3-td-05",
+      "type": "exercice",
+      "titre": "Encoder des URL",
+      "source": "TP 03 – exercice 5",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Encode ces deux adresses : 1) http://www.uvs.sn/index.php?q=kébémer   2) http://www.uvs.sn/fichier 12.html",
+      "indices": [
+        "é devient %E9 dans la table du cours.",
+        "L'espace devient %20."
+      ],
+      "solution": "1) http://www.uvs.sn/index.php?q=k%E9b%E9mer\n2) http://www.uvs.sn/fichier%2012.html",
+      "explication_simple": "Seuls les caractères ASCII passent sur Internet : les autres sont remplacés par « % » suivi de deux chiffres hexadécimaux.",
+      "attention": "Les navigateurs actuels encodent « é » en UTF-8 (%C3%A9). Le cours utilise la table %E9."
+    }
+  ]
+}

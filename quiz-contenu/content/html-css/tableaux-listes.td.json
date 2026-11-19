@@ -1,0 +1,68 @@
+{
+  "matiere": "html-css",
+  "module": "tableaux-listes",
+  "titre": "TD – Les tableaux et les listes",
+  "exercices": [
+    {
+      "id": "htmlcss-s7-td-01",
+      "type": "exercice",
+      "titre": "Tableau des universités",
+      "source": "TP 07 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise un tableau de 3 lignes : nom de l'université, image, liste de ses facultés (numérotée ou en lettres) et lien vers son site. Chaque ligne a sa couleur de fond.",
+      "indices": [
+        "<tr> pour chaque ligne, <td> pour chaque cellule.",
+        "Une liste <ol> peut être dans une cellule."
+      ],
+      "solution": "<table border=\"1\" style=\"border-collapse:collapse;\">\n<tr style=\"background-color:lightgrey;\">\n<td><b>UGB</b></td>\n<td><img src=\"ugb.jpg\" alt=\"UGB\" width=\"90\"></td>\n<td><ol><li>UFR SAT</li><li>UFR SEG</li><li>UFR LSH</li></ol></td>\n<td><a href=\"http://www.ugb.sn\">http://www.ugb.sn</a></td>\n</tr>\n<tr style=\"background-color:yellow;\">\n<td><b>UCAD</b></td>\n<td><img src=\"ucad.jpg\" alt=\"UCAD\" width=\"90\"></td>\n<td><ol><li>FAC SCIENCE</li><li>FAC LETTRES</li><li>FAC MEDECINE</li></ol></td>\n<td><a href=\"http://www.ucad.sn\">http://www.ucad.sn</a></td>\n</tr>\n<tr style=\"background-color:mistyrose;\">\n<td><b>UADB</b></td>\n<td><img src=\"uadb.jpg\" alt=\"UADB\" width=\"90\"></td>\n<td><ol type=\"a\"><li>UFR SET</li><li>UFR SANTE</li><li>UFR AGRO</li></ol></td>\n<td><a href=\"http://www.uadb.sn\">http://www.uadb.sn</a></td>\n</tr>\n</table>",
+      "explication_simple": "Une cellule peut contenir n'importe quoi : texte, image, liste, lien. type=\"a\" donne des lettres au lieu des chiffres.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s7-td-02",
+      "type": "exercice",
+      "titre": "Listes imbriquées",
+      "source": "TP 07 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise une liste numérotée qui commence à 3 : « UFR SAT » (avec trois sections en lettres sur fond vert), « UFR SEG », « UFR SJP », « UFR LSH ».",
+      "indices": [
+        "start=\"3\" pour commencer à 3.",
+        "Une liste peut être placée à l'intérieur d'un <li>."
+      ],
+      "solution": "<ol start=\"3\">\n<li>UFR SAT\n<ol type=\"a\" style=\"background-color:green;\">\n<li>Section Maths</li>\n<li>Section Info</li>\n<li>Section Physique</li>\n</ol>\n</li>\n<li>UFR SEG</li>\n<li>UFR SJP</li>\n<li>UFR LSH</li>\n</ol>",
+      "explication_simple": "La liste en lettres est dans le <li> de « UFR SAT ». Résultat : 3. UFR SAT (a, b, c), 4. UFR SEG, 5. UFR SJP, 6. UFR LSH.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s7-td-03",
+      "type": "exercice",
+      "titre": "Fusionner des cellules : colspan et rowspan",
+      "source": "TP 07 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Les schémas du TP sont des tableaux avec des cellules fusionnées. Montre comment fusionner des colonnes et des lignes.",
+      "indices": [
+        "colspan fusionne vers la droite, rowspan vers le bas.",
+        "Compte les colonnes de chaque ligne."
+      ],
+      "solution": "<table border=\"1\" style=\"border-collapse:collapse;\">\n<tr><td colspan=\"2\">A (2 colonnes)</td><td>B</td></tr>\n<tr><td>C</td><td rowspan=\"2\">D (2 lignes)</td><td>E</td></tr>\n<tr><td>F</td><td>G</td></tr>\n</table>",
+      "explication_simple": "Le tableau a 3 colonnes. Ligne 1 : A prend 2 colonnes + B. Ligne 2 : C, D (qui continue sur la ligne 3) et E. Ligne 3 : F et G, car D occupe déjà la colonne du milieu.",
+      "attention": "Les 5 schémas de l'énoncé se construisent de la même manière : dessine la grille, repère les fusions, puis écris les <td> avec colspan/rowspan."
+    },
+    {
+      "id": "htmlcss-s7-td-04",
+      "type": "exercice",
+      "titre": "Un CV mis en page avec des tableaux",
+      "source": "TP 07 – exercice 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise un CV : en haut, une zone identité (nom, statut, adresse, email, tél) et une photo ; puis les rubriques Formation, Expériences professionnelles et Connaissances informatiques. Cache les bordures à la fin.",
+      "indices": [
+        "Un tableau pour l'en-tête, un autre pour les rubriques.",
+        "colspan=\"2\" pour les titres de rubriques.",
+        "Pour cacher les bordures, mets border:0."
+      ],
+      "solution": "<table style=\"width:100%; border:0;\">\n<tr>\n<td>Prénoms Nom<br>Statut<br>Adresse<br>Email<br>Tel</td>\n<td style=\"text-align:right;\"><img src=\"photo.jpg\" alt=\"Photo\" width=\"90\"></td>\n</tr>\n<tr><td colspan=\"2\" style=\"text-align:center; font-size:150%;\">Ingénieur en télécom (en cours)</td></tr>\n</table>\n\n<table style=\"width:100%; border:0;\">\n<tr><th colspan=\"2\" style=\"background-color:#fbd5b5;\">Formation</th></tr>\n<tr><td><b>2016-2017</b></td><td>Deuxième année de Licence Professionnelle en Réseaux Télécom</td></tr>\n<tr><td><b>2015-2016</b></td><td>Première année de Licence Professionnelle en Réseaux Télécom</td></tr>\n<tr><th colspan=\"2\" style=\"background-color:#fbd5b5;\">Expériences professionnelles</th></tr>\n<tr><td><b>01/07/16 au 30/08/16</b></td><td>Stage dans le domaine des réseaux</td></tr>\n<tr><th colspan=\"2\" style=\"background-color:#fbd5b5;\">Connaissances informatiques</th></tr>\n<tr><td colspan=\"2\"><b>Systèmes d'exploitation :</b> Windows, Linux</td></tr>\n</table>",
+      "explication_simple": "En phase de test, on peut mettre border=\"1\" pour voir la grille ; à la fin on la retire. (En pratique, on préfère div + CSS pour la mise en page.)",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    }
+  ]
+}

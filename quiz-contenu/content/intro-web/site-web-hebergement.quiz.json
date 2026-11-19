@@ -1,0 +1,270 @@
+{
+  "matiere": "intro-web",
+  "module": "site-web-hebergement",
+  "titre": "Site web et hébergement",
+  "sources": [
+    "Séquence 3_Site Web et hébergement.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un document HTML ?",
+      "choix": [
+        "Une image au format JPG",
+        "Un fichier d'extension .htm ou .html contenant du texte brut et des balises HTML",
+        "Une base de données",
+        "Un programme compilé"
+      ],
+      "reponse": 1,
+      "explication": "C'est la base d'un site web.",
+      "id": "web-s3-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un navigateur web ?",
+      "choix": [
+        "Un logiciel conçu pour consulter et afficher le World Wide Web (au minimum un client HTTP)",
+        "Un serveur de fichiers",
+        "Un langage de programmation",
+        "Un moteur de recherche"
+      ],
+      "reponse": 0,
+      "explication": "Il existe des navigateurs pour ordinateurs, tablettes et téléphones.",
+      "id": "web-s3-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'une page web ?",
+      "choix": [
+        "Un fichier JPG",
+        "Un serveur",
+        "Un nom de domaine",
+        "Le format obtenu après l'affichage d'un document HTML par un navigateur"
+      ],
+      "reponse": 3,
+      "explication": "Le navigateur n'affiche pas les balises : il les utilise pour interpréter le contenu.",
+      "id": "web-s3-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un site web ?",
+      "choix": [
+        "Un seul fichier d'image",
+        "Un câble réseau",
+        "Un ensemble de fichiers HTML (ou générant du HTML) stocké dans un serveur web",
+        "Un logiciel de dessin"
+      ],
+      "reponse": 2,
+      "explication": "On l'appelle aussi site internet, ou « page perso » pour un site personnel.",
+      "id": "web-s3-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un site web statique ?",
+      "choix": [
+        "Un site dont les pages sont générées à chaque demande",
+        "Un site dont chaque page est créée en HTML et servie telle quelle",
+        "Un site qui ne contient aucune image",
+        "Un site qui ne peut pas être hébergé"
+      ],
+      "reponse": 1,
+      "explication": "La page est stockée toute prête sur le serveur.",
+      "id": "web-s3-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un site web dynamique ?",
+      "choix": [
+        "Un site dont les pages sont générées dynamiquement à la demande",
+        "Un site avec beaucoup d'images animées",
+        "Un site sans HTML",
+        "Un site hébergé gratuitement"
+      ],
+      "reponse": 0,
+      "explication": "Le contenu est obtenu, par exemple, en combinant un langage de script et une base de données.",
+      "id": "web-s3-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un hébergeur ?",
+      "choix": [
+        "Un logiciel pour écrire du HTML",
+        "Un navigateur",
+        "Un langage de script",
+        "Une société qui met à disposition un serveur web connecté en permanence à Internet"
+      ],
+      "reponse": 3,
+      "explication": "Il existe deux principales catégories : gratuits et professionnels.",
+      "id": "web-s3-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels navigateurs le cours cite-t-il comme les plus utilisés ?",
+      "choix": [
+        "Photoshop, Gimp, Fireworks",
+        "Apache, Nginx, IIS",
+        "Google Chrome, Mozilla Firefox, Internet Explorer/Edge, Safari, Opera",
+        "Filezilla, CuteFTP, Dreamweaver"
+      ],
+      "reponse": 2,
+      "explication": "Liste de 2018 : Internet Explorer n'est plus supporté aujourd'hui.",
+      "id": "web-s3-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont des limites des sites statiques ?",
+      "choix": [
+        "Ils ne peuvent pas contenir de texte",
+        "Maintenance difficile, impossibilité de personnaliser une page selon le visiteur ou de la créer à partir d'une base de données",
+        "Ils ne s'affichent que sur mobile",
+        "Ils sont toujours payants"
+      ],
+      "reponse": 1,
+      "explication": "Il faut modifier manuellement chaque page, par exemple pour changer un menu commun.",
+      "id": "web-s3-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment obtient-on un site dynamique ?",
+      "choix": [
+        "En combinant un langage de scripts ou de programmation côté serveur et une base de données",
+        "En ajoutant seulement des images GIF",
+        "En utilisant uniquement HTML",
+        "En changeant de navigateur"
+      ],
+      "reponse": 0,
+      "explication": "Solutions côté serveur citées : CGI, ASP, PHP…",
+      "id": "web-s3-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment les hébergeurs gratuits gagnent-ils de l'argent, selon le cours ?",
+      "choix": [
+        "En vendant votre code",
+        "En louant du matériel",
+        "En faisant payer chaque visiteur",
+        "Avec de la publicité sur votre site ou grâce au trafic sur leur propre site"
+      ],
+      "reponse": 3,
+      "explication": "Exemples cités en 2018 : hebergratuit.com, 000webhost.com.",
+      "id": "web-s3-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que garantissent les hébergeurs professionnels ?",
+      "choix": [
+        "Un site sans aucun coût",
+        "Un nombre illimité de visiteurs gratuits",
+        "Un service de qualité (bande passante) et de sécurité (données, peu de pannes)",
+        "Un site qui ne nécessite aucun fichier"
+      ],
+      "reponse": 2,
+      "explication": "Ils sont presque indispensables au-delà de 1000 visiteurs par jour et permettent l'achat d'un nom de domaine.",
+      "id": "web-s3-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans l'image d'un navigateur du cours, que contient la zone n°5 ?",
+      "choix": [
+        "La barre d'adresse",
+        "La zone d'affichage des pages web",
+        "La barre des états",
+        "La barre de menus"
+      ],
+      "reponse": 1,
+      "explication": "Parties : 1 boutons de navigation, 2 barre d'adresse, 3 barre de menus, 4 barre personnelle, 5 zone d'affichage, 6 barre des états.",
+      "id": "web-s3-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels modules composent un navigateur, selon le cours ?",
+      "choix": [
+        "Interpréteur d'URL, interpréteur HTML/XHTML, interpréteur de script, environnement d'exécution d'applications, barre d'outils",
+        "Un serveur HTTP, un serveur FTP, un serveur Mail",
+        "Un compilateur, un débogueur, un éditeur",
+        "Un routeur, un modem, un hub"
+      ],
+      "reponse": 0,
+      "explication": "Chaque module a ses vulnérabilités propres.",
+      "id": "web-s3-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Un site doit afficher à chaque visiteur une page personnalisée avec son nom. Quel type de site faut-il ?",
+      "choix": [
+        "Un site statique",
+        "Un document HTML sans balises",
+        "Aucun : c'est impossible sur le web",
+        "Un site dynamique"
+      ],
+      "reponse": 3,
+      "explication": "Un site statique ne peut pas renvoyer une page personnalisée selon le visiteur.",
+      "id": "web-s3-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi la maintenance d'un site statique de dizaines de pages est-elle difficile ?",
+      "choix": [
+        "Parce que les pages sont chiffrées",
+        "Parce que HTML ne permet pas de modifier un fichier",
+        "Parce qu'il faut modifier manuellement chaque page, par exemple pour un menu commun",
+        "Parce que le serveur interdit les mises à jour"
+      ],
+      "reponse": 2,
+      "explication": "C'est l'une des raisons qui ont mené aux solutions de génération de pages côté serveur.",
+      "id": "web-s3-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quelles attaques l'interpréteur d'URL et l'interpréteur de script sont-ils respectivement vulnérables ?",
+      "choix": [
+        "Boucles sans fin ; hameçonnage",
+        "Hameçonnage ; boucles sans fin et exploitation de bugs",
+        "Piratage de câble ; coupure de courant",
+        "Virus de boot ; défragmentation"
+      ],
+      "reponse": 1,
+      "explication": "Chaque module du navigateur a ses vulnérabilités propres.",
+      "id": "web-s3-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait un navigateur des balises d'un document HTML ?",
+      "choix": [
+        "Il ne les affiche pas : il les utilise pour interpréter le contenu de la page",
+        "Il les affiche telles quelles",
+        "Il les envoie au serveur",
+        "Il les convertit en image"
+      ],
+      "reponse": 0,
+      "explication": "Le but du navigateur est de lire le HTML et de l'afficher dans un autre format : la page web.",
+      "id": "web-s3-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Une boutique en ligne affiche son catalogue depuis une base de données. Quel type de site est-ce ?",
+      "choix": [
+        "Un site statique",
+        "Un site hors ligne",
+        "Un intranet",
+        "Un site dynamique"
+      ],
+      "reponse": 3,
+      "explication": "Les pages sont générées à la demande à partir de la base de données.",
+      "id": "web-s3-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Après la création d'un compte chez un hébergeur gratuit, quelles informations faut-il conserver ?",
+      "choix": [
+        "Uniquement le nom du navigateur",
+        "Rien : l'hébergeur s'occupe de tout",
+        "Les paramètres envoyés par e-mail (serveur, identifiant, mot de passe), utiles pour mettre le site en ligne",
+        "Seulement le logo de l'hébergeur"
+      ],
+      "reponse": 2,
+      "explication": "Ces paramètres serviront dans l'exercice de transfert avec un client FTP.",
+      "id": "web-s3-20"
+    }
+  ]
+}

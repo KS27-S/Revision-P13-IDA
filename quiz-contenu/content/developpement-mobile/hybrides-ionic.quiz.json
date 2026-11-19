@@ -1,0 +1,270 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "hybrides-ionic",
+  "titre": "Les applications hybrides et Ionic",
+  "sources": [
+    "sequence 4.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Pourquoi la tendance au « tout natif » pose-t-elle problème ?",
+      "choix": [
+        "Elle interdit l'accès à la caméra",
+        "Elle peut doubler voire tripler les ressources nécessaires à un projet, maintenance comprise",
+        "Elle réduit la performance",
+        "Elle impose d'utiliser un navigateur"
+      ],
+      "reponse": 1,
+      "explication": "Le marché est dominé par Google et Apple mais reste fragmenté (Windows Phone, BlackBerry OS, Firefox OS, Tizen…), d'où l'intérêt des solutions multiplateformes.",
+      "id": "devmob-ionic-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel trio de langages web PhoneGap (Apache Cordova) propose-t-il comme source des applications ?",
+      "choix": [
+        "HTML5, CSS3 et JavaScript",
+        "Java, Kotlin et XML",
+        "C#, F# et XAML",
+        "Objective C, Swift et C"
+      ],
+      "reponse": 0,
+      "explication": "PhoneGap a été l'un des pionniers du développement mobile multiplateforme.",
+      "id": "devmob-ionic-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'Ionic ?",
+      "choix": [
+        "Un système d'exploitation mobile",
+        "Un émulateur Android",
+        "Un langage de programmation",
+        "Un framework pour créer des applications hybrides en HTML5, CSS et JavaScript"
+      ],
+      "reponse": 3,
+      "explication": "Ionic est l'une des solutions les plus populaires basées sur Cordova.",
+      "id": "devmob-ionic-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Sur quelles technologies Ionic est-il basé ?",
+      "choix": [
+        "Xamarin et Mono",
+        "Java et Gradle",
+        "AngularJS et Apache Cordova",
+        "Swift et Xcode"
+      ],
+      "reponse": 2,
+      "explication": "Ionic = AngularJS + Cordova. AngularJS sert à la partie applicative web ; Cordova construit les applications natives.",
+      "id": "devmob-ionic-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage Xamarin utilise-t-il pour développer des applications multiplateformes ?",
+      "choix": [
+        "Java",
+        "C#",
+        "Objective C",
+        "JavaScript"
+      ],
+      "reponse": 1,
+      "explication": "Xamarin a été fondée en 2011 par l'équipe du projet open source Mono.",
+      "id": "devmob-ionic-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Sur quelle plateforme Ionic s'appuie-t-il, à installer en premier ?",
+      "choix": [
+        "Node.js",
+        "Eclipse",
+        "Visual Basic",
+        "Photoshop"
+      ],
+      "reponse": 0,
+      "explication": "Node.js est indispensable ; ensuite on installe Cordova, puis Ionic, avec npm.",
+      "id": "devmob-ionic-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle commande crée un projet Ionic nommé uvsApp avec le modèle vide ?",
+      "choix": [
+        "ionic run uvsApp",
+        "ionic platform add uvsApp",
+        "npm install -g uvsApp",
+        "ionic start uvsApp blank"
+      ],
+      "reponse": 3,
+      "explication": "Trois modèles sont présentés : blank, tabs et sidemenu.",
+      "id": "devmob-ionic-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que désigne le terme « hybride » dans l'usage courant ?",
+      "choix": [
+        "Uniquement les applications faites avec PhoneGap",
+        "Uniquement les applications natives en Java",
+        "Toute application développée avec une solution multiplateforme, même sans l'approche hybride",
+        "Uniquement les sites web"
+      ],
+      "reponse": 2,
+      "explication": "Le terme vient de l'approche de PhoneGap (hybridation web/natif) mais s'est démocratisé. Une application hybride n'est donc pas forcément développée avec « l'approche hybride ».",
+      "id": "devmob-ionic-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans l'approche hybride (Apache Cordova), comment l'interface utilisateur est-elle réalisée ?",
+      "choix": [
+        "Par du code assembleur natif",
+        "Par une WebView qui interprète le code web comme un navigateur",
+        "Par un moteur de jeu 3D",
+        "Par un fichier de layout XML Android"
+      ],
+      "reponse": 1,
+      "explication": "L'application native enveloppe le projet web : toute l'interface est une WebView. L'accès aux fonctions de l'appareil passe par des interfaces fournies par les librairies de la solution.",
+      "id": "devmob-ionic-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait l'approche « compilation directe » ?",
+      "choix": [
+        "Un compilateur spécialisé produit directement du code natif à partir d'un langage unique",
+        "Elle interprète du HTML à l'exécution",
+        "Elle copie le site web dans l'application",
+        "Elle supprime le besoin de SDK"
+      ],
+      "reponse": 0,
+      "explication": "Avantage : une performance plus élevée. Contrainte : un environnement d'exécution (runtime) est nécessaire pour l'application finale.",
+      "id": "devmob-ionic-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle approche Xamarin utilise-t-il, et dans quel runtime ses applications fonctionnent-elles ?",
+      "choix": [
+        "L'approche hybride, dans une WebView",
+        "L'approche web, dans le navigateur",
+        "L'approche native, dans la JVM d'Oracle",
+        "La compilation directe, dans le runtime Mono"
+      ],
+      "reponse": 3,
+      "explication": "L'environnement Mono accède au noyau Linux et l'expose aux applications Xamarin (C#), comme l'Android Runtime (ART) le fait pour les applications Android standards en Java.",
+      "id": "devmob-ionic-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle entreprise a racheté Nitobi, créatrice de PhoneGap, en 2011 ?",
+      "choix": [
+        "Google",
+        "Apple",
+        "Adobe Systems",
+        "Microsoft"
+      ],
+      "reponse": 2,
+      "explication": "Le code a ensuite été cédé à la Fondation Apache et renommé Apache Cordova ; Adobe a proposé Adobe PhoneGap puis PhoneGap Build.",
+      "id": "devmob-ionic-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment le code source d'une application Appcelerator Titanium est-il exécuté ?",
+      "choix": [
+        "Il est compilé en C#",
+        "Il est interprété par un moteur JavaScript à l'exécution",
+        "Il est affiché dans une WebView uniquement",
+        "Il est converti en Java par le Play Store"
+      ],
+      "reponse": 1,
+      "explication": "Appcelerator Studio permet de développer des applications multiplateformes à partir de JavaScript.",
+      "id": "devmob-ionic-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est le rôle d'Apache Cordova dans Ionic ?",
+      "choix": [
+        "C'est un pont qui encapsule le code web dans une application native et donne accès à certaines fonctions de l'appareil",
+        "Il fournit les composants graphiques AngularJS",
+        "Il remplace Node.js",
+        "Il émule un téléphone"
+      ],
+      "reponse": 0,
+      "explication": "Cordova donne notamment accès à la caméra ou à l'accéléromètre.",
+      "id": "devmob-ionic-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans quel ordre installe-t-on les outils pour Ionic ?",
+      "choix": [
+        "Ionic, puis Cordova, puis Node.js",
+        "Cordova, puis Node.js, puis Ionic",
+        "Ionic et Node.js en même temps, sans Cordova",
+        "Node.js, puis Cordova, puis Ionic"
+      ],
+      "reponse": 3,
+      "explication": "Cordova : npm install -g cordova. Ionic : npm install -g ionic. Il faut aussi le SDK de chaque plateforme cible pour compiler.",
+      "id": "devmob-ionic-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles commandes ajoutent la plateforme Android à un projet Ionic puis le lancent sur appareil ou émulateur ?",
+      "choix": [
+        "ionic start android, puis ionic build uvsApp",
+        "ionic run android, puis ionic platform add android",
+        "ionic platform add android, puis ionic run android",
+        "npm install android, puis ionic serve"
+      ],
+      "reponse": 2,
+      "explication": "Pour iOS, le principe est le même : ionic platform add ios puis ionic run ios. On exécute ces commandes à la racine du projet.",
+      "id": "devmob-ionic-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles variables d'environnement sont nécessaires pour utiliser Ionic sous Unix ?",
+      "choix": [
+        "JAVA_HOME et PYTHON_HOME",
+        "JAVA_HOME et ANDROID_HOME",
+        "NODE_HOME et IONIC_HOME",
+        "ANDROID_HOME uniquement, sans JAVA_HOME"
+      ],
+      "reponse": 1,
+      "explication": "Sous Windows, la commande npm ne fonctionne pas sans les variables d'environnement JAVA_HOME, ANDROID_HOME et NPM.",
+      "id": "devmob-ionic-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi l'approche de compilation directe est-elle plus performante que l'approche hybride ?",
+      "choix": [
+        "Parce que son architecture est plus proche d'une vraie application native, sans interprétation de code web à l'exécution",
+        "Parce qu'elle utilise plus de JavaScript",
+        "Parce qu'elle fonctionne dans un navigateur",
+        "Parce qu'elle n'utilise aucun runtime"
+      ],
+      "reponse": 0,
+      "explication": "L'approche hybride interprète du code web dans une WebView. La compilation directe génère du code natif, mais exige un runtime qui expose les API système.",
+      "id": "devmob-ionic-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi faut-il installer le SDK Android pour développer une application Ionic destinée à Android ?",
+      "choix": [
+        "Pour écrire le code HTML",
+        "Pour remplacer Node.js",
+        "Pour afficher la WebView dans un navigateur",
+        "Pour compiler et construire l'application"
+      ],
+      "reponse": 3,
+      "explication": "Même avec Ionic, la construction de l'application native passe par les outils de la plateforme visée ; c'est vrai pour les autres OS cibles aussi.",
+      "id": "devmob-ionic-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels sont les trois modèles de départ proposés par ionic start dans le cours ?",
+      "choix": [
+        "blank, grid et list",
+        "tabs, login et map",
+        "blank, tabs et sidemenu",
+        "empty, basic et advanced"
+      ],
+      "reponse": 2,
+      "explication": "blank : projet vide ; tabs : navigation par onglets ; sidemenu : menu latéral.",
+      "id": "devmob-ionic-20"
+    }
+  ]
+}

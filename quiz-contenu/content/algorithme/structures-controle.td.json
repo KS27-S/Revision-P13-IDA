@@ -1,0 +1,189 @@
+{
+  "matiere": "algorithmique",
+  "module": "structures-controle",
+  "titre": "TD – Les structures de contrôle",
+  "exercices": [
+    {
+      "id": "algo-structures-controle-td-01",
+      "titre": "Le plus grand de trois nombres (puis de quatre)",
+      "source": "TD K. SYLLA (Initiation à l'algorithmique)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "L'utilisateur donne trois nombres. Affiche le plus grand. Ensuite, modifie ton algorithme pour qu'il marche avec quatre nombres.",
+      "indices": [
+        "Garde le plus grand trouvé jusqu'ici dans une variable max.",
+        "Au début, max prend la valeur du 1er nombre.",
+        "Compare max avec chacun des autres nombres, un par un."
+      ],
+      "solution": "Algorithme Max3\nVariables : a, b, c, max : Réels\nDébut\n   Ecrire(\"Entrez trois nombres : \")\n   Lire(a, b, c)\n   max ← a\n   Si b > max Alors\n      max ← b\n   Finsi\n   Si c > max Alors\n      max ← c\n   Finsi\n   Ecrire(\"Le maximum est : \", max)\nFin\n\n% Pour 4 nombres : ajouter d dans Lire, puis\n  Si d > max Alors max ← d Finsi %",
+      "explication_simple": "Comme dans un concours : le champion actuel (max) affronte chaque nouveau candidat. Passer à 4 nombres = ajouter un combat de plus.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-02",
+      "titre": "Résoudre A·x + B = 0",
+      "source": "TD K. SYLLA (Initiation à l'algorithmique)",
+      "statut_corrige": "corrigé rédigé à partir de l'exemple du cours",
+      "enonce_simple": "L'utilisateur donne A et B. Affiche la solution de A·x + B = 0. Attention aux cas où A ou B valent 0.",
+      "indices": [
+        "Si A n'est pas nul : x = −B / A.",
+        "Si A est nul et B est nul : tout nombre est solution.",
+        "Si A est nul et B n'est pas nul : aucune solution."
+      ],
+      "solution": "Algorithme Equation1\nVariables : A, B, X : Réels\nDébut\n   Lire(A, B)\n   Si A <> 0 Alors\n      X ← -B / A\n      Ecrire(\"X = \", X)\n   Sinon\n      Si B = 0 Alors\n         Ecrire(\"tout réel est solution\")\n      Sinon\n         Ecrire(\"pas de solution\")\n      Finsi\n   Finsi\nFin",
+      "explication_simple": "On teste d'abord le cas où on peut diviser (A ≠ 0). Sinon, il reste deux cas particuliers qu'on sépare avec un Si imbriqué.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-03",
+      "titre": "Résoudre a·x² + b·x + c = 0",
+      "source": "TD2 Algo L1 AgroTIC (fiche n°2)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "L'utilisateur donne a, b et c. Affiche les solutions de l'équation du second degré. Redemande a tant qu'il vaut 0.",
+      "indices": [
+        "Contrôle de saisie : Répéter … jusqu'à a <> 0.",
+        "Calcule delta = b² − 4ac.",
+        "delta > 0 : deux solutions ; delta = 0 : une solution ; delta < 0 : pas de solution réelle."
+      ],
+      "solution": "Algorithme Racines\nVariables : a, b, c, delta, x1, x2 : Réels\nDébut\n   Répéter\n      Ecrire(\"Entrez a (différent de 0) : \")\n      Lire(a)\n   jusqu'à a <> 0\n   Ecrire(\"Entrez b et c : \")\n   Lire(b, c)\n   delta ← b*b - 4*a*c\n   Si delta > 0 Alors\n      x1 ← (-b - Racine(delta)) / (2*a)\n      x2 ← (-b + Racine(delta)) / (2*a)\n      Ecrire(\"Deux solutions : \", x1, \" et \", x2)\n   Sinon\n      Si delta = 0 Alors\n         x1 ← -b / (2*a)\n         Ecrire(\"Solution double : \", x1)\n      Sinon\n         Ecrire(\"Pas de solution réelle\")\n      Finsi\n   Finsi\nFin",
+      "explication_simple": "Répéter garantit au moins une saisie et recommence tant que a = 0. Ensuite, c'est le signe de delta qui décide du nombre de solutions.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-04",
+      "titre": "Prix d'un billet d'avion avec réductions",
+      "source": "TD 3 (TD2.s1.pdf)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Un billet Dakar-Paris-Dakar coûte 375 000 F CFA. Les voyageurs de moins de 25 ans ont 20 % de réduction, ceux de plus de 65 ans ont 15 %. Demande l'âge et affiche le prix à payer.",
+      "indices": [
+        "Il y a trois cas : moins de 25 ans, plus de 65 ans, tous les autres.",
+        "20 % de réduction = on paie 80 % du prix.",
+        "Un Si … Sinon Si … Sinon règle les trois cas."
+      ],
+      "solution": "Algorithme PrixBillet\nConstante : PRIX = 375000\nVariables : age : Entier ; prix : Réel\nDébut\n   Ecrire(\"Quel est votre âge ? \")\n   Lire(age)\n   Si age < 25 Alors\n      prix ← PRIX * 0.80\n   Sinon\n      Si age > 65 Alors\n         prix ← PRIX * 0.85\n      Sinon\n         prix ← PRIX\n      Finsi\n   Finsi\n   Ecrire(\"Prix à payer : \", prix, \" F CFA\")\nFin",
+      "explication_simple": "Résultats : moins de 25 ans → 300 000 ; plus de 65 ans → 318 750 ; sinon → 375 000. Les cas s'excluent mutuellement, donc on les enchaîne avec des Sinon.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-05",
+      "titre": "Que fait cette boucle Répéter ? Puis la réécrire avec Tant que",
+      "source": "TD 3 (TD2.s1.pdf)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Suis pas à pas la séquence suivante avec un tableau de valeurs (A, B). Dis ce qui est affiché, puis réécris-la avec Tant que et explique la différence.\nA ← 2 ; B ← 2\nRépéter : A ← A+2 ; B ← B+1 ; Afficher A ; Afficher B ; jusqu'à (A+B >= 10)",
+      "indices": [
+        "Tour 1 : A = 4, B = 3, A+B = 7. On continue ?",
+        "Tour 2 : A = 6, B = 4, A+B = 10. On continue ?",
+        "Pour Tant que, la condition doit dire « tant que ça n'est PAS fini » : A+B < 10."
+      ],
+      "solution": "% Affichage : 4 3 6 4 %\n\nA ← 2\nB ← 2\nTant que (A + B) < 10 faire\n   A ← A + 2\n   B ← B + 1\n   Afficher(A)\n   Afficher(B)\nFtantque",
+      "explication_simple": "Répéter teste la condition à la fin (au moins un tour) et s'arrête quand elle est vraie. Tant que teste au début et continue tant qu'elle est vraie : on inverse donc la condition. Pour fait compter automatiquement et s'utilise quand on connaît le nombre de tours.",
+      "attention": "Les deux versions donnent ici le même résultat parce que, au départ, A+B vaut 4 (donc < 10) : on entre bien dans la boucle Tant que.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-06",
+      "titre": "Multiplier par additions successives",
+      "source": "TD 3 (TD2.s1.pdf)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Sans utiliser l'opérateur *, calcule le produit de deux entiers positifs en additionnant plusieurs fois. Exemple : 6 × 3 = 3 + 3 + 3 + 3 + 3 + 3. Version améliorée : répète le moins de fois possible et refuse les nombres qui ne sont pas strictement positifs.",
+      "indices": [
+        "Un produit a × b, c'est a fois la valeur b (ou b fois la valeur a).",
+        "Pour aller plus vite, on répète autant de fois que le plus petit nombre.",
+        "Contrôle de saisie : Répéter … jusqu'à a > 0 et b > 0."
+      ],
+      "solution": "Algorithme MultiplicationParAdditions\nVariables : a, b, petit, grand, i, produit : Entiers\nDébut\n   Répéter\n      Ecrire(\"Entrez deux entiers strictement positifs : \")\n      Lire(a, b)\n   jusqu'à (a > 0) et (b > 0)\n   Si a < b Alors\n      petit ← a\n      grand ← b\n   Sinon\n      petit ← b\n      grand ← a\n   Finsi\n   produit ← 0\n   Pour i ← 1 à petit faire\n      produit ← produit + grand\n   Fpour\n   Ecrire(a, \" × \", b, \" = \", produit)\nFin",
+      "explication_simple": "Pour 6 × 3 : petit = 3, grand = 6, on ajoute 6 trois fois (6 + 6 + 6 = 18) au lieu d'ajouter 3 six fois : moins de tours, même résultat.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-07",
+      "titre": "Prix à payer avec port et remise",
+      "source": "TD 3 (TD2.s1.pdf)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant) — la règle de la remise sous 2 000 F est supposée nulle",
+      "enonce_simple": "Un client commande un produit (prix unitaire PU, quantité QTCOM). TOT = PU × QTCOM. Le port est gratuit si TOT est supérieur à 5 000 F, sinon il coûte 2 % de TOT. La remise est de 5 % si TOT est entre 2 000 et 10 000 F, et de 10 % au-delà. Affiche le détail et le prix à payer (PAP).",
+      "indices": [
+        "Calcule TOT d'abord.",
+        "Deux tests séparés : un pour le port, un pour la remise.",
+        "PAP = TOT + PORT − REM."
+      ],
+      "solution": "Algorithme Commande\nVariables : PU, QTCOM, TOT, PORT, REM, PAP : Réels\nDébut\n   Ecrire(\"Prix unitaire et quantité : \")\n   Lire(PU, QTCOM)\n   TOT ← PU * QTCOM\n   Si TOT > 5000 Alors\n      PORT ← 0\n   Sinon\n      PORT ← TOT * 0.02\n   Finsi\n   Si TOT > 10000 Alors\n      REM ← TOT * 0.10\n   Sinon\n      Si TOT >= 2000 Alors\n         REM ← TOT * 0.05\n      Sinon\n         REM ← 0\n      Finsi\n   Finsi\n   PAP ← TOT + PORT - REM\n   Ecrire(\"Port : \", PORT, \" | Remise : \", REM, \" | À payer : \", PAP)\nFin",
+      "explication_simple": "Port et remise sont deux règles indépendantes, chacune avec son propre Si. Exemple : TOT = 3 000 → port 60, remise 150, PAP = 2 910.",
+      "attention": "L'énoncé ne dit rien pour TOT < 2 000 F : on suppose ici qu'il n'y a pas de remise. À confirmer avec l'enseignant.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-08",
+      "titre": "Moyenne d'un nombre inconnu de notes",
+      "source": "TD 3 (TD2.s1.pdf)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Lis des notes au clavier et calcule leur moyenne. On ne sait pas combien il y en a (maximum 1000). Pour arrêter, l'utilisateur tape une note négative, qui ne compte pas dans la moyenne.",
+      "indices": [
+        "Tu as besoin de deux compteurs : la somme et le nombre de notes.",
+        "Boucle Tant que : on continue tant que la note est positive et que n < 1000.",
+        "Ne divise pas par 0 si l'utilisateur n'a donné aucune note."
+      ],
+      "solution": "Algorithme MoyenneNotes\nVariables : note, somme, moyenne : Réels ; n : Entier\nDébut\n   somme ← 0\n   n ← 0\n   Ecrire(\"Note (négative pour terminer) : \")\n   Lire(note)\n   Tant que (note >= 0) et (n < 1000) faire\n      somme ← somme + note\n      n ← n + 1\n      Si n < 1000 Alors\n         Ecrire(\"Note suivante : \")\n         Lire(note)\n      Finsi\n   Ftantque\n   Si n > 0 Alors\n      moyenne ← somme / n\n      Ecrire(\"Moyenne : \", moyenne)\n   Sinon\n      Ecrire(\"Aucune note saisie\")\n   Finsi\nFin",
+      "explication_simple": "La première note est lue avant la boucle ; la boucle traite la note puis lit la suivante. La note négative (valeur « sentinelle ») arrête la boucle sans être comptée.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-09",
+      "titre": "Calculer une factorielle",
+      "source": "TD2 Algo L1 AgroTIC (fiche n°2)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "L'utilisateur donne un entier positif nb. Affiche sa factorielle. Exemple : 5! = 1 × 2 × 3 × 4 × 5 = 120.",
+      "indices": [
+        "Démarre un résultat f à 1.",
+        "Boucle Pour de 1 à nb : multiplie f par i.",
+        "Et 0! ? Par convention il vaut 1 : ta boucle ne doit rien faire."
+      ],
+      "solution": "Algorithme factorielle\nVariables : nb, i, f : Entiers\nDébut\n   Répéter\n      Ecrire(\"Entrez un entier positif : \")\n      Lire(nb)\n   jusqu'à nb >= 0\n   f ← 1\n   Pour i ← 1 à nb faire\n      f ← f * i\n   Fpour\n   Ecrire(nb, \" factoriel est \", f)\nFin",
+      "explication_simple": "f démarre à 1 car 1 est le neutre de la multiplication. Pour nb = 0, la boucle de 1 à 0 ne s'exécute pas et f reste 1, ce qui est la bonne réponse.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-10",
+      "titre": "Nombre parfait",
+      "source": "TD2 Algo L1 AgroTIC (fiche n°2)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Un entier est parfait s'il est égal à la somme de ses diviseurs, sauf lui-même. Exemple : 6 = 1 + 2 + 3. Dis si un entier x donné est parfait.",
+      "indices": [
+        "Un nombre i divise x quand x MOD i = 0.",
+        "Il suffit de tester les i de 1 à x DIV 2 (au-delà, aucun diviseur sauf x).",
+        "Additionne les diviseurs, puis compare la somme avec x."
+      ],
+      "solution": "Algorithme parfait\nVariables : x, i, somme : Entiers\nDébut\n   Ecrire(\"Entrez un entier : \")\n   Lire(x)\n   somme ← 0\n   Pour i ← 1 à x DIV 2 faire\n      Si x MOD i = 0 Alors\n         somme ← somme + i\n      Finsi\n   Fpour\n   Si somme = x Alors\n      Ecrire(x, \" est parfait\")\n   Sinon\n      Ecrire(x, \" n'est pas parfait\")\n   Finsi\nFin",
+      "explication_simple": "Pour 6 : diviseurs 1, 2, 3 → somme 6 = x → parfait. Pour 8 : 1 + 2 + 4 = 7 ≠ 8 → pas parfait. (Pour la suite du TD, deux nombres sont « amicaux » si la somme des diviseurs de chacun égale l'autre : on réutilise cette même boucle deux fois.)",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-11",
+      "titre": "Afficher la saison avec Suivant … faire",
+      "source": "TD2 Algo L1 AgroTIC (fiche n°2)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "À partir du numéro d'un mois (1 à 12), affiche la saison. Utilise le choix multiple. Exemples : 6 → Été, 3 → Printemps, 9 → Automne, 1 → Hiver.",
+      "indices": [
+        "Regroupe les mois par saison : 12-1-2, 3-4-5, 6-7-8, 9-10-11.",
+        "Utilise Sinon pour les numéros qui ne sont pas entre 1 et 12."
+      ],
+      "solution": "Algorithme Saison\nVariable : mois : Entier\nDébut\n   Ecrire(\"Numéro du mois : \")\n   Lire(mois)\n   Suivant mois faire\n      12, 1, 2 : Ecrire(\"Hiver\")\n      3, 4, 5  : Ecrire(\"Printemps\")\n      6, 7, 8  : Ecrire(\"Été\")\n      9, 10, 11 : Ecrire(\"Automne\")\n      Sinon    : Ecrire(\"Mois invalide\")\n   FinCas\nFin",
+      "explication_simple": "Le choix multiple est plus lisible que quatre Si imbriqués quand on compare une même variable à plusieurs valeurs. Le Sinon rattrape toutes les valeurs hors liste.",
+      "attention": "L'énoncé parle de « Selon » ; le cours écrit « Suivant … faire … FinCas ». Les saisons correspondent aux découpages donnés dans l'exemple de l'énoncé (mois entiers).",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-structures-controle-td-12",
+      "titre": "Dessiner un triangle d'étoiles",
+      "source": "TD2 Algo L1 AgroTIC (fiche n°2)",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Affiche ce triangle (5 lignes) :\n*\n**\n***\n****\n*****",
+      "indices": [
+        "La ligne numéro i contient i étoiles.",
+        "Il faut une boucle pour les lignes et, dedans, une boucle pour les étoiles.",
+        "À la fin de chaque ligne, passe à la ligne suivante."
+      ],
+      "solution": "Algorithme triangle\nVariables : i, j : Entiers\nDébut\n   Pour i ← 1 à 5 faire\n      Pour j ← 1 à i faire\n         Ecrire(\"*\")\n      Fpour\n      % passer à la ligne %\n   Fpour\nFin",
+      "explication_simple": "Deux boucles imbriquées : la boucle extérieure choisit la ligne i ; la boucle intérieure écrit i étoiles. À la ligne 3, j va de 1 à 3, donc 3 étoiles.",
+      "type": "exercice"
+    }
+  ]
+}
