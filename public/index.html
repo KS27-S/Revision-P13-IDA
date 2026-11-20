@@ -443,7 +443,9 @@
         </p>
       </article>
 
-      <!-- Bloc final : le bouton renvoie vers l'accueil. -->
+      <!-- Bloc final : le bouton renvoie vers l'accueil. On utilise un attribut
+           data-redirection et script.js, car helmet interdit le JavaScript
+           écrit directement dans les attributs onclick. -->
       <div class="terms-accept">
         <p>
           Le site est conçu pour être simple et utilisable sur téléphone. Nous
@@ -453,7 +455,7 @@
         <button
           type="button"
           class="accept-button"
-          onclick="location.href = 'accueil.html'"
+          data-redirection="accueil.html"
         >
           <strong
             >Je confirme avoir lu et accepté les conditions d'utilisation du

@@ -1,0 +1,23 @@
+{
+  "name": "revision-p13-ida",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plateforme de révision de la promotion IDA P13 : front statique et API Express/SQLite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "creer-admin": "node scripts/creer-admin.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^13.2.0",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "helmet": "^8.3.0"
+  }
+}

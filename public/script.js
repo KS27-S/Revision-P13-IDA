@@ -7,10 +7,15 @@
  * sept fichiers. On les génère donc une seule fois, ici, à partir de petites
  * fonctions. Le HTML ne garde que deux conteneurs vides (site-header et
  * site-footer) : le JavaScript vient les remplir quand la page s'ouvre.
+ *
+ * Depuis l'arrivée du backend, ce script demande aussi à l'API si un utilisateur
+ * est connecté. Le menu change alors : Connexion/Inscription si on est
+ * déconnecté, pseudo et Déconnexion si on est connecté.
  */
 
-// Liste unique des entrées du menu. Pourquoi un tableau : c'est la "source de
-// vérité". Ajouter une page ici suffit à la faire apparaître partout.
+// Liste unique des entrées du menu visibles par tout le monde. Pourquoi un
+// tableau : c'est la "source de vérité". Ajouter une page ici suffit à la faire
+// apparaître partout.
 let LIENS_NAVIGATION = [
   { page: "accueil.html", libelle: "Accueil" },
   { page: "revision.html", libelle: "Révision" },
@@ -37,11 +42,65 @@ function recupererPageCourante() {
 }
 
 /*
+ * Demande l'état de la session au serveur.
+ * Pourquoi passer par l'API : le cookie est httpOnly, donc le JavaScript n'a pas
+ * le droit de le lire. C'est le serveur qui nous dit qui est connecté.
+ * Si le serveur ne répond pas (page ouverte en local sans Node), on considère
+ * que le visiteur est déconnecté : le site reste lisible.
+ */
+async function recupererSession() {
+  try {
+    const reponse = await fetch("/api/session", {
+      headers: { Accept: "application/json" },
+    });
+    if (!reponse.ok) {
+      return { connecte: false };
+    }
+    return await reponse.json();
+  } catch (erreur) {
+    return { connecte: false };
+  }
+}
+
+// Fabrique un <li><a> du menu. textContent (et non innerHTML) empêche
+// qu'un pseudo contenant du HTML modifie la page.
+function creerLienMenu(page, libelle, pageCourante) {
+  let elementListe = document.createElement("li");
+  let ancre = document.createElement("a");
+  ancre.href = page;
+  ancre.textContent = libelle;
+
+  if (page === pageCourante) {
+    ancre.className = "actif";
+    ancre.setAttribute("aria-current", "page");
+  }
+
+  elementListe.appendChild(ancre);
+  return elementListe;
+}
+
+// Appelé par le bouton "Déconnexion" du menu.
+async function deconnecter() {
+  try {
+    const reponse = await fetch("/api/deconnexion", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: "{}",
+    });
+    if (reponse.ok) {
+      window.location.href = "accueil.html";
+    }
+  } catch (erreur) {
+    console.error("Déconnexion impossible :", erreur);
+  }
+}
+
+/*
  * Fonction 1 : construire la barre de navigation.
  * Elle crée le logo, le bouton burger (masqué sur ordinateur par le CSS) et
- * la liste des liens, puis Place le tout dans <header id="site-header">.
+ * la liste des liens, puis place le tout dans <header id="site-header">.
  */
-function creerNavigation() {
+function creerNavigation(session) {
   let emplacement = document.getElementById("site-header");
   // Pourquoi cette vérification : si une page oublie le conteneur, on ne doit
   // pas provoquer d'erreur JavaScript qui empêcherait le reste de la page.
@@ -78,21 +137,35 @@ function creerNavigation() {
   liste.className = "menu-liens";
 
   LIENS_NAVIGATION.forEach(function (lien) {
-    let elementListe = document.createElement("li");
-    let ancre = document.createElement("a");
-    ancre.href = lien.page;
-    ancre.textContent = lien.libelle;
+    liste.appendChild(creerLienMenu(lien.page, lien.libelle, pageCourante));
+  });
 
-    // Pourquoi "actif" : c'est cette classe que le CSS utilise pour montrer
-    // la page en cours. aria-current donne la même information aux lecteurs d'écran.
-    if (lien.page === pageCourante) {
-      ancre.className = "actif";
-      ancre.setAttribute("aria-current", "page");
+  // Liens qui dépendent de la session. Le serveur a déjà vérifié le cookie :
+  // le front ne fait qu'afficher le résultat, il ne décide pas des droits.
+  if (session.connecte) {
+    if (session.role === "admin") {
+      liste.appendChild(creerLienMenu("admin.html", "Administration", pageCourante));
     }
 
-    elementListe.appendChild(ancre);
-    liste.appendChild(elementListe);
-  });
+    let elementPseudo = document.createElement("li");
+    let affichagePseudo = document.createElement("span");
+    affichagePseudo.className = "menu-pseudo";
+    affichagePseudo.textContent = session.pseudo;
+    elementPseudo.appendChild(affichagePseudo);
+    liste.appendChild(elementPseudo);
+
+    let elementDeconnexion = document.createElement("li");
+    let boutonDeconnexion = document.createElement("button");
+    boutonDeconnexion.type = "button";
+    boutonDeconnexion.className = "lien-menu";
+    boutonDeconnexion.textContent = "Déconnexion";
+    boutonDeconnexion.addEventListener("click", deconnecter);
+    elementDeconnexion.appendChild(boutonDeconnexion);
+    liste.appendChild(elementDeconnexion);
+  } else {
+    liste.appendChild(creerLienMenu("connexion.html", "Connexion", pageCourante));
+    liste.appendChild(creerLienMenu("inscription.html", "Inscription", pageCourante));
+  }
 
   barre.appendChild(logo);
   barre.appendChild(boutonBurger);
@@ -151,13 +224,47 @@ function creerPiedDePage() {
 }
 
 /*
+ * Sur les pages protégées, le serveur bloque déjà l'accès. Cette vérification
+ * côté navigateur sert seulement à éviter un affichage bref de la page avant
+ * une redirection : elle n'est jamais une protection de sécurité.
+ */
+function protegerPages(session) {
+  let page = recupererPageCourante();
+
+  if (page === "espace-etudiant.html") {
+    if (!session.connecte) {
+      window.location.replace("connexion.html");
+    } else if (session.statut && session.statut !== "valide") {
+      window.location.replace("en-attente.html");
+    }
+  }
+
+  if (page === "admin.html" && (!session.connecte || session.role !== "admin")) {
+    window.location.replace("accueil.html");
+  }
+}
+
+// Les boutons avec data-redirection remplacent les anciens attributs onclick :
+// helmet interdit le JavaScript écrit directement dans le HTML.
+function activerBoutonsRedirection() {
+  document.querySelectorAll("[data-redirection]").forEach(function (bouton) {
+    bouton.addEventListener("click", function () {
+      window.location.href = bouton.dataset.redirection;
+    });
+  });
+}
+
+/*
  * Démarrage : avec l'attribut defer, le HTML est déjà lu quand ce fichier
  * s'exécute. Le test sur readyState reste là pour que le script fonctionne
  * aussi s'il était chargé autrement (par exemple sans defer).
  */
-function initialiserElementsPartages() {
-  creerNavigation();
+async function initialiserElementsPartages() {
+  let session = await recupererSession();
+  creerNavigation(session);
   creerPiedDePage();
+  activerBoutonsRedirection();
+  protegerPages(session);
 }
 
 if (document.readyState === "loading") {

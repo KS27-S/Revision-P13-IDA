@@ -1,0 +1,82 @@
+<!doctype html>
+<!-- Connexion : ouverture d'une session avec le numéro WhatsApp et le mot de passe -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connexion | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main class="terms-page formulaire-page">
+      <div class="terms-header">
+        <p class="terms-kicker">Plateforme de révision · Promotion IDA P13</p>
+        <h1>Connexion</h1>
+        <p class="terms-intro">
+          Connectez-vous avec votre numéro WhatsApp et votre mot de passe. Votre
+          compte doit avoir été validé par l'administrateur pour accéder à
+          l'espace étudiant.
+        </p>
+      </div>
+
+      <article class="terms-article">
+        <h2>Accéder à mon espace</h2>
+
+        <form id="formulaire-connexion" class="formulaire-compte">
+          <div class="champ">
+            <label for="whatsapp">Numéro WhatsApp</label>
+            <input
+              id="whatsapp"
+              name="whatsapp"
+              type="tel"
+              placeholder="+221771234567"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <div class="champ">
+            <label for="mot_de_passe">Mot de passe</label>
+            <input
+              id="mot_de_passe"
+              name="mot_de_passe"
+              type="password"
+              autocomplete="current-password"
+              required
+            />
+          </div>
+
+          <!-- Le serveur envoie toujours le même message en cas d'échec :
+               on ne peut pas deviner si le numéro existe. -->
+          <p id="message-connexion" class="message-erreur" role="alert"></p>
+
+          <button type="submit" class="accept-button">Se connecter</button>
+        </form>
+
+        <p class="lien-bas">
+          Pas encore de compte ? <a href="inscription.html">Inscrivez-vous</a>.
+        </p>
+      </article>
+
+      <div class="terms-note">
+        <p class="terms-note-title">Sécurité</p>
+        <ul>
+          <li>
+            Le nombre d'essais est limité : après plusieurs erreurs, la
+            connexion est bloquée temporairement.
+          </li>
+          <li>
+            Le cookie de session est protégé : il n'est pas lisible par le
+            JavaScript et n'est envoyé qu'au site.
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

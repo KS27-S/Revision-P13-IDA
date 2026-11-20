@@ -1247,3 +1247,142 @@ footer a.actif {
     font-size: 0.7rem;
   }
 }
+
+/* Comptes et administration : ces règles reprennent les couleurs et les
+   arrondis déjà utilisés par les conditions d'utilisation. Le design des
+   pages existantes n'est pas modifié. */
+.lien-menu {
+  border: 0;
+  background: transparent;
+  color: var(--color-black);
+  font: inherit;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.lien-menu:hover,
+.lien-menu:focus-visible {
+  color: var(--color-white);
+  background-color: var(--color-blue-dark);
+}
+.menu-pseudo {
+  display: inline-block;
+  padding: 8px 12px;
+  font-weight: 700;
+}
+.formulaire-page {
+  max-width: 760px;
+}
+.formulaire-compte {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+.champ {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.champ label {
+  color: var(--color-blue-dark);
+  font-weight: 700;
+}
+.champ input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  border: 1px solid #bfe0f5;
+  border-radius: 10px;
+  font: inherit;
+}
+.champ input:focus-visible {
+  outline: 3px solid var(--color-orange);
+  outline-offset: 2px;
+}
+.aide-champ {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+.message-erreur,
+.message-succes {
+  margin: 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.message-erreur {
+  border: 1px solid #f0b4b4;
+  background: #fff3f3;
+  color: #9b1c1c;
+}
+.message-succes {
+  border: 1px solid #b7e4c7;
+  background: #f1fff5;
+  color: #0b6b32;
+}
+.message-erreur:empty,
+.message-succes:empty {
+  display: none;
+}
+.lien-bas {
+  margin: 20px 0 0;
+  text-align: center;
+}
+.attente-message {
+  text-align: center;
+}
+.tableau-admin {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+.tableau-admin table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+.tableau-admin th,
+.tableau-admin td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e2eef7;
+  text-align: left;
+  vertical-align: middle;
+}
+.tableau-admin th {
+  color: var(--color-blue-dark);
+  background: var(--color-soft-blue);
+}
+.btn-valider,
+.btn-refuser {
+  margin-right: 6px;
+  border-radius: 999px;
+  color: var(--color-white);
+  cursor: pointer;
+}
+.btn-valider {
+  background: var(--color-green);
+}
+.btn-refuser {
+  background: #b42318;
+}
+@media (max-width: 600px) {
+  .formulaire-page {
+    padding: 20px 12px 48px;
+  }
+  .tableau-admin th,
+  .tableau-admin td {
+    padding: 8px 6px;
+    font-size: 0.82rem;
+  }
+}
+.bouton-secondaire {
+  margin-top: 10px;
+  background: var(--color-soft-blue);
+  box-shadow: none;
+  color: var(--color-blue-dark);
+}
+.bouton-secondaire:hover {
+  box-shadow: none;
+}

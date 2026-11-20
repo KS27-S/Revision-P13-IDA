@@ -1,0 +1,50 @@
+<!doctype html>
+<!-- Administration : validation manuelle des inscriptions (page protégée par le serveur) -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administration | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main class="terms-page formulaire-page">
+      <div class="terms-header">
+        <p class="terms-kicker">Plateforme de révision · Promotion IDA P13</p>
+        <h1>Administration</h1>
+        <p class="terms-intro">
+          Liste des inscriptions en attente. Vous seul pouvez valider ou refuser
+          une demande : aucun contenu n'est accessible aux comptes en attente.
+        </p>
+      </div>
+
+      <section class="terms-article">
+        <h2>Demandes en attente</h2>
+        <p id="message-admin" class="message-erreur" role="alert"></p>
+
+        <div class="tableau-admin">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Pseudo</th>
+                <th scope="col">WhatsApp</th>
+                <th scope="col">Date</th>
+                <th scope="col">Numéro</th>
+                <th scope="col">Décision</th>
+              </tr>
+            </thead>
+            <tbody id="corps-tableau">
+              <!-- admin.js remplit ce tableau avec les données de l'API. -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

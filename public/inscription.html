@@ -1,0 +1,120 @@
+<!doctype html>
+<!-- Inscription : création d'un compte étudiant, puis vérification du numéro -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- script.js construit le menu commun, auth.js gère le formulaire. -->
+    <script src="script.js" defer></script>
+    <script src="auth.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main class="terms-page formulaire-page">
+      <div class="terms-header">
+        <p class="terms-kicker">Plateforme de révision · Promotion IDA P13</p>
+        <h1>Créer mon compte</h1>
+        <p class="terms-intro">
+          L'inscription est réservée aux étudiants de la promotion IDA P13.
+          Votre numéro WhatsApp sert d'identifiant : un seul compte par numéro.
+          L'administrateur validera votre demande avant que vous puissiez
+          accéder aux contenus.
+        </p>
+      </div>
+
+      <article class="terms-article">
+        <h2>Mes informations</h2>
+
+        <!-- required/minlength aident l'utilisateur, mais la vraie validation
+             est faite côté serveur dans middleware/validation.js. -->
+        <form id="formulaire-inscription" class="formulaire-compte">
+          <div class="champ">
+            <label for="pseudo">Prénom ou pseudo</label>
+            <input
+              id="pseudo"
+              name="pseudo"
+              type="text"
+              minlength="2"
+              maxlength="50"
+              autocomplete="nickname"
+              required
+            />
+          </div>
+
+          <div class="champ">
+            <label for="whatsapp">Numéro WhatsApp</label>
+            <input
+              id="whatsapp"
+              name="whatsapp"
+              type="tel"
+              placeholder="+221771234567"
+              autocomplete="tel"
+              required
+            />
+            <p class="aide-champ">
+              Format international accepté, avec ou sans le signe +.
+            </p>
+          </div>
+
+          <div class="champ">
+            <label for="mot_de_passe">Mot de passe</label>
+            <input
+              id="mot_de_passe"
+              name="mot_de_passe"
+              type="password"
+              minlength="8"
+              maxlength="100"
+              autocomplete="new-password"
+              required
+            />
+            <p class="aide-champ">Au moins 8 caractères. Il est stocké haché.</p>
+          </div>
+
+          <p id="message-inscription" class="message-erreur" role="alert"></p>
+
+          <button type="submit" class="accept-button">Créer mon compte</button>
+        </form>
+
+        <p class="lien-bas">
+          Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous</a>.
+        </p>
+      </article>
+
+      <!-- Cette partie reste masquée jusqu'à ce que l'inscription réussisse. -->
+      <section id="section-code" class="terms-article" hidden>
+        <h2>Vérifier mon numéro</h2>
+        <p>
+          Un code à six chiffres a été généré. Tant que la vraie API WhatsApp
+          n'est pas branchée, il s'affiche dans la console du serveur.
+        </p>
+        <form id="formulaire-code" class="formulaire-compte">
+          <!-- Champ caché : auth.js se souvient du numéro saisi plus haut. -->
+          <input id="whatsapp-code" name="whatsapp" type="hidden" />
+          <div class="champ">
+            <label for="code">Code de vérification</label>
+            <input
+              id="code"
+              name="code"
+              type="text"
+              inputmode="numeric"
+              pattern="[0-9]{6}"
+              maxlength="6"
+              autocomplete="one-time-code"
+              required
+            />
+          </div>
+          <p id="message-code" class="message-erreur" role="alert"></p>
+          <button type="submit" class="accept-button">Vérifier le code</button>
+          <button type="button" id="renvoyer-code" class="accept-button bouton-secondaire">
+            Renvoyer un code
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

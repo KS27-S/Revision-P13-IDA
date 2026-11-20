@@ -1,0 +1,14 @@
+# Dépendances installées par npm : elles se régénèrent avec npm install.
+node_modules/
+
+# Secrets : le fichier .env contient la clé de session, il ne doit jamais être versionné.
+.env
+
+# Base de données locale et ses fichiers temporaires SQLite : données personnelles des étudiants.
+donnees/
+*.db
+*.db-shm
+*.db-wal
+
+# Fichiers de journal générés en cas d'erreur npm.
+npm-debug.log*
