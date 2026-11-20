@@ -1,34 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Espace étudiant : maquette statique du tableau de bord personnel -->
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Révision P13 IDA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-   <header>
-        <nav>
-            <img src="image/logo UNCHK.png" class="logo-unchk" id="logo-unchk" alt="logo unchk">
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="revision.html">Révision</a></li>
-                <li><a href="assistant.html">Assistant de révision</a></li>
-                <li><a href="rappel.html">Rappel de cours</a></li>
-                <li><a href="projet.html">Projet</a></li>
-                <li><a href="espace-etudiant.html">Espace étudiant</a></li>
-            </ul>
-        </nav>
-    </header> 
-    <main>
+  <!-- En-tête : métadonnées, titre de l'onglet et feuille de style commune -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espace étudiant | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête commun : script.js remplit ce conteneur avec le logo et le menu -->
+    <header id="site-header"></header>
+
+    <!-- Contenu principal : toutes les valeurs sont des exemples, à remplacer
+         par les données du compte quand le backend existera. -->
+    <main class="espace-page">
+      <div class="espace-bienvenue">
         <h1>Espace étudiant</h1>
-        <p>Bienvenue dans votre espace étudiant !</p>
-       
+        <p>
+          Bienvenue dans votre espace ! Retrouvez votre progression, vos points,
+          votre classement et votre abonnement. Ces chiffres sont une maquette :
+          le serveur les calculera plus tard.
+        </p>
+      </div>
+
+      <!-- Grille de panneaux : elle se réorganise toute seule sur petit écran. -->
+      <div class="espace-grille">
+        <!-- Progression par matière : la largeur de chaque barre est donnée par
+             la variable --progression (exemple : 25 % pour 1 module sur 4). -->
+        <section class="panneau">
+          <h2>Ma progression</h2>
+          <div class="progression-ligne" style="--progression: 25%">
+            <div class="progression-entete">
+              <span>Algorithmique</span><span>1 / 4 modules</span>
+            </div>
+            <div class="barre-progression"><span></span></div>
+          </div>
+          <div class="progression-ligne" style="--progression: 0%">
+            <div class="progression-entete">
+              <span>Développement mobile</span><span>0 / 4 modules</span>
+            </div>
+            <div class="barre-progression"><span></span></div>
+          </div>
+          <div class="progression-ligne" style="--progression: 33%">
+            <div class="progression-entete">
+              <span>HTML et CSS</span><span>3 / 9 modules</span>
+            </div>
+            <div class="barre-progression"><span></span></div>
+          </div>
+          <div class="progression-ligne" style="--progression: 50%">
+            <div class="progression-entete">
+              <span>Introduction au web</span><span>3 / 6 modules</span>
+            </div>
+            <div class="barre-progression"><span></span></div>
+          </div>
+        </section>
+
+        <!-- Points : un seul chiffre bien visible, avec la règle rappelée en
+             petites lettres (les points seront calculés côté serveur). -->
+        <section class="panneau">
+          <h2>Mes points</h2>
+          <p class="points-valeur">245 pts</p>
+          <p class="points-legende">
+            Quiz validés, scores obtenus, TD rendus et rappels terminés. Chaque
+            module ne rapporte des points qu'une fois, sur le meilleur score.
+          </p>
+        </section>
+
+        <!-- Classement : prénom ou pseudo seulement, jamais le numéro WhatsApp. -->
+        <section class="panneau">
+          <h2>Classement général</h2>
+          <ol class="classement-liste">
+            <li><span>1. Amina</span><span>612 pts</span></li>
+            <li><span>2. Ibrahim</span><span>540 pts</span></li>
+            <li><span>3. Chloé</span><span>388 pts</span></li>
+            <li class="moi"><span>4. Vous</span><span>245 pts</span></li>
+            <li><span>5. Yassine</span><span>198 pts</span></li>
+          </ol>
+        </section>
+
+        <!-- Abonnement : l'offre en cours et ce qu'elle donne accès. -->
+        <section class="panneau">
+          <h2>Mon abonnement</h2>
+          <div class="abonnement-offre">
+            <h3>Offre gratuite</h3>
+            <p>Valable jusqu'au 15 décembre 2026.</p>
+            <p>Premier module de chaque matière : quiz, TD et rappel offerts.</p>
+            <p>Assistant IA : 10 messages par jour.</p>
+          </div>
+          <p class="points-legende">
+            Le détail des offres et des règles est indiqué dans les
+            <a href="index.html">conditions d'utilisation</a>.
+          </p>
+        </section>
+      </div>
     </main>
-    <footer>
-        <img src="image/logo dijadev.png" alt="logo dijadev" class="logo-dijadev" id="logo-dijadev">
-        <p>&copy;  2026 Révision P13 IDA-Tous droits réservés.</p>
-    </footer>
+
+    <!-- Pied de page commun : script.js remplit ce conteneur -->
+    <footer id="site-footer"></footer>
+    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>

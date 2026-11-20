@@ -1,161 +1,471 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Page des conditions d'utilisation : règles de la plateforme, rédigées à
+     partir du cahier des charges du projet. -->
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Révision P13 IDA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="image/logo UNCHK.png" class="logo-unchk" id="logo-unchk" alt="logo unchk">
-            <ul>
-                 <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="revision.html">Révision</a></li>
-                <li><a href="assistant.html">Assistant de révision</a></li>
-                <li><a href="rappel.html">Rappel de cours</a></li>
-                <li><a href="projet.html">Projet</a></li>
-                <li><a href="espace-etudiant.html">Espace étudiant</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- En-tête : métadonnées, titre de l'onglet et feuille de style commune -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions d'utilisation | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête commun : script.js remplit ce conteneur avec le logo et le menu -->
+    <header id="site-header"></header>
+
+    <!-- Contenu principal : chaque article reprend une règle du cahier des
+         charges. Quand une règle n'est pas encore décidée, on le dit au lieu
+         d'inventer une promesse. -->
     <main class="terms-page">
-        <div class="terms-header">
-            <p class="terms-kicker">Plateforme de révision · Promotion IDA P13 · Mis à jour en novembre 2026</p>
-            <h1>Conditions d'utilisation du site</h1>
-            <p class="terms-intro">Veuillez lire attentivement les dispositions ci-dessous. Elles décrivent le fonctionnement de la plateforme, les règles applicables à chaque ressource et les conditions dans lesquelles vous pouvez les utiliser pour vos révisions.</p>
+      <div class="terms-header">
+        <p class="terms-kicker">
+          Plateforme de révision · Promotion IDA P13 · Mis à jour en novembre
+          2026
+        </p>
+        <h1>Conditions d'utilisation du site</h1>
+        <p class="terms-intro">
+          Ces conditions décrivent le fonctionnement de la plateforme : les
+          offres, les règles des quiz et des TD, les limites de l'assistant IA,
+          la validation des comptes et l'usage des données personnelles.
+        </p>
+      </div>
+
+      <!-- Article 01 : à qui s'adresse la plateforme et que contient-elle ? -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">01</span>
+          <h2>Objet et public cible</h2>
         </div>
+        <p>
+          La plateforme est réservée aux étudiants de la promotion IDA P13. Elle
+          regroupe huit matières et trente-sept modules, avec, pour chaque
+          module, un rappel de cours, un quiz, un travail dirigé (TD) et, plus
+          tard, un assistant IA. Elle accompagne toute la promotion pendant son
+          cycle de révision.
+        </p>
+        <p>
+          L'utilisation du site suppose l'acceptation des présentes conditions.
+          Les langage C et SQL, la fonctionnalité « Pratique » et la section
+          projet sont prévus pour une phase ultérieure et ne sont pas encore
+          accessibles.
+        </p>
+      </article>
 
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">01</span>
-                <h2>Objet et public cible</h2>
-            </div>
-            <p>Cette plateforme est conçue pour les étudiants de la promotion P13 IDA. Elle met à leur disposition des quiz, des travaux dirigés (TD), des rappels de cours, un assistant de révision, une section projet et un espace étudiant, afin de les aider à réviser efficacement et à renforcer leurs connaissances.</p>
-            <p>L'utilisation du site est subordonnée à l'acceptation des présentes conditions. Chaque section est décrite ci-dessous pour vous permettre d'utiliser le site en connaissance de cause.</p>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">02</span>
-                <h2>Compte et accès au site</h2>
-            </div>
-            <p>L'inscription est réservée aux étudiants de la promotion P13 IDA. Un compte est nécessaire pour accéder aux ressources et à l'espace étudiant. L'administrateur valide manuellement chaque inscription : tant que la validation n'est pas intervenue, le compte reste en attente et affiche le message « Votre inscription est en cours de validation ». Aucun contenu, y compris gratuit, n'est accessible pendant cette période.</p>
-            <p>L'espace étudiant est protégé par un mot de passe afin de garantir la confidentialité de vos informations.</p>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">03</span>
-                <h2>Les quiz</h2>
-            </div>
-            <p>Les quiz proposent une série de questions à choix multiples. Chaque question n'admet qu'une seule réponse correcte : sélectionnez la réponse qui vous semble juste, puis soumettez-la. À l'issue du quiz, un score basé sur le nombre de réponses correctes vous est affiché. Les quiz testent les concepts clés de chaque matière et peuvent être refaits pour améliorer votre score et votre compréhension.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>Les quiz sont débloqués selon votre progression : vous devez d'abord réussir les quiz précédents pour accéder aux suivants.</li>
-                    <li>Les quiz sont limités à trois tentatives par étudiant, sauf si vous disposez d'une offre premium.</li>
-                    <li>Les quiz sont chronométrés : vous devez répondre à toutes les questions dans le temps imparti.</li>
-                    <li>Les quiz sont notés sur 20 points ; chaque question vaut un certain nombre de points selon sa difficulté.</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">04</span>
-                <h2>Les travaux dirigés (TD)</h2>
-            </div>
-            <p>Les TD consistent à résoudre des exercices pratiques fondés sur les notions étudiées en classe. Après avoir soumis votre solution, un retour vous indique si l'exercice a été résolu correctement. À la fin du TD, un score basé sur le nombre d'exercices réussis vous est affiché. Les TD renforcent votre compréhension des concepts et vous aident à les appliquer dans des situations pratiques. Vous pouvez les refaire autant de fois que nécessaire.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>Les TD sont débloqués selon votre progression : vous devez d'abord réussir les TD précédents pour accéder aux suivants.</li>
-                    <li>Les TD ne sont disponibles qu'avec une offre premium, à l'exception du premier TD de chaque matière, qui est offert.</li>
-                    <li>Les TD sont chronométrés : vous devez résoudre tous les exercices dans le temps imparti.</li>
-                    <li>Les TD sont notés sur 20 points ; chaque exercice vaut un certain nombre de points selon sa difficulté.</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">05</span>
-                <h2>Les rappels de cours</h2>
-            </div>
-            <p>Les rappels de cours sont des résumés des notions importantes étudiées en classe. Ils vous aident à vous remémorer ces notions et à renforcer votre compréhension des concepts. Vous pouvez les consulter autant de fois que nécessaire.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>Les rappels de cours sont disponibles pour toutes les matières, mais uniquement avec une offre premium.</li>
-                    <li>Ils sont organisés par matière et par chapitre pour faciliter la navigation.</li>
-                    <li>Ils sont mis à jour régulièrement afin de refléter les informations et les tendances les plus récentes de chaque matière.</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">06</span>
-                <h2>L'espace étudiant</h2>
-            </div>
-            <p>L'espace étudiant permet aux inscrits de s'entraider, de suivre leur progression, de se mesurer à leurs camarades et de recevoir des recommandations personnalisées pour améliorer leurs performances.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>L'espace étudiant est disponible pour tous les étudiants inscrits sur le site.</li>
-                    <li>Il est mis à jour régulièrement pour refléter vos dernières performances.</li>
-                    <li>Il est sécurisé et protégé par un mot de passe, afin de garantir la confidentialité de vos informations.</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">07</span>
-                <h2>L'assistant de révision</h2>
-            </div>
-            <p>L'assistant de révision est un outil interactif qui guide les étudiants à travers des questions et des exercices pour renforcer leur compréhension des concepts. Il contribue à la préparation aux examens et à l'amélioration des performances académiques. Vous pouvez l'utiliser autant de fois que nécessaire.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>L'assistant de révision est disponible pour toutes les matières.</li>
-                    <li>Il est mis à jour régulièrement pour refléter les informations et les tendances les plus récentes de chaque matière.</li>
-                    <li>Il est interactif et engageant, avec des questions et des exercices adaptés à votre niveau de compétence.</li>
-                    <li>Il est réservé aux étudiants disposant d'une offre premium.</li>
-                    <li>Il est accessible 24 heures sur 24 et 7 jours sur 7, selon vos crédits.</li>
-                </ul>
-            </div>
-        </article>
-
-        <article class="terms-article">
-            <div class="terms-article-head">
-                <span class="terms-number">08</span>
-                <h2>La section projet</h2>
-            </div>
-            <p>La section projet permet aux étudiants de travailler sur des projets pratiques afin d'appliquer leurs connaissances et de développer leurs compétences. Elle vise à acquérir une expérience pratique et à renforcer la compréhension des concepts. Vous pouvez travailler sur les projets autant de fois que nécessaire.</p>
-            <div class="terms-note">
-                <p class="terms-note-title">Points importants</p>
-                <ul>
-                    <li>La section projet est disponible pour toutes les matières.</li>
-                    <li>Elle est mise à jour régulièrement pour refléter les informations et les tendances les plus récentes de chaque matière.</li>
-                    <li>L'accès est réservé aux étudiants disposant d'un compte premium.</li>
-                    <li>L'accès est également conditionné au déblocage de 5 modules de HTML/CSS et de 3 modules de chaque autre matière.</li>
-                </ul>
-            </div>
-        </article>
-
-        <div class="terms-accept">
-            <p>Le site est conçu pour être convivial et facile à utiliser, avec une navigation intuitive et des fonctionnalités accessibles à tous les étudiants. Nous espérons qu'il vous sera utile dans vos révisions et vous aidera à réussir vos examens.</p>
-            <button type="button" class="accept-button" onclick="location.href='accueil.html'"><strong>Je confirme avoir lu et accepté les conditions d'utilisation du site</strong></button>
+      <!-- Article 02 : compte, numéro WhatsApp et validation manuelle. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">02</span>
+          <h2>Compte, numéro WhatsApp et validation manuelle</h2>
         </div>
+        <p>
+          L'inscription est réservée aux étudiants de la promotion P13 IDA. Elle
+          demande un prénom ou pseudo, un numéro de téléphone utilisable sur
+          WhatsApp et un mot de passe. Le numéro sert d'identifiant au compte ;
+          un seul numéro est autorisé par compte. Le nom complet est demandé
+          pour permettre à l'administrateur de reconnaître les étudiants de la
+          promotion, mais il n'est visible que par lui.
+        </p>
+        <p>
+          Chaque inscription est validée manuellement par l'administrateur, qui
+          l'accepte ou la refuse. Tant que la validation n'est pas intervenue,
+          le compte reste « en attente » et affiche le message « Votre
+          inscription est en cours de validation » : aucun contenu n'est
+          accessible, même le contenu gratuit. Les dix premiers accès gratuits
+          sont comptés dans l'ordre de validation.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Sécurité du compte</p>
+          <ul>
+            <li>Le mot de passe n'est jamais stocké en clair.</li>
+            <li>
+              Le numéro est vérifié par un code ; dans une première phase, cette
+              vérification et la réinitialisation du mot de passe sont faites
+              manuellement par l'administrateur, avant l'envoi automatique de
+              codes WhatsApp.
+            </li>
+            <li>
+              Quand l'envoi automatique sera en place, les codes seront limités
+              (par exemple trois par heure et par numéro) et valables dix
+              minutes, car chaque message a un coût.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 03 : les offres, la gratuité et la durée d'accès. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">03</span>
+          <h2>Offres, gratuité et durée d'accès</h2>
+        </div>
+        <p>
+          Tous les étudiants disposent gratuitement du premier module de chaque
+          matière, soit huit modules sur trente-sept, avec son rappel de cours,
+          son quiz et son TD, ainsi que de dix messages par jour avec
+          l'assistant IA. Les dix premiers utilisateurs reçoivent un accès
+          gratuit à la plateforme.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Les offres payantes</p>
+          <ul>
+            <li>
+              <strong>500 F par mois</strong> : les quiz de toutes les matières,
+              avec déblocage progressif des modules.
+            </li>
+            <li>
+              <strong>1 000 F par mois</strong> : les quiz, les rappels de cours
+              et les TD, avec le même déblocage progressif.
+            </li>
+            <li>
+              <strong>2 000 F par mois</strong> : les quiz, les rappels, les TD
+              et l'assistant IA porté à cinquante messages par jour, avec le
+              même déblocage progressif.
+            </li>
+            <li>
+              Chaque offre couvre toutes les matières et dure un mois. À la fin
+              d'un mois non renouvelé, la progression est conservée mais l'accès
+              est suspendu jusqu'au renouvellement.
+            </li>
+            <li>
+              Le niveau exact des dix accès gratuits et leur durée restent à
+              préciser dans les conditions définitives.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 04 : règles des quiz (tentatives, seuil, délai, score). -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">04</span>
+          <h2>Les quiz</h2>
+        </div>
+        <p>
+          Chaque module propose un quiz de vingt questions à choix multiples,
+          avec quatre réponses possibles et une seule bonne réponse. Chaque
+          réponse est corrigée avec une explication. Le score est affiché sur
+          vingt ; le meilleur score est conservé, même si vous refaites le quiz.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Validation et tentatives</p>
+          <ul>
+            <li>
+              Un quiz est validé à partir de 70 %, soit quatorze bonnes réponses
+              sur vingt. Vous disposez de trois tentatives.
+            </li>
+            <li>
+              Après la troisième tentative, un meilleur score situé entre 50 %
+              et 70 % valide quand même le module, mais il est signalé « à
+              revoir ».
+            </li>
+            <li>
+              Si le meilleur score reste sous 50 % (moins de dix sur vingt),
+              vous devez attendre douze heures, puis vous disposez de deux
+              nouvelles tentatives. La même règle recommence si besoin.
+            </li>
+            <li>
+              Le nombre de tentatives et l'heure de la dernière tentative sont
+              enregistrés côté serveur : ils ne peuvent donc pas être modifiés
+              depuis le navigateur. Le score, les tentatives restantes et le
+              délai d'attente éventuel sont affichés.
+            </li>
+            <li>
+              L'ordre des questions et des réponses peut changer d'une tentative
+              à l'autre. Un module ne s'ouvre qu'après la réussite du quiz du
+              module précédent, dans sa propre matière.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 05 : TD, rendu du travail, vérification IA et correction. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">05</span>
+          <h2>Les travaux dirigés (TD)</h2>
+        </div>
+        <p>
+          Un TD contient un énoncé simplifié et des indices. Vous rendez votre
+          travail sous forme de texte ou de code collé, de photo ou de fichier,
+          au choix. L'explication détaillée ne s'affiche qu'après ce rendu :
+          elle vous aide à comprendre vos erreurs. Le premier TD de chaque
+          matière est offert ; les autres sont inclus dans les offres à 1 000 F
+          et 2 000 F.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Vérification du rendu</p>
+          <ul>
+            <li>
+              L'IA vérifie que le travail est « sérieux » : non vide, en rapport
+              avec l'énoncé et issu d'une tentative réelle. Elle ne juge pas si
+              la réponse est juste, c'est le rôle de la correction. Elle répond
+              « accepté » ou « refusé » avec un court message d'aide.
+            </li>
+            <li>
+              Le nombre d'essais est limité. En cas d'erreur de l'IA (photo
+              illisible, faux refus), l'administrateur peut débloquer la
+              correction manuellement.
+            </li>
+            <li>
+              Un TD ne rapporte de points que si le rendu est accepté comme
+              sérieux. Un envoi vide ou sans rapport ne suffit pas.
+            </li>
+            <li>
+              Les corrigés ont été rédigés avec l'aide de l'IA : ils doivent
+              être validés par un enseignant ou un relecteur avant publication.
+            </li>
+            <li>
+              Les rendus sont visibles seulement par vous et l'administrateur.
+              Ils sont envoyés à un service d'IA externe : votre accord est
+              demandé au préalable. Les formats acceptés, la taille maximale des
+              fichiers et la durée de conservation seront précisés.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 06 : rappels de cours, gratuits ou selon l'offre. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">06</span>
+          <h2>Les rappels de cours</h2>
+        </div>
+        <p>
+          Un rappel est une fiche de synthèse d'environ dix minutes de lecture,
+          avec les objectifs, des sections numérotées, des tableaux, des
+          exemples de code, un « À retenir » et les « Pièges fréquents ». Les
+          fiches des huit premiers modules sont déjà rédigées ; les autres sont
+          écrites matière par matière et relues avant publication.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Accès</p>
+          <ul>
+            <li>Le rappel du premier module de chaque matière est gratuit.</li>
+            <li>
+              Les autres rappels sont inclus dans les offres à 1 000 F et 2 000
+              F, avec le même déblocage progressif que les quiz et les TD.
+            </li>
+            <li>Ils sont organisés par matière et par module.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 07 : limites de l'assistant IA et maîtrise du coût. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">07</span>
+          <h2>L'assistant IA et ses limites</h2>
+        </div>
+        <p>
+          L'assistant aide à réviser en s'appuyant sur le contenu du cours pour
+          limiter les erreurs. Il ne donne pas la solution d'un TD avant que le
+          travail ait été rendu. Le quota de messages restant est affiché.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Quotas et coût</p>
+          <ul>
+            <li>
+              Dix messages par jour sont offerts à tous, y compris avec les
+              offres gratuites, à 500 F et à 1 000 F.
+            </li>
+            <li>
+              L'offre à 2 000 F porte le quota à cinquante messages par jour.
+            </li>
+            <li>
+              L'assistant n'est donc pas illimité : chaque message a un coût. Un
+              plafond global de dépense par jour peut mettre l'assistant en
+              pause avant tout dépassement du budget.
+            </li>
+            <li>
+              La clé de l'IA reste côté serveur et n'est jamais visible dans le
+              navigateur. Le contenu d'un rendu est traité comme une donnée,
+              jamais comme une instruction pour l'IA.
+            </li>
+            <li>
+              L'assistant n'est pas encore disponible : son interface est une
+              maquette.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 08 : points et classement, calculés côté serveur. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">08</span>
+          <h2>Points et classement</h2>
+        </div>
+        <p>
+          Les points servent à la compétition entre tous les étudiants de la
+          plateforme : celui qui en a le plus est premier. Ils s'obtiennent avec
+          un quiz validé et son score, un TD rendu et accepté, et un rappel de
+          cours terminé. Le calcul est fait côté serveur, jamais dans le
+          navigateur. Le barème précis reste à fixer.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Règles du classement</p>
+          <ul>
+            <li>
+              Les points d'un module ne sont attribués qu'une fois, sur le
+              meilleur score, pour éviter de les accumuler en refaisant un quiz.
+            </li>
+            <li>
+              Il n'existe qu'un seul classement général, visible dans l'espace
+              étudiant avec le rang et les points. Il affiche uniquement le
+              prénom ou le pseudo, jamais le numéro de téléphone.
+            </li>
+            <li>
+              Les offres supérieures ouvrent plus d'actions qui rapportent des
+              points : c'est prévu. Un classement de la semaine ou du mois est
+              également prévu pour les nouveaux inscrits.
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 09 : déblocage des modules, propre à chaque matière. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">09</span>
+          <h2>Déblocage des modules</h2>
+        </div>
+        <p>
+          Chaque matière a sa propre suite de modules : vous commencez par le
+          module 1 de chaque matière, sans attendre d'avoir terminé une autre
+          matière. Un module ne s'ouvre que lorsque le quiz du module précédent
+          a été réussi.
+        </p>
+        <p>
+          Un module est considéré comme terminé quand vous avez fini tout ce que
+          votre offre inclut pour ce module : les quiz seulement à 500 F, les
+          quiz, le rappel de cours et le TD à 1 000 F et 2 000 F. Si vous passez
+          de 500 F à 1 000 F, le rappel et le TD s'ouvrent pour les modules déjà
+          débloqués par les quiz.
+        </p>
+      </article>
+
+      <!-- Article 10 : données personnelles, dont le numéro WhatsApp. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">10</span>
+          <h2>Données personnelles et numéro WhatsApp</h2>
+        </div>
+        <p>
+          Le numéro de téléphone est une donnée personnelle. Il est demandé pour
+          identifier le compte, vérifier l'inscription et, plus tard, recevoir
+          les codes de réinitialisation du mot de passe sur WhatsApp. Son
+          utilisation fait l'objet d'un consentement : seules les données
+          nécessaires au fonctionnement du site sont collectées.
+        </p>
+        <div class="terms-note">
+          <p class="terms-note-title">Ce que nous nous engageons à faire</p>
+          <ul>
+            <li>Le numéro n'apparaît jamais dans le classement.</li>
+            <li>
+              Le nom complet reste visible par l'administrateur uniquement.
+            </li>
+            <li>
+              Les échanges avec le site se font en HTTPS et la suppression du
+              compte peut être demandée.
+            </li>
+            <li>
+              Les rendus de TD envoyés à un service d'IA externe sont décrits
+              comme des données personnelles : un accord est demandé avant leur
+              envoi.
+            </li>
+            <li>La réglementation locale en vigueur doit être respectée.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Article 11 : paiement Wave et activation de l'accès. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">11</span>
+          <h2>Paiements Wave</h2>
+        </div>
+        <p>
+          Le paiement se fait par Wave. Dans une première phase, vous envoyez le
+          montant de l'offre au numéro Wave indiqué, puis vous transmettez la
+          référence de la transaction : l'administrateur active votre accès
+          manuellement après vérification. Le paiement manuel permet de démarrer
+          sans démarche d'entreprise, mais il demande un contrôle et peut être
+          exposé à de fausses preuves.
+        </p>
+        <p>
+          Après la formalisation prévue, le paiement automatique pourra être mis
+          en place avec Wave Business ou un agrégateur. D'autres moyens, comme
+          Orange Money ou la carte bancaire, sont à l'étude selon les pays. Le
+          site enregistre pour chaque paiement le montant, le moyen, la
+          référence, la date et la date de fin de validité, soit un mois.
+        </p>
+      </article>
+
+      <!-- Article 12 : remboursements. Le cahier des charges ne fixe pas encore
+           de politique : on indique la procédure sans promettre une règle. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">12</span>
+          <h2>Remboursements</h2>
+        </div>
+        <p>
+          Un paiement active un accès d'un mois. Aucune règle de remboursement
+          automatique n'est encore définie : toute demande est examinée
+          manuellement par l'administrateur. Pour être traitée, elle doit
+          préciser le numéro du compte et la référence de la transaction Wave.
+        </p>
+        <p>
+          En cas de paiement effectué deux fois ou par erreur, signalez-le
+          rapidement avec la référence afin que l'administrateur puisse vérifier
+          les opérations auprès de Wave. La politique de remboursement
+          définitive sera publiée ici avant le lancement officiel des paiements.
+        </p>
+      </article>
+
+      <!-- Article 13 : origine des supports pédagogiques. -->
+      <article class="terms-article">
+        <div class="terms-article-head">
+          <span class="terms-number">13</span>
+          <h2>Source des contenus</h2>
+        </div>
+        <p>
+          Les rappels de cours, les quiz et les TD sont tirés des supports
+          officiels de l'<strong
+            ><span style="color: #91c2e7">U</span
+            ><span style="color: #0788d9">N</span
+            ><span style="color: #10a040">C</span
+            ><span style="color: #204050">H</span
+            ><span style="color: #e08020">K</span></strong
+          >
+          (Université numérique Cheikh Hamidou Kane), promotion P13 IDA. Ils
+          sont mis à jour régulièrement. Les corrigés de TD rédigés avec l'IA
+          restent soumis à une validation humaine avant publication.
+        </p>
+      </article>
+
+      <!-- Bloc final : le bouton renvoie vers l'accueil. -->
+      <div class="terms-accept">
+        <p>
+          Le site est conçu pour être simple et utilisable sur téléphone. Nous
+          vous remercions d'avoir pris connaissance de ces règles : elles
+          permettent à chacun de réviser dans de bonnes conditions.
+        </p>
+        <button
+          type="button"
+          class="accept-button"
+          onclick="location.href = 'accueil.html'"
+        >
+          <strong
+            >Je confirme avoir lu et accepté les conditions d'utilisation du
+            site</strong
+          >
+        </button>
+      </div>
     </main>
 
-    <footer>
-        <img src="image/logo dijadev.png" alt="logo dijadev" class="logo-dijadev" id="logo-dijadev">
-        <p>&copy;  2026 Révision P13 IDA-Tous droits réservés.</p>
-    </footer>
+    <!-- Pied de page commun : script.js remplit ce conteneur -->
+    <footer id="site-footer"></footer>
+    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>

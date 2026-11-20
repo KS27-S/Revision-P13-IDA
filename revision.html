@@ -1,107 +1,508 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Page de révision : une carte par matière, avec ses modules, quiz et TD -->
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Révision P13 IDA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="image/logo UNCHK.png" class="logo-unchk" id="logo-unchk" alt="logo unchk">
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="revision.html">Révision</a></li>
-                <li><a href="assistant.html">Assistant de révision</a></li>
-                <li><a href="rappel.html">Rappel de cours</a></li>
-                <li><a href="projet.html">Projet</a></li>
-                <li><a href="espace-etudiant.html">Espace étudiant</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+  <!-- En-tête : métadonnées, titre de l'onglet et feuille de style commune -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Révision | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête commun : script.js remplit ce conteneur avec le logo et le menu -->
+    <header id="site-header"></header>
+
+    <!-- Contenu principal : la grille contient une carte par matière -->
+    <main class="revision-page">
+      <div class="page-intro">
         <h1>Révision P13 IDA</h1>
-        <p>Bienvenue sur le site de révision pour le cours P13 IDA !</p>
-        <p>Choisissez une section pour commencer votre révision :</p>
-        <section>
-            <h2> Algorithme</h2>
-            <div class="quizz">
-                <ul>
-                    <li>
-                        <button>Quiz sur Algorithme</button></li>
-                    <li><button>TD sur Algorithme</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2> Développement mobile</h2>
-            <div class="quizz">
-                <ul>
-                    <li><button>Quiz sur Développement mobile</button></li>
-                    <li><button>TD sur Développement mobile</button></li>
-                </ul>
-            </div> 
-        </section>
-        <section>
-            <h2> Environnement mobile</h2>
-            <div class="quizz">
-                <ul>
-                    <li><button>Quiz sur Environnement mobile</button></li>
-                    <li><button>TD sur Environnement mobile</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2> HTML-CSS</h2>
-            <div class="quizz">
-               <ul>
-                    <li><button>Quiz sur HTML-CSS</button></li>
-                    <li><button>TD sur HTML-CSS</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2> Initiation à la programmation</h2>
-            <div class="quizz">
-               <ul>
-                    <li><button>Quiz sur Initiation à la programmation</button></li>
-                    <li><button>TD sur Initiation à la programmation</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2> Intro au web</h2>
-            <div class="quizz">
-                <ul>
-                    <li><button>Quiz sur Intro au Web</button></li>
-                    <li><button>TD sur Intro au web</button></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2> JavaScript</h2>
-            <div class="quizz">
-               <ul>
-                <li><button>Quiz sur JavaScript</button></li>
-                <li><button>TD sur JavaScript</button></li>
-               </ul>
-            </div>
-        </section>
-        <section>
-            <h2> Réseaux</h2>
-            <div class="quizz">
-                <ul>
-                    <li><button>Quiz sur Réseaux</button></li>
-                    <li><button>TD sur Réseaux</button></li>
-                </ul>
-            </div>
-        </section>
-       </main>
-       <footer>
-        <img src="image/logo dijadev.png" alt="logo dijadev" class="logo-dijadev" id="logo-dijadev">
-        <p>&copy;  2026 Révision P13 IDA-Tous droits réservés.</p>
-       </footer>
-        <script src="script.js" defer></script>
-       </body>
-       </html>
+        <p>
+          Choisissez une matière, puis un module. Chaque module propose un quiz
+          et un travail dirigé (TD). Pour l'instant, l'interface est statique :
+          les boutons montrent les états prévus, sans lancer d'exercice.
+        </p>
+      </div>
+
+      <!-- Légende des états : elle rend compréhensibles les badges des modules. -->
+      <ul class="legend-etats">
+        <li>
+          <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+          Module qui s'ouvrira après le quiz du module précédent.
+        </li>
+        <li>
+          <span class="etat-badge etat-badge--disponible">Disponible</span>
+          Activité que vous pouvez commencer.
+        </li>
+        <li>
+          <span class="etat-badge etat-badge--reussi">Réussi</span>
+          Activité validée, que vous pouvez refaire.
+        </li>
+        <li><span class="offert-badge">Offert</span> Premier TD de la matière.</li>
+      </ul>
+
+      <!-- Chaque attribut data-... est une étiquette lisible par le futur backend :
+           il pourra changer data-etat ou ajouter "disabled" sans réécrire le HTML. -->
+      <div class="grille-matieres">
+        <!-- Carte d'Algorithmique : premier module réussi, deuxième disponible,
+             les deux derniers verrouillés. -->
+        <article class="matiere-carte" data-matiere-id="algorithmique">
+          <div class="matiere-carte-head">
+            <h2>Algorithmique</h2>
+            <span class="matiere-compteur">1 / 4 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="introduction" data-etat="reussi">
+              <div class="module-info">
+                <span class="module-nom">Introduction à l'algorithmique</span>
+                <span class="etat-badge etat-badge--reussi">Réussi</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="algorithmique" data-module="introduction" data-etat="reussi">Refaire le quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="algorithmique" data-module="introduction" data-etat="reussi">Refaire le TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="structures-controle" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Les structures de contrôle (tests et boucles)</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="algorithmique" data-module="structures-controle" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="algorithmique" data-module="structures-controle" data-etat="disponible">TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="sous-programmes" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les sous-programmes (fonctions et procédures)</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="algorithmique" data-module="sous-programmes" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="algorithmique" data-module="sous-programmes" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="tableaux-structures" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les tableaux, les chaînes et les structures</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="algorithmique" data-module="tableaux-structures" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="algorithmique" data-module="tableaux-structures" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte de Développement mobile : deux modules n'ont pas encore de TD
+             dans les fichiers de contenu ; le bouton est donc "à venir". -->
+        <article class="matiere-carte" data-matiere-id="developpement-mobile">
+          <div class="matiere-carte-head">
+            <h2>Développement mobile</h2>
+            <span class="matiere-compteur">0 / 4 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="introduction-mobile" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Introduction au génie logiciel mobile</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="developpement-mobile" data-module="introduction-mobile" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="developpement-mobile" data-module="introduction-mobile" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="android-studio" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Prise en main d'Android Studio</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="developpement-mobile" data-module="android-studio" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="developpement-mobile" data-module="android-studio" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="notions-android" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Notions essentielles d'une application Android</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="developpement-mobile" data-module="notions-android" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="developpement-mobile" data-module="notions-android" data-etat="a-venir" disabled>TD à venir</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="hybrides-ionic" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les applications hybrides et Ionic</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="developpement-mobile" data-module="hybrides-ionic" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="developpement-mobile" data-module="hybrides-ionic" data-etat="a-venir" disabled>TD à venir</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte d'Environnement mobile -->
+        <article class="matiere-carte" data-matiere-id="environnement-mobile">
+          <div class="matiere-carte-head">
+            <h2>Environnement mobile</h2>
+            <span class="matiere-compteur">0 / 4 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="introduction-technologies-mobiles" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Introduction aux technologies mobiles</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="environnement-mobile" data-module="introduction-technologies-mobiles" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="environnement-mobile" data-module="introduction-technologies-mobiles" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="plateformes-os-mobiles" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Plateformes et systèmes d'exploitation mobiles</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="environnement-mobile" data-module="plateformes-os-mobiles" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="environnement-mobile" data-module="plateformes-os-mobiles" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="approches-developpement" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les approches de développement mobile</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="environnement-mobile" data-module="approches-developpement" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="environnement-mobile" data-module="approches-developpement" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="ide-mobile" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les environnements de développement intégrés (IDE)</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="environnement-mobile" data-module="ide-mobile" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="environnement-mobile" data-module="ide-mobile" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte de HTML et CSS : neuf modules, donc une carte plus longue. -->
+        <article class="matiere-carte" data-matiere-id="html-css">
+          <div class="matiere-carte-head">
+            <h2>HTML et CSS</h2>
+            <span class="matiere-compteur">0 / 9 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="introduction-html-css" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Introduction à HTML et CSS</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="introduction-html-css" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="introduction-html-css" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="elements-attributs-html" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les éléments et attributs HTML</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="elements-attributs-html" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="elements-attributs-html" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="caracteres-metadonnees" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Jeux de caractères, symboles et métadonnées</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="caracteres-metadonnees" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="caracteres-metadonnees" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="styles-couleurs" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les styles et couleurs en HTML</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="styles-couleurs" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="styles-couleurs" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="feuilles-de-style-css" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les feuilles de style CSS</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="feuilles-de-style-css" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="feuilles-de-style-css" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="elements-multimedias" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les éléments multimédias en HTML</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="elements-multimedias" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="elements-multimedias" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="tableaux-listes" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les tableaux et les listes</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="tableaux-listes" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="tableaux-listes" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="mise-en-page" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">La mise en page en HTML</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="mise-en-page" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="mise-en-page" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="formulaires" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les formulaires HTML</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="html-css" data-module="formulaires" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="html-css" data-module="formulaires" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte d'Initiation à la programmation (Scratch) -->
+        <article class="matiere-carte" data-matiere-id="initiation-programmation">
+          <div class="matiere-carte-head">
+            <h2>Initiation à la programmation</h2>
+            <span class="matiere-compteur">0 / 2 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="decouverte-scratch" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">À la découverte de la programmation interactive (Scratch)</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="initiation-programmation" data-module="decouverte-scratch" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="initiation-programmation" data-module="decouverte-scratch" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="programmer-avec-scratch" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Programmer avec Scratch 2 : algorithmes, variables, tests et boucles</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="initiation-programmation" data-module="programmer-avec-scratch" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="initiation-programmation" data-module="programmer-avec-scratch" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte d'Introduction au web : le premier module n'a pas de TD dans
+             les fichiers d'origine, donc le badge "Offert" est placé sur le
+             premier TD réellement disponible (module 2). -->
+        <article class="matiere-carte" data-matiere-id="intro-web">
+          <div class="matiere-carte-head">
+            <h2>Introduction au web</h2>
+            <span class="matiere-compteur">0 / 6 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="reseau-internet" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Réseau informatique et Internet</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="reseau-internet" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="reseau-internet" data-etat="a-venir" disabled>TD à venir</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="web-client-serveur" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Le Web et le concept client/serveur</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="web-client-serveur" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="web-client-serveur" data-etat="verrouille" disabled>TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="site-web-hebergement" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Site web et hébergement</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="site-web-hebergement" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="site-web-hebergement" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="webmastering-metiers" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Le webmastering et les autres métiers du web</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="webmastering-metiers" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="webmastering-metiers" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="langages-du-web" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les langages du web</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="langages-du-web" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="langages-du-web" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="noms-de-domaine" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les noms de domaine</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="intro-web" data-module="noms-de-domaine" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="intro-web" data-module="noms-de-domaine" data-etat="a-venir" disabled>TD à venir</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte de JavaScript : le dernier module n'a pas encore de TD. -->
+        <article class="matiere-carte" data-matiere-id="javascript">
+          <div class="matiere-carte-head">
+            <h2>JavaScript</h2>
+            <span class="matiere-compteur">0 / 3 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="langage-javascript" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Le langage JavaScript</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="javascript" data-module="langage-javascript" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="javascript" data-module="langage-javascript" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="objets-tableaux-fonctions" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les objets, les tableaux et les fonctions</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="javascript" data-module="objets-tableaux-fonctions" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="javascript" data-module="objets-tableaux-fonctions" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="javascript-navigateurs" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">JavaScript et les navigateurs : DOM, CSS et événements</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="javascript" data-module="javascript-navigateurs" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="javascript" data-module="javascript-navigateurs" data-etat="a-venir" disabled>TD à venir</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Carte de Réseau : le nom est harmonisé au singulier, comme dans le
+             cahier des charges et dans la page de rappel de cours. -->
+        <article class="matiere-carte" data-matiere-id="reseau">
+          <div class="matiere-carte-head">
+            <h2>Réseau</h2>
+            <span class="matiere-compteur">0 / 5 modules terminés</span>
+          </div>
+          <ul class="module-liste">
+            <li class="module-ligne" data-module-id="presentation-reseaux" data-etat="disponible">
+              <div class="module-info">
+                <span class="module-nom">Présentation des réseaux : connexion à Internet</span>
+                <span class="etat-badge etat-badge--disponible">Disponible</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="reseau" data-module="presentation-reseaux" data-etat="disponible">Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="reseau" data-module="presentation-reseaux" data-etat="disponible">TD <span class="offert-badge">Offert</span></button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="aspects-mathematiques" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Aspects mathématiques : binaire, hexadécimal, adresses IP</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="reseau" data-module="aspects-mathematiques" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="reseau" data-module="aspects-mathematiques" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="notions-de-base" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Notions de base : LAN, WAN, bande passante, OSI et TCP/IP</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="reseau" data-module="notions-de-base" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="reseau" data-module="notions-de-base" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="medias-reseau" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Les médias réseau : cuivre, fibre, sans fil et Packet Tracer</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="reseau" data-module="medias-reseau" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="reseau" data-module="medias-reseau" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+            <li class="module-ligne" data-module-id="cablage-lan-wan" data-etat="verrouille">
+              <div class="module-info">
+                <span class="module-nom">Infrastructures : câblage des réseaux locaux et distants</span>
+                <span class="etat-badge etat-badge--verrouille">Verrouillé</span>
+              </div>
+              <div class="module-actions">
+                <button type="button" class="action-btn" data-type="quiz" data-matiere="reseau" data-module="cablage-lan-wan" data-etat="verrouille" disabled>Quiz</button>
+                <button type="button" class="action-btn action-btn--td" data-type="td" data-matiere="reseau" data-module="cablage-lan-wan" data-etat="verrouille" disabled>TD</button>
+              </div>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <!-- Pied de page commun : script.js remplit ce conteneur -->
+    <footer id="site-footer"></footer>
+    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
+    <script src="script.js" defer></script>
+  </body>
+</html>

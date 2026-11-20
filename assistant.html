@@ -1,39 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- Page de l'assistant de révision : maquette statique d'une interface de discussion -->
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Révision P13 IDA</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="image/logo UNCHK.png" class="logo-unchk" id="logo-unchk" alt="logo unchk">
-            <ul>
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="revision.html">Révision</a></li>
-                <li><a href="assistant.html">Assistant de révision</a></li>
-                <li><a href="rappel.html">Rappel de cours</a></li>
-                <li><a href="projet.html">Projet</a></li>
-                <li><a href="espace-etudiant.html">Espace étudiant</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+  <!-- En-tête : métadonnées, titre de l'onglet et feuille de style commune -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistant de révision | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- En-tête commun : script.js remplit ce conteneur avec le logo et le menu -->
+    <header id="site-header"></header>
+
+    <!-- Contenu principal : la fenêtre de discussion est une maquette, sans IA derrière -->
+    <main class="chat-page">
+      <!-- Introduction courte : on dit tout de suite que l'outil n'est pas encore actif -->
+      <div class="page-intro">
         <h1>Assistant de révision</h1>
-        <p>Bienvenue sur l'assistant de révision !</p>
-        <p>Choisissez un sujet pour commencer votre révision :</p>
-        <ul>
-            <li><a href="revision.html#sujet1">Sujet 1</a></li>
-            <li><a href="revision.html#sujet2">Sujet 2</a></li>
-            <li><a href="revision.html#sujet3">Sujet 3</a></li>
-        </ul>
+        <p>
+          Posez vos questions sur les cours de la promotion P13 IDA. L'assistant
+          arrivera bientôt : la page ci-dessous montre à quoi il ressemblera.
+        </p>
+      </div>
+
+      <!-- Fenêtre de discussion : elle garde la forme d'un vrai chat, mais les
+           messages sont figés dans le HTML pour montrer l'interface future. -->
+      <div class="chat-window">
+        <!-- Bandeau du haut : avatar, nom de l'assistant et badge de disponibilité -->
+        <div class="chat-window-head">
+          <span class="chat-avatar" aria-hidden="true">IA</span>
+          <div class="chat-titre">
+            <h2>Assistant IDA P13</h2>
+            <p>Questions, explications et reprises de cours</p>
+          </div>
+          <span class="chat-badge">Bientôt disponible</span>
+        </div>
+
+        <!-- Zone des messages : deux exemples suffisent à rendre la maquette lisible.
+             role="log" indique aux lecteurs d'écran qu'il s'agit d'un fil de discussion. -->
+        <div
+          class="chat-messages"
+          role="log"
+          aria-label="Exemples de messages de discussion"
+        >
+          <article class="chat-message chat-message--assistant">
+            <span class="chat-auteur">Assistant</span>
+            <p>
+              Bonjour ! Je pourrai vous expliquer une notion, vous donner un
+              exemple ou vous aider à préparer un quiz.
+            </p>
+          </article>
+          <article class="chat-message chat-message--etudiant">
+            <span class="chat-auteur">Vous</span>
+            <p>Comment fonctionne une affectation en algorithmique ?</p>
+          </article>
+          <article class="chat-message chat-message--assistant">
+            <span class="chat-auteur">Assistant</span>
+            <p>
+              L'affectation donne une valeur à une variable avec le symbole ←.
+              Par exemple : X ← 5. Ce n'est pas une comparaison : « = » sert à
+              comparer deux valeurs.
+            </p>
+          </article>
+        </div>
+
+        <!-- Zone de saisie désactivée : on voit où l'étudiant écrira plus tard,
+             sans laisser croire que l'envoi fonctionne déjà. -->
+        <div class="chat-compose" role="group" aria-label="Zone de saisie désactivée">
+          <input
+            type="text"
+            aria-label="Votre question"
+            placeholder="Écrivez votre question…"
+            disabled
+          />
+          <button type="button" disabled>Envoyer</button>
+        </div>
+      </div>
+
+      <!-- Encadré : rappel des limites prévues par le cahier des charges.
+           Ces chiffres sont ceux des conditions d'utilisation. -->
+      <aside class="chat-avant">
+        <p>
+          <strong>Bientôt disponible.</strong> Dix messages par jour seront
+          offerts à tous les étudiants ; l'offre à 2 000 F portera ce quota à
+          cinquante messages par jour. L'assistant ne donnera pas la solution
+          d'un TD avant que vous ayez rendu votre travail.
+        </p>
+      </aside>
     </main>
-    <footer>
-        <img src="image/logo dijadev.png" alt="logo dijadev" class="logo-dijadev" id="logo-dijadev">
-        <p>&copy;  2026 Révision P13 IDA-Tous droits réservés.</p>
-    </footer>
+
+    <!-- Pied de page commun : script.js remplit ce conteneur -->
+    <footer id="site-footer"></footer>
+    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
