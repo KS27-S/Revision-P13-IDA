@@ -1,0 +1,22 @@
+{
+  "matiere": "initiation-programmation",
+  "module": "decouverte-scratch",
+  "titre": "TD – À la découverte de Scratch",
+  "exercices": [
+    {
+      "id": "prog-s1-td-01",
+      "type": "exercice",
+      "titre": "Mon premier projet Scratch (guide « Pour bien commencer »)",
+      "source": "Getting-Started-Guide-Scratch2.pdf (aucun TD fourni pour cette séquence)",
+      "statut_corrige": "résumé du guide officiel intégré à la séquence 1 (pas un TD)",
+      "enonce_simple": "Suis les 12 étapes du guide pour créer ton premier projet : un lutin qui bouge, joue du tambour, parle, change de couleur et danse.",
+      "indices": [
+        "Commence par cliquer sur Créer.",
+        "Un script commence par un bloc de la catégorie Événements.",
+        "Pour répéter, entoure les blocs avec RÉPÉTER."
+      ],
+      "solution": "1. Se lancer : déplacer le bloc AVANCER dans l'aire des scripts et cliquer dessus (le chat avance de 10 pas).\n2. Ajouter des sons : coller le bloc JOUER DU TAMBOUR sous AVANCER.\n3. Créer une danse : ajouter un autre AVANCER (avec un signe moins pour reculer) puis un autre JOUER DU TAMBOUR.\n4. Encore et encore : placer un bloc RÉPÉTER sur le dessus de la pile et régler le nombre de répétitions.\n5. Dire quelque chose : bloc DIRE (catégorie Apparence) en haut de la pile.\n6. Le drapeau vert : placer « quand drapeau vert pressé » sur le dessus de la pile.\n7. Changer les couleurs : bloc AJOUTER À L'EFFET.\n8. Appuyer sur la barre espace : bloc « quand [espace] est pressé ».\n9. Ajouter un arrière-plan depuis la bibliothèque (par exemple « Spotlight-stage »).\n10. Ajouter un lutin (bibliothèque, dessin, fichier ou webcam), par exemple « Cassy Danse » dans la catégorie Gens.\n11. Découvrir : ajouter un son (onglet SONS), changer de costume et animer le lutin en alternant les costumes.\n12. Des conseils : donner un nom au projet et ouvrir la fenêtre Conseils.",
+      "explication_simple": "Chaque étape ajoute un petit bloc : en les empilant, tu construis un programme complet. Tu peux cliquer sur n'importe quel bloc pour tester la pile."
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "matiere": "algorithmique",
+  "module": "introduction",
+  "titre": "Introduction à l'algorithmique",
+  "sources": [
+    "Sequence2-Introduction Algo (2).pdf",
+    "Introduction_à_l_Algorithmique.pptx"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un algorithme ?",
+      "choix": [
+        "Un langage de programmation comme Pascal",
+        "Une suite finie de règles ou d'opérations qui transforme des données d'entrée en données de sortie",
+        "Un logiciel qui s'installe sur l'ordinateur",
+        "Un type de variable qui stocke du texte"
+      ],
+      "reponse": 1,
+      "explication": "Un algorithme décrit comment résoudre un problème : il prend des données en entrée (input) et produit des résultats en sortie (output). Ce n'est pas un langage : le programme est le codage de l'algorithme dans un langage donné.",
+      "id": "algo-introduction-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "D'où vient le mot « algorithme » ?",
+      "choix": [
+        "Du nom du mathématicien arabe El Khawarizmi (IXe siècle)",
+        "Du nom du mathématicien grec Euclide",
+        "Du nom du savant grec Archimède",
+        "Du mot « logarithme », inventé au XXe siècle"
+      ],
+      "reponse": 0,
+      "explication": "Le mot vient d'un mathématicien arabe du IXe siècle (écrit « El Khawrismi » dans le cours). Euclide et Archimède en sont des précurseurs (calcul du PGCD, du nombre π), mais ils ne lui ont pas donné son nom.",
+      "id": "algo-introduction-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Laquelle de ces propriétés n'est PAS exigée d'un algorithme ?",
+      "choix": [
+        "Être précis",
+        "Être déterministe",
+        "Être fini dans le temps",
+        "Être écrit dans le langage Pascal"
+      ],
+      "reponse": 3,
+      "explication": "Un algorithme doit être précis, déterministe et fini dans le temps. Il peut s'écrire en français ou en pseudo-langage : le choix d'un langage de programmation vient après, au moment du codage.",
+      "id": "algo-introduction-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel type de données ne peut prendre que les valeurs VRAI ou FAUX ?",
+      "choix": [
+        "Le type entier",
+        "Le type réel",
+        "Le type booléen",
+        "Le type caractère"
+      ],
+      "reponse": 2,
+      "explication": "Le type booléen est le type logique : ses deux seules valeurs sont VRAI et FAUX.",
+      "id": "algo-introduction-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel symbole désigne l'affectation dans le cours ?",
+      "choix": [
+        "=",
+        "←",
+        "<>",
+        "MOD"
+      ],
+      "reponse": 1,
+      "explication": "L'affectation (X ← 1) attribue une valeur à une variable. Le symbole = sert à comparer deux valeurs.",
+      "id": "algo-introduction-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle instruction permet d'afficher un résultat à l'écran ?",
+      "choix": [
+        "Ecrire",
+        "Lire",
+        "Retourner",
+        "Declarer"
+      ],
+      "reponse": 0,
+      "explication": "Ecrire communique des valeurs à l'utilisateur en les affichant. Lire fait l'inverse : elle récupère une valeur saisie au clavier.",
+      "id": "algo-introduction-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle instruction permet à l'utilisateur de fournir une valeur au clavier ?",
+      "choix": [
+        "Ecrire",
+        "Debut",
+        "Fin",
+        "Lire"
+      ],
+      "reponse": 3,
+      "explication": "Lire(nomVariable) range dans la variable la valeur tapée par l'utilisateur. Bon réflexe : afficher d'abord un message avec Ecrire pour lui dire quoi saisir.",
+      "id": "algo-introduction-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Un algorithme est « déterministe ». Cela signifie que…",
+      "choix": [
+        "il s'arrête toujours après un temps fini",
+        "il indique l'ordre exact des étapes",
+        "avec les mêmes données d'entrée, il produit toujours les mêmes résultats",
+        "il n'utilise que des nombres entiers"
+      ],
+      "reponse": 2,
+      "explication": "Déterministe = mêmes données, mêmes résultats. S'arrêter après un temps fini, c'est la propriété « fini dans le temps » ; indiquer l'ordre exact des étapes relève de la précision.",
+      "id": "algo-introduction-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que vaut 17 MOD 5 ?",
+      "choix": [
+        "3",
+        "2",
+        "12",
+        "3,4"
+      ],
+      "reponse": 1,
+      "explication": "MOD donne le reste de la division entière. 17 = 5 × 3 + 2, donc le reste est 2.",
+      "id": "algo-introduction-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que vaut 17 DIV 5 ?",
+      "choix": [
+        "3",
+        "2",
+        "3,4",
+        "12"
+      ],
+      "reponse": 0,
+      "explication": "DIV donne le quotient de la division entière : 17 = 5 × 3 + 2, donc 17 DIV 5 = 3.",
+      "id": "algo-introduction-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'une constante ?",
+      "choix": [
+        "Une variable de type entier",
+        "Une valeur qui change à chaque lecture",
+        "Un commentaire ignoré par la machine",
+        "Un objet dont la valeur ne change pas pendant tout l'algorithme"
+      ],
+      "reponse": 3,
+      "explication": "Une constante est déclarée une fois (par exemple PI = 3,14) et sa valeur reste figée. Une variable, elle, peut changer pendant l'exécution.",
+      "id": "algo-introduction-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lequel de ces noms est un identificateur valide ?",
+      "choix": [
+        "prix total",
+        "2prix",
+        "prix_total",
+        "3,14"
+      ],
+      "reponse": 2,
+      "explication": "Un identificateur commence par une lettre et ne contient pas d'espace. « prix total » a un espace, « 2prix » commence par un chiffre, « 3,14 » est un nombre.",
+      "id": "algo-introduction-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans quel ordre apparaissent les parties d'un algorithme ?",
+      "choix": [
+        "Début, instructions, déclarations, Fin",
+        "Nom, déclarations (constantes, types, variables), Début, instructions, Fin",
+        "Variables, Fin, instructions, Début",
+        "Instructions, déclarations, nom, Début"
+      ],
+      "reponse": 1,
+      "explication": "On donne le nom, on déclare tout ce qu'on utilisera (constantes, types, variables), puis le corps de l'algorithme est encadré par Début et Fin.",
+      "id": "algo-introduction-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment note-t-on un commentaire dans le cours ?",
+      "choix": [
+        "Entre les symboles % et %",
+        "Entre guillemets « »",
+        "Entre parenthèses ( )",
+        "Après le symbole ←"
+      ],
+      "reponse": 0,
+      "explication": "Exemple du cours : (% ceci est un commentaire %). Il sert à documenter l'algorithme pour un lecteur et n'est jamais exécuté.",
+      "id": "algo-introduction-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que vaut X à la fin de ces instructions ?",
+      "code": "X ← 2*3+5\nX ← X+1\nEcrire(X)",
+      "choix": [
+        "11",
+        "16",
+        "8",
+        "12"
+      ],
+      "reponse": 3,
+      "explication": "On calcule d'abord 2*3+5 = 11 (la multiplication est prioritaire sur l'addition), puis X ← X+1 donne 12.",
+      "id": "algo-introduction-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "nb_kg est un ENTIER et prix_du_kg est un REEL. Quel doit être le type de prix_total dans prix_total ← nb_kg * prix_du_kg ?",
+      "choix": [
+        "Entier",
+        "Booléen",
+        "Réel",
+        "Chaîne de caractères"
+      ],
+      "reponse": 2,
+      "explication": "Le produit d'un entier et d'un réel est un réel. La valeur affectée doit être compatible avec le type de la variable à gauche, donc prix_total doit être réel.",
+      "id": "algo-introduction-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Un programme s'exécute sans message d'erreur mais affiche des résultats faux. De quel type d'erreur s'agit-il ?",
+      "choix": [
+        "Une erreur syntaxique : il suffit de corriger l'écriture d'un mot-clé",
+        "Une erreur sémantique : il faut revenir à l'analyse de l'algorithme",
+        "Une erreur de saisie de l'utilisateur uniquement",
+        "Une erreur de la machine, pas du programme"
+      ],
+      "reponse": 1,
+      "explication": "Les erreurs syntaxiques sont signalées à l'exécution et se corrigent facilement. Les erreurs sémantiques (résultats ≠ résultats attendus) sont plus difficiles à trouver et obligent à revenir à l'analyse.",
+      "id": "algo-introduction-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Avec A = 3 et B = 5 au départ, quelles sont les valeurs de A et B à la fin ?",
+      "code": "A ← B\nB ← A",
+      "choix": [
+        "A = 5 et B = 5",
+        "A = 5 et B = 3",
+        "A = 3 et B = 5",
+        "A = 3 et B = 3"
+      ],
+      "reponse": 0,
+      "explication": "Après A ← B, l'ancienne valeur de A (3) est perdue. Ensuite B ← A recopie 5. Pour permuter correctement, il faut une variable intermédiaire temp.",
+      "id": "algo-introduction-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "On exécute cet algorithme avec A = 0 et B = 5. Qu'affiche-t-il ?",
+      "code": "Lire(A, B)\nSi A <> 0 Alors\n   X ← -B / A\n   Ecrire(X)\nSinon\n   Si B = 0 Alors\n      Ecrire(\"tout réel est solution\")\n   Sinon\n      Ecrire(\"pas de solution\")\n   Finsi\nFinsi",
+      "choix": [
+        "X = 0",
+        "tout réel est solution",
+        "X = -5",
+        "pas de solution"
+      ],
+      "reponse": 3,
+      "explication": "A est nul, donc on passe au « sinon ». Comme B n'est pas nul, l'équation 0·X + 5 = 0 est impossible : « pas de solution ».",
+      "id": "algo-introduction-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est l'ordre correct des quatre phases d'élaboration d'un algorithme ?",
+      "choix": [
+        "Pseudo-langage → analyse du problème → tests → langage courant",
+        "Codage → analyse du problème → tests → pseudo-langage",
+        "Analyse du problème → solution en langage courant → pseudo-langage → tests et vérification",
+        "Tests → analyse du problème → langage courant → pseudo-langage"
+      ],
+      "reponse": 2,
+      "explication": "On comprend d'abord le problème, on décrit l'idée en langage courant, on l'écrit en pseudo-langage, puis on teste. Si le résultat ne répond pas à l'énoncé, on retourne à la première phase.",
+      "id": "algo-introduction-20"
+    }
+  ]
+}

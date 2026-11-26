@@ -1,0 +1,93 @@
+{
+  "matiere": "reseau",
+  "module": "cablage-lan-wan",
+  "titre": "TD – Câblage des réseaux locaux et distants (Packet Tracer)",
+  "exercices": [
+    {
+      "id": "reseau-s5-td-01",
+      "type": "exercice",
+      "titre": "Étape 1 : un réseau de deux ordinateurs (câble croisé)",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais le réseau le plus simple : deux ordinateurs reliés par un câble croisé.",
+      "indices": [
+        "Deux équipements de même nature se relient avec un câble croisé."
+      ],
+      "solution": "1. Placer deux PC (type « End Devices »).\n2. Outil de câblage : choisir « Copper Cross-Over ».\n3. Relier FastEthernet0 du PC0 à FastEthernet0 du PC1.\n4. Donner une adresse IP à chaque PC (Desktop > IP Configuration), par exemple 192.168.1.1 et 192.168.1.2 avec le masque 255.255.255.0.\n5. Tester avec Add Simple PDU ou ping.",
+      "explication_simple": "Un câble croisé relie directement deux équipements de même type, sans commutateur.",
+      "attention": "Les adresses IP ne sont pas imposées par le TP : elles sont données ici pour pouvoir tester le ping."
+    },
+    {
+      "id": "reseau-s5-td-02",
+      "type": "exercice",
+      "titre": "Étape 2 : un réseau local avec un concentrateur (hub)",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais un réseau avec 4 ordinateurs et un concentrateur (hub), avec des câbles droits.",
+      "indices": [
+        "PC vers hub : câble droit."
+      ],
+      "solution": "1. Placer un Hub (type « Hubs ») et 4 PC.\n2. Choisir « Copper Straight-Through » pour chaque liaison.\n3. Relier chaque PC à un port du hub.\n4. Adresses IP : 192.168.1.1 à 192.168.1.4 avec le masque 255.255.255.0.\n5. Tester un ping entre deux PC.",
+      "explication_simple": "Un hub répète le signal vers tous les ports : tous les PC partagent le même média."
+    },
+    {
+      "id": "reseau-s5-td-03",
+      "type": "exercice",
+      "titre": "Étape 3 : un réseau local avec un pont (bridge)",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais un réseau avec 4 ordinateurs, 2 concentrateurs et un pont, avec des câbles droits et croisés.",
+      "indices": [
+        "Chaque hub avec ses 2 PC forme un segment.",
+        "Hub vers pont : câble croisé (équipements de même type, selon le cours : concentrateur vers commutateur ou pont = croisé)."
+      ],
+      "solution": "1. Placer 2 hubs, 1 pont (Bridge) et 4 PC.\n2. PC0 et PC1 vers Hub0 ; PC2 et PC3 vers Hub1 : câbles droits.\n3. Hub0 vers le pont et Hub1 vers le pont : câbles croisés (dans Packet Tracer, l'option « Automatically choose connection type » choisit le bon câble).\n4. Adresses IP : 192.168.1.1 à 192.168.1.4 (masque 255.255.255.0).\n5. Tester : le pont ne transmet au segment voisin que ce qui est nécessaire.",
+      "explication_simple": "Le pont relie deux segments et filtre le trafic grâce aux adresses MAC.",
+      "attention": "Selon le cours, concentrateur vers commutateur se fait avec un câble croisé ; j'ai appliqué la même règle au pont. Vérifie le type de câble avec l'indicateur de liaison de Packet Tracer."
+    },
+    {
+      "id": "reseau-s5-td-04",
+      "type": "exercice",
+      "titre": "Étape 4 : un réseau local avec un commutateur (switch)",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais un réseau avec 4 ordinateurs et un commutateur, avec des câbles droits.",
+      "indices": [
+        "PC vers commutateur : câble droit."
+      ],
+      "solution": "1. Placer un Switch et 4 PC.\n2. Choisir « Copper Straight-Through ».\n3. Relier chaque PC à un port du commutateur.\n4. Adresses IP : 192.168.1.1 à 192.168.1.4 (masque 255.255.255.0).\n5. Tester les ping : la liaison devient verte après quelques secondes.",
+      "explication_simple": "Un commutateur ne transmet une trame qu'au port concerné (microsegmentation) : le trafic est moins chargé qu'avec un hub."
+    },
+    {
+      "id": "reseau-s5-td-05",
+      "type": "exercice",
+      "titre": "Étape 5 : un réseau distant avec deux routeurs",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais le réseau distant : deux réseaux locaux, un réseau étendu (WAN), 2 routeurs, 2 commutateurs et 4 ordinateurs, avec des câbles droits et des câbles série.",
+      "indices": [
+        "Chaque LAN : 2 PC + 1 commutateur + 1 routeur.",
+        "Les deux routeurs sont reliés par un câble série (WAN).",
+        "Une des extrémités série est DCE (elle fournit la synchronisation)."
+      ],
+      "solution": "1. Placer 2 routeurs, 2 commutateurs et 4 PC.\n2. LAN 1 : PC0 et PC1 vers Switch0 (câbles droits) ; Switch0 vers Router0 (câble droit).\n3. LAN 2 : PC2 et PC3 vers Switch1 ; Switch1 vers Router1 (câbles droits).\n4. WAN : câble série (« Serial DCE ») entre Router0 et Router1 ; l'extrémité DCE fournit l'horloge.\n5. Plan d'adressage possible : LAN 1 192.168.1.0/24, LAN 2 192.168.2.0/24, WAN 10.0.0.0/30.",
+      "explication_simple": "Un routeur relie chaque LAN au WAN. Sur la liaison série, un côté est ETCD (DCE, côté fournisseur, synchronisation) et l'autre ETTD (DTE, côté utilisateur).",
+      "attention": "Le TP demande seulement le schéma (placement et câblage). La configuration des routeurs (adresses, routes) n'est pas vue dans ce cours : le plan d'adressage est un exemple facultatif. Selon la version de Packet Tracer, il peut falloir ajouter une carte série au routeur."
+    },
+    {
+      "id": "reseau-s5-td-06",
+      "type": "exercice",
+      "titre": "Étape 6 : un réseau local sans fil",
+      "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais un réseau avec 3 ordinateurs, une tablette, un smartphone et une antenne (point d'accès).",
+      "indices": [
+        "Un point d'accès relie les clients sans fil au réseau filaire.",
+        "Les ordinateurs doivent avoir une carte sans fil."
+      ],
+      "solution": "1. Placer un point d'accès (Access Point), 3 PC (ou portables), une tablette et un smartphone (catégorie « Wireless Devices » et « End Devices »).\n2. Pour les PC : si besoin, remplacer la carte réseau filaire par une carte sans fil (arrêter l'appareil, changer le module, rallumer).\n3. Régler le même SSID sur le point d'accès et sur les équipements.\n4. Vérifier que les équipements s'associent au point d'accès (lignes en pointillé).\n5. Tester par un ping.",
+      "explication_simple": "Un point d'accès joue le rôle de concentrateur sans fil : tous les équipements de la zone s'y associent.",
+      "attention": "Les noms d'équipements et les menus varient selon la version de Packet Tracer."
+    }
+  ]
+}

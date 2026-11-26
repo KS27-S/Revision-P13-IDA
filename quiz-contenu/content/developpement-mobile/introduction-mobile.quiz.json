@@ -1,0 +1,270 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "introduction-mobile",
+  "titre": "Introduction au génie logiciel mobile",
+  "sources": [
+    "Séquence 1 Initiation au génie logiciel Mobile.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Un smartphone est la combinaison de…",
+      "choix": [
+        "un ordinateur de bureau et d'un GPS",
+        "un téléphone portable et d'un assistant numérique personnel (PDA)",
+        "un téléphone fixe et d'une console de jeux",
+        "un PDA et d'un appareil photo uniquement"
+      ],
+      "reponse": 1,
+      "explication": "Le téléphone portable est apparu en 1983 (Motorola), les PDA en 1990 (agenda, carnet d'adresses, synchronisation avec un PC). Smartphone = téléphone portable + PDA, avec en plus des applications téléchargeables.",
+      "id": "devmob-intro-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quels événements ont marqué l'essor des smartphones, selon le cours ?",
+      "choix": [
+        "La sortie de l'iPhone et le rachat d'Android par Google",
+        "La sortie de Symbian et de Blackberry",
+        "La création de Windows Mobile et de Bada",
+        "L'invention du PDA et de la carte SIM"
+      ],
+      "reponse": 0,
+      "explication": "Selon le cours, l'essor date de 2005 avec ces deux événements.",
+      "id": "devmob-intro-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle entreprise développe le système Android ?",
+      "choix": [
+        "Apple",
+        "Nokia",
+        "Samsung",
+        "Google"
+      ],
+      "reponse": 3,
+      "explication": "Android est développé par Google ; iOS par Apple ; Symbian par Nokia ; Bada par Samsung.",
+      "id": "devmob-intro-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Lequel de ces systèmes appartient à l'« ancienne génération » ?",
+      "choix": [
+        "iOS d'Apple",
+        "Android de Google",
+        "Symbian de Nokia",
+        "Windows Phone 7 de Microsoft"
+      ],
+      "reponse": 2,
+      "explication": "Ancienne génération : Symbian, Blackberry OS, Windows Mobile, Bada. OS tactiles : iOS, Android, Windows Phone 7.",
+      "id": "devmob-intro-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles contraintes matérielles le cours cite-t-il pour les appareils mobiles ?",
+      "choix": [
+        "Mémoire illimitée et processeur ultra-rapide",
+        "Mémoire limitée, processeur lent, stockage limité, autonomie réduite",
+        "Écran toujours plus grand que sur un PC",
+        "Batterie à autonomie illimitée"
+      ],
+      "reponse": 1,
+      "explication": "Il faut éviter les traitements complexes et gourmands, penser au stockage sur le cloud et limiter la consommation d'énergie.",
+      "id": "devmob-intro-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "D'après le graphique du cours, quel OS avait la plus grande part de marché en 2016 ?",
+      "choix": [
+        "Android",
+        "iOS",
+        "Symbian",
+        "Microsoft"
+      ],
+      "reponse": 0,
+      "explication": "Android atteint environ 84,8 % en 2016, iOS environ 14,4 %. Symbian, très présent en 2009 (environ 47 %), a presque disparu.",
+      "id": "devmob-intro-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le moyen de monétisation « classique » d'une application ?",
+      "choix": [
+        "Le sponsoring",
+        "Le freemium",
+        "La publicité par bandeau",
+        "L'application payante"
+      ],
+      "reponse": 3,
+      "explication": "L'application payante est la méthode classique, vendue via App Store ou Google Play. Les autres (essai, publicité, sponsoring, freemium) sont des alternatives.",
+      "id": "devmob-intro-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que désigne le « fat finger » ?",
+      "choix": [
+        "Un virus qui touche les écrans tactiles",
+        "Une méthode de saisie vocale",
+        "Un clic invalide dû à la taille des doigts par rapport aux éléments cliquables",
+        "Un type d'écran très large"
+      ],
+      "reponse": 2,
+      "explication": "Il faut soigner la taille et la proximité des éléments cliquables, et prévoir une fonction « Annuler » un peu partout.",
+      "id": "devmob-intro-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle approche est conseillée pour gérer des tailles d'écran variables ?",
+      "choix": [
+        "Une taille d'écran fixe",
+        "Le responsive design",
+        "Cibler uniquement les tablettes",
+        "Ignorer la taille de l'écran"
+      ],
+      "reponse": 1,
+      "explication": "Le responsive design adapte l'interface à la taille de l'écran. On peut aussi fixer un header et utiliser des icônes plutôt que des mots.",
+      "id": "devmob-intro-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle solution le cours conseille-t-il face à la capacité de stockage limitée ?",
+      "choix": [
+        "S'orienter vers le stockage sur le cloud",
+        "Augmenter la RAM",
+        "Changer de processeur",
+        "Stocker uniquement sur des supports amovibles"
+      ],
+      "reponse": 0,
+      "explication": "Certains modèles d'entrée de gamme n'ont que 4 Go (la majorité 16 Go) : le cloud évite de saturer l'appareil.",
+      "id": "devmob-intro-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "L'absence d'effet de survol (hover) sur un écran tactile entraîne…",
+      "choix": [
+        "moins de boutons à prévoir",
+        "la suppression du clavier",
+        "l'impossibilité de cliquer",
+        "un besoin de plus de liens et de boutons"
+      ],
+      "reponse": 3,
+      "explication": "Sans survol, on ne peut pas révéler d'information en passant la souris : l'interface doit afficher davantage de liens et de boutons. On peut compenser avec des gestes comme le swipe ou le shake.",
+      "id": "devmob-intro-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment la publicité mobile rémunère-t-elle généralement le développeur, et quel est son risque ?",
+      "choix": [
+        "À l'installation ; elle augmente toujours la vitesse",
+        "Au temps passé ; elle réduit la RAM",
+        "Au clic ; elle peut altérer l'expérience utilisateur",
+        "À la vente ; elle n'a aucun inconvénient"
+      ],
+      "reponse": 2,
+      "explication": "Comme la rémunération se fait au clic, le revenu est difficile à estimer. La publicité peut ralentir l'application ou provoquer des appuis par erreur.",
+      "id": "devmob-intro-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "En quoi consiste le sponsoring ?",
+      "choix": [
+        "Vendre l'application à prix réduit",
+        "Inciter l'utilisateur à effectuer une action en échange d'un bien virtuel",
+        "Offrir un téléphone gratuit à l'utilisateur",
+        "Afficher un bandeau publicitaire en permanence"
+      ],
+      "reponse": 1,
+      "explication": "Le sponsoring est bien adapté aux jeux : le public est bien ciblé, donc les chances de revenus sont plus grandes.",
+      "id": "devmob-intro-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment s'appelle la facturation intégrée du freemium chez Google ?",
+      "choix": [
+        "In-app billing",
+        "In-app purchase",
+        "Apple Pay",
+        "App Store Connect"
+      ],
+      "reponse": 0,
+      "explication": "Freemium = contenu virtuel contre de l'argent. Chez Apple : in-app purchase ; chez Google : in-app billing.",
+      "id": "devmob-intro-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est le principal inconvénient des applications natives ?",
+      "choix": [
+        "Elles n'ont pas accès à la caméra",
+        "Elles ne fonctionnent jamais sans connexion",
+        "Elles ne peuvent pas être publiées sur les stores",
+        "Un développement coûteux, car le code n'est ni réutilisable ni portable entre plateformes"
+      ],
+      "reponse": 3,
+      "explication": "Les applications natives sont performantes, ont accès aux fonctionnalités du téléphone et fonctionnent hors connexion, mais il faut les dupliquer pour chaque OS (Objective C pour iOS, Java pour Android).",
+      "id": "devmob-intro-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle affirmation décrit correctement une application web mobile ?",
+      "choix": [
+        "Elle s'installe depuis le store et utilise la caméra nativement",
+        "Elle est écrite en Objective C",
+        "Elle s'utilise via le navigateur, sans installation, mais n'a pas accès aux fonctionnalités du téléphone",
+        "Elle fonctionne uniquement hors connexion"
+      ],
+      "reponse": 2,
+      "explication": "Avantages : développement rapide et peu coûteux, vraiment multiplateforme, mise à jour à un seul endroit. Inconvénients : UX purement web, pas de distribution par les stores, donc peu de visibilité.",
+      "id": "devmob-intro-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'est-ce qui caractérise une application hybride ?",
+      "choix": [
+        "Elle est écrite en Java uniquement pour Android",
+        "Elle est développée en HTML, JavaScript et CSS puis enveloppée dans une application native installable",
+        "Elle est accessible uniquement par le navigateur",
+        "Elle est compilée en assembleur sans aucun langage web"
+      ],
+      "reponse": 1,
+      "explication": "Une application hybride s'installe comme une application native et peut être publiée sur les stores. Elle a plus d'accès aux fonctions du téléphone que le web pur, mais reste un peu limitée ; le rendu peut varier selon les navigateurs.",
+      "id": "devmob-intro-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi le prix d'une application payante peut-il varier selon l'OS ?",
+      "choix": [
+        "À cause de la répercussion du coût de portage",
+        "Parce que les utilisateurs d'iOS sont plus nombreux",
+        "Parce que Google l'impose",
+        "Parce que le prix dépend de la taille de l'écran"
+      ],
+      "reponse": 0,
+      "explication": "Une application native doit être réécrite pour chaque OS : ce coût de portage se répercute sur le prix. Le cours note aussi que certains utilisateurs, surtout sur Android, sont réticents à acheter des applications.",
+      "id": "devmob-intro-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pour quel type d'applications la version d'essai est-elle bien adaptée, et quel problème pose-t-elle aux développeurs ?",
+      "choix": [
+        "Les applications bancaires ; un problème de sécurité",
+        "Les jeux ; l'obligation d'afficher de la publicité",
+        "Les applications web ; l'interdiction sur les stores",
+        "Les jeux ; un problème de maintenabilité"
+      ],
+      "reponse": 3,
+      "explication": "La version d'essai fournit une version limitée qui donne une idée de la qualité de l'application. Maintenir deux versions complique le travail du développeur.",
+      "id": "devmob-intro-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi dit-on que l'expérience utilisateur (UX) est une notion dynamique ?",
+      "choix": [
+        "Parce qu'elle ne concerne que les animations",
+        "Parce qu'elle se mesure uniquement avec un chronomètre",
+        "Parce qu'elle évolue dans le temps avec les circonstances d'usage, les habitudes et les systèmes",
+        "Parce qu'elle dépend uniquement du processeur"
+      ],
+      "reponse": 2,
+      "explication": "L'UX est aussi subjective, car elle dépend de la personne. Elle concerne l'utilité, la facilité d'utilisation et l'efficacité du produit.",
+      "id": "devmob-intro-20"
+    }
+  ]
+}

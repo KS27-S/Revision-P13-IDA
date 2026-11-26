@@ -1,0 +1,271 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "android-studio",
+  "titre": "Prise en main d'Android Studio",
+  "sources": [
+    "Sequence 2 Prise de main de androide studio.pdf",
+    "ATELIER_ANDROID (1).pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quel environnement de développement a remplacé Eclipse avec son module ADT à partir de décembre 2014 ?",
+      "choix": [
+        "NetBeans",
+        "Android Studio",
+        "Visual Studio Code",
+        "Xcode"
+      ],
+      "reponse": 1,
+      "explication": "Depuis décembre 2014, Eclipse et son module ADT ont pris leur retraite au profit d'Android Studio.",
+      "id": "devmob-studio-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel outil faut-il installer en premier avant Android Studio ?",
+      "choix": [
+        "Le JDK (Java Development Kit)",
+        "Node.js",
+        "Cordova",
+        "Un navigateur web"
+      ],
+      "reponse": 0,
+      "explication": "Ordre du cours : télécharger le JDK, désinstaller les anciennes versions, installer le nouveau JDK, télécharger Android Studio, lancer l'exécutable.",
+      "id": "devmob-studio-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'Android Studio contient à l'installation ?",
+      "choix": [
+        "Uniquement un éditeur de texte",
+        "Uniquement le JDK",
+        "Uniquement un navigateur pour tester le web",
+        "L'IDE, le SDK Android avec la dernière plateforme, et un émulateur"
+      ],
+      "reponse": 3,
+      "explication": "SDK = Software Development Kit. Android Studio l'inclut, ainsi qu'un émulateur pour tester.",
+      "id": "devmob-studio-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie AVD ?",
+      "choix": [
+        "Android Visual Driver",
+        "Application Virtual Display",
+        "Android Virtual Device",
+        "Android Version Document"
+      ],
+      "reponse": 2,
+      "explication": "Un AVD est un appareil virtuel qui émule le comportement d'un téléphone ou d'une tablette.",
+      "id": "devmob-studio-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel fichier est obligatoire dans tout projet Android et doit toujours porter ce nom ?",
+      "choix": [
+        "MainActivity.java",
+        "AndroidManifest.xml",
+        "build.gradle",
+        "content_main.xml"
+      ],
+      "reponse": 1,
+      "explication": "Le manifeste, dans le dossier manifests, permet au système de reconnaître l'application.",
+      "id": "devmob-studio-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Dans quel dossier du projet se trouve le code Java de l'application ?",
+      "choix": [
+        "Le dossier java",
+        "Le dossier res",
+        "Le dossier drawable",
+        "Le dossier values"
+      ],
+      "reponse": 0,
+      "explication": "Le dossier java contient les classes, dont MainActivity.java. Le dossier res contient tout ce qui touche à l'interface (layout, drawable, values…).",
+      "id": "devmob-studio-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est l'intérêt d'un émulateur (AVD) ?",
+      "choix": [
+        "Remplacer le JDK",
+        "Écrire le code Java à votre place",
+        "Publier l'application sur le Play Store",
+        "Tester l'application sans devoir la charger à chaque fois sur un appareil réel"
+      ],
+      "reponse": 3,
+      "explication": "On lance l'application depuis l'IDE (bouton Run) et elle s'exécute sur l'appareil virtuel. L'émulateur peut prendre quelques minutes à démarrer.",
+      "id": "devmob-studio-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert le « Package name » d'un projet Android ?",
+      "choix": [
+        "C'est le nom affiché sur l'écran d'accueil",
+        "C'est le nom du fichier XML du layout",
+        "C'est l'identifiant de l'application, unique parmi tous les packages installés sur le système",
+        "C'est le nom de l'émulateur"
+      ],
+      "reponse": 2,
+      "explication": "Il permet de considérer différentes versions d'une application comme une même application. Le nom affiché dans la liste des applications et sur le Play Store, c'est l'Application name.",
+      "id": "devmob-studio-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel champ de création de projet correspond au nom affiché dans la liste des applications et dans le Play Store ?",
+      "choix": [
+        "Package name",
+        "Application name",
+        "Company domain",
+        "Activity name"
+      ],
+      "reponse": 1,
+      "explication": "Le Company domain est un qualifiant qui apparaît dans le nom du package.",
+      "id": "devmob-studio-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'une activité, et que définit son layout ?",
+      "choix": [
+        "Un écran avec interface graphique ; le layout définit la disposition des composants sur l'écran",
+        "Un service en arrière-plan ; le layout définit le code Java",
+        "Un fichier de configuration ; le layout définit le nom du package",
+        "Un émulateur ; le layout définit la résolution"
+      ],
+      "reponse": 0,
+      "explication": "À la création, on choisit ici une Empty Activity. Chaque activité dispose d'un layout.",
+      "id": "devmob-studio-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un fragment ?",
+      "choix": [
+        "Un fichier image du dossier drawable",
+        "Une version abrégée du manifeste",
+        "Un type d'émulateur léger",
+        "Une portion d'activité avec son propre layout, réutilisable dans plusieurs activités"
+      ],
+      "reponse": 3,
+      "explication": "La notion de fragment a été introduite pour favoriser la réutilisabilité de morceaux d'activité. Le cours poursuit sans fragments « pour faire simple ».",
+      "id": "devmob-studio-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que contiennent respectivement les dossiers layout et values ?",
+      "choix": [
+        "layout : les images ; values : le code Java",
+        "layout : les icônes ; values : les menus",
+        "layout : les fichiers XML de disposition des composants ; values : les constantes (chaînes, dimensions, couleurs, styles)",
+        "layout : les scripts Gradle ; values : le manifeste"
+      ],
+      "reponse": 2,
+      "explication": "Le dossier menu contient les XML des menus, mipmap les icônes de l'application, drawable les éléments dessinables.",
+      "id": "devmob-studio-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que contiennent les dossiers drawable et mipmap ?",
+      "choix": [
+        "drawable : le code Java ; mipmap : les chaînes de caractères",
+        "drawable : images, formes, animations, transitions ; mipmap : l'icône de l'application en plusieurs résolutions",
+        "drawable : les menus ; mipmap : les layouts",
+        "drawable : les scripts Gradle ; mipmap : le manifeste"
+      ],
+      "reponse": 1,
+      "explication": "Pour les images, le PNG est conseillé.",
+      "id": "devmob-studio-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert Gradle dans un projet Android Studio ?",
+      "choix": [
+        "À compiler et générer l'application à partir d'un script de règles et de dépendances",
+        "À dessiner l'interface graphique",
+        "À émuler un téléphone",
+        "À publier sur le Play Store"
+      ],
+      "reponse": 0,
+      "explication": "Il y a un script par module (build.gradle (Module : app)) et un pour tout le projet. Le script de l'application définit la version du SDK de compilation, la version minimale (rétrocompatibilité) et le package.",
+      "id": "devmob-studio-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel dossier drawable est destiné aux écrans de haute résolution (environ 240 dpi) ?",
+      "choix": [
+        "ldpi",
+        "mdpi",
+        "xxhdpi",
+        "hdpi"
+      ],
+      "reponse": 3,
+      "explication": "ldpi ≈ 120 dpi, mdpi ≈ 160, hdpi ≈ 240, xhdpi ≈ 320, xxhdpi ≈ 480.",
+      "id": "devmob-studio-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi existe-t-il plusieurs dossiers drawable (ldpi, mdpi, hdpi…) ?",
+      "choix": [
+        "Pour avoir plusieurs versions de l'application sur le Play Store",
+        "Parce qu'Android refuse les gros fichiers",
+        "Pour proposer des images adaptées à chaque résolution d'écran avec un seul fichier .apk",
+        "Pour séparer le code Java du code XML"
+      ],
+      "reponse": 2,
+      "explication": "En remplissant correctement ces dossiers, l'interface s'adapte à chaque appareil sans produire un .apk par résolution.",
+      "id": "devmob-studio-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le projet du cours, lequel des deux fichiers sert à disposer les composants de l'activité ?",
+      "choix": [
+        "activite_main.xml",
+        "content_main.xml",
+        "AndroidManifest.xml",
+        "build.gradle"
+      ],
+      "reponse": 1,
+      "explication": "activite_main.xml (« activity_main » dans un projet standard) définit l'apparence générale : disposition, taille, barre d'outils. Il contient content_main.xml, qui est celui qu'on manipule pour placer les composants.",
+      "id": "devmob-studio-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment faire apparaître les « Options pour les développeurs » sur un appareil Android récent (version > 4.2) pour activer le débogage USB ?",
+      "choix": [
+        "Paramètres > À propos, puis toucher sept fois « Numéro de build »",
+        "Paramètres > À propos, puis toucher trois fois « Version Android »",
+        "Redémarrer le téléphone en mode sans échec",
+        "Installer Gradle sur le téléphone"
+      ],
+      "reponse": 0,
+      "explication": "L'option est cachée par défaut. Ensuite on connecte l'appareil par câble USB, on active le débogage et on lance l'application depuis Android Studio en choisissant « Choose a running device ».",
+      "id": "devmob-studio-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quoi sert Logcat dans Android Studio ?",
+      "choix": [
+        "À créer un AVD",
+        "À installer le SDK",
+        "À dessiner le layout",
+        "À consulter les journaux (logs) de l'application et du système pour repérer des erreurs"
+      ],
+      "reponse": 3,
+      "explication": "Logcat est cité dans la fiche d'atelier (« consulter les journaux avec Logcat »). Il sert au débogage : erreurs de compilation et d'exécution.",
+      "id": "devmob-studio-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est le rôle d'ADB (Android Debug Bridge) ?",
+      "choix": [
+        "Compiler le code Java en bytecode",
+        "Dessiner les icônes de l'application",
+        "Faire communiquer l'ordinateur avec l'émulateur ou un smartphone Android connecté",
+        "Publier l'application sur le Play Store"
+      ],
+      "reponse": 2,
+      "explication": "La fiche d'atelier cite ADB pour la communication avec l'émulateur et la connexion à un smartphone réel (mode développeur et débogage USB). La chaîne vue en atelier : IDE → SDK → AVD → Émulateur → ADB.",
+      "id": "devmob-studio-20"
+    }
+  ]
+}

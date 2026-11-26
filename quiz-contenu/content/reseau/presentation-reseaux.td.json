@@ -1,0 +1,23 @@
+{
+  "matiere": "reseau",
+  "module": "presentation-reseaux",
+  "titre": "TD – Présentation des réseaux",
+  "exercices": [
+    {
+      "id": "reseau-s1-td-01",
+      "type": "exercice",
+      "titre": "Matériel de l'ordinateur : examiner et documenter un PC",
+      "source": "TP 1 – Matériel de l'ordinateur",
+      "statut_corrige": "guide de réponse rédigé (réponses propres à chaque machine)",
+      "enonce_simple": "Examine ton ordinateur : fabricant, modèle, 5 composants externes, démarrage de Windows, type de processeur, quantité de RAM, système d'exploitation, nom de l'ordinateur et vitesse du processeur.",
+      "indices": [
+        "Les réponses dépendent de ta machine.",
+        "Les informations système se trouvent dans « Système » du Panneau de configuration (ou « À propos » dans les Paramètres récents).",
+        "Le fabricant et le modèle sont souvent sur une étiquette sous l'ordinateur."
+      ],
+      "solution": "Méthode (les valeurs dépendent de ta machine) :\n• Fabricant et modèle : étiquette de l'ordinateur ou fenêtre Système.\n• 5 composants externes : par exemple écran, clavier, souris, port USB, prise réseau (RJ-45) ou carte réseau sans fil, adaptateur secteur (nom, fabricant, caractéristiques).\n• Démarrage : observer si Windows démarre correctement et si la mémoire disponible s'affiche pendant le démarrage.\n• Processeur, RAM, système, nom, vitesse : Démarrer > Paramètres > Panneau de configuration > Système > onglet Général (sur un Windows récent : Paramètres > Système > À propos de).",
+      "explication_simple": "L'objectif est de connaître les composants d'un PC : un PC est lui-même un petit réseau d'équipements reliés par le bus.",
+      "attention": "Exercice pratique : pas de réponse unique. L'énoncé renvoie à un modèle d'ordinateur de référence (lien Newegg) qui n'est sans doute plus disponible : utilise ta propre machine."
+    }
+  ]
+}

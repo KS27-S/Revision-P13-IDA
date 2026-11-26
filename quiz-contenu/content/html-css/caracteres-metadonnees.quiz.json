@@ -1,0 +1,271 @@
+{
+  "matiere": "html-css",
+  "module": "caracteres-metadonnees",
+  "titre": "Jeux de caractères, symboles et métadonnées",
+  "sources": [
+    "Séquence 3-JEUX DE CARACTERES, SYMBOLES ET METADONNEES EN HTML.pdf",
+    "TP 03 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Combien de caractères le jeu ASCII définit-il ?",
+      "choix": [
+        "64",
+        "128",
+        "256",
+        "65 536"
+      ],
+      "reponse": 1,
+      "explication": "ASCII a été la première norme d'encodage : chiffres, lettres anglaises et quelques caractères spéciaux. ANSI et ISO-8859-1 en supportent 256.",
+      "id": "htmlcss-s3-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est l'encodage de caractères par défaut de HTML5 ?",
+      "choix": [
+        "UTF-8",
+        "ASCII",
+        "ISO-8859-1",
+        "ANSI (Windows-1252)"
+      ],
+      "reponse": 0,
+      "explication": "UTF-8 (Unicode) couvre presque tous les caractères et symboles du monde. ISO-8859-1 était le jeu par défaut de HTML 4.",
+      "id": "htmlcss-s3-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment afficher le signe inférieur « < » dans une page ?",
+      "choix": [
+        "En l'écrivant simplement <",
+        "Avec l'entité &gt;",
+        "Avec l'entité &amp;",
+        "Avec l'entité &lt;"
+      ],
+      "reponse": 3,
+      "explication": "Les caractères < et > sont réservés : le navigateur les prendrait pour des balises. Alternative : &#60;.",
+      "id": "htmlcss-s3-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle entité produit un espace insécable ?",
+      "choix": [
+        "&space;",
+        "&sp;",
+        "&nbsp;",
+        "&blank;"
+      ],
+      "reponse": 2,
+      "explication": "&nbsp; (numéro &#160;) donne un espace insécable.",
+      "id": "htmlcss-s3-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où se placent les balises de métadonnées d'un document ?",
+      "choix": [
+        "Dans l'élément <body>",
+        "Dans l'élément <head>",
+        "Avant la déclaration DOCTYPE",
+        "Après la balise </html>"
+      ],
+      "reponse": 1,
+      "explication": "Les métadonnées sont des données sur le document HTML ; elles ne sont pas affichées.",
+      "id": "htmlcss-s3-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert l'élément <title> ?",
+      "choix": [
+        "À définir le titre affiché dans l'onglet, les favoris et les résultats des moteurs de recherche",
+        "À afficher un gros titre dans la page",
+        "À centrer le texte",
+        "À insérer une image de fond"
+      ],
+      "reponse": 0,
+      "explication": "Il est nécessaire dans tous les documents HTML. Le gros titre visible dans la page se fait avec h1.",
+      "id": "htmlcss-s3-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie URL ?",
+      "choix": [
+        "Universal Reading Language",
+        "Unified Remote Link",
+        "User Resource List",
+        "Uniform Resource Locator"
+      ],
+      "reponse": 3,
+      "explication": "Une URL permet de désigner un document ou d'autres données sur le web.",
+      "id": "htmlcss-s3-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle entité affiche le symbole euro « € » ?",
+      "choix": [
+        "&pound;",
+        "&yen;",
+        "&euro;",
+        "&cent;"
+      ],
+      "reponse": 2,
+      "explication": "&euro; (numéro &#8364;), &pound; pour la livre, &yen; pour le yen, &cent; pour le cent.",
+      "id": "htmlcss-s3-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle est la syntaxe d'une entité de caractère ?",
+      "choix": [
+        "<nom_entité> ou <#numéro>",
+        "&nom_entité; ou &#numéro;",
+        "%nom_entité% ou %numéro%",
+        "$nom_entité; ou $numéro;"
+      ],
+      "reponse": 1,
+      "explication": "Les noms d'entités sont sensibles à la casse. Exemple : &lt; ou &#60; pour <.",
+      "id": "htmlcss-s3-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel était le jeu de caractères par défaut de HTML 4 ?",
+      "choix": [
+        "ISO-8859-1",
+        "UTF-8",
+        "ASCII",
+        "UTF-32"
+      ],
+      "reponse": 0,
+      "explication": "ANSI et ISO-8859-1 étant limités (256 codes chacun), HTML 4 prend aussi en charge UTF-8.",
+      "id": "htmlcss-s3-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait <meta charset=\"UTF-8\"> ?",
+      "choix": [
+        "Il change la police du texte",
+        "Il traduit la page en UTF-8",
+        "Il définit la couleur de fond",
+        "Il spécifie le jeu de caractères utilisé par le document"
+      ],
+      "reponse": 3,
+      "explication": "Pour afficher correctement une page, le navigateur doit connaître le jeu de caractères à utiliser.",
+      "id": "htmlcss-s3-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait <link rel=\"stylesheet\" href=\"mystyle.css\"> ?",
+      "choix": [
+        "Il crée un lien hypertexte visible",
+        "Il télécharge une image",
+        "Il lie le document à une feuille de style externe",
+        "Il ajoute un commentaire"
+      ],
+      "reponse": 2,
+      "explication": "L'élément <link> est utilisé pour créer un lien vers des feuilles de style externes.",
+      "id": "htmlcss-s3-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> ?",
+      "choix": [
+        "À augmenter la qualité des images",
+        "À adapter la page à la largeur de l'écran de l'appareil et à fixer le zoom initial",
+        "À bloquer l'affichage sur mobile",
+        "À définir l'auteur de la page"
+      ],
+      "reponse": 1,
+      "explication": "Le viewport est la zone visible par l'utilisateur ; elle est plus petite sur un téléphone que sur un ordinateur. La balise est à inclure dans toutes vos pages web.",
+      "id": "htmlcss-s3-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lesquelles de ces balises décrivent des métadonnées ?",
+      "choix": [
+        "<title>, <style>, <meta>, <link>, <script> et <base>",
+        "<h1>, <p>, <br> et <hr>",
+        "<table>, <tr> et <td>",
+        "<ul>, <ol> et <li>"
+      ],
+      "reponse": 0,
+      "explication": "Ce sont les balises citées dans le cours pour décrire les métadonnées.",
+      "id": "htmlcss-s3-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment afficher le caractère « & » dans une page ?",
+      "choix": [
+        "En l'écrivant simplement &",
+        "Avec l'entité &and;",
+        "Avec l'entité &lt;",
+        "Avec l'entité &amp;"
+      ],
+      "reponse": 3,
+      "explication": "& commence une entité : pour l'afficher réellement, on écrit &amp; (numéro &#38;).",
+      "id": "htmlcss-s3-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Par quoi l'encodage d'URL remplace-t-il normalement un espace ?",
+      "choix": [
+        "+20",
+        "&20;",
+        "%20",
+        "_20"
+      ],
+      "reponse": 2,
+      "explication": "Une URL ne peut pas contenir d'espace. Le TP : http://www.uvs.sn/fichier 12.html devient http://www.uvs.sn/fichier%2012.html.",
+      "id": "htmlcss-s3-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans l'URL http://www.uvs.sn:80/pats/index.html, que représente « 80 » ?",
+      "choix": [
+        "Le nom du fichier",
+        "Le numéro de port (valeur par défaut pour HTTP)",
+        "Le chemin d'accès",
+        "Le type de service Internet"
+      ],
+      "reponse": 1,
+      "explication": "Syntaxe : uri://host.domain:port/path/filename. Ici uri = http, host = www, domaine = uvs.sn, path = /pats, filename = index.html.",
+      "id": "htmlcss-s3-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que garantit le protocole https par rapport à http ?",
+      "choix": [
+        "Toutes les informations échangées sont cryptées",
+        "Les pages se chargent plus vite",
+        "Les pages ne contiennent aucune image",
+        "Les pages s'affichent sans navigateur"
+      ],
+      "reponse": 0,
+      "explication": "https (Secure HyperText Transfer Protocol) sert à sécuriser les pages web ; http n'est pas chiffré.",
+      "id": "htmlcss-s3-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi encode-t-on une URL, et comment ?",
+      "choix": [
+        "Pour la raccourcir, en supprimant les voyelles",
+        "Pour la rendre secrète, en la chiffrant",
+        "Pour la rendre cliquable, en ajoutant <a>",
+        "Parce qu'elle ne peut être envoyée qu'en ASCII : les caractères non ASCII sont remplacés par « % » suivi de deux chiffres hexadécimaux"
+      ],
+      "reponse": 3,
+      "explication": "Exemple du cours : Sénégal est encodé S%E9n%E9gal (le TP écrit de même k%E9b%E9mer pour kébémer).",
+      "id": "htmlcss-s3-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est l'avantage et l'inconvénient d'utiliser un nom d'entité plutôt qu'un numéro ?",
+      "choix": [
+        "Le nom est plus court, mais toujours moins lisible",
+        "Le nom est universel, mais impossible à mémoriser",
+        "Le nom est plus facile à retenir, mais tous les navigateurs ne supportent pas tous les noms d'entité",
+        "Il n'y a ni avantage ni inconvénient"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : &lt; (nom) ou &#60; (numéro).",
+      "id": "htmlcss-s3-20"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "intro-web",
+  "titre": "Introduction au web",
+  "modules": [
+    {
+      "id": "reseau-internet",
+      "titre": "Réseau informatique et Internet",
+      "quiz": "reseau-internet.quiz.json",
+      "td": null
+    },
+    {
+      "id": "web-client-serveur",
+      "titre": "Le Web et le concept client/serveur",
+      "quiz": "web-client-serveur.quiz.json",
+      "td": "web-client-serveur.td.json"
+    },
+    {
+      "id": "site-web-hebergement",
+      "titre": "Site web et hébergement",
+      "quiz": "site-web-hebergement.quiz.json",
+      "td": "site-web-hebergement.td.json"
+    },
+    {
+      "id": "webmastering-metiers",
+      "titre": "Le webmastering et les autres métiers du web",
+      "quiz": "webmastering-metiers.quiz.json",
+      "td": "webmastering-metiers.td.json"
+    },
+    {
+      "id": "langages-du-web",
+      "titre": "Les langages du web",
+      "quiz": "langages-du-web.quiz.json",
+      "td": "langages-du-web.td.json"
+    },
+    {
+      "id": "noms-de-domaine",
+      "titre": "Les noms de domaine",
+      "quiz": "noms-de-domaine.quiz.json",
+      "td": null
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "reseau",
+  "titre": "Réseau",
+  "modules": [
+    {
+      "id": "presentation-reseaux",
+      "titre": "Présentation des réseaux : connexion à Internet",
+      "quiz": "presentation-reseaux.quiz.json",
+      "td": "presentation-reseaux.td.json"
+    },
+    {
+      "id": "aspects-mathematiques",
+      "titre": "Aspects mathématiques des réseaux : binaire, hexadécimal, adresses IP",
+      "quiz": "aspects-mathematiques.quiz.json",
+      "td": "aspects-mathematiques.td.json"
+    },
+    {
+      "id": "notions-de-base",
+      "titre": "Notions de base sur les réseaux : LAN, WAN, bande passante, modèles OSI et TCP/IP",
+      "quiz": "notions-de-base.quiz.json",
+      "td": "notions-de-base.td.json"
+    },
+    {
+      "id": "medias-reseau",
+      "titre": "Les médias réseau : cuivre, fibre optique, sans fil et Packet Tracer",
+      "quiz": "medias-reseau.quiz.json",
+      "td": "medias-reseau.td.json"
+    },
+    {
+      "id": "cablage-lan-wan",
+      "titre": "Infrastructures : câblage des réseaux locaux et distants",
+      "quiz": "cablage-lan-wan.quiz.json",
+      "td": "cablage-lan-wan.td.json"
+    }
+  ]
+}

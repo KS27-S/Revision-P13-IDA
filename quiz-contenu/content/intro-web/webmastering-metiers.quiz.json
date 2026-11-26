@@ -1,0 +1,271 @@
+{
+  "matiere": "intro-web",
+  "module": "webmastering-metiers",
+  "titre": "Le webmastering et les autres métiers du web",
+  "sources": [
+    "Séquence 4_Le webmastering et les autres.pdf",
+    "Travaux Dirigés_4.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qui est le webmaster ?",
+      "choix": [
+        "Un logiciel de création de pages",
+        "La personne en charge d'un site web : elle le conçoit généralement et le met à jour",
+        "Un type de serveur",
+        "Un navigateur"
+      ],
+      "reponse": 1,
+      "explication": "Le webmastering désigne l'ensemble des tâches du webmaster : créer le site, le faire connaître, le faire héberger…",
+      "id": "web-s4-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles sont les deux principales facettes de la vie d'un site web ?",
+      "choix": [
+        "La création et l'exploitation",
+        "La lecture et l'écriture",
+        "La conception et la destruction",
+        "L'achat et la vente"
+      ],
+      "reponse": 0,
+      "explication": "Création : du projet au site en ligne, référencé et visité. Exploitation : gestion quotidienne, évolution et mise à jour.",
+      "id": "web-s4-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que sont les métiers du web ?",
+      "choix": [
+        "Uniquement les métiers de la programmation",
+        "Uniquement les métiers du graphisme",
+        "Les métiers de la vente de matériel",
+        "L'ensemble des métiers ayant pour but le développement et la maintenance de sites web"
+      ],
+      "reponse": 3,
+      "explication": "La classification change selon les études, les pays et les auteurs.",
+      "id": "web-s4-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fait un chef de projet web ?",
+      "choix": [
+        "Il crée les images animées",
+        "Il vérifie la légalité des informations",
+        "Il dirige la conception et la réalisation du site",
+        "Il anime la communauté"
+      ],
+      "reponse": 2,
+      "explication": "Il fait partie de la famille « gestion de projet ».",
+      "id": "web-s4-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fait un développeur web ?",
+      "choix": [
+        "Il rédige les textes",
+        "Il conçoit et réalise les éléments techniques du site",
+        "Il vend le site",
+        "Il gère les réseaux sociaux"
+      ],
+      "reponse": 1,
+      "explication": "Famille « programmation et développement ».",
+      "id": "web-s4-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fait un webdesigner ?",
+      "choix": [
+        "Il conçoit le site, avec ses différentes parties qui seront réalisées par lui-même ou par d'autres",
+        "Il gère la base de données",
+        "Il vérifie la légalité",
+        "Il héberge le site"
+      ],
+      "reponse": 0,
+      "explication": "Famille « graphisme et webdesign ».",
+      "id": "web-s4-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un client FTP ?",
+      "choix": [
+        "Un navigateur",
+        "Un éditeur d'images",
+        "Un moteur de recherche",
+        "Un logiciel permettant de se connecter à un serveur pour y échanger des fichiers"
+      ],
+      "reponse": 3,
+      "explication": "Exemples : Filezilla, CuteFTP, Dreamweaver.",
+      "id": "web-s4-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lesquelles de ces familles de métiers du web sont citées dans le cours ?",
+      "choix": [
+        "Cuisine, transport, bâtiment",
+        "Santé, droit, agriculture",
+        "Gestion de projet, programmation et développement, graphisme et webdesign, gestion de l'information, marketing et promotion, exploitation, animation, administration",
+        "Aucune famille n'est citée"
+      ],
+      "reponse": 2,
+      "explication": "Les métiers sont regroupés en familles.",
+      "id": "web-s4-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un architecte de l'information ?",
+      "choix": [
+        "Il dessine des logos",
+        "Il organise et classifie l'information à publier",
+        "Il écrit du code PHP",
+        "Il vend des noms de domaine"
+      ],
+      "reponse": 1,
+      "explication": "Famille « gestion de projet ».",
+      "id": "web-s4-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un ergonome ?",
+      "choix": [
+        "Il renforce l'accessibilité du site et s'assure que les informations sont facilement accessibles à tous",
+        "Il gère les bases de données",
+        "Il fait de la publicité",
+        "Il configure le serveur"
+      ],
+      "reponse": 0,
+      "explication": "Famille « graphisme et webdesign ».",
+      "id": "web-s4-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle est la différence entre un référenceur et un webmarketeur ?",
+      "choix": [
+        "Le référenceur crée les images ; le webmarketeur les héberge",
+        "Il n'y en a aucune",
+        "Le référenceur gère la base de données ; le webmarketeur le serveur",
+        "Le référenceur favorise le référencement naturel auprès des moteurs de recherche ; le webmarketeur élabore la stratégie marketing internet"
+      ],
+      "reponse": 3,
+      "explication": "Famille « marketing et promotion ».",
+      "id": "web-s4-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un gestionnaire de communauté ?",
+      "choix": [
+        "Il écrit le code du site",
+        "Il vérifie la légalité",
+        "Il anime la communauté au travers du site, des réseaux sociaux, des forums…",
+        "Il dessine le site"
+      ],
+      "reponse": 2,
+      "explication": "Famille « animation ».",
+      "id": "web-s4-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles connaissances le webmaster doit-il nécessairement avoir ?",
+      "choix": [
+        "Uniquement Photoshop",
+        "HTML, JavaScript, un langage serveur (PHP, ASP, JSP…) et les bases de données (MySQL, Oracle…)",
+        "Uniquement le montage vidéo",
+        "Uniquement la comptabilité"
+      ],
+      "reponse": 1,
+      "explication": "Le HTML est le langage de base du web.",
+      "id": "web-s4-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont des façons de réaliser un site web, selon le cours ?",
+      "choix": [
+        "Tout développer soi-même (éditeur simple ou WYSIWYG), utiliser des outils en ligne (Google Sites), un CMS (Joomla, WordPress) ou un framework (CodeIgniter)",
+        "Uniquement un éditeur d'images",
+        "Uniquement un client FTP",
+        "Uniquement un logiciel de comptabilité"
+      ],
+      "reponse": 0,
+      "explication": "Plusieurs voies, selon le besoin et le niveau.",
+      "id": "web-s4-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que signifie WYSIWYG, et lequel de ces éditeurs en est un exemple ?",
+      "choix": [
+        "What You Say Is What You Get ; Notepad++",
+        "Web You See In Web You Get ; Filezilla",
+        "What You See Is What You Gain ; TextEdit",
+        "What You See Is What You Get ; Dreamweaver"
+      ],
+      "reponse": 3,
+      "explication": "Éditeur « à la main » : Notepad++ ou TextEdit. Éditeur WYSIWYG : Dreamweaver ou Visual Studio, selon le cours.",
+      "id": "web-s4-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi le cours recommande-t-il d'éditer le HTML « à la main » pour apprendre ?",
+      "choix": [
+        "Parce qu'elle est la plus rapide",
+        "Parce qu'elle ne demande aucune connaissance",
+        "C'est la solution la plus fastidieuse, mais la meilleure pour comprendre le fonctionnement et obtenir un code propre et optimisé",
+        "Parce qu'elle génère automatiquement le site"
+      ],
+      "reponse": 2,
+      "explication": "L'éditeur WYSIWYG est pratique pour de petites pages, mais peut devenir ennuyeux quand on n'arrive pas à faire ce que l'on veut.",
+      "id": "web-s4-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Peut-on créer un site web sans être connecté à Internet ?",
+      "choix": [
+        "Non, la connexion est toujours nécessaire",
+        "Oui : il faut une connexion seulement pour la mise en ligne",
+        "Oui, mais seulement avec Dreamweaver",
+        "Non, sauf sur mobile"
+      ],
+      "reponse": 1,
+      "explication": "Au départ, il s'agit uniquement de créer les fichiers HTML et les images.",
+      "id": "web-s4-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels paramètres de connexion faut-il pour transférer un site vers un serveur ?",
+      "choix": [
+        "Le nom du serveur, le login et le mot de passe",
+        "L'adresse du navigateur et la version du système",
+        "La couleur du site et sa police",
+        "Le nom de l'écran et de la souris"
+      ],
+      "reponse": 0,
+      "explication": "Ce sont les paramètres envoyés par l'hébergeur lors de l'ouverture du compte.",
+      "id": "web-s4-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels formats d'image le cours cite-t-il pour un site web, et quels logiciels pour les traiter ?",
+      "choix": [
+        "MP3 ou WAV ; Filezilla",
+        "PDF ou DOC ; Notepad++",
+        "AVI ou MOV ; Apache",
+        "GIF ou JPG ; Photoshop, Fireworks, Gimp"
+      ],
+      "reponse": 3,
+      "explication": "Un site doit contenir des images : il faut un logiciel de dessin pour les préparer.",
+      "id": "web-s4-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle est la différence entre un documentaliste et un juriste sur un site web ?",
+      "choix": [
+        "Le documentaliste vérifie la légalité ; le juriste collecte les informations",
+        "Le documentaliste écrit le code ; le juriste le teste",
+        "Le documentaliste collecte, vérifie et valide les informations ; le juriste vérifie leur légalité",
+        "Il n'y a aucune différence"
+      ],
+      "reponse": 2,
+      "explication": "Famille « gestion de l'information ».",
+      "id": "web-s4-20"
+    }
+  ]
+}

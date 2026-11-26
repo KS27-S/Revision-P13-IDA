@@ -1,0 +1,272 @@
+{
+  "matiere": "reseau",
+  "module": "notions-de-base",
+  "titre": "Notions de base sur les réseaux : LAN, WAN, bande passante, modèles OSI et TCP/IP",
+  "sources": [
+    "Chapitre3-IntroductionAuxReseaux.pdf (diapos en images, lues par OCR)",
+    "Travaux-Pratiques3-1",
+    "Travaux-Pratiques3-2"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Pour quelle étendue géographique un réseau local (LAN) est-il conçu ?",
+      "choix": [
+        "Une région mondiale",
+        "Une région géographique limitée",
+        "Une seule machine",
+        "Uniquement une ville"
+      ],
+      "reponse": 1,
+      "explication": "Il offre aussi un contrôle privé du réseau sous administration locale.",
+      "id": "reseau-s3-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Pour quelle étendue géographique un réseau étendu (WAN) est-il conçu ?",
+      "choix": [
+        "Une vaste région géographique, voire planétaire",
+        "Une seule pièce",
+        "Un seul bureau",
+        "Une imprimante"
+      ],
+      "reponse": 0,
+      "explication": "Il relie des équipements dispersés, avec un accès par des interfaces série plus lentes.",
+      "id": "reseau-s3-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi le cours compare-t-il la bande passante ?",
+      "choix": [
+        "À la couleur d'un câble",
+        "Au poids d'un fichier",
+        "À la hauteur d'un bâtiment",
+        "Au nombre de voies d'une autoroute"
+      ],
+      "reponse": 3,
+      "explication": "Les paquets sont comparables aux véhicules ; les équipements réseau aux bretelles, feux et panneaux.",
+      "id": "reseau-s3-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est l'unité fondamentale de la bande passante ?",
+      "choix": [
+        "Le volt",
+        "Le mètre",
+        "Le bit par seconde (bits/s)",
+        "L'octet"
+      ],
+      "reponse": 2,
+      "explication": "Les multiples : kbits/s, Mbits/s, Gbits/s, Tbits/s.",
+      "id": "reseau-s3-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Combien de couches compte le modèle OSI ?",
+      "choix": [
+        "4",
+        "7",
+        "5",
+        "9"
+      ],
+      "reponse": 1,
+      "explication": "Application, Présentation, Session, Transport, Réseau, Liaison de données, Physique.",
+      "id": "reseau-s3-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Combien de couches compte le modèle TCP/IP présenté dans le cours ?",
+      "choix": [
+        "4",
+        "3",
+        "5",
+        "7"
+      ],
+      "reponse": 0,
+      "explication": "Application, Transport, Internet, Accès réseau.",
+      "id": "reseau-s3-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que décrit la couche physique (couche 1) du modèle OSI ?",
+      "choix": [
+        "Le routage des paquets",
+        "Le choix de l'application",
+        "Le format des données",
+        "La transmission binaire : fils, connecteurs, tensions, débits"
+      ],
+      "reponse": 3,
+      "explication": "C'est la couche la plus basse du modèle.",
+      "id": "reseau-s3-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est l'ordre des couches OSI, de la couche 7 à la couche 1 ?",
+      "choix": [
+        "Physique, Liaison de données, Réseau, Transport, Session, Présentation, Application",
+        "Application, Session, Présentation, Réseau, Transport, Physique, Liaison de données",
+        "Application, Présentation, Session, Transport, Réseau, Liaison de données, Physique",
+        "Présentation, Application, Transport, Session, Réseau, Physique, Liaison de données"
+      ],
+      "reponse": 2,
+      "explication": "La couche 7 est la plus proche de l'utilisateur, la couche 1 la plus proche du média.",
+      "id": "reseau-s3-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est le rôle de la couche Réseau (couche 3) ?",
+      "choix": [
+        "La transmission des bits sur le câble",
+        "L'adressage réseau et la détermination du meilleur chemin",
+        "La représentation des données",
+        "Les services de courrier électronique"
+      ],
+      "reponse": 1,
+      "explication": "Elle assure la connectivité et la sélection du chemin entre les systèmes hôtes.",
+      "id": "reseau-s3-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait la couche Transport (couche 4) ?",
+      "choix": [
+        "Elle gère les connexions de bout en bout et la fiabilité du transport des données",
+        "Elle choisit le câble",
+        "Elle affiche les pages web",
+        "Elle encode les images"
+      ],
+      "reponse": 0,
+      "explication": "Elle établit, maintient et termine les circuits, détecte les pannes et reprend le contrôle du flux d'informations.",
+      "id": "reseau-s3-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait la couche Présentation (couche 6) ?",
+      "choix": [
+        "Elle gère les connexions de bout en bout",
+        "Elle détermine le meilleur chemin",
+        "Elle fournit les médias physiques",
+        "Elle gère la représentation des données pour qu'elles soient lisibles par le système de destination"
+      ],
+      "reponse": 3,
+      "explication": "Elle négocie aussi la syntaxe de transfert des données.",
+      "id": "reseau-s3-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels services la couche Application (couche 7) fournit-elle ?",
+      "choix": [
+        "La transmission binaire sur les fils",
+        "L'adressage IP",
+        "Des services aux processus applicatifs, comme le courrier électronique, le transfert de fichiers et l'émulation de terminal",
+        "La régénération des signaux"
+      ],
+      "reponse": 2,
+      "explication": "Elle relie les processus réseau aux applications.",
+      "id": "reseau-s3-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les quatre couches du modèle TCP/IP ?",
+      "choix": [
+        "Physique, Liaison, Réseau, Transport",
+        "Application, Transport, Internet, Accès réseau",
+        "Session, Présentation, Application, Réseau",
+        "Web, Mail, FTP, DNS"
+      ],
+      "reponse": 1,
+      "explication": "Plusieurs couches OSI sont reliées à une même couche TCP/IP (les couches 5, 6 et 7 correspondent à la couche Application).",
+      "id": "reseau-s3-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est l'un des avantages du modèle OSI cité dans le cours ?",
+      "choix": [
+        "Il réduit la complexité et facilite la conception modulaire",
+        "Il supprime le besoin de protocoles",
+        "Il fonctionne sans matériel",
+        "Il remplace Internet"
+      ],
+      "reponse": 0,
+      "explication": "Autres avantages : il uniformise les interfaces, assure l'interopérabilité, accélère l'évolution et simplifie l'enseignement.",
+      "id": "reseau-s3-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Combien de bits par seconde représente 1 Mbit/s ?",
+      "choix": [
+        "1 000 bits/s",
+        "1 000 000 000 bits/s",
+        "1 048 576 octets/s",
+        "1 000 000 bits/s"
+      ],
+      "reponse": 3,
+      "explication": "1 kbit/s = 1 000 bits/s ; 1 Mbit/s = 10^6 bits/s ; 1 Gbit/s = 10^9 bits/s.",
+      "id": "reseau-s3-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "D'après le cours, comment calcule-t-on la durée typique d'un transfert de fichier ?",
+      "choix": [
+        "D = T × P",
+        "D = P / T",
+        "D = T / P, avec T la taille du fichier en bits et P le débit effectif en bits/s",
+        "D = BP − T"
+      ],
+      "reponse": 2,
+      "explication": "Dans le meilleur cas, D = T / BP, où BP est la bande passante théorique maximale de la liaison la plus lente.",
+      "id": "reseau-s3-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Un fichier de 10 Mbits est transféré sur une liaison de bande passante théorique 10 Mbits/s, avec un débit effectif de 5 Mbits/s. Quelle est la durée typique ?",
+      "choix": [
+        "1 seconde dans tous les cas",
+        "2 secondes (au mieux 1 seconde)",
+        "5 secondes",
+        "50 secondes"
+      ],
+      "reponse": 1,
+      "explication": "Typique : 10 / 5 = 2 s. Meilleur cas : 10 / 10 = 1 s. Le débit réel est inférieur à la bande passante.",
+      "id": "reseau-s3-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle topologie relie tous les hôtes à un point central comme un concentrateur ou un commutateur ?",
+      "choix": [
+        "La topologie en étoile",
+        "La topologie en anneau",
+        "La topologie maillée",
+        "La topologie en bus"
+      ],
+      "reponse": 0,
+      "explication": "Autres topologies présentées : bus, anneau, étoile étendue, hiérarchique et maillée.",
+      "id": "reseau-s3-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles variables peuvent affecter le débit ?",
+      "choix": [
+        "La couleur des câbles",
+        "La marque de l'écran",
+        "La taille du boîtier de l'ordinateur",
+        "Les autres utilisateurs du réseau, le routage dans le « nuage », la topologie, le type de données transmises et l'heure du jour"
+      ],
+      "reponse": 3,
+      "explication": "Le débit est toujours inférieur ou égal à la bande passante numérique du média.",
+      "id": "reseau-s3-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "D'après le schéma des protocoles TCP/IP communs, quel protocole de transport TFTP utilise-t-il ?",
+      "choix": [
+        "TCP",
+        "IP uniquement",
+        "UDP",
+        "Ethernet"
+      ],
+      "reponse": 2,
+      "explication": "FTP, HTTP, SMTP et DNS sont reliés à TCP ; DNS et TFTP à UDP ; TCP et UDP reposent sur IP.",
+      "id": "reseau-s3-20"
+    }
+  ]
+}

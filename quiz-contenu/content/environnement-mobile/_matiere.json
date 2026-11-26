@@ -1,0 +1,30 @@
+{
+  "id": "environnement-mobile",
+  "titre": "Environnement mobile",
+  "modules": [
+    {
+      "id": "introduction-technologies-mobiles",
+      "titre": "Introduction aux technologies mobiles",
+      "quiz": "introduction-technologies-mobiles.quiz.json",
+      "td": "introduction-technologies-mobiles.td.json"
+    },
+    {
+      "id": "plateformes-os-mobiles",
+      "titre": "Plateformes et systèmes d'exploitation mobiles",
+      "quiz": "plateformes-os-mobiles.quiz.json",
+      "td": "plateformes-os-mobiles.td.json"
+    },
+    {
+      "id": "approches-developpement",
+      "titre": "Les approches de développement mobile",
+      "quiz": "approches-developpement.quiz.json",
+      "td": "approches-developpement.td.json"
+    },
+    {
+      "id": "ide-mobile",
+      "titre": "Les environnements de développement intégrés (IDE) pour le mobile",
+      "quiz": "ide-mobile.quiz.json",
+      "td": "ide-mobile.td.json"
+    }
+  ]
+}

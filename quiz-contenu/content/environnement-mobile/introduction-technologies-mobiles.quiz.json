@@ -1,0 +1,270 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "introduction-technologies-mobiles",
+  "titre": "Introduction aux technologies mobiles",
+  "sources": [
+    "DWMG1142_Séquence 1_Introduction aux Technologies Mobiles.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Que désigne un « environnement mobile » ?",
+      "choix": [
+        "Uniquement le système d'exploitation du téléphone",
+        "L'ensemble des éléments autour du mobile qui contribuent à maintenir son écosystème",
+        "Le réseau Wi-Fi d'une entreprise",
+        "Un logiciel qui simule un téléphone"
+      ],
+      "reponse": 1,
+      "explication": "Un environnement mobile regroupe les périphériques mobiles, les systèmes d'exploitation, les applications, les approches de développement et le marché du mobile.",
+      "id": "envmob-intro-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Lequel de ces éléments fait partie de l'environnement mobile selon le cours ?",
+      "choix": [
+        "Les approches de développement d'applications",
+        "Les imprimantes de bureau",
+        "Les consoles de salon",
+        "Les téléviseurs"
+      ],
+      "reponse": 0,
+      "explication": "Les cinq éléments cités : périphériques mobiles, systèmes d'exploitation mobiles, applications mobiles, approches de développement d'applications et marché du mobile.",
+      "id": "envmob-intro-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'une application mobile ?",
+      "choix": [
+        "Un site web réservé aux ordinateurs",
+        "Un système d'exploitation pour téléphones",
+        "Un composant matériel du téléphone",
+        "Une application logicielle conçue pour fonctionner sur smartphones, tablettes et autres appareils mobiles"
+      ],
+      "reponse": 3,
+      "explication": "Les applications mobiles sont des logiciels conçus pour les appareils mobiles. Elles sont distribuées via des plateformes de distribution natives (les App Stores).",
+      "id": "envmob-intro-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Où les applications mobiles sont-elles typiquement disponibles ?",
+      "choix": [
+        "Uniquement sur les sites des opérateurs télécoms",
+        "Uniquement dans des magasins physiques",
+        "Dans des App Stores exploités par les propriétaires du système d'exploitation mobile",
+        "Uniquement sur des clés USB"
+      ],
+      "reponse": 2,
+      "explication": "Un App Store est un magasin d'applications. Chaque propriétaire d'OS mobile exploite le sien.",
+      "id": "envmob-intro-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel magasin d'applications est exploité par Google ?",
+      "choix": [
+        "L'App Store",
+        "Google Play",
+        "Windows Phone Store",
+        "BlackBerry App World"
+      ],
+      "reponse": 1,
+      "explication": "Magasins cités : l'App Store d'Apple, Google Play, Windows Phone Store et BlackBerry App World.",
+      "id": "envmob-intro-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Combien de nouvelles applications ont été téléchargées sur l'App Store et Google Play en 2016, selon le cours ?",
+      "choix": [
+        "Plus de 90 milliards",
+        "Plus de 9 milliards",
+        "Environ 35 milliards",
+        "Environ 405 milliards"
+      ],
+      "reponse": 0,
+      "explication": "Chiffre tiré d'un article du journal Le Monde. Attention à ne pas le confondre avec les 35 milliards de dollars de revenus.",
+      "id": "envmob-intro-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Vers quoi les environnements mobiles, fragmentés au départ, tendent-ils à se résumer ?",
+      "choix": [
+        "Windows Phone et BlackBerry",
+        "Symbian et Bada",
+        "Un seul système unique pour tous",
+        "Android et iOS"
+      ],
+      "reponse": 3,
+      "explication": "La variété des solutions mobiles a favorisé des environnements fragmentés au départ, mais ils tournent de plus en plus autour d'Android et d'iOS.",
+      "id": "envmob-intro-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels revenus les stores de Google et d'Apple ont-ils rapportés aux éditeurs en 2016 ?",
+      "choix": [
+        "90 milliards de dollars",
+        "28 milliards de dollars",
+        "35 milliards de dollars",
+        "405 milliards de dollars"
+      ],
+      "reponse": 2,
+      "explication": "Ces revenus concernent des services en tout genre : jeux, messageries, outils, sites d'information…",
+      "id": "envmob-intro-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À combien de francs CFA le cours convertit-il ces 35 milliards de dollars ?",
+      "choix": [
+        "3 500 milliards",
+        "19 444 milliards",
+        "35 milliards",
+        "405 milliards"
+      ],
+      "reponse": 1,
+      "explication": "Le cours indique « 35 milliards de dollars (19 444 milliards de francs CFA) ».",
+      "id": "envmob-intro-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Combien de sociétés compte l'écosystème mobile en 2016, selon le panorama ?",
+      "choix": [
+        "Plus de 350",
+        "Environ 35",
+        "Plus de 3 500",
+        "Exactement 28"
+      ],
+      "reponse": 0,
+      "explication": "Le panorama évoque plus de 350 sociétés, 28 milliards de dollars d'investissement et une valorisation estimée à 405 milliards de dollars.",
+      "id": "envmob-intro-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle valorisation le panorama estime-t-il pour l'écosystème mobile en 2016 ?",
+      "choix": [
+        "28 milliards de dollars",
+        "35 milliards de dollars",
+        "90 milliards de dollars",
+        "405 milliards de dollars"
+      ],
+      "reponse": 3,
+      "explication": "405 milliards de dollars de valorisation estimée, pour 28 milliards de dollars d'investissement.",
+      "id": "envmob-intro-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qui exploite respectivement le Windows Phone Store et BlackBerry App World ?",
+      "choix": [
+        "Google et Apple",
+        "Apple et Microsoft",
+        "Microsoft et BlackBerry",
+        "Nokia et Samsung"
+      ],
+      "reponse": 2,
+      "explication": "Chaque magasin est exploité par le propriétaire de l'OS mobile correspondant.",
+      "id": "envmob-intro-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pourquoi l'écosystème mobile est-il de plus en plus complexe à suivre ?",
+      "choix": [
+        "Parce qu'il ne reste qu'un seul acteur",
+        "À cause d'une multitude d'intervenants, de prestataires, de supports et d'outils analytiques",
+        "Parce que les stores ont disparu",
+        "Parce que les mobiles n'ont plus d'applications"
+      ],
+      "reponse": 1,
+      "explication": "Le panorama 2016 recense des centaines d'acteurs répartis en plusieurs domaines.",
+      "id": "envmob-intro-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Laquelle de ces compétences la séquence 1 vise-t-elle ?",
+      "choix": [
+        "Distinguer les App Stores les plus utilisés",
+        "Programmer une application en Java",
+        "Installer un serveur web",
+        "Configurer un réseau local"
+      ],
+      "reponse": 0,
+      "explication": "Objectifs : définir un environnement mobile, distinguer les App Stores, dresser le panorama des environnements mobiles, expliquer les enjeux liés à ces environnements.",
+      "id": "envmob-intro-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Une start-up veut distribuer son application aux utilisateurs d'iPhone et d'Android. Quels magasins doit-elle viser ?",
+      "choix": [
+        "Windows Phone Store et BlackBerry App World",
+        "Google Play uniquement",
+        "Le site de l'opérateur télécom",
+        "L'App Store d'Apple et Google Play"
+      ],
+      "reponse": 3,
+      "explication": "Chaque OS a son magasin : App Store pour iOS, Google Play pour Android. Un éditeur qui vise les deux doit publier sur les deux.",
+      "id": "envmob-intro-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le panorama 2016, que représentent les 28 milliards de dollars ?",
+      "choix": [
+        "Les revenus des stores",
+        "La valorisation de l'écosystème",
+        "Les investissements dans l'écosystème",
+        "Le nombre de téléchargements"
+      ],
+      "reponse": 2,
+      "explication": "Investissement : 28 milliards. Valorisation : 405 milliards. Revenus des stores : 35 milliards. Téléchargements : plus de 90 milliards.",
+      "id": "envmob-intro-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi un environnement mobile est-il plus large qu'une simple application ?",
+      "choix": [
+        "Il ne comprend que le matériel",
+        "Il inclut aussi les périphériques, les systèmes d'exploitation, les approches de développement et le marché",
+        "Il n'existe que pour Android",
+        "Il se limite aux stores"
+      ],
+      "reponse": 1,
+      "explication": "L'application n'est qu'un des cinq éléments de l'environnement mobile.",
+      "id": "envmob-intro-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que mesure le chiffre « plus de 90 milliards » cité pour 2016 ?",
+      "choix": [
+        "Le nombre de nouvelles applications téléchargées sur l'App Store et Google Play",
+        "Le nombre d'applications disponibles sur les stores",
+        "Les revenus en dollars des éditeurs",
+        "Le nombre de smartphones vendus"
+      ],
+      "reponse": 0,
+      "explication": "Ce sont des téléchargements de nouvelles applications en 2016, pas un stock d'applications ni des revenus.",
+      "id": "envmob-intro-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Sur la diapo « Panorama de l'écosystème mobile en 2016 », quel domaine compte le plus d'acteurs ?",
+      "choix": [
+        "Analytics (62)",
+        "Monetization (78)",
+        "Development (76)",
+        "User Acquisition (81)"
+      ],
+      "reponse": 3,
+      "explication": "Effectifs lus sur la diapo : User Acquisition 81, Monetization 78, Development 76, User Engagement 68, Analytics 62, UX 34, Geolocation 26, API Layer 21, Attribution 15, Monitoring 7.",
+      "id": "envmob-intro-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Sur la même diapo, quel domaine compte le moins d'acteurs ?",
+      "choix": [
+        "Attribution (15)",
+        "API Layer (21)",
+        "Monitoring (7)",
+        "Geolocation (26)"
+      ],
+      "reponse": 2,
+      "explication": "Le domaine Monitoring ne compte que 7 acteurs, contre 15 pour Attribution et 21 pour API Layer.",
+      "id": "envmob-intro-20"
+    }
+  ]
+}

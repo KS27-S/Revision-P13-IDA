@@ -1,0 +1,273 @@
+{
+  "matiere": "html-css",
+  "module": "tableaux-listes",
+  "titre": "Les tableaux et les listes",
+  "sources": [
+    "Séquence 7 -Tableau et liste.pdf",
+    "TP 07 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit un tableau ?",
+      "choix": [
+        "<tab>",
+        "<table>",
+        "<grid>",
+        "<tr>"
+      ],
+      "reponse": 1,
+      "explication": "Une table HTML est définie par la balise <table>.",
+      "id": "htmlcss-s7-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit une ligne de tableau ?",
+      "choix": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "reponse": 0,
+      "explication": "tr = table row.",
+      "id": "htmlcss-s7-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit une cellule de données ?",
+      "choix": [
+        "<th>",
+        "<tr>",
+        "<cell>",
+        "<td>"
+      ],
+      "reponse": 3,
+      "explication": "Les éléments td peuvent contenir du texte, des images, des listes, d'autres tableaux…",
+      "id": "htmlcss-s7-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit une cellule d'en-tête ?",
+      "choix": [
+        "<td>",
+        "<head>",
+        "<th>",
+        "<hd>"
+      ],
+      "reponse": 2,
+      "explication": "Un th est par défaut en gras et centré.",
+      "id": "htmlcss-s7-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit une liste non numérotée ?",
+      "choix": [
+        "<ol>",
+        "<ul>",
+        "<dl>",
+        "<li>"
+      ],
+      "reponse": 1,
+      "explication": "ul = unordered list.",
+      "id": "htmlcss-s7-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit une liste numérotée ?",
+      "choix": [
+        "<ol>",
+        "<ul>",
+        "<dl>",
+        "<nl>"
+      ],
+      "reponse": 0,
+      "explication": "ol = ordered list.",
+      "id": "htmlcss-s7-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit un élément (item) d'une liste ul ou ol ?",
+      "choix": [
+        "<it>",
+        "<item>",
+        "<dd>",
+        "<li>"
+      ],
+      "reponse": 3,
+      "explication": "<li> indique chaque nouvel item de la liste.",
+      "id": "htmlcss-s7-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles balises composent une liste descriptive ?",
+      "choix": [
+        "<ul>, <ol> et <li>",
+        "<table>, <tr> et <td>",
+        "<dl> pour la liste, <dt> pour le terme et <dd> pour la description",
+        "<dl> pour la description, <dt> pour la liste, <li> pour le terme"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <dt>UCAD</dt><dd>- Université Cheikh Anta Diop de Dakar</dd>.",
+      "id": "htmlcss-s7-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment ajoute-t-on une bordure fine à un tableau et à ses cellules ?",
+      "choix": [
+        "table { border: yes; }",
+        "table, th, td { border: 1px solid black; }",
+        "<table border-style>",
+        "td { line: 1px; }"
+      ],
+      "reponse": 1,
+      "explication": "Sans bordure spécifiée, la table est affichée sans bordure.",
+      "id": "htmlcss-s7-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait border-collapse: collapse ?",
+      "choix": [
+        "Il fusionne les bordures des cellules en une seule bordure",
+        "Il masque la bordure du tableau",
+        "Il agrandit les cellules",
+        "Il double les bordures"
+      ],
+      "reponse": 0,
+      "explication": "Sans cette propriété, chaque cellule garde sa propre bordure, d'où des doubles traits.",
+      "id": "htmlcss-s7-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre padding et border-spacing dans un tableau ?",
+      "choix": [
+        "padding : espace entre les cellules ; border-spacing : espace dans la cellule",
+        "Aucune, ce sont deux noms de la même propriété",
+        "padding colore les cellules ; border-spacing les aligne",
+        "padding : espace entre le contenu d'une cellule et ses bordures ; border-spacing : espace entre les cellules"
+      ],
+      "reponse": 3,
+      "explication": "Exemples : th, td { padding: 15px; } et table { border-spacing: 5px; }.",
+      "id": "htmlcss-s7-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que font colspan et rowspan ?",
+      "choix": [
+        "Ils fixent la largeur et la hauteur de la cellule en pixels",
+        "Ils fusionnent deux tableaux",
+        "Ils permettent à une cellule de s'étendre sur plusieurs colonnes ou plusieurs lignes",
+        "Ils trient les lignes et les colonnes"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <th colspan=\"2\">Telephone</th>.",
+      "id": "htmlcss-s7-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Où doit être placée la balise <caption> ?",
+      "choix": [
+        "À la fin du tableau, avant </table>",
+        "Immédiatement après la balise <table>",
+        "Dans le <head>",
+        "Dans la première cellule"
+      ],
+      "reponse": 1,
+      "explication": "Elle ajoute une légende au tableau. Exemple : <caption>Soldes mensuels</caption>.",
+      "id": "htmlcss-s7-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle est la valeur par défaut de list-style-type pour une liste ul ?",
+      "choix": [
+        "disc",
+        "circle",
+        "square",
+        "none"
+      ],
+      "reponse": 0,
+      "explication": "Valeurs : disc (par défaut), circle, square, none (pas de marqueur).",
+      "id": "htmlcss-s7-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que s'affiche-t-il pour <ol type=\"a\" start=\"3\"> avec trois éléments ?",
+      "code": "<ol type=\"a\" start=\"3\">\n<li>UFR SAT</li>\n<li>UFR SEG</li>\n<li>UFR SJP</li>\n</ol>",
+      "choix": [
+        "a., b., c.",
+        "3., 4., 5.",
+        "iii., iv., v.",
+        "c., d., e."
+      ],
+      "reponse": 3,
+      "explication": "type=\"a\" : lettres minuscules ; start=\"3\" : on commence au 3e rang, donc c.",
+      "id": "htmlcss-s7-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que s'affiche-t-il pour <ol type=\"I\" start=\"2\"> avec trois éléments ?",
+      "choix": [
+        "I., II., III.",
+        "2., 3., 4.",
+        "II., III., IV.",
+        "ii., iii., iv."
+      ],
+      "reponse": 2,
+      "explication": "type=\"I\" : nombres romains en majuscules ; start=\"2\" : on commence au rang 2.",
+      "id": "htmlcss-s7-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait table#t01 tr:nth-child(even) { background-color: #eee; } ?",
+      "choix": [
+        "Elle colore les lignes impaires",
+        "Elle colore les lignes paires du tableau d'id t01",
+        "Elle colore toutes les colonnes",
+        "Elle supprime les lignes paires"
+      ],
+      "reponse": 1,
+      "explication": "nth-child(odd) cible les lignes impaires. L'attribut id permet d'appliquer un style spécial à un tableau précis.",
+      "id": "htmlcss-s7-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le menu horizontal du cours, quelles déclarations alignent les éléments de liste côte à côte et retirent les puces ?",
+      "code": "ul {\n  list-style-type: none;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n  background-color: #333333;\n}\nli { float: left; }",
+      "choix": [
+        "li { float: left; } et ul { list-style-type: none; }",
+        "li { float: right; } et ul { list-style-type: disc; }",
+        "ul { display: table; } et li { color: none; }",
+        "li { text-align: left; } et ul { list-style: circle; }"
+      ],
+      "reponse": 0,
+      "explication": "Le menu est une liste ul dont les li flottent à gauche, avec des liens (a) stylés.",
+      "id": "htmlcss-s7-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans ce menu, à quoi sert la règle li a:hover ?",
+      "choix": [
+        "À désactiver le lien",
+        "À le rendre visité",
+        "À le souligner en permanence",
+        "À changer la couleur de fond du lien quand la souris le survole"
+      ],
+      "reponse": 3,
+      "explication": "Dans le cours : li a:hover { background-color: #111111; }.",
+      "id": "htmlcss-s7-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que peut contenir une cellule <td> ?",
+      "choix": [
+        "Uniquement du texte",
+        "Uniquement des nombres",
+        "Du texte, des images, des listes, d'autres tableaux…",
+        "Uniquement des images"
+      ],
+      "reponse": 2,
+      "explication": "Les éléments td sont les conteneurs de données de la table.",
+      "id": "htmlcss-s7-20"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "matiere": "html-css",
+  "module": "mise-en-page",
+  "titre": "TD – La mise en page en HTML",
+  "exercices": [
+    {
+      "id": "htmlcss-s8-td-01",
+      "type": "exercice",
+      "titre": "Schémas de mise en page avec des div",
+      "source": "TP 08 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise les schémas du TP (grilles de rectangles) avec des div. Montre la méthode sur un exemple : un en-tête sur toute la largeur, puis deux colonnes.",
+      "indices": [
+        "Les div de niveau bloc se placent l'un sous l'autre.",
+        "float:left les met côte à côte.",
+        "clear:both place un bloc sous les flottants."
+      ],
+      "solution": "<div style=\"width:300px;\">\n<div style=\"border:1px solid black; height:40px;\">En-tête</div>\n<div style=\"float:left; width:100px; height:100px; border:1px solid black; box-sizing:border-box;\">Colonne 1</div>\n<div style=\"float:left; width:200px; height:100px; border:1px solid black; box-sizing:border-box;\">Colonne 2</div>\n<div style=\"clear:both; border:1px solid black; height:30px;\">Pied</div>\n</div>",
+      "explication_simple": "Chaque rectangle du schéma est un div. Pour mettre des rectangles côte à côte, on les fait flotter à gauche, puis on utilise clear:both pour passer à la ligne suivante.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s8-td-02",
+      "type": "exercice",
+      "titre": "Un CV mis en page avec des div",
+      "source": "TP 08 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise le CV du TP 7 avec des div : un bloc en-tête (identité à gauche, photo à droite, titre en dessous) puis un bloc par rubrique.",
+      "indices": [
+        "Un div par zone.",
+        "float:right pour la photo.",
+        "Un div par rubrique, avec un titre h2."
+      ],
+      "solution": "<div style=\"border:1px solid black; overflow:hidden;\">\n<img src=\"photo.jpg\" alt=\"Photo\" style=\"float:right; width:90px;\">\n<div>Prénoms Nom<br>Statut<br>Adresse<br>Email<br>Tel</div>\n<h2 style=\"text-align:center;\">Ingénieur en télécom (en cours)</h2>\n</div>\n\n<div>\n<h2 style=\"background-color:#fbd5b5; text-align:center;\">Formation</h2>\n<p><b>2016-2017</b> Deuxième année de Licence Professionnelle en Réseaux Télécom</p>\n</div>\n<div>\n<h2 style=\"background-color:#fbd5b5; text-align:center;\">Expériences professionnelles</h2>\n<p><b>01/07/16 au 30/08/16</b> Stage dans le domaine des réseaux</p>\n</div>\n<div>\n<h2 style=\"background-color:#fbd5b5; text-align:center;\">Connaissances informatiques</h2>\n<p>Systèmes d'exploitation : Windows, Linux</p>\n</div>",
+      "explication_simple": "Le même contenu qu'avec des tableaux, mais le code est plus lisible et plus facile à modifier.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s8-td-03",
+      "type": "exercice",
+      "titre": "Corriger et modifier le code du bloc CFPP-UGB",
+      "source": "TP 08 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Dans le code du TP : 1) le bloc occupe toute la largeur ; 2) « Copyright@ugb » est centré dans le bloc gris ; 3) le texte CFPP-UGB devient une image ; 4) les textes de menu et content ont une marge de 5px.",
+      "indices": [
+        "Largeur : width:100% au lieu de 500px.",
+        "Centrer : text-align:center.",
+        "Marge intérieure : padding.",
+        "Les pourcentages 20 % + 80 % = 100 %."
+      ],
+      "solution": "<div id=\"container\" style=\"width:100%;\">\n<div id=\"header\" style=\"background-color:#FFA500;\">\n<h1 style=\"margin-bottom:0px\"><img src=\"logo-ugb.png\" alt=\"CFPP-UGB\" style=\"height:60px;\"></h1>\n</div>\n<div id=\"menu\" style=\"background-color:#FFD700; height:200px; width:20%; float:left; padding:5px; box-sizing:border-box;\">\n<b>Menu</b>\n<br />HTML\n<br />CSS\n<br />JavaScript\n</div>\n<div id=\"content\" style=\"background-color:green; height:200px; width:80%; float:left; padding:5px; box-sizing:border-box;\">\n<b>Contenu</b>\n</div>\n<div id=\"footer\" style=\"background-color:grey; clear:both; text-align:center;\">\n<b>Copyright@ugb</b>\n</div>\n</div>",
+      "explication_simple": "J'ai aussi corrigé deux erreurs du code d'origine : <b />Menu</b> devient <b>Menu</b>, et width=\"500px\" (attribut) devient un style. Les largeurs en % s'adaptent à l'écran ; clear:both place le pied sous les deux blocs flottants.",
+      "attention": "Le « Copyrith@ugb » de l'énoncé est une faute de frappe pour « Copyright@ugb »."
+    },
+    {
+      "id": "htmlcss-s8-td-04",
+      "type": "exercice",
+      "titre": "Un CV en 4 blocs avec float et iframe",
+      "source": "TP 08 – exercice 4",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Avec div et iframe, réalise une page de CV découpée en 4 blocs : logo (logo + description), menu (liens vers les parties du CV), content (une iframe qui affiche la partie choisie) et copyright (« Copyright@UGB 2016 »).",
+      "indices": [
+        "Menu à gauche (float:left), content à droite (float:left).",
+        "Les liens du menu ont target = nom de l'iframe.",
+        "Le bloc copyright utilise clear:both."
+      ],
+      "solution": "<div id=\"logo\" style=\"background-color:#FFA500;\"><img src=\"logo.png\" alt=\"Logo\" height=\"50\"> Mon CV en ligne</div>\n<div id=\"menu\" style=\"float:left; width:20%;\">\n<a href=\"formation.html\" target=\"cv\">Formation</a><br>\n<a href=\"experiences.html\" target=\"cv\">Expériences</a><br>\n<a href=\"competences.html\" target=\"cv\">Compétences</a>\n</div>\n<div id=\"content\" style=\"float:left; width:80%;\">\n<iframe name=\"cv\" src=\"formation.html\" width=\"100%\" height=\"300\"></iframe>\n</div>\n<div id=\"copyright\" style=\"clear:both; text-align:center; background-color:grey;\">Copyright@UGB 2016</div>",
+      "explication_simple": "Chaque partie du CV est une page séparée affichée dans l'iframe quand on clique sur le menu. Les trois pages formation.html, experiences.html et competences.html sont à créer.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    }
+  ]
+}

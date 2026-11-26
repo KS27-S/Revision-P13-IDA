@@ -1,0 +1,271 @@
+{
+  "matiere": "reseau",
+  "module": "cablage-lan-wan",
+  "titre": "Infrastructures : câblage des réseaux locaux et distants",
+  "sources": [
+    "Chapitre3-InfrastructuresDesReseaux.pdf (diapos en images, lues par OCR)",
+    "Travaux-Pratiques5-Introduction aux Reseaux.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le rôle d'un répéteur ?",
+      "choix": [
+        "Choisir le meilleur chemin",
+        "Recevoir un signal, le régénérer et le retransmettre, pour qu'il parcoure une plus longue distance",
+        "Filtrer les trames par adresse MAC",
+        "Attribuer des adresses IP"
+      ],
+      "reponse": 1,
+      "explication": "Un répéteur régénère et resynchronise les signaux réseau au niveau du bit.",
+      "id": "reseau-s5-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un concentrateur (hub) ?",
+      "choix": [
+        "Un répéteur multiports",
+        "Un routeur sans fil",
+        "Un type de câble",
+        "Un pare-feu"
+      ],
+      "reponse": 0,
+      "explication": "La différence entre un concentrateur et un répéteur réside dans le nombre de ports.",
+      "id": "reseau-s5-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on parfois un commutateur ?",
+      "choix": [
+        "Un répéteur à deux ports",
+        "Un modem",
+        "Une passerelle d'application",
+        "Un pont multiport"
+      ],
+      "reponse": 3,
+      "explication": "Un pont classique ne comporte que deux ports reliant deux segments.",
+      "id": "reseau-s5-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi servent les routeurs ?",
+      "choix": [
+        "À régénérer les signaux",
+        "À brancher les imprimantes",
+        "À router les paquets de la source à la destination dans le LAN et à assurer la connectivité au WAN",
+        "À stocker les fichiers"
+      ],
+      "reponse": 2,
+      "explication": "Pour offrir ces services, le routeur doit être connecté au LAN et au WAN.",
+      "id": "reseau-s5-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel câble utilise-t-on pour relier un commutateur à un PC ?",
+      "choix": [
+        "Un câble croisé",
+        "Un câble droit",
+        "Un câble console",
+        "Une fibre optique obligatoirement"
+      ],
+      "reponse": 1,
+      "explication": "Câble droit : commutateur–routeur, commutateur–PC ou serveur, concentrateur–PC ou serveur.",
+      "id": "reseau-s5-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel câble utilise-t-on pour relier directement deux PC ?",
+      "choix": [
+        "Un câble croisé",
+        "Un câble droit",
+        "Un câble coaxial uniquement",
+        "Un câble série"
+      ],
+      "reponse": 0,
+      "explication": "C'est aussi l'étape 1 du TP 5 : deux ordinateurs reliés par un câble croisé.",
+      "id": "reseau-s5-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel connecteur est utilisé pour les câbles à paires torsadées Ethernet ?",
+      "choix": [
+        "Le connecteur BNC",
+        "Le connecteur RJ-11",
+        "Le connecteur ST",
+        "Le connecteur RJ-45"
+      ],
+      "reponse": 3,
+      "explication": "Les connecteurs et prises RJ-45 sont légèrement plus grands que les connecteurs de téléphone RJ-11.",
+      "id": "reseau-s5-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont les trois types de concentrateurs ?",
+      "choix": [
+        "Simple, double et triple",
+        "Local, distant et mobile",
+        "Passif, actif et intelligent",
+        "Optique, radio et filaire"
+      ],
+      "reponse": 2,
+      "explication": "Le passif n'a besoin d'aucune alimentation et ne fait que partager le média ; l'actif amplifie le signal ; l'intelligent ajoute des fonctions de diagnostic.",
+      "id": "reseau-s5-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre un concentrateur passif et un concentrateur actif ?",
+      "choix": [
+        "Le passif amplifie le signal ; l'actif non",
+        "Le passif ne nécessite pas d'alimentation et n'amplifie pas le signal ; l'actif est branché sur le courant et l'amplifie",
+        "Aucune",
+        "Le passif est sans fil ; l'actif filaire"
+      ],
+      "reponse": 1,
+      "explication": "Un concentrateur passif ne peut ni manipuler ni visualiser le trafic.",
+      "id": "reseau-s5-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quel niveau du modèle OSI fonctionnent les ponts et les commutateurs ?",
+      "choix": [
+        "La couche liaison de données (couche 2)",
+        "La couche physique",
+        "La couche transport",
+        "La couche application"
+      ],
+      "reponse": 0,
+      "explication": "Un pont prend des décisions intelligentes quant à la transmission des signaux au segment suivant.",
+      "id": "reseau-s5-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'apporte la microsegmentation par un commutateur ?",
+      "choix": [
+        "Un trafic visible sur chaque segment",
+        "Une réduction du nombre de ports",
+        "L'arrêt complet du réseau",
+        "Des chemins dédiés entre l'hôte émetteur et l'hôte récepteur, au lieu d'un trafic visible sur tout le segment"
+      ],
+      "reponse": 3,
+      "explication": "Segmenter un grand LAN réduit le trafic sur chaque segment et permet d'étendre la zone géographique couverte.",
+      "id": "reseau-s5-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que contient la table de commutation d'un commutateur ?",
+      "choix": [
+        "La liste des sites web visités",
+        "Les mots de passe des utilisateurs",
+        "Les associations entre les interfaces (ports) et les adresses MAC des ordinateurs",
+        "Les adresses de messagerie"
+      ],
+      "reponse": 2,
+      "explication": "Le commutateur observe les trames reçues pour créer ces tables et décider de la destination des données.",
+      "id": "reseau-s5-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un routeur dans un LAN, d'après le cours ?",
+      "choix": [
+        "Il amplifie le signal uniquement",
+        "Il stoppe les broadcasts, fournit des services de résolution d'adresse (ARP, RARP) et peut segmenter le réseau en sous-réseaux",
+        "Il relaie tous les broadcasts",
+        "Il remplace la carte réseau"
+      ],
+      "reponse": 1,
+      "explication": "C'est une différence importante avec un concentrateur, qui relaie tout.",
+      "id": "reseau-s5-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont les avantages d'un réseau d'égal à égal et d'un réseau client-serveur ?",
+      "choix": [
+        "Égal à égal : moins coûteux, sans administrateur dédié ; client-serveur : meilleure sécurité et administration centralisée",
+        "Égal à égal : meilleure sécurité ; client-serveur : moins coûteux",
+        "Les deux : aucun avantage",
+        "Égal à égal : administration centralisée ; client-serveur : sans serveur"
+      ],
+      "reponse": 0,
+      "explication": "Le client-serveur coûte plus cher (logiciel spécialisé, serveur puissant) mais s'adapte mieux aux grands réseaux.",
+      "id": "reseau-s5-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Laquelle de ces liaisons nécessite un câble croisé ?",
+      "choix": [
+        "Commutateur vers PC",
+        "Commutateur vers routeur",
+        "Concentrateur vers serveur",
+        "Commutateur vers commutateur"
+      ],
+      "reponse": 3,
+      "explication": "Câble croisé aussi pour : commutateur–concentrateur, concentrateur–concentrateur, routeur–routeur, PC–PC et routeur–PC.",
+      "id": "reseau-s5-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que modifie-t-on dans un câble croisé par rapport à un câble droit ?",
+      "choix": [
+        "On supprime les quatre fils actifs",
+        "On remplace le cuivre par de la fibre",
+        "On inverse les paires orange et verte à l'une des extrémités",
+        "On change le connecteur en BNC"
+      ],
+      "reponse": 2,
+      "explication": "Dans un câble droit, les extrémités sont dans le même ordre ; T568A et T568B sont deux codes de couleurs de câblage.",
+      "id": "reseau-s5-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quels débits correspondent les normes Ethernet 802.3, 802.3u et 802.3z ?",
+      "choix": [
+        "1 Mbit/s, 10 Mbits/s, 100 Mbits/s",
+        "10 Mbits/s (Ethernet), 100 Mbits/s (Fast Ethernet), 1000 Mbits/s (Gigabit Ethernet)",
+        "100 Mbits/s, 1 Gbit/s, 10 Gbits/s",
+        "10 Mbits/s, 10 Mbits/s, 10 Mbits/s"
+      ],
+      "reponse": 1,
+      "explication": "Les mises en œuvre de couche physique varient selon le média utilisé.",
+      "id": "reseau-s5-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel média et quelle topologie caractérisent le 100BASE-TX ?",
+      "choix": [
+        "Câble UTP de catégorie 5 à deux paires, en étoile",
+        "Câble coaxial, en bus",
+        "Fibre monomode, en anneau",
+        "Câble série, maillé"
+      ],
+      "reponse": 0,
+      "explication": "100BASE-FX utilise de la fibre multimode 62,5/125 ; 1000BASE-T un câble UTP de catégorie 5 à quatre paires.",
+      "id": "reseau-s5-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans une connexion série WAN, que sont l'ETTD et l'ETCD ?",
+      "choix": [
+        "L'ETTD est côté fournisseur ; l'ETCD côté utilisateur",
+        "Deux types de câbles Ethernet",
+        "Deux normes sans fil",
+        "L'ETTD (DTE) est l'équipement côté utilisateur ; l'ETCD (DCE) est l'équipement côté fournisseur, responsable de la synchronisation"
+      ],
+      "reponse": 3,
+      "explication": "Les types de connexion WAN cités : RNIS (BRI), DSL et modem câble.",
+      "id": "reseau-s5-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À l'étape 1 du TP 5 sous Packet Tracer (deux ordinateurs), quel câble faut-il choisir ?",
+      "choix": [
+        "Un câble droit",
+        "Un câble console",
+        "Un câble croisé",
+        "Une liaison série"
+      ],
+      "reponse": 2,
+      "explication": "Deux équipements de même nature se relient avec un câble croisé. Pour les étapes avec hub ou switch, on utilise des câbles droits.",
+      "id": "reseau-s5-20"
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "matiere": "javascript",
+  "module": "langage-javascript",
+  "titre": "Le langage JavaScript",
+  "sources": [
+    "Chapitre1.pdf",
+    "td 1.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce que JavaScript ?",
+      "choix": [
+        "Un logiciel de traitement de texte",
+        "Le langage de programmation du Web",
+        "Un système d'exploitation",
+        "Une base de données"
+      ],
+      "reponse": 1,
+      "explication": "La majorité des sites web modernes l'utilisent, et tous les navigateurs modernes le comprennent.",
+      "id": "js-s1-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Dans la triade HTML, CSS, JavaScript, que spécifie JavaScript ?",
+      "choix": [
+        "Le comportement des pages web",
+        "Le contenu des pages web",
+        "La présentation des pages web",
+        "L'hébergement des pages web"
+      ],
+      "reponse": 0,
+      "explication": "HTML : le contenu. CSS : la présentation. JavaScript : le comportement.",
+      "id": "js-s1-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qui interprète le code JavaScript d'une page web ?",
+      "choix": [
+        "Le serveur web uniquement",
+        "Le routeur",
+        "Le système de fichiers",
+        "Le navigateur du visiteur (le client)"
+      ],
+      "reponse": 3,
+      "explication": "JavaScript est un langage de script : il s'interprète (contrairement à un langage compilé).",
+      "id": "js-s1-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "JavaScript est-il le même langage que Java ?",
+      "choix": [
+        "Oui, c'est le même langage",
+        "Oui, JavaScript est une version simplifiée de Java",
+        "Non : ce sont deux langages différents",
+        "Non, mais ils ont la même syntaxe exacte"
+      ],
+      "reponse": 2,
+      "explication": "Le cours précise bien que JavaScript est différent du langage de programmation Java.",
+      "id": "js-s1-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est l'extension d'un fichier externe contenant du code JavaScript ?",
+      "choix": [
+        ".java",
+        ".js",
+        ".html",
+        ".css"
+      ],
+      "reponse": 1,
+      "explication": "On l'importe comme pour le CSS.",
+      "id": "js-s1-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété de la balise <script> indique le fichier externe à charger ?",
+      "choix": [
+        "src",
+        "href",
+        "link",
+        "file"
+      ],
+      "reponse": 0,
+      "explication": "Comme pour les images : <script type=\"text/javascript\" src=\"script.js\"></script>.",
+      "id": "js-s1-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle instruction affiche une boîte de dialogue contenant un message ?",
+      "choix": [
+        "print('Bonjour !');",
+        "echo('Bonjour !');",
+        "message('Bonjour !');",
+        "alert('Bonjour !');"
+      ],
+      "reponse": 3,
+      "explication": "alert() affiche un message dans une boîte de dialogue.",
+      "id": "js-s1-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce que l'ECMAScript ?",
+      "choix": [
+        "Un navigateur web",
+        "Un éditeur de code",
+        "Le standard (publié par l'ECMA) dont JavaScript est l'implémentation ; ES2015 (ES6) a été ratifiée en juin 2015",
+        "Un serveur HTTP"
+      ],
+      "reponse": 2,
+      "explication": "Le cours indique aussi qu'à sa rédaction, ECMAScript 5 était la version la mieux supportée par la plupart des navigateurs.",
+      "id": "js-s1-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un gestionnaire d'événements (event handler) dans une balise ?",
+      "code": "<a href=\"#\" onclick=\"alert('Bonjour !');\">lien</a>",
+      "choix": [
+        "Un fichier JavaScript externe",
+        "Une propriété portant le nom de l'événement et contenant le script à exécuter",
+        "Une balise <script> spéciale",
+        "Un commentaire HTML"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : <a href=\"#\" onclick=\"alert('Bonjour !');\">lien</a>.",
+      "id": "js-s1-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les trois méthodes pour insérer du JavaScript dans une page ?",
+      "choix": [
+        "Dans les balises (gestionnaire d'événements), entre <script> et </script>, ou dans un fichier externe .js",
+        "Dans le title, dans le meta, dans le link",
+        "Uniquement dans un fichier externe",
+        "Uniquement dans le head"
+      ],
+      "reponse": 0,
+      "explication": "La balise <script> peut être placée dans le head ou dans le body.",
+      "id": "js-s1-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "JavaScript fait-il la différence entre majuscules et minuscules ?",
+      "choix": [
+        "Non : nom, Nom et NOM désignent la même variable",
+        "Oui, mais seulement pour les chaînes",
+        "Non, sauf pour les nombres",
+        "Oui : nom, Nom et NOM sont trois variables différentes"
+      ],
+      "reponse": 3,
+      "explication": "JavaScript est sensible à la casse.",
+      "id": "js-s1-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle règle s'applique à un nom de variable ?",
+      "choix": [
+        "Il doit commencer par un chiffre",
+        "Il peut contenir des espaces",
+        "Il peut contenir lettres, chiffres et underscore, mais ne doit pas commencer par un chiffre",
+        "Il doit être écrit en majuscules"
+      ],
+      "reponse": 2,
+      "explication": "Il faut aussi éviter les mots-clés du langage.",
+      "id": "js-s1-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait cette instruction avec age = 18 ?",
+      "code": "var age = 18;\nalert(\"Vous avez \" + age + \" ans\");",
+      "choix": [
+        "Elle additionne 18 et 'Vous avez'",
+        "Elle affiche « Vous avez 18 ans » (concaténation avec +)",
+        "Elle affiche une erreur",
+        "Elle affiche seulement 18"
+      ],
+      "reponse": 1,
+      "explication": "Concaténer, c'est mettre bout à bout plusieurs chaînes pour n'en former qu'une.",
+      "id": "js-s1-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que vaut 52 % 19 en JavaScript ?",
+      "choix": [
+        "14",
+        "2",
+        "33",
+        "71"
+      ],
+      "reponse": 0,
+      "explication": "% est le modulo : le reste de la division de 52 par 19. 52 = 19 × 2 + 14.",
+      "id": "js-s1-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que renvoie parseInt(\"abc\") ?",
+      "choix": [
+        "0",
+        "\"abc\"",
+        "undefined",
+        "NaN (Not a Number)"
+      ],
+      "reponse": 3,
+      "explication": "La conversion échoue si la chaîne n'est pas un nombre.",
+      "id": "js-s1-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que retourne checkscope() ?",
+      "code": "var scope = \"global\";\nfunction checkscope() {\n  var scope = \"local\";\n  return scope;\n}\ncheckscope()",
+      "choix": [
+        "\"global\"",
+        "undefined",
+        "\"local\"",
+        "Une erreur"
+      ],
+      "reponse": 2,
+      "explication": "La variable locale masque la variable globale du même nom dans le corps de la fonction.",
+      "id": "js-s1-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que se passe-t-il dans un switch si aucun case ne correspond et qu'il n'y a pas de bloc default ?",
+      "choix": [
+        "Une erreur est signalée",
+        "Le switch ignore complètement le bloc de code",
+        "Le premier case est exécuté",
+        "Le dernier case est exécuté"
+      ],
+      "reponse": 1,
+      "explication": "S'il y a un default, c'est lui qui est exécuté.",
+      "id": "js-s1-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle est la particularité de la boucle do/while ?",
+      "choix": [
+        "Le test est fait en bas de la boucle : le corps est donc exécuté au moins une fois",
+        "Le test est fait avant : le corps peut ne jamais s'exécuter",
+        "Elle ne fonctionne qu'avec les tableaux",
+        "Elle ne peut pas être infinie"
+      ],
+      "reponse": 0,
+      "explication": "En pratique, elle est moins utilisée que while.",
+      "id": "js-s1-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans quels cas if (!username) { … } exécute-t-il son bloc ?",
+      "choix": [
+        "Uniquement quand username n'est pas déclarée",
+        "Uniquement quand username vaut null",
+        "Quand username contient du texte",
+        "Quand username vaut null, undefined, false, 0, \"\" ou NaN"
+      ],
+      "reponse": 3,
+      "explication": "Ces valeurs sont considérées comme fausses, d'où le « non » qui devient vrai.",
+      "id": "js-s1-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que permet const, introduit par ES6 ?",
+      "choix": [
+        "Déclarer une variable globale modifiable partout",
+        "Déclarer une fonction",
+        "Déclarer une variable à assignation unique, accessible au niveau du bloc",
+        "Déclarer un commentaire"
+      ],
+      "reponse": 2,
+      "explication": "var était utilisé jusqu'à ES5 ; ES6 ajoute let et const.",
+      "id": "js-s1-20"
+    }
+  ]
+}

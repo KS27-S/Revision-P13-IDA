@@ -1,0 +1,272 @@
+{
+  "matiere": "html-css",
+  "module": "elements-attributs-html",
+  "titre": "Les éléments et attributs HTML",
+  "sources": [
+    "Séquence 2-LES ELEMENTS ET ATTRIBUTS HTML.pdf",
+    "TP 02.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "De quoi est généralement constitué un élément HTML ?",
+      "choix": [
+        "D'un attribut seulement",
+        "D'une balise de début, d'un contenu et d'une balise de fin",
+        "D'une feuille de style",
+        "D'une image et d'un lien"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : <p> Mon premier paragraphe. </p>.",
+      "id": "htmlcss-s2-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'appelle-t-on un élément vide ?",
+      "choix": [
+        "Un élément sans contenu, qui n'a pas de balise de fin (par exemple <br>)",
+        "Un élément dont le texte est vide",
+        "Un élément qui n'a pas de balise de début",
+        "Un élément placé dans le head"
+      ],
+      "reponse": 0,
+      "explication": "On peut le « fermer » dans la balise de début : <br />. HTML5 n'exige pas cette fermeture.",
+      "id": "htmlcss-s2-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un attribut HTML ?",
+      "choix": [
+        "Un élément vide",
+        "Un commentaire",
+        "Une balise de fin",
+        "Une information supplémentaire sur un élément, placée dans la balise de début, en paire nom=\"valeur\""
+      ],
+      "reponse": 3,
+      "explication": "Exemple : <html lang=\"wo-SN\">. Tous les éléments HTML peuvent avoir des attributs.",
+      "id": "htmlcss-s2-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles balises définissent les titres ?",
+      "choix": [
+        "<t1> à <t6>",
+        "<title1> à <title6>",
+        "<h1> à <h6>",
+        "<head1> à <head6>"
+      ],
+      "reponse": 2,
+      "explication": "<h1> est le titre le plus important et <h6> le moins important.",
+      "id": "htmlcss-s2-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit un paragraphe ?",
+      "choix": [
+        "<par>",
+        "<p>",
+        "<para>",
+        "<pg>"
+      ],
+      "reponse": 1,
+      "explication": "Les navigateurs ajoutent automatiquement une ligne vide avant et après un paragraphe.",
+      "id": "htmlcss-s2-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise définit un saut de ligne ?",
+      "choix": [
+        "<br>",
+        "<lb>",
+        "<break>",
+        "<nl>"
+      ],
+      "reponse": 0,
+      "explication": "<br> est utilisé si on veut une nouvelle ligne sans commencer un nouveau paragraphe. C'est un élément vide.",
+      "id": "htmlcss-s2-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise crée une ligne horizontale ?",
+      "choix": [
+        "<line>",
+        "<h1>",
+        "<br />",
+        "<hr />"
+      ],
+      "reponse": 3,
+      "explication": "L'élément hr peut être utilisé pour séparer le contenu.",
+      "id": "htmlcss-s2-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans cet exemple, où se trouve l'élément title ?",
+      "code": "<html>\n<head>\n<title>Titre de la page</title>\n</head>\n<body>\n<h1>Ma premiere entête</h1>\n<p>Mon premier paragraphe.</p>\n</body>\n</html>",
+      "choix": [
+        "Directement dans body",
+        "En dehors de html",
+        "Imbriqué dans l'élément head, lui-même dans html",
+        "À l'intérieur de h1"
+      ],
+      "reponse": 2,
+      "explication": "Les éléments head, title et body sont imbriqués dans html ; h1 et p sont imbriqués dans body.",
+      "id": "htmlcss-s2-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Les noms de balises HTML sont-ils sensibles à la casse ?",
+      "choix": [
+        "Oui, seules les minuscules fonctionnent",
+        "Non : <P> et <p> sont équivalents, mais le W3C recommande les minuscules",
+        "Oui, seules les majuscules fonctionnent",
+        "Non, et le W3C recommande les majuscules"
+      ],
+      "reponse": 1,
+      "explication": "La norme HTML5 n'exige pas de minuscules, mais elles sont exigées dans les types de documents plus stricts comme XHTML.",
+      "id": "htmlcss-s2-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert l'attribut lang de la balise html ?",
+      "choix": [
+        "À déclarer la langue du document, utile pour les lecteurs d'écran et les moteurs de recherche",
+        "À choisir l'encodage des caractères",
+        "À traduire automatiquement la page",
+        "À changer la police de caractères"
+      ],
+      "reponse": 0,
+      "explication": "Exemple du cours : <html lang=\"wo-SN\">.",
+      "id": "htmlcss-s2-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Les guillemets autour des valeurs d'attribut sont-ils obligatoires en HTML5 ?",
+      "choix": [
+        "Oui, toujours",
+        "Non, et ils sont interdits",
+        "Oui, mais seulement les apostrophes",
+        "Non, mais le W3C les recommande (guillemets ou apostrophes)"
+      ],
+      "reponse": 3,
+      "explication": "<a href=https://www.gouv.sn> est correct en HTML5 ; les guillemets sont exigés pour les types de documents plus stricts comme XHTML.",
+      "id": "htmlcss-s2-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lequel de ces attributs est standard pour la plupart des éléments HTML ?",
+      "choix": [
+        "height5",
+        "colour",
+        "class",
+        "target-id"
+      ],
+      "reponse": 2,
+      "explication": "Attributs standards cités : class, id, style, title. Le title indique des informations supplémentaires, affichées comme infobulle.",
+      "id": "htmlcss-s2-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait l'élément <pre> ?",
+      "choix": [
+        "Il met le texte en gras",
+        "Il affiche du texte préformaté en police à largeur fixe, en préservant espaces et sauts de ligne",
+        "Il précharge une image",
+        "Il crée un paragraphe numéroté"
+      ],
+      "reponse": 1,
+      "explication": "Le texte à l'intérieur de <pre> est généralement affiché en Courier.",
+      "id": "htmlcss-s2-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment écrit-on un commentaire HTML ?",
+      "choix": [
+        "<!-- Ceci est un commentaire -->",
+        "// Ceci est un commentaire",
+        "/* Ceci est un commentaire */",
+        "<comment>Ceci est un commentaire</comment>"
+      ],
+      "reponse": 0,
+      "explication": "Les commentaires sont ignorés par le navigateur et ne sont pas affichés. Il y a un point d'exclamation après le crochet ouvrant, mais pas avant le crochet fermant.",
+      "id": "htmlcss-s2-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi ne faut-il pas utiliser les titres h1 à h6 pour rendre un texte gros ou gras ?",
+      "choix": [
+        "Parce qu'ils sont obsolètes en HTML5",
+        "Parce qu'ils ne fonctionnent que dans l'élément head",
+        "Parce qu'ils ne supportent pas les accents",
+        "Parce qu'ils servent à structurer le document : les moteurs de recherche et les utilisateurs s'en servent pour parcourir la page"
+      ],
+      "reponse": 3,
+      "explication": "Les titres doivent montrer la structure : h1 pour les rubriques principales, puis h2, h3…",
+      "id": "htmlcss-s2-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel attribut donne un identifiant unique à un élément ?",
+      "choix": [
+        "class",
+        "style",
+        "id",
+        "title"
+      ],
+      "reponse": 2,
+      "explication": "class indique un nom de classe (réutilisable), style un style en ligne, title une infobulle.",
+      "id": "htmlcss-s2-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que désigne <img src=\"../picture.jpg\"> ?",
+      "choix": [
+        "Le fichier picture.jpg situé dans le dossier courant",
+        "Le fichier picture.jpg situé dans le dossier parent du dossier courant",
+        "Le fichier picture.jpg situé à la racine du site",
+        "Le fichier picture.jpg situé dans un dossier nommé « .. »"
+      ],
+      "reponse": 1,
+      "explication": "../ remonte d'un niveau dans l'arborescence.",
+      "id": "htmlcss-s2-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que désigne <img src=\"/images/image.jpg\"> ?",
+      "choix": [
+        "Le fichier image.jpg situé dans le dossier images à la racine du site web",
+        "Le fichier image.jpg dans le dossier images du dossier courant",
+        "Le fichier image.jpg dans le dossier parent",
+        "Le fichier image.jpg dans le même dossier que la page"
+      ],
+      "reponse": 0,
+      "explication": "La barre oblique initiale désigne la racine du site. Sans elle (images/image.jpg), le chemin part du dossier courant.",
+      "id": "htmlcss-s2-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que risque-t-on en oubliant la balise de fin </p> ?",
+      "choix": [
+        "Rien, car les balises de fin sont toujours inutiles",
+        "La page n'affiche rien du tout, dans tous les cas",
+        "Le navigateur ajoute toujours un commentaire",
+        "Ça peut sembler fonctionner, mais d'autres éléments donneront des résultats inattendus : il ne faut jamais s'y fier"
+      ],
+      "reponse": 3,
+      "explication": "La balise de fermeture est considérée comme facultative pour certains éléments, mais beaucoup d'éléments produiront des erreurs si elle est oubliée.",
+      "id": "htmlcss-s2-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment faire disparaître la ligne « Université de Matam » de l'affichage sans l'effacer du code ?",
+      "choix": [
+        "La placer dans un second <head>",
+        "L'écrire entre <hr> et </hr>",
+        "L'entourer d'un commentaire <!-- ... -->",
+        "Lui ajouter un attribut lang"
+      ],
+      "reponse": 2,
+      "explication": "C'est l'exercice 3 du TP 2 : mettre la ligne en commentaire la rend invisible au navigateur tout en la conservant dans le code.",
+      "id": "htmlcss-s2-20"
+    }
+  ]
+}

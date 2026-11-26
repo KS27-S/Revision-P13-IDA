@@ -1,0 +1,55 @@
+{
+  "matiere": "javascript",
+  "module": "objets-tableaux-fonctions",
+  "titre": "TD – Les objets, les tableaux et les fonctions",
+  "exercices": [
+    {
+      "id": "js-s2-td-01",
+      "type": "exercice",
+      "titre": "Trois fonctions : identity, max et repeat",
+      "source": "td2.pdf – exercice 2.1",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Écris : identity(a, b) qui calcule a² + 2ab + b² ; max(a, b) qui renvoie la plus grande de deux valeurs ; repeat(mot, n) qui répète un mot n fois.",
+      "indices": [
+        "Utilise return pour renvoyer le résultat.",
+        "max : compare a et b avec un if.",
+        "repeat : concatène le mot dans une boucle for."
+      ],
+      "solution": "function identity(a, b) {\n  return a * a + 2 * a * b + b * b;\n}\n\nfunction max(a, b) {\n  if (a > b) {\n    return a;\n  }\n  return b;\n}\n\nfunction repeat(mot, n) {\n  var resultat = \"\";\n  for (var i = 0; i < n; i++) {\n    resultat += mot;\n  }\n  return resultat;\n}\n\nidentity(2, 3)     // 25\nmax(4, 9)          // 9\nrepeat(\"ha\", 3)    // \"hahaha\"",
+      "explication_simple": "identity(2, 3) = 4 + 12 + 9 = 25, ce qui est (2+3)². repeat construit la chaîne en ajoutant le mot à chaque tour.",
+      "attention": "L'énoncé parle de valeurs « de type int » : cette notation vient de Java ; en JavaScript, il n'y a pas de type int, on utilise simplement des nombres."
+    },
+    {
+      "id": "js-s2-td-02",
+      "type": "exercice",
+      "titre": "Comparer deux tableaux",
+      "source": "td2.pdf – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Deux tableaux t1 et t2 sont égaux si et seulement s'ils ont la même longueur et si t1[i] == t2[i] pour tout indice i. Écris la fonction estEgal(t1, t2).",
+      "indices": [
+        "Compare d'abord les longueurs.",
+        "Parcours les indices avec une boucle for.",
+        "Dès qu'un élément diffère, renvoie false."
+      ],
+      "solution": "function estEgal(t1, t2) {\n  if (t1.length !== t2.length) {\n    return false;\n  }\n  for (var i = 0; i < t1.length; i++) {\n    if (t1[i] !== t2[i]) {\n      return false;\n    }\n  }\n  return true;\n}\n\nestEgal([1, 2, 3], [1, 2, 3])  // true\nestEgal([1, 2, 3], [1, 2])     // false\nestEgal([1, 2, 3], [1, 2, 4])  // false",
+      "explication_simple": "On renvoie false au premier problème (longueurs ou éléments différents). Si aucun problème n'est trouvé après la boucle, les tableaux sont égaux.",
+      "attention": "L'énoncé parle de tableaux « de type int[] » (notation Java). En JavaScript, on ne peut pas écrire t1 == t2 pour comparer le contenu de deux tableaux : cela compare les références, d'où la boucle."
+    },
+    {
+      "id": "js-s2-td-03",
+      "type": "exercice",
+      "titre": "Créer un objet Etudiant avec constructeur et méthodes",
+      "source": "td2.pdf – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée un objet Etudiant : un constructeur initialise le nom ; travailler() écrit « Ndiaye se met au travail » si le nom est Ndiaye ; seReposer() écrit « Nama est au repos » si le nom est Nama. Crée une instance « Ndiaye » et appelle travailler, puis une instance « Diop » et appelle seReposer.",
+      "indices": [
+        "Une fonction constructeur utilise this.nom = nom.",
+        "Une méthode est une fonction stockée dans une propriété.",
+        "Utilise if pour tester le nom."
+      ],
+      "solution": "function Etudiant(nom) {\n  this.nom = nom;\n  this.travailler = function () {\n    if (this.nom === \"Ndiaye\") {\n      console.log(\"Ndiaye se met au travail\");\n    }\n  };\n  this.seReposer = function () {\n    if (this.nom === \"Nama\") {\n      console.log(\"Nama est au repos\");\n    }\n  };\n}\n\nvar e1 = new Etudiant(\"Ndiaye\");\ne1.travailler();   // affiche : Ndiaye se met au travail\n\nvar e2 = new Etudiant(\"Diop\");\ne2.seReposer();    // n'affiche rien (le nom n'est pas Nama)",
+      "explication_simple": "Le constructeur crée l'objet avec sa propriété nom. Les méthodes vérifient le nom grâce à this.nom avant d'écrire dans la console.",
+      "attention": "Ambiguïté de l'énoncé : avec une instance « Diop », seReposer() ne peut rien afficher puisque le nom n'est pas « Nama ». Je l'ai écrit littéralement ; l'enseignant a peut-être voulu un autre comportement. Variante : définir les méthodes sur Etudiant.prototype pour les partager entre instances."
+    }
+  ]
+}

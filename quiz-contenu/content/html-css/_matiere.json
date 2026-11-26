@@ -1,0 +1,60 @@
+{
+  "id": "html-css",
+  "titre": "HTML et CSS",
+  "modules": [
+    {
+      "id": "introduction-html-css",
+      "titre": "Introduction à HTML et CSS",
+      "quiz": "introduction-html-css.quiz.json",
+      "td": "introduction-html-css.td.json"
+    },
+    {
+      "id": "elements-attributs-html",
+      "titre": "Les éléments et attributs HTML",
+      "quiz": "elements-attributs-html.quiz.json",
+      "td": "elements-attributs-html.td.json"
+    },
+    {
+      "id": "caracteres-metadonnees",
+      "titre": "Jeux de caractères, symboles et métadonnées",
+      "quiz": "caracteres-metadonnees.quiz.json",
+      "td": "caracteres-metadonnees.td.json"
+    },
+    {
+      "id": "styles-couleurs",
+      "titre": "Les styles et couleurs en HTML",
+      "quiz": "styles-couleurs.quiz.json",
+      "td": "styles-couleurs.td.json"
+    },
+    {
+      "id": "feuilles-de-style-css",
+      "titre": "Les feuilles de style CSS",
+      "quiz": "feuilles-de-style-css.quiz.json",
+      "td": "feuilles-de-style-css.td.json"
+    },
+    {
+      "id": "elements-multimedias",
+      "titre": "Les éléments multimédias en HTML",
+      "quiz": "elements-multimedias.quiz.json",
+      "td": "elements-multimedias.td.json"
+    },
+    {
+      "id": "tableaux-listes",
+      "titre": "Les tableaux et les listes",
+      "quiz": "tableaux-listes.quiz.json",
+      "td": "tableaux-listes.td.json"
+    },
+    {
+      "id": "mise-en-page",
+      "titre": "La mise en page en HTML",
+      "quiz": "mise-en-page.quiz.json",
+      "td": "mise-en-page.td.json"
+    },
+    {
+      "id": "formulaires",
+      "titre": "Les formulaires HTML",
+      "quiz": "formulaires.quiz.json",
+      "td": "formulaires.td.json"
+    }
+  ]
+}

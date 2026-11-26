@@ -1,0 +1,49 @@
+{
+  "matiere": "html-css",
+  "module": "elements-attributs-html",
+  "titre": "TD – Les éléments et attributs HTML",
+  "exercices": [
+    {
+      "id": "htmlcss-s2-td-01",
+      "type": "exercice",
+      "titre": "Les composants d'un document HTML",
+      "source": "TP 02 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Pour chaque élément du code du TP (html, head, title, meta, body, p, pre), donne : son nom, sa balise de début et de fin, son contenu, ses attributs et son rôle. Quels éléments sont imbriqués ?",
+      "indices": [
+        "Pense aux éléments vides (pas de balise de fin).",
+        "meta a un attribut : charset."
+      ],
+      "solution": "html : <html> … </html>, contient head et body ; rôle : racine du document.\nhead : <head> … </head>, contient title et meta ; rôle : métadonnées.\ntitle : <title> … </title>, contenu « Titre de la page » ; rôle : titre de l'onglet.\nmeta : <meta charset=\"UTF-8\">, élément vide (pas de balise de fin), attribut charset = « UTF-8 » ; rôle : jeu de caractères.\nbody : <body> … </body>, contient p et pre ; rôle : contenu visible.\np : <p> … </p>, contenu « Titre du paragraphe » ; rôle : paragraphe.\npre : <pre> … </pre>, contenu : les noms des universités ; rôle : texte préformaté.\nImbrications : head et body dans html ; title et meta dans head ; p et pre dans body.",
+      "explication_simple": "Un élément = balise de début + contenu + balise de fin. L'attribut (charset) est dans la balise de début, sous la forme nom=\"valeur\"."
+    },
+    {
+      "id": "htmlcss-s2-td-02",
+      "type": "exercice",
+      "titre": "Rubriques et paragraphes",
+      "source": "TP 02 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Écris le code de la page « Liste des universités du Sénégal » : un grand titre, puis pour chaque université un titre de niveau 2, un paragraphe et une ligne de séparation.",
+      "indices": [
+        "h1 pour le titre principal, h2 pour chaque université.",
+        "hr crée une ligne horizontale."
+      ],
+      "solution": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<title>Universités du Sénégal</title>\n</head>\n<body>\n<h1>Liste des universités du Sénégal</h1>\n<hr />\n<h2>Université Cheikh Anta Diop de Dakar</h2>\n<p>L'université Cheikh-Anta-Diop (UCAD), également connue comme université de Dakar, est la principale université de Dakar, la capitale du Sénégal.</p>\n<hr />\n<h2>Université Gaston Berger de Saint-Louis</h2>\n<p>L'université Gaston Berger est une université du Sénégal située à Saint-Louis.</p>\n<hr />\n<h2>Université Virtuelle du Sénégal</h2>\n<p>L'université Virtuelle du Sénégal est la dernière des universités du Sénégal.</p>\n<hr />\n</body>\n</html>",
+      "explication_simple": "Le h1 est la rubrique principale, les h2 en sont les sous-rubriques. Les paragraphes sont dans des <p>.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s2-td-03",
+      "type": "exercice",
+      "titre": "Commenter un document HTML",
+      "source": "TP 02 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Ajoute un commentaire avec ton nom et la date de création. Puis fais disparaître « Université de Matam » en le mettant en commentaire.",
+      "indices": [
+        "Un commentaire s'écrit <!-- … -->."
+      ],
+      "solution": "<!DOCTYPE html>\n<html>\n<head>\n<!-- Auteur : Prénom Nom — créé le 19/07/2026 -->\n<title>Titre de la page</title>\n<meta charset=\"UTF-8\">\n</head>\n<body>\n<p>Titre du paragraphe</p>\n<pre>\nUniversité Cheikh Anta Diop de Dakar.\nUniversité Gaston Berger de Saint-Louis.\n<!-- Université de Matam. -->\n</pre>\n</body>\n</html>",
+      "explication_simple": "Le navigateur ignore tout ce qui est entre <!-- et -->. La ligne reste dans le code mais n'est plus affichée."
+    }
+  ]
+}

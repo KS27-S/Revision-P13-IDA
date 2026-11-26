@@ -1,0 +1,272 @@
+{
+  "matiere": "html-css",
+  "module": "introduction-html-css",
+  "titre": "Introduction à HTML et CSS",
+  "sources": [
+    "Séquence 1 Introduction.pdf",
+    "TP 01.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie HTML ?",
+      "choix": [
+        "High Tech Modern Language",
+        "Hyper Text Markup Language",
+        "Hyperlink and Text Management Language",
+        "Home Tool Markup Language"
+      ],
+      "reponse": 1,
+      "explication": "HTML est le langage de balisage standard pour la création de pages web.",
+      "id": "htmlcss-s1-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie CSS ?",
+      "choix": [
+        "Cascading Style Sheets (feuilles de style en cascade)",
+        "Computer Style System",
+        "Creative Server Scripts",
+        "Coded Site Structure"
+      ],
+      "reponse": 0,
+      "explication": "CSS est un langage qui décrit la présentation des documents HTML et XML.",
+      "id": "htmlcss-s1-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le rôle de HTML par rapport à celui de CSS ?",
+      "choix": [
+        "HTML décrit la présentation, CSS décrit la structure",
+        "HTML gère les bases de données, CSS gère les images",
+        "Les deux ont exactement le même rôle",
+        "HTML décrit la structure des pages, CSS décrit leur présentation"
+      ],
+      "reponse": 3,
+      "explication": "HTML décrit la structure des pages web en utilisant le balisage ; CSS décrit comment les afficher.",
+      "id": "htmlcss-s1-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qui a créé le HTML, d'après le cours ?",
+      "choix": [
+        "Ted Nelson, un informaticien de l'université Harvard",
+        "Marc Andreessen, du NCSA",
+        "Tim Berners-Lee, un physicien du CERN",
+        "Bill Gates, de Microsoft"
+      ],
+      "reponse": 2,
+      "explication": "Tim Berners-Lee a développé les protocoles du World Wide Web et créé le HTML, issu d'un sous-ensemble du SGML.",
+      "id": "htmlcss-s1-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle extension un document HTML peut-il avoir ?",
+      "choix": [
+        ".txt ou .doc",
+        ".html ou .htm",
+        ".css ou .js",
+        ".exe ou .bat"
+      ],
+      "reponse": 1,
+      "explication": "Un document HTML est un fichier décrivant une page web ; il contient des balises HTML et du texte brut.",
+      "id": "htmlcss-s1-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est la déclaration du type de document pour HTML5 ?",
+      "choix": [
+        "<!DOCTYPE html>",
+        "<html5>",
+        "<!HTML version=\"5\">",
+        "<doctype html5>"
+      ],
+      "reponse": 0,
+      "explication": "La déclaration <!DOCTYPE> aide les navigateurs à afficher correctement les pages. Elle n'est pas sensible à la casse.",
+      "id": "htmlcss-s1-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est l'élément racine d'une page HTML ?",
+      "choix": [
+        "<head>",
+        "<body>",
+        "<title>",
+        "<html>"
+      ],
+      "reponse": 3,
+      "explication": "<html> contient toute la page : d'abord <head> (méta-informations), ensuite <body> (contenu visible).",
+      "id": "htmlcss-s1-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que contient l'élément <head> ?",
+      "choix": [
+        "Le contenu visible de la page",
+        "Uniquement les images",
+        "Des méta-informations sur le document",
+        "Les titres h1 à h6"
+      ],
+      "reponse": 2,
+      "explication": "Par exemple <title> et d'autres métadonnées. Rien de ce qu'il contient n'est affiché dans la page elle-même.",
+      "id": "htmlcss-s1-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que contient l'élément <body> ?",
+      "choix": [
+        "Les méta-informations du document",
+        "Le contenu visible de la page",
+        "Uniquement la déclaration DOCTYPE",
+        "Le titre de l'onglet du navigateur"
+      ],
+      "reponse": 1,
+      "explication": "On y place par exemple <h1> (un gros titre) et <p> (un paragraphe).",
+      "id": "htmlcss-s1-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un navigateur des balises HTML qu'il lit ?",
+      "choix": [
+        "Il ne les affiche pas : il les utilise pour interpréter le contenu de la page",
+        "Il les affiche telles quelles",
+        "Il les supprime avant d'enregistrer le fichier",
+        "Il les traduit en CSS"
+      ],
+      "reponse": 0,
+      "explication": "Le but d'un navigateur est de lire les documents HTML et de les afficher sous forme de pages web.",
+      "id": "htmlcss-s1-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Où doit apparaître la déclaration <!DOCTYPE> ?",
+      "choix": [
+        "À la fin du document",
+        "Dans le body",
+        "Autant de fois qu'on veut",
+        "Une seule fois, tout en haut de la page, avant la balise html"
+      ],
+      "reponse": 3,
+      "explication": "Elle doit apparaître une seule fois, en haut de la page (avant les balises HTML).",
+      "id": "htmlcss-s1-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles versions le cours indique-t-il comme actuelles ?",
+      "choix": [
+        "La version 3 pour HTML et la version 5 pour CSS",
+        "La version 4.01 pour HTML et la version 2 pour CSS",
+        "La version 5 pour HTML et la version 3 pour CSS",
+        "La version 2.0 pour HTML et la version 1 pour CSS"
+      ],
+      "reponse": 2,
+      "explication": "On est actuellement à la version 5 pour HTML et la version 3 pour CSS.",
+      "id": "htmlcss-s1-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert XAMPP ?",
+      "choix": [
+        "À créer des images pour le web",
+        "À disposer d'un serveur web local (Apache), d'un serveur FTP et d'un serveur de messagerie",
+        "À compiler du code Java",
+        "À remplacer le navigateur web"
+      ],
+      "reponse": 1,
+      "explication": "XAMPP est libre et téléchargeable depuis apachefriends.org. Il rapproche les tests de la réalité d'un vrai serveur web.",
+      "id": "htmlcss-s1-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment s'écrit la balise de fin d'un élément ?",
+      "choix": [
+        "Comme la balise de début, avec une barre oblique avant le nom : </p>",
+        "Comme la balise de début, mais en majuscules : <P>",
+        "Avec le mot « end » : <end p>",
+        "Elle s'écrit comme la balise de début, sans différence"
+      ],
+      "reponse": 0,
+      "explication": "Syntaxe : <nomelement> le contenu </nomelement>. Les balises vont normalement par paires.",
+      "id": "htmlcss-s1-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qui a lancé la version initiale des feuilles de style CSS le 17 décembre 1996 ?",
+      "choix": [
+        "Le CERN",
+        "Le NCSA",
+        "Microsoft",
+        "Le World Wide Web Consortium (W3C)"
+      ],
+      "reponse": 3,
+      "explication": "Le CERN est lié aux travaux de Tim Berners-Lee ; Mosaic est un navigateur du NCSA. Les feuilles de style CSS sont développées par le W3C.",
+      "id": "htmlcss-s1-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Selon le tableau des versions du cours, en quelle année HTML5 apparaît-il ?",
+      "choix": [
+        "2000",
+        "1999",
+        "2014",
+        "1997"
+      ],
+      "reponse": 2,
+      "explication": "HTML : 1991 ; HTML 2.0 : 1995 ; HTML 3.2 : 1997 ; HTML 4.01 : 1999 ; XHTML : 2000 ; HTML5 : 2014.",
+      "id": "htmlcss-s1-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Peut-on visualiser une page HTML créée en local sans serveur web ?",
+      "choix": [
+        "Non, un serveur web est indispensable",
+        "Oui, avec n'importe quel navigateur ; mais un serveur local rapproche des conditions réelles",
+        "Oui, mais uniquement avec Internet Explorer",
+        "Non, il faut d'abord la publier sur Internet"
+      ],
+      "reponse": 1,
+      "explication": "Un serveur web local comme XAMPP est un plus, pas une obligation. Le TP 1 propose de tester l'adresse http://localhost/monsite.",
+      "id": "htmlcss-s1-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel événement de 1993 a provoqué l'explosion d'Internet, selon le cours ?",
+      "choix": [
+        "La sortie du navigateur Mosaic du NCSA",
+        "La création du langage CSS",
+        "Le lancement de HTML5",
+        "La sortie du serveur XAMPP"
+      ],
+      "reponse": 0,
+      "explication": "Dans le cours, Mosaic est le navigateur (browser) qui marque l'explosion d'Internet en 1993.",
+      "id": "htmlcss-s1-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qui est à l'origine du terme « hypertexte » (1965), sur les travaux duquel s'appuie Tim Berners-Lee ?",
+      "choix": [
+        "Mark Zuckerberg",
+        "Linus Torvalds",
+        "Ada Lovelace",
+        "Ted Nelson"
+      ],
+      "reponse": 3,
+      "explication": "Tim Berners-Lee a créé HTML en s'appuyant sur les travaux de Ted Nelson, à l'origine du terme hypertexte.",
+      "id": "htmlcss-s1-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle structure minimale correspond à une page HTML5 correcte ?",
+      "code": "<!DOCTYPE html>\n<html>\n<head>\n<title>Titre de la page</title>\n</head>\n<body>\n<h1>Ma premiere entête</h1>\n<p>Mon premier paragraphe.</p>\n</body>\n</html>",
+      "choix": [
+        "<body> contenant <html>, puis <head>",
+        "<head> contenant <body> et <html>",
+        "<!DOCTYPE html>, puis <html> contenant <head> (avec <title>) suivi de <body>",
+        "<html> sans <head> ni <body>, directement le texte"
+      ],
+      "reponse": 2,
+      "explication": "La page du TP 1 : DOCTYPE, html, head (title), body (h1 et p). Le title est dans head ; h1 et p sont dans body.",
+      "id": "htmlcss-s1-20"
+    }
+  ]
+}

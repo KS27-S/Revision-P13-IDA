@@ -1,0 +1,125 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "approches-developpement",
+  "titre": "TD – Approches de développement mobile",
+  "exercices": [
+    {
+      "id": "envmob-approches-td-01",
+      "type": "exercice",
+      "titre": "Qu'est-ce qu'une approche de développement ?",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'appelle-t-on une approche de développement mobile ?",
+      "indices": [
+        "C'est la manière de fabriquer l'application."
+      ],
+      "solution": "C'est la manière de créer une application mobile : les outils, les langages et la technologie utilisés (natif, web, hybride, multiplateforme).",
+      "explication_simple": "Même application, mais plusieurs façons de la construire."
+    },
+    {
+      "id": "envmob-approches-td-02",
+      "type": "exercice",
+      "titre": "Lister et décrire les approches",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite les approches de développement mobile et décris-les en une phrase.",
+      "indices": [
+        "Il y en a quatre."
+      ],
+      "solution": "Natif : une application par plateforme, avec ses outils et son langage (Objective-C/Swift, Java, C#). Web : HTML5, CSS, JavaScript, via le navigateur (Write Once, Run Anywhere). Hybride : application web encapsulée dans un conteneur natif (PhoneGap, Cordova, Ionic). Cross-plateforme : un code presque 100 % commun pour Android, iOS et Windows Phone (Xamarin).",
+      "explication_simple": "Du plus spécifique (natif) au plus universel (web), avec deux solutions intermédiaires."
+    },
+    {
+      "id": "envmob-approches-td-03",
+      "type": "exercice",
+      "titre": "3 avantages et 3 inconvénients de chaque approche",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours ; la partie hybride vient du cours Développement mobile (le support de cette séquence ne la détaille pas)",
+      "enonce_simple": "Donne trois avantages et trois inconvénients de chaque approche.",
+      "indices": [
+        "Reprends les diapos : natif, web, multiplateforme. Pour l'hybride, regarde le cours Développement mobile."
+      ],
+      "solution": "Natif — Avantages : accès aux fonctions de l'appareil, visibilité sur les stores, ergonomie propre à chaque OS. Inconvénients : coût élevé, une version par OS, mises à jour multipliées par le nombre de plateformes.\nWeb — Avantages : développement web classique, responsive design, mises à jour faciles. Inconvénients : connexion internet nécessaire, pas de visibilité sur les stores, pas d'icône ni de plein écran.\nMultiplateforme — Avantages : économie de budget, mises à jour sur chaque plateforme, idéale pour les jeux 2D/3D. Inconvénients : problèmes d'accès aux API, validation par les stores, ergonomie non optimisée.\nHybride — Avantages : sans navigateur et installable, temps de développement raisonnable, accès aux fonctions du téléphone. Inconvénients : les navigateurs ne donnent pas toujours le même rendu ; accès aux fonctions un peu limité.",
+      "explication_simple": "Chaque approche échange du coût, de la performance et de l'accès à l'appareil."
+    },
+    {
+      "id": "envmob-approches-td-04",
+      "type": "exercice",
+      "titre": "L'approche multiplateforme et son succès",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Explique l'approche multiplateforme et donne des raisons de son succès.",
+      "indices": [
+        "Un seul code, plusieurs systèmes."
+      ],
+      "solution": "Elle permet de créer des applications Android, iOS et Windows Phone, de la logique métier à l'interface, avec un code presque 100 % commun. Raisons du succès : économie de budget, mises à jour effectives sur chaque plateforme, visibilité sur les stores, bien adaptée aux jeux 2D/3D, et fragmentation du marché (les développeurs utilisent souvent plusieurs plateformes).",
+      "explication_simple": "On écrit une fois et on publie partout : moins cher que d'écrire une application par système."
+    },
+    {
+      "id": "envmob-approches-td-05",
+      "type": "exercice",
+      "titre": "5 défis du développement mobile",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite cinq défis du développement mobile.",
+      "indices": [
+        "Appareils, réseau, écran, connexion, services cloud."
+      ],
+      "solution": "1) Un paysage de fournisseurs concurrentiel et fluide, donc des applications multiplateformes. 2) Pas d'appareil « standard ». 3) Faible bande passante. 4) Taille d'écran limitée. 5) Manque de fiabilité de la connectivité et de l'appareil (réseau, alimentation, lumière, bruit). Aussi : compromis avec les services cloud et d'entreprise.",
+      "explication_simple": "Un mobile n'a ni écran, ni réseau, ni batterie illimités : il faut s'adapter."
+    },
+    {
+      "id": "envmob-approches-td-06",
+      "type": "exercice",
+      "titre": "Les supports du développement d'applications mobiles",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quels sont les supports du développement d'applications mobiles ?",
+      "indices": [
+        "Langages, scripts, outils multiplateformes, frameworks."
+      ],
+      "solution": "Langages orientés objet de 3e génération (iOS : Objective-C ou Swift ; Android : Java ; Windows Phone : C#) ; langages de script (JavaScript, Ruby) ; structures multiplateformes (Titanium, RhoMobile, Xamarin, PhoneGap) ; frameworks spécifiques au développement d'applications mobiles.",
+      "explication_simple": "Ce sont les « matériaux » à disposition du développeur."
+    },
+    {
+      "id": "envmob-approches-td-07",
+      "type": "exercice",
+      "titre": "Qu'est-ce que Xamarin ?",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Explique ce qu'est Xamarin.",
+      "indices": [
+        "C# et .NET."
+      ],
+      "solution": "Une solution multiplateforme qui permet de construire des applications iOS, Android et Windows Mobile en C# et .NET Framework, avec une UI native, des performances natives, du code partagé et un accès à toutes les API de chaque plateforme.",
+      "explication_simple": "C'est un outil Microsoft pour écrire une seule fois en C# et obtenir des applications natives."
+    },
+    {
+      "id": "envmob-approches-td-08",
+      "type": "exercice",
+      "titre": "Origine de l'essor de l'Internet mobile",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Qu'est-ce qui est à l'origine de l'essor des marchés de l'Internet mobile ?",
+      "indices": [
+        "Deux systèmes ont réussi là où le WAP avait échoué."
+      ],
+      "solution": "iOS et Android, alors que les tentatives précédentes (WAP, walled gardens) ont échoué. Ils ont réduit la fragmentation et attiré de nombreux développeurs, avec près de 1,5 million d'emplois et 13 milliards d'euros de revenus générés en Europe en 2016.",
+      "explication_simple": "Les deux grands systèmes ont créé un marché simple pour les développeurs et les utilisateurs."
+    },
+    {
+      "id": "envmob-approches-td-09",
+      "type": "exercice",
+      "titre": "Résumé des points clés",
+      "source": "TD 5 – Approches de développement pour les environnements mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Fais un résumé des points clés sur les plateformes mobiles.",
+      "indices": [
+        "Reprends les diapos « Points clés » et « À retenir »."
+      ],
+      "solution": "iOS et Android ont réduit la fragmentation et fait décoller les smartphones ; économie des applications dynamique ; réussites dans les jeux (Angry Birds de Rovio) ou chez Facebook ; concurrence renforcée par Android (nouveaux entrants, baisse des prix) ; les développeurs utilisent plusieurs plateformes grâce aux outils cross-platform.",
+      "explication_simple": "Un marché dominé par deux systèmes, mais avec beaucoup d'outils pour développer sur plusieurs plateformes à la fois.",
+      "attention": "La question sur un jeu à succès au Sénégal n'est pas reprise : elle dépend d'un contexte local non présent dans les supports."
+    }
+  ]
+}

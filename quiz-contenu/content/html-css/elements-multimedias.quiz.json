@@ -1,0 +1,274 @@
+{
+  "matiere": "html-css",
+  "module": "elements-multimedias",
+  "titre": "Les éléments multimédias en HTML",
+  "sources": [
+    "Séquence 6-LES ELEMENTS MULTIMEDIAS EN HTML.pdf",
+    "TP 06 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise crée un lien hypertexte ?",
+      "choix": [
+        "<link>",
+        "<a>",
+        "<url>",
+        "<href>"
+      ],
+      "reponse": 1,
+      "explication": "Les liens sont spécifiés en utilisant la balise <a> ; la destination est donnée par l'attribut href.",
+      "id": "htmlcss-s6-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel attribut indique la destination d'un lien ?",
+      "choix": [
+        "href",
+        "src",
+        "target",
+        "alt"
+      ],
+      "reponse": 0,
+      "explication": "Syntaxe : <a href=\"url\">Texte du lien</a>. Le texte du lien peut aussi être une image.",
+      "id": "htmlcss-s6-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise affiche une image ?",
+      "choix": [
+        "<image>",
+        "<picture src>",
+        "<photo>",
+        "<img>"
+      ],
+      "reponse": 3,
+      "explication": "<img> est un élément vide.",
+      "id": "htmlcss-s6-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que contient l'attribut src d'une image ?",
+      "choix": [
+        "Le texte alternatif",
+        "La largeur de l'image",
+        "L'URL de l'image",
+        "Le titre de la page"
+      ],
+      "reponse": 2,
+      "explication": "src (source) pointe vers l'emplacement où l'image est stockée.",
+      "id": "htmlcss-s6-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert l'attribut alt ?",
+      "choix": [
+        "À changer la taille de l'image",
+        "À fournir un texte alternatif si l'image ne peut pas être vue",
+        "À choisir le format du fichier",
+        "À faire flotter l'image"
+      ],
+      "reponse": 1,
+      "explication": "Utile en cas de lenteur de connexion, d'erreur dans src ou de lecteur d'écran.",
+      "id": "htmlcss-s6-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise affiche une page web à l'intérieur d'une autre page web ?",
+      "choix": [
+        "<iframe>",
+        "<frame-page>",
+        "<embedpage>",
+        "<window>"
+      ],
+      "reponse": 0,
+      "explication": "Syntaxe : <iframe src=\"URL\"></iframe>.",
+      "id": "htmlcss-s6-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles balises HTML5 permettent d'intégrer du son et de la vidéo ?",
+      "choix": [
+        "<sound> et <movie>",
+        "<mp3> et <mp4>",
+        "<play> et <media>",
+        "<audio> et <video>"
+      ],
+      "reponse": 3,
+      "explication": "Elles ont été introduites pour standardiser l'intégration de fichiers audio et vidéo, auparavant faite via des plug-ins comme Flash.",
+      "id": "htmlcss-s6-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les couleurs par défaut d'un lien non visité, visité et actif ?",
+      "choix": [
+        "Rouge, bleu et vert",
+        "Noir, gris et blanc",
+        "Bleu souligné, violet souligné et rouge souligné",
+        "Vert, violet et jaune"
+      ],
+      "reponse": 2,
+      "explication": "On peut les modifier avec a:link, a:visited, a:hover et a:active.",
+      "id": "htmlcss-s6-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait target=\"_blank\" sur un lien ?",
+      "choix": [
+        "Il ouvre le document dans la même fenêtre",
+        "Il ouvre le document lié dans une nouvelle fenêtre ou un nouvel onglet",
+        "Il ouvre le document dans le cadre parent",
+        "Il bloque le lien"
+      ],
+      "reponse": 1,
+      "explication": "_self est la valeur par défaut (même fenêtre) ; _parent ouvre dans le cadre parent ; _top dans toute la fenêtre.",
+      "id": "htmlcss-s6-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment crée-t-on un signet et un lien vers lui dans la même page ?",
+      "choix": [
+        "Signet : <h2 id=\"C4\"> ; lien : <a href=\"#C4\">",
+        "Signet : <h2 name=\"#C4\"> ; lien : <a id=\"C4\">",
+        "Signet : <a href=\"C4\"> ; lien : <h2 id=\"#C4\">",
+        "Signet : <bookmark C4> ; lien : <a goto=\"C4\">"
+      ],
+      "reponse": 0,
+      "explication": "Les signets sont utiles quand la page est très longue. C'est la base du TP 6 (menu en haut et en bas).",
+      "id": "htmlcss-s6-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment pointer vers un signet situé dans une autre page ?",
+      "choix": [
+        "<a href=\"#page_signet.html C4\">",
+        "<a href=\"C4#page_signet.html\">",
+        "<a id=\"page_signet.html\">",
+        "<a href=\"page_signet.html#C4\">"
+      ],
+      "reponse": 3,
+      "explication": "On ajoute #nomDuSignet après l'adresse de la page.",
+      "id": "htmlcss-s6-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment faire flotter une image à droite d'un texte ?",
+      "choix": [
+        "Avec style=\"align:right;\"",
+        "Avec style=\"position:flottant;\"",
+        "Avec style=\"float:right;\"",
+        "Avec l'attribut float=\"right\" sur <p>"
+      ],
+      "reponse": 2,
+      "explication": "C'est ce qu'on utilise au TP 6 pour afficher chaque logo à droite du paragraphe.",
+      "id": "htmlcss-s6-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert l'attribut controls de <video> et <audio> ?",
+      "choix": [
+        "Il contrôle la taille du fichier",
+        "Il ajoute des contrôles (lecture, pause, volume)",
+        "Il lance automatiquement la lecture",
+        "Il interdit le téléchargement"
+      ],
+      "reponse": 1,
+      "explication": "Dans le cours, il est présenté pour l'élément video avec la mention « control ».",
+      "id": "htmlcss-s6-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est le rôle de plusieurs éléments <source> dans <video> ?",
+      "choix": [
+        "Proposer plusieurs formats ; le navigateur utilise le premier format reconnu",
+        "Lire plusieurs vidéos en même temps",
+        "Afficher des sous-titres",
+        "Compresser la vidéo"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : movie.mp4 (video/mp4) et movie.ogg (video/ogg). Le texte placé entre <video> et </video> s'affiche si le navigateur ne supporte pas la balise.",
+      "id": "htmlcss-s6-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi est-il utile de préciser width et height sur une vidéo ?",
+      "choix": [
+        "Pour augmenter la qualité de la vidéo",
+        "Pour que la vidéo démarre plus vite",
+        "Pour interdire le plein écran",
+        "Pour réserver l'espace dès le chargement ; sinon la mise en page change quand la vidéo se charge"
+      ],
+      "reponse": 3,
+      "explication": "Sans ces attributs, le navigateur ne connaît pas la taille de la vidéo.",
+      "id": "htmlcss-s6-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Selon l'exemple de l'élément <picture>, quelle image est affichée si la fenêtre fait 500 pixels de large ?",
+      "code": "<picture>\n<source media=\"(min-width: 650px)\" srcset=\"img_pink_flowers.jpg\">\n<source media=\"(min-width: 465px)\" srcset=\"img_white_flower.jpg\">\n<img src=\"img_orange_flowers.jpg\" alt=\"Flowers\">\n</picture>",
+      "choix": [
+        "img_pink_flowers.jpg",
+        "img_orange_flowers.jpg",
+        "img_white_flower.jpg",
+        "Aucune image"
+      ],
+      "reponse": 2,
+      "explication": "500 ≥ 465 mais 500 < 650 : la 1re source (min-width: 650px) ne correspond pas, la 2e (min-width: 465px) oui. Le navigateur utilise la première source qui correspond.",
+      "id": "htmlcss-s6-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment un lien peut-il s'ouvrir dans une iframe précise ?",
+      "code": "<iframe src=\"demo_iframe.htm\" name=\"iframe_a\"></iframe>\n<p><a href=\"https://www.gouv.sn\" target=\"iframe_a\">Gouv.sn</a></p>",
+      "choix": [
+        "L'attribut href de l'iframe doit contenir l'id du lien",
+        "L'attribut target du lien doit être égal à l'attribut name de l'iframe",
+        "Il faut utiliser <a iframe=\"nom\">",
+        "Impossible : une iframe ne peut pas être une cible"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : <iframe name=\"iframe_a\"> et <a href=\"...\" target=\"iframe_a\">. C'est la base du TP 6, exercice 4.",
+      "id": "htmlcss-s6-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle façon d'intégrer une vidéo YouTube le cours recommande-t-il ?",
+      "choix": [
+        "Avec une iframe ; <object> et <embed> sont obsolètes depuis janvier 2015",
+        "Avec <embed>, plus moderne",
+        "Avec <object>, plus sûr",
+        "Avec <marquee>"
+      ],
+      "reponse": 0,
+      "explication": "Laisser YouTube convertir la vidéo évite les problèmes de formats selon les navigateurs.",
+      "id": "htmlcss-s6-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel attribut de <img> relie l'image à une carte cliquable <map> ?",
+      "code": "<img src=\"planets.gif\" alt=\"Planets\" usemap=\"#planetmap\">\n<map name=\"planetmap\">\n<area shape=\"rect\" coords=\"0,0,82,126\" alt=\"Sun\" href=\"sun.htm\">\n</map>",
+      "choix": [
+        "mapname",
+        "href",
+        "area",
+        "usemap"
+      ],
+      "reponse": 3,
+      "explication": "L'attribut name de <map> est associé à l'attribut usemap de <img>. <map> contient des zones <area> qui définissent les régions cliquables.",
+      "id": "htmlcss-s6-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que voit le visiteur si le navigateur ne trouve pas une image ?",
+      "choix": [
+        "Une page blanche",
+        "Une erreur serveur",
+        "Une icône de lien brisé",
+        "L'image est remplacée par la vidéo"
+      ],
+      "reponse": 2,
+      "explication": "Il faut s'assurer que les images restent bien à leur place par rapport à la page web. Un fichier HTML avec dix images demande onze fichiers au total.",
+      "id": "htmlcss-s6-20"
+    }
+  ]
+}

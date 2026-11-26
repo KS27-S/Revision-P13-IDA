@@ -1,4 +1,3 @@
 {
-    // Port utilisé par l'extension Live Server de VS Code pour le serveur local
     "liveServer.settings.port": 5501
 }

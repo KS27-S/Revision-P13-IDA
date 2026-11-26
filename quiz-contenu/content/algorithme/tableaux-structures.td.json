@@ -1,0 +1,114 @@
+{
+  "matiere": "algorithmique",
+  "module": "tableaux-structures",
+  "titre": "TD – Les tableaux et chaînes de caractères",
+  "exercices": [
+    {
+      "id": "algo-tableaux-structures-td-01",
+      "titre": "Trois traitements sur un tableau t de n entiers",
+      "source": "TD4.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "a) Compte les éléments égaux à 0.\nb) Trouve la position et la valeur du premier élément qui n'est pas 0.\nc) Remplace chaque nombre négatif par sa valeur absolue et chaque nombre positif par son carré.",
+      "indices": [
+        "a) Un compteur qui augmente de 1 à chaque fois que t[i] = 0.",
+        "b) Avance tant que t[i] vaut 0 ; arrête-toi sur le premier autre élément.",
+        "c) Deux cas selon le signe de t[i]."
+      ],
+      "solution": "% a) %\nnb ← 0\nPour i ← 1 à n faire\n   Si t[i] = 0 Alors\n      nb ← nb + 1\n   Finsi\nFpour\nEcrire(\"Nombre de zéros : \", nb)\n\n% b) %\ni ← 1\nTant que (i <= n) et (t[i] = 0) faire\n   i ← i + 1\nFtantque\nSi i <= n Alors\n   Ecrire(\"Position : \", i, \" Valeur : \", t[i])\nSinon\n   Ecrire(\"Tous les éléments sont nuls\")\nFinsi\n\n% c) %\nPour i ← 1 à n faire\n   Si t[i] < 0 Alors\n      t[i] ← -t[i]\n   Sinon\n      Si t[i] > 0 Alors\n         t[i] ← t[i] * t[i]\n      Finsi\n   Finsi\nFpour",
+      "explication_simple": "a) est un comptage classique. b) arrête la recherche dès qu'on trouve un élément non nul. c) modifie le tableau sur place ; les zéros restent inchangés.",
+      "attention": "En b), si i dépasse n, lire t[i] serait une erreur. Beaucoup de langages n'évaluent pas la 2e partie d'un « et » quand la 1re est fausse ; sinon, il faut séparer les deux tests.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-02",
+      "titre": "Totaux par ligne et par colonne d'un tableau 10 × 20",
+      "source": "TD4.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Saisis des entiers dans un tableau à deux dimensions TAB de 10 lignes et 20 colonnes. Calcule le total de chaque ligne (dans TOTLIG) et de chaque colonne (dans TOTCOL).",
+      "indices": [
+        "Une double boucle parcourt toutes les cases : i pour les lignes, j pour les colonnes.",
+        "Pense à mettre les totaux à 0 avant d'additionner.",
+        "Chaque case TAB[i,j] s'ajoute à TOTLIG[i] et à TOTCOL[j]."
+      ],
+      "solution": "Variables TAB : tableau[1..10, 1..20] d'Entier\n          TOTLIG : tableau[1..10] d'Entier\n          TOTCOL : tableau[1..20] d'Entier\n          i, j : Entier\n\nPour i ← 1 à 10 faire\n   TOTLIG[i] ← 0\nFpour\nPour j ← 1 à 20 faire\n   TOTCOL[j] ← 0\nFpour\nPour i ← 1 à 10 faire\n   Pour j ← 1 à 20 faire\n      Ecrire(\"TAB[\", i, \",\", j, \"] : \")\n      Lire(TAB[i,j])\n      TOTLIG[i] ← TOTLIG[i] + TAB[i,j]\n      TOTCOL[j] ← TOTCOL[j] + TAB[i,j]\n   Fpour\nFpour",
+      "explication_simple": "Chaque nombre lu est ajouté en même temps au total de sa ligne et au total de sa colonne. Sans initialisation à 0, les totaux contiendraient des valeurs au hasard.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-03",
+      "titre": "Mot ou phrase palindrome",
+      "source": "TD4.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Un palindrome se lit pareil dans les deux sens (ANNA, ou ESOPE RESTE ICI ET SE REPOSE). Dis si un mot ou une phrase est un palindrome.",
+      "indices": [
+        "Compare le 1er caractère avec le dernier, le 2e avec l'avant-dernier, etc.",
+        "Le caractère i se compare au caractère n − i + 1.",
+        "Il suffit de vérifier la première moitié ; arrête-toi dès qu'une paire est différente.",
+        "Pour une phrase, il faut d'abord retirer les espaces."
+      ],
+      "solution": "Algorithme palindrome\nVariables : mot : Chaîne ; n, i : Entier ; pal : Booléen\nDébut\n   Ecrire(\"Entrez un mot (sans espaces) : \")\n   Lire(mot)\n   n ← longueur(mot)\n   pal ← VRAI\n   i ← 1\n   Tant que (i <= n DIV 2) et pal faire\n      Si mot[i] <> mot[n - i + 1] Alors\n         pal ← FAUX\n      Finsi\n      i ← i + 1\n   Ftantque\n   Si pal Alors\n      Ecrire(mot, \" est un palindrome\")\n   Sinon\n      Ecrire(mot, \" n'est pas un palindrome\")\n   Finsi\nFin",
+      "explication_simple": "Une chaîne peut se traiter comme un tableau de caractères. Pour ANNA (n = 4) : on compare 1 avec 4, puis 2 avec 3. Aucune différence → palindrome.",
+      "attention": "Pour une phrase comme « ESOPE RESTE ICI ET SE REPOSE », il faut d'abord construire une version sans espaces, sinon les espaces faussent les comparaisons.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-04",
+      "titre": "Maximum, minimum et moyenne d'un tableau de réels",
+      "source": "TD_seq3_algo_ida.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Affiche le plus grand, le plus petit et la moyenne des éléments d'un tableau de n réels. (L'exercice 3 du TD demande la même chose pour un tableau de 100 réels : il suffit de prendre n = 100.)",
+      "indices": [
+        "Démarre max et min avec le premier élément t[1].",
+        "Additionne tous les éléments pour la moyenne.",
+        "Moyenne = somme / n."
+      ],
+      "solution": "Algorithme MaxMinMoy\nVariables : t : tableau[1..n] de Réel ; i, n : Entier ; max, min, somme, moy : Réel\nDébut\n   % remplir le tableau t %\n   max ← t[1]\n   min ← t[1]\n   somme ← 0\n   Pour i ← 1 à n faire\n      Si t[i] > max Alors\n         max ← t[i]\n      Finsi\n      Si t[i] < min Alors\n         min ← t[i]\n      Finsi\n      somme ← somme + t[i]\n   Fpour\n   moy ← somme / n\n   Ecrire(\"Max : \", max, \" Min : \", min, \" Moyenne : \", moy)\nFin",
+      "explication_simple": "Un seul parcours du tableau suffit pour calculer les trois résultats à la fois.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-05",
+      "titre": "Somme de deux vecteurs",
+      "source": "TD_seq3_algo_ida.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Deux vecteurs U et V ont la même taille n. Calcule le vecteur S dont chaque élément est la somme des éléments de même position : S[i] = U[i] + V[i].",
+      "indices": [
+        "Les deux tableaux ont les mêmes indices.",
+        "Une seule boucle Pour de 1 à n."
+      ],
+      "solution": "Variables : U, V, S : tableau[1..n] de Réel ; i : Entier\n\nPour i ← 1 à n faire\n   S[i] ← U[i] + V[i]\nFpour\nPour i ← 1 à n faire\n   Ecrire(S[i])\nFpour",
+      "explication_simple": "Exemple : U = [1, 2, 3] et V = [4, 5, 6] donnent S = [5, 7, 9].",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-06",
+      "titre": "Nombre d'occurrences d'un élément",
+      "source": "TD_seq3_algo_ida.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Pour un tableau t de n éléments, compte combien de fois apparaît une valeur x donnée par l'utilisateur, puis affiche ce nombre.",
+      "indices": [
+        "Un compteur nb, initialisé à 0.",
+        "Ajoute 1 chaque fois que t[i] est égal à x.",
+        "Ici, tu dois parcourir tout le tableau : Pour est le bon choix."
+      ],
+      "solution": "Variables : t : tableau[1..n] de Entier ; x, nb, i : Entier\n\nEcrire(\"Valeur recherchée : \")\nLire(x)\nnb ← 0\nPour i ← 1 à n faire\n   Si t[i] = x Alors\n      nb ← nb + 1\n   Finsi\nFpour\nEcrire(x, \" apparaît \", nb, \" fois\")",
+      "explication_simple": "Contrairement au test d'appartenance, on ne s'arrête pas à la première rencontre : il faut compter toutes les occurrences, donc on parcourt tout le tableau.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-tableaux-structures-td-07",
+      "titre": "Produit scalaire de deux vecteurs (fonction)",
+      "source": "TD_seq3_algo_ida.pdf",
+      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      "enonce_simple": "Écris une fonction qui calcule le produit scalaire de deux vecteurs d'entiers U et V de même dimension n : U[1]×V[1] + U[2]×V[2] + … + U[n]×V[n].",
+      "indices": [
+        "Comme une somme, mais on additionne des produits.",
+        "Démarre à 0.",
+        "Termine la fonction avec retourner."
+      ],
+      "solution": "fonction produitScalaire(U, V : tableau[1..n] d'Entier ; n : Entier) : Entier\nVariables i, s : Entier\ndebut\n   s ← 0\n   Pour i ← 1 à n faire\n      s ← s + U[i] * V[i]\n   Fpour\n   retourner s\nfin",
+      "explication_simple": "Pour U = [1, 2, 3] et V = [4, 5, 6] : 1×4 + 2×5 + 3×6 = 32.",
+      "type": "exercice"
+    }
+  ]
+}

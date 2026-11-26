@@ -1,0 +1,271 @@
+{
+  "matiere": "intro-web",
+  "module": "web-client-serveur",
+  "titre": "Le Web et le concept client/serveur",
+  "sources": [
+    "Séquence 2_Le Web et le concept.pdf",
+    "Travaux Dirigés_2.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce que le World Wide Web ?",
+      "choix": [
+        "Un autre nom d'Internet",
+        "Une des applications d'Internet : un système hypertexte public consulté avec un navigateur",
+        "Un logiciel de messagerie",
+        "Un langage de programmation"
+      ],
+      "reponse": 1,
+      "explication": "Le Web est aussi appelé « la Toile ».",
+      "id": "web-s2-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Pourquoi parle-t-on de « toile » ?",
+      "choix": [
+        "À cause des hyperliens qui relient les pages web entre elles",
+        "À cause des câbles du réseau",
+        "À cause de l'araignée du logo",
+        "À cause de la couleur des pages"
+      ],
+      "reponse": 0,
+      "explication": "L'image de la toile vient des hyperliens.",
+      "id": "web-s2-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un serveur web au niveau matériel ?",
+      "choix": [
+        "Un navigateur",
+        "Un câble réseau",
+        "Un logiciel de dessin",
+        "Un ordinateur connecté en permanence à Internet et hébergeant des sites web"
+      ],
+      "reponse": 3,
+      "explication": "On parle de serveur parce que cet ordinateur possède un logiciel permettant de servir des pages web.",
+      "id": "web-s2-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le serveur HTTP le plus populaire cité dans le cours ?",
+      "choix": [
+        "Firefox",
+        "Filezilla",
+        "Apache",
+        "Dreamweaver"
+      ],
+      "reponse": 2,
+      "explication": "Apache est distribué selon les termes de la licence Apache.",
+      "id": "web-s2-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un client dans un réseau informatique ?",
+      "choix": [
+        "Un logiciel qui stocke les sites web",
+        "Un logiciel qui envoie des demandes à un serveur",
+        "Un câble de connexion",
+        "Un type de site"
+      ],
+      "reponse": 1,
+      "explication": "Le terme peut aussi désigner l'ordinateur d'où partent les demandes, ou la personne qui les opère.",
+      "id": "web-s2-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le client web le plus courant ?",
+      "choix": [
+        "Le navigateur web",
+        "Le serveur Apache",
+        "Le routeur",
+        "Le disque dur"
+      ],
+      "reponse": 0,
+      "explication": "Un navigateur est un logiciel client pour le World Wide Web.",
+      "id": "web-s2-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Dans le TD, quelle adresse permet de tester le site « monsite » installé avec XAMPP ?",
+      "choix": [
+        "http://www.monsite.com",
+        "ftp://monsite",
+        "http://localhost:21",
+        "http://localhost/monsite"
+      ],
+      "reponse": 3,
+      "explication": "localhost désigne l'ordinateur local ; le site est dans un dossier du serveur Apache.",
+      "id": "web-s2-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qui a inventé le terme « hypertexte » ?",
+      "choix": [
+        "Tim Berners-Lee",
+        "Vannevar Bush",
+        "Ted Nelson",
+        "Vint Cerf"
+      ],
+      "reponse": 2,
+      "explication": "Ted Nelson est aussi à l'origine du projet Xanadu, premier système hypertexte (influent mais pas un succès).",
+      "id": "web-s2-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un « nœud » dans un système hypertexte ?",
+      "choix": [
+        "Un câble réseau",
+        "Une unité minimale d'information, par exemple un paragraphe",
+        "Un serveur",
+        "Un navigateur"
+      ],
+      "reponse": 1,
+      "explication": "Si les nœuds sont audiovisuels, on parle de système hypermédia.",
+      "id": "web-s2-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel ingénieur a décrit en 1945 le Memex dans l'article « As we may think » ?",
+      "choix": [
+        "Vannevar Bush",
+        "Doug Engelbart",
+        "Ted Nelson",
+        "Robert Kahn"
+      ],
+      "reponse": 0,
+      "explication": "Le Memex reliait des paires d'images de microfilms : première idée basique de lien.",
+      "id": "web-s2-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce que ENQUIRE, créé par Tim Berners-Lee en 1980 au CERN ?",
+      "choix": [
+        "Le premier navigateur grand public",
+        "Un protocole de messagerie",
+        "Un langage de style",
+        "Une base de données de personnes et de logiciels, premier logiciel à utiliser des liens hypertexte"
+      ],
+      "reponse": 3,
+      "explication": "Tim Berners-Lee est ensuite passé à l'implémentation du World Wide Web sur une station NeXT.",
+      "id": "web-s2-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels outils Tim Berners-Lee avait-il créés en 1990 ?",
+      "choix": [
+        "Le protocole TCP/IP et le langage CSS",
+        "Le langage PHP et la base MySQL",
+        "Le protocole HTTP, le langage HTML, le premier navigateur et le premier serveur HTTP",
+        "Le navigateur Mosaic et le serveur Apache"
+      ],
+      "reponse": 2,
+      "explication": "Tous les outils nécessaires au Web existaient donc en 1990.",
+      "id": "web-s2-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que s'est-il passé le 30 avril 1993 ?",
+      "choix": [
+        "La création du W3C",
+        "Le CERN a versé toutes les technologies du WWW dans le domaine public",
+        "Le lancement du langage HTML5",
+        "La création d'ARPANET"
+      ],
+      "reponse": 1,
+      "explication": "Parmi les tout premiers navigateurs : NCSA Mosaic.",
+      "id": "web-s2-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait le W3C ?",
+      "choix": [
+        "Il supervise le développement des standards du web et publie des recommandations",
+        "Il vend des noms de domaine",
+        "Il héberge des sites web",
+        "Il fabrique des navigateurs"
+      ],
+      "reponse": 0,
+      "explication": "Le World Wide Web Consortium est un consortium international mis en place en octobre 1994 par Tim Berners-Lee.",
+      "id": "web-s2-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'est-ce qu'un serveur HTTP au niveau logiciel ?",
+      "choix": [
+        "Un logiciel qui dessine les pages",
+        "Un logiciel qui chiffre les mots de passe",
+        "Un logiciel de traitement de texte",
+        "Un logiciel qui comprend les URL et le protocole HTTP"
+      ],
+      "reponse": 3,
+      "explication": "C'est le composant minimal d'un serveur web logiciel.",
+      "id": "web-s2-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que contient XAMPP, selon le cours ?",
+      "choix": [
+        "Seulement un navigateur",
+        "Un éditeur de texte et un compilateur",
+        "Un serveur HTTP, un serveur MySQL, un serveur FTP et un serveur Mail",
+        "Un serveur DNS et un serveur de jeux"
+      ],
+      "reponse": 2,
+      "explication": "XAMPP permet de mettre en place facilement un serveur web complet en local.",
+      "id": "web-s2-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Le W3C définit-il des normes au sens strict ?",
+      "choix": [
+        "Oui, il impose des lois aux fabricants",
+        "Non : il publie des recommandations à valeur de standards industriels, que les fabricants suivent",
+        "Non, il ne publie rien",
+        "Oui, mais seulement pour le langage PHP"
+      ],
+      "reponse": 1,
+      "explication": "Il laisse aux fabricants le soin de suivre ses recommandations.",
+      "id": "web-s2-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que créait Doug Engelbart à Stanford dans les années 60 avec NLS ?",
+      "choix": [
+        "Un prototype révolutionnaire utilisant liens, écran, souris, fenêtres et programmes",
+        "Le premier serveur web",
+        "Le langage HTML",
+        "Le protocole HTTP"
+      ],
+      "reponse": 0,
+      "explication": "NLS signifie oN-Line System.",
+      "id": "web-s2-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que dit le cours sur la relation dans le temps entre Internet et le Web ?",
+      "choix": [
+        "Le Web a été inventé avant Internet",
+        "Le Web et Internet sont nés le même jour",
+        "Le Web est né des technologies de MOSAIC",
+        "Le Web a été inventé plusieurs années après Internet"
+      ],
+      "reponse": 3,
+      "explication": "Le Web est un service d'Internet : Internet existait déjà.",
+      "id": "web-s2-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel dossier du serveur contient les sites dans le TD XAMPP, et que faut-il corriger dans l'énoncé ?",
+      "choix": [
+        "Le dossier www (le TD écrit « hdocs » correctement)",
+        "Le dossier localhost, sans erreur dans l'énoncé",
+        "Le dossier htdocs (le TD écrit « hdocs » par erreur)",
+        "Le dossier apache (le TD écrit « hdocs » correctement)"
+      ],
+      "reponse": 2,
+      "explication": "Les sites se placent dans c:\\xampp\\htdocs. Dans le support, « hdocs » est une faute de frappe.",
+      "id": "web-s2-20"
+    }
+  ]
+}

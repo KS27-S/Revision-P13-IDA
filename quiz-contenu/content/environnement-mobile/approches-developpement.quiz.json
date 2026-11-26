@@ -1,0 +1,270 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "approches-developpement",
+  "titre": "Les approches de développement mobile",
+  "sources": [
+    "DWMG1142_Séquence 5_Approches de développement pour les environnements mobiles.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quelles sont les quatre approches de développement mobile présentées ?",
+      "choix": [
+        "Natif, procédural, objet et fonctionnel",
+        "Natif, cross-plateforme, hybride et web",
+        "Web, desktop, console et serveur",
+        "Java, C#, Swift et Ruby"
+      ],
+      "reponse": 1,
+      "explication": "Natif (Objective-C ou Swift, Java, C#…), cross-plateforme (Xamarin), hybride (PhoneGap/Cordova) et web (HTML5, CSS, JavaScript).",
+      "id": "envmob-approches-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on l'approche native ?",
+      "choix": [
+        "L'approche en silo",
+        "Write Once, Run Anywhere",
+        "L'approche WebView",
+        "L'approche cloud"
+      ],
+      "reponse": 0,
+      "explication": "Chaque application native est spécifique à une plateforme (iOS ou Android) et utilise ses outils et son langage.",
+      "id": "envmob-approches-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel slogan est associé à l'approche web ?",
+      "choix": [
+        "Une application par plateforme",
+        "Natif partout",
+        "Code compilé en assembleur",
+        "Write Once, Run Anywhere"
+      ],
+      "reponse": 3,
+      "explication": "On écrit une fois et l'application fonctionne sur plusieurs appareils.",
+      "id": "envmob-approches-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles technologies l'approche web utilise-t-elle ?",
+      "choix": [
+        "Objective-C et Swift",
+        "C# et .NET",
+        "HTML5, CSS et JavaScript",
+        "Java et XML"
+      ],
+      "reponse": 2,
+      "explication": "Avec des boîtes à outils comme AngularJS ou React.",
+      "id": "envmob-approches-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fait une solution hybride comme PhoneGap ou Cordova ?",
+      "choix": [
+        "Elle compile du C# en code natif",
+        "Elle embarque une web view dans une application native",
+        "Elle supprime tout code web",
+        "Elle remplace le système d'exploitation"
+      ],
+      "reponse": 1,
+      "explication": "L'application hybride est construite avec HTML5 et JavaScript, puis encapsulée dans un conteneur natif.",
+      "id": "envmob-approches-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage la solution cross-plateforme Xamarin utilise-t-elle ?",
+      "choix": [
+        "C# (avec le .NET Framework)",
+        "Java",
+        "Objective-C",
+        "Ruby"
+      ],
+      "reponse": 0,
+      "explication": "Xamarin permet de construire des applications iOS, Android et Windows Mobile dans un environnement de développement Microsoft.",
+      "id": "envmob-approches-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est un inconvénient majeur de l'approche native ?",
+      "choix": [
+        "L'impossibilité d'utiliser la caméra",
+        "L'absence de visibilité sur les stores",
+        "La nécessité d'une connexion permanente",
+        "Un coût de développement important, car il faut une version par système d'exploitation"
+      ],
+      "reponse": 3,
+      "explication": "Chaque mise à jour coûte aussi plus cher : le coût est multiplié par le nombre de plateformes utilisées.",
+      "id": "envmob-approches-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'implique l'approche en silo pour l'équipe de développement ?",
+      "choix": [
+        "Un seul code pour toutes les plateformes",
+        "Moins de développeurs",
+        "Créer l'application plusieurs fois, avec plus de développeurs, plus de maintenance et différents environnements",
+        "Aucune maintenance"
+      ],
+      "reponse": 2,
+      "explication": "C'est le revers du design plus apprécié et des meilleures performances des applications natives.",
+      "id": "envmob-approches-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont des avantages de l'approche native ?",
+      "choix": [
+        "Un fonctionnement uniquement par navigateur, sans installation",
+        "L'accès aux fonctions de l'appareil (caméra, géolocalisation, gyroscope) et la visibilité sur les stores",
+        "Un seul code pour iOS et Android",
+        "Aucun coût de mise à jour"
+      ],
+      "reponse": 1,
+      "explication": "Autres avantages : accès aux API natives, intégration à la facturation des stores, ergonomie propre à chaque OS.",
+      "id": "envmob-approches-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont des inconvénients de l'approche web ?",
+      "choix": [
+        "Elle exige une connexion internet et n'a pas de visibilité sur les stores",
+        "Elle exige un Mac",
+        "Elle impose Objective-C",
+        "Elle empêche le responsive design"
+      ],
+      "reponse": 0,
+      "explication": "Elle n'a pas d'icône d'application, ne s'exécute pas en plein écran et reste accessible via le navigateur.",
+      "id": "envmob-approches-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont des avantages de l'approche web ?",
+      "choix": [
+        "Un accès illimité aux capteurs",
+        "Une icône d'application et le plein écran garantis",
+        "Une visibilité maximale sur les stores",
+        "Un développement web classique, bien maîtrisé, avec un responsive design et des mises à jour de contenu faciles"
+      ],
+      "reponse": 3,
+      "explication": "On utilise HTML5, CSS3, JavaScript et des frameworks.",
+      "id": "envmob-approches-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pourquoi beaucoup ont-ils essayé le web pour finalement revenir au natif ?",
+      "choix": [
+        "Parce que le web est interdit sur mobile",
+        "Parce que le natif est gratuit",
+        "À cause d'un manque d'intégration avec l'OS, de performances dégradées et d'une expérience utilisateur moins bonne",
+        "Parce que le web demande plus de développeurs"
+      ],
+      "reponse": 2,
+      "explication": "Le cours cite aussi le développement spécifique selon le navigateur web.",
+      "id": "envmob-approches-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'une application hybride selon la séquence 5 ?",
+      "choix": [
+        "Une application écrite uniquement en Java",
+        "Une application construite avec HTML5 et JavaScript puis encapsulée dans un conteneur natif mince",
+        "Un site web accessible via le navigateur",
+        "Une application compilée en assembleur"
+      ],
+      "reponse": 1,
+      "explication": "Le conteneur natif donne accès aux fonctionnalités de la plateforme. Frameworks cités : Ionic, NativeScript, React Native, Xamarin, PhoneGap.",
+      "id": "envmob-approches-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que permet l'approche multiplateforme ?",
+      "choix": [
+        "Créer des applications Android, iOS et Windows Phone avec un code presque 100 % commun",
+        "Créer uniquement des applications iOS",
+        "Éviter d'écrire du code",
+        "Remplacer les stores"
+      ],
+      "reponse": 0,
+      "explication": "De la logique métier à l'interface utilisateur.",
+      "id": "envmob-approches-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est un inconvénient de l'approche multiplateforme ?",
+      "choix": [
+        "Un coût de développement multiplié par le nombre de plateformes",
+        "L'impossibilité de partager du code",
+        "L'absence totale de mises à jour",
+        "Des problèmes d'accès aux API et de validation des applications par les stores"
+      ],
+      "reponse": 3,
+      "explication": "Autres inconvénients : difficile à maintenir et à faire évoluer, fonctionnalités des appareils non toutes exploitables, UX et UI non optimisées.",
+      "id": "envmob-approches-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est un avantage de l'approche multiplateforme ?",
+      "choix": [
+        "Une ergonomie toujours optimale",
+        "Un accès à toutes les fonctionnalités des appareils",
+        "Une économie de budget et des mises à jour effectives sur chaque plateforme",
+        "Une indépendance totale vis-à-vis des stores"
+      ],
+      "reponse": 2,
+      "explication": "Elle est aussi idéale pour les jeux en 2D ou 3D et offre une visibilité sur les stores.",
+      "id": "envmob-approches-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'offre l'approche de Xamarin ?",
+      "choix": [
+        "Une interface web dans une WebView",
+        "Une UI native, des performances natives, du code partagé et un accès à toutes les API de chaque plateforme",
+        "Un code propre à chaque plateforme",
+        "Une interface identique sans composants natifs"
+      ],
+      "reponse": 1,
+      "explication": "C# et .NET Framework : c'est ce qui la distingue des solutions hybrides basées sur une WebView.",
+      "id": "envmob-approches-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Lequel de ces éléments est un défi du développement mobile cité par le cours ?",
+      "choix": [
+        "L'absence d'appareil « standard »",
+        "Une bande passante toujours très élevée",
+        "Des écrans de taille illimitée",
+        "Une connectivité toujours fiable"
+      ],
+      "reponse": 0,
+      "explication": "Autres défis : paysage de fournisseurs concurrentiel et fluide, faible bande passante, taille d'écran limitée, manque de fiabilité du réseau et de l'alimentation, compromis avec les services cloud et d'entreprise.",
+      "id": "envmob-approches-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quoi le cours attribue-t-il l'essor des smartphones et du marché de l'Internet mobile ?",
+      "choix": [
+        "Au WAP et aux walled gardens",
+        "À Symbian et BlackBerry",
+        "À Windows Phone uniquement",
+        "À iOS et Android, alors que le WAP et les « walled gardens » avaient échoué"
+      ],
+      "reponse": 3,
+      "explication": "iOS et Android ont aussi réduit la fragmentation de l'industrie mobile et attiré rapidement de nombreux développeurs.",
+      "id": "envmob-approches-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment Android a-t-il renforcé la concurrence entre les fabricants de terminaux ?",
+      "choix": [
+        "En interdisant les nouveaux fabricants",
+        "En imposant un matériel unique",
+        "En favorisant l'arrivée de nouveaux entrants grâce à un abaissement des prix",
+        "En augmentant le prix des appareils"
+      ],
+      "reponse": 2,
+      "explication": "La concurrence est plus intense qu'avant le lancement d'iOS et d'Android. Les développeurs utilisent aussi couramment plusieurs plateformes grâce aux outils cross-platform.",
+      "id": "envmob-approches-20"
+    }
+  ]
+}
