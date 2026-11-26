@@ -1,0 +1,30 @@
+{
+  "id": "algorithmique",
+  "titre": "Algorithmique",
+  "modules": [
+    {
+      "id": "introduction",
+      "titre": "Introduction à l'algorithmique",
+      "quiz": "introduction.quiz.json",
+      "td": "introduction.td.json"
+    },
+    {
+      "id": "structures-controle",
+      "titre": "Les structures de contrôle (tests et boucles)",
+      "quiz": "structures-controle.quiz.json",
+      "td": "structures-controle.td.json"
+    },
+    {
+      "id": "sous-programmes",
+      "titre": "Les sous-programmes (fonctions et procédures)",
+      "quiz": "sous-programmes.quiz.json",
+      "td": "sous-programmes.td.json"
+    },
+    {
+      "id": "tableaux-structures",
+      "titre": "Les tableaux, les chaînes de caractères et les structures",
+      "quiz": "tableaux-structures.quiz.json",
+      "td": "tableaux-structures.td.json"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "matiere": "algorithmique",
+  "module": "introduction",
+  "titre": "TD – Introduction à l'algorithmique",
+  "exercices": [
+    {
+      "id": "algo-introduction-td-01",
+      "titre": "Calculer le prix d'un achat (HT, TVA, TTC)",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Un client achète plusieurs articles au même prix. Demande-lui le prix d'un article et le nombre d'articles. Calcule le prix hors taxes (PHT), la TVA (18 %) et le prix toutes taxes comprises (TTC), puis affiche les trois.",
+      "indices": [
+        "PHT = prix d'un article × nombre d'articles.",
+        "TVA = PHT × 0,18. Comme 18 % ne change pas, utilise une constante.",
+        "TTC = PHT + TVA."
+      ],
+      "solution": "Algorithme CalculPrix\nVariables : prix_unitaire, nb_articles, PHT, TVA, TTC : Réels\nConstante : TAUX_TVA = 0.18\nDébut\n   Ecrire(\"Entrez le prix unitaire : \")\n   Lire(prix_unitaire)\n   Ecrire(\"Entrez le nombre d'articles : \")\n   Lire(nb_articles)\n   PHT ← prix_unitaire * nb_articles\n   TVA ← PHT * TAUX_TVA\n   TTC ← PHT + TVA\n   Ecrire(\"PHT : \", PHT, \" | TVA : \", TVA, \" | TTC : \", TTC)\nFin",
+      "explication_simple": "On lit deux données, on enchaîne trois calculs dans le bon ordre (le TTC a besoin de PHT et de TVA) et on affiche. Le taux de TVA est une constante : si le taux change, on ne modifie qu'une ligne.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-02",
+      "titre": "Échanger deux valeurs (permutation)",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Tu as deux variables A et B. Fais en sorte que A contienne l'ancienne valeur de B, et B l'ancienne valeur de A. Trouve deux méthodes : avec une variable en plus, puis sans variable en plus.",
+      "indices": [
+        "Si tu écris A ← B directement, l'ancienne valeur de A est perdue.",
+        "Méthode 1 : garde l'ancienne valeur de A dans une variable temporaire.",
+        "Méthode 2 : joue avec la somme A + B."
+      ],
+      "solution": "Algorithme Permutation\nVariables : A, B, temp : Entiers\nDébut\n   Ecrire(\"Entrez A et B : \")\n   Lire(A, B)\n   % 1. Avec variable intermédiaire %\n   temp ← A\n   A ← B\n   B ← temp\n   % 2. Sans variable (arithmétique) %\n   A ← A + B\n   B ← A - B\n   A ← A - B\nFin",
+      "explication_simple": "Pense à deux verres d'eau à échanger : il faut un troisième verre (temp). Sans troisième verre, on retient la somme dans A : après A ← A+B, B ← A-B redonne l'ancien A, puis A ← A-B redonne l'ancien B.",
+      "attention": "Attention : les deux méthodes sont montrées l'une après l'autre dans la correction. Si on les exécute à la suite sur les mêmes variables, A et B sont permutés deux fois et reviennent à leur valeur de départ. En pratique, on n'utilise qu'une seule méthode.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-03",
+      "titre": "Convertir des secondes en heures, minutes, secondes",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "L'utilisateur donne une durée en secondes (par exemple 3725). Affiche-la sous la forme heures, minutes, secondes.",
+      "indices": [
+        "1 heure = 3600 secondes : combien d'heures complètes ? C'est un DIV.",
+        "Après avoir enlevé les heures, que reste-t-il ? C'est un MOD.",
+        "Dans ce reste, combien de minutes complètes (60 s) ? Puis ce qui reste = secondes."
+      ],
+      "solution": "Algorithme ConversionTemps\nVariables : t, h, m, s : Entiers\nDébut\n   Ecrire(\"Entrez le temps en secondes : \")\n   Lire(t)\n   h ← t DIV 3600\n   m ← (t MOD 3600) DIV 60\n   s ← t MOD 60\n   Ecrire(t, \" s = \", h, \"h : \", m, \"min : \", s, \"s\")\nFin",
+      "explication_simple": "DIV donne le nombre de paquets complets, MOD donne ce qui reste. Pour t = 3725 : h = 1, t MOD 3600 = 125, m = 2, s = 5.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-04",
+      "titre": "Surface et périmètre d'un cercle",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Demande le rayon d'un cercle et affiche sa surface et son périmètre.",
+      "indices": [
+        "Surface = π × rayon × rayon.",
+        "Périmètre = 2 × π × rayon.",
+        "π ne change jamais : constante."
+      ],
+      "solution": "Algorithme Cercle\nVariables : rayon, surface, perimetre : Réels\nConstante : PI = 3.14159\nDébut\n   Ecrire(\"Entrez le rayon : \")\n   Lire(rayon)\n   surface ← PI * rayon * rayon\n   perimetre ← 2 * PI * rayon\n   Ecrire(\"Surface : \", surface, \" | Périmètre : \", perimetre)\nFin",
+      "explication_simple": "Deux formules simples, une constante pour π, des variables réelles car le rayon peut avoir des décimales.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-05",
+      "titre": "Les quatre opérations sur deux entiers",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Demande deux entiers a et b. Affiche leur somme, leur différence, leur produit et leur quotient.",
+      "indices": [
+        "Pense aux opérateurs + - * /.",
+        "Que se passe-t-il si b vaut 0 ?"
+      ],
+      "solution": "Algorithme Operations\nVariables : a, b : Entiers\nDébut\n   Ecrire(\"Entrez 2 entiers : \")\n   Lire(a, b)\n   Ecrire(\"Somme : \", a + b)\n   Ecrire(\"Différence : \", a - b)\n   Ecrire(\"Produit : \", a * b)\n   Ecrire(\"Quotient : \", a / b)\nFin",
+      "explication_simple": "Chaque opération est calculée directement dans le Ecrire. L'opérateur / donne un résultat réel, même avec deux entiers.",
+      "attention": "La correction ne gère pas le cas b = 0 (division par zéro). Avec les structures de contrôle (module suivant), on pourra tester b <> 0 avant de diviser.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-06",
+      "titre": "Distance entre deux points",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Demande les coordonnées de deux points (x1, y1) et (x2, y2) et affiche la distance qui les sépare.",
+      "indices": [
+        "Formule : racine de [(x2 − x1)² + (y2 − y1)²].",
+        "Utilise la fonction Racine."
+      ],
+      "solution": "Algorithme DistancePoints\nVariables : x1, y1, x2, y2, d : Réels\nDébut\n   Ecrire(\"Entrez les coordonnées (x1, y1) et (x2, y2) : \")\n   Lire(x1, y1, x2, y2)\n   d ← Racine((x2 - x1)^2 + (y2 - y1)^2)\n   Ecrire(\"Distance : \", d)\nFin",
+      "explication_simple": "C'est le théorème de Pythagore : on calcule l'écart en x, l'écart en y, on les met au carré, on additionne et on prend la racine.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-07",
+      "titre": "Convertir des bits en octets, Ko, Mo, Go",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "L'utilisateur donne un nombre de bits. Affiche son équivalent en octets, en Ko, en Mo et en Go.",
+      "indices": [
+        "1 octet = 8 bits.",
+        "1 Ko = 1024 octets, 1 Mo = 1024 Ko, 1 Go = 1024 Mo.",
+        "Chaque unité se calcule à partir de la précédente."
+      ],
+      "solution": "Algorithme ConversionStockage\nVariables : bits, octets, ko, mo, go : Réels\nDébut\n   Ecrire(\"Nombre de bits : \")\n   Lire(bits)\n   octets ← bits / 8\n   ko ← octets / 1024\n   mo ← ko / 1024\n   go ← mo / 1024\n   Ecrire(octets, \" octets, \", ko, \" ko, \", mo, \" mo, \", go, \" go\")\nFin",
+      "explication_simple": "On passe d'une unité à l'autre en divisant : 8 d'abord, puis 1024 à chaque étape. Les résultats sont réels car ils ont souvent des décimales.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-08",
+      "titre": "Extraire les chiffres d'un nombre à 3 chiffres",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "L'utilisateur donne un entier à 3 chiffres (par exemple 472). Affiche son chiffre des centaines, des dizaines et des unités.",
+      "indices": [
+        "Les centaines : n DIV 100.",
+        "Les unités : n MOD 10.",
+        "Les dizaines : enlève d'abord les centaines avec MOD 100, puis DIV 10."
+      ],
+      "solution": "Algorithme Extraction\nVariables : n, centaine, dizaine, unite : Entiers\nDébut\n   Ecrire(\"Entrez un entier de 3 chiffres : \")\n   Lire(n)\n   centaine ← n DIV 100\n   dizaine ← (n MOD 100) DIV 10\n   unite ← n MOD 10\n   Ecrire(\"C : \", centaine, \" D : \", dizaine, \" U : \", unite)\nFin",
+      "explication_simple": "Pour 472 : 472 DIV 100 = 4 ; 472 MOD 100 = 72, puis 72 DIV 10 = 7 ; 472 MOD 10 = 2.",
+      "type": "exercice"
+    },
+    {
+      "id": "algo-introduction-td-09",
+      "titre": "Salaire brut et salaire net",
+      "source": "Correction des TD d'Algorithmique 1 (1784816376729-815125.pdf)",
+      "statut_corrige": "corrigé fourni dans le support",
+      "enonce_simple": "Demande le nombre d'heures travaillées et le salaire par heure. Calcule le salaire brut, puis le net sachant que les charges représentent 25 % du brut.",
+      "indices": [
+        "Brut = heures × taux horaire.",
+        "Charges = brut × 0,25 (constante).",
+        "Net = brut − charges."
+      ],
+      "solution": "Algorithme SalaireEmploye\nVariables : heures, taux_horaire, brut, net, charges : Réels\nConstante : TAUX_IMPOT = 0.25\nDébut\n   Ecrire(\"Nombre d'heures et salaire horaire : \")\n   Lire(heures, taux_horaire)\n   brut ← heures * taux_horaire\n   charges ← brut * TAUX_IMPOT\n   net ← brut - charges\n   Ecrire(\"Salaire Brut : \", brut, \" | Salaire Net : \", net)\nFin",
+      "explication_simple": "Trois calculs qui s'enchaînent. Le taux d'imposition est une constante, comme demandé dans l'énoncé.",
+      "type": "exercice"
+    }
+  ]
+}

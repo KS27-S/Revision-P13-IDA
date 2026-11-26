@@ -1,0 +1,270 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "ide-mobile",
+  "titre": "Les environnements de développement intégrés (IDE) pour le mobile",
+  "sources": [
+    "DWMG1142_Séquence 6_Environnements de développement intégré pour le mobile.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quel IDE est propriétaire pour développer pour iOS ?",
+      "choix": [
+        "Android Studio",
+        "Xcode",
+        "Eclipse",
+        "NetBeans"
+      ],
+      "reponse": 1,
+      "explication": "Selon le cours, Eclipse et Android Studio sont des IDE ouverts ; Xcode et MS Visual Studio sont propriétaires.",
+      "id": "envmob-ide-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage est associé au développement Android dans la séquence 6 ?",
+      "choix": [
+        "Java",
+        "Objective-C",
+        "C#",
+        "WLangage"
+      ],
+      "reponse": 0,
+      "explication": "Les environnements cités pour Android : Android Studio, Eclipse, Visual Studio.",
+      "id": "envmob-ide-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Pour quel système Xcode est-il conçu ?",
+      "choix": [
+        "Windows",
+        "Linux",
+        "Android",
+        "Mac OS X"
+      ],
+      "reponse": 3,
+      "explication": "Xcode est un environnement de développement pour Mac OS X, fourni avec une suite logicielle complète.",
+      "id": "envmob-ide-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel outil faut-il pour utiliser Android Studio ?",
+      "choix": [
+        "Xcode",
+        "Visual Studio",
+        "Le JDK (Java Development Kit)",
+        "Cordova"
+      ],
+      "reponse": 2,
+      "explication": "Android Studio nécessite le JDK. Le cours renvoie au site d'Oracle pour le télécharger.",
+      "id": "envmob-ide-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel langage est utilisé avec le BlackBerry Java Development Environment ?",
+      "choix": [
+        "Objective-C",
+        "Java",
+        "C#",
+        "WLangage"
+      ],
+      "reponse": 1,
+      "explication": "Il inclut des outils de modification et de débogage.",
+      "id": "envmob-ide-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles technologies un développeur PhoneGap utilise-t-il ?",
+      "choix": [
+        "HTML, JavaScript et CSS",
+        "Objective-C et Swift",
+        "C# et .NET",
+        "Java et XML"
+      ],
+      "reponse": 0,
+      "explication": "PhoneGap/Apache Cordova est une application web empaquetée dans un conteneur d'application native.",
+      "id": "envmob-ide-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel IDE est « pensé pour être accessible aux débutants » ?",
+      "choix": [
+        "Xcode",
+        "Titanium",
+        "BlackBerry Java Development Environment",
+        "Windev Mobile"
+      ],
+      "reponse": 3,
+      "explication": "Windev Mobile cible Windows Phone, Android et iOS, avec le WLangage.",
+      "id": "envmob-ide-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lequel de ces éléments est cité comme support des IDE pour le mobile ?",
+      "choix": [
+        "L'impression 3D",
+        "Le montage vidéo",
+        "Les émulateurs",
+        "La comptabilité"
+      ],
+      "reponse": 2,
+      "explication": "Le cours cite : outils de test, profilage de performance, intégration SCM, émulateurs et accès aux capteurs (GPS, accéléromètre).",
+      "id": "envmob-ide-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels systèmes de gestion de versions (SCM) le cours cite-t-il ?",
+      "choix": [
+        "Excel, Word et Access",
+        "Git, SVN et CVS",
+        "FTP, SSH et HTTP",
+        "Maven, Gradle et Ant"
+      ],
+      "reponse": 1,
+      "explication": "L'intégration SCM fait partie des supports des IDE pour le mobile.",
+      "id": "envmob-ide-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel pourcentage de code Xamarin permet-il de partager entre iOS, Android et Windows ?",
+      "choix": [
+        "75 %",
+        "25 %",
+        "50 %",
+        "100 %"
+      ],
+      "reponse": 0,
+      "explication": "Les développeurs Xamarin utilisent C#. Xamarin permet aussi d'exécuter des tests automatisés et de surveiller les performances.",
+      "id": "envmob-ide-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment fonctionne PhoneGap / Apache Cordova ?",
+      "choix": [
+        "Un compilateur produit du code assembleur natif",
+        "Un moteur de jeu 3D affiche l'interface",
+        "Un émulateur Windows exécute l'application",
+        "Une application web est empaquetée dans un conteneur natif, chaque opération passant par JavaScript via des API de l'appareil"
+      ],
+      "reponse": 3,
+      "explication": "Les développeurs ont la liberté d'utiliser HTML, JavaScript et CSS.",
+      "id": "envmob-ide-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "De quels langages le WLangage de Windev Mobile est-il dérivé ?",
+      "choix": [
+        "De Java et de Python",
+        "De C# et de Ruby",
+        "Du C++ et de Pascal",
+        "De Swift et de Kotlin"
+      ],
+      "reponse": 2,
+      "explication": "Windev Mobile est créé par la société française PC Soft et orienté vers la gestion de bases de données embarquées.",
+      "id": "envmob-ide-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment développer pour Android avec NetBeans ?",
+      "choix": [
+        "C'est impossible, NetBeans ne supporte pas Java",
+        "Grâce au pack « NetBeans Mobile »",
+        "Avec Xcode intégré",
+        "Avec un émulateur BlackBerry"
+      ],
+      "reponse": 1,
+      "explication": "NetBeans est un IDE utilisant Java ; le pack donne accès à une suite logicielle complète pour développer sous Android.",
+      "id": "envmob-ide-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre les API Carbon et Cocoa de Xcode ?",
+      "choix": [
+        "Carbon : C et C++ ; Cocoa : Objective-C, AppleScript et Java",
+        "Carbon : Java ; Cocoa : C#",
+        "Carbon : Swift ; Cocoa : Kotlin",
+        "Carbon : HTML ; Cocoa : CSS"
+      ],
+      "reponse": 0,
+      "explication": "Xcode dispose de ces deux API de programmation.",
+      "id": "envmob-ide-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels défauts les IDE basés sur HTML5 (PhoneGap, NS Basic, RedFoundry…) héritent-ils des Web Apps ?",
+      "choix": [
+        "Aucun accès à Internet",
+        "Un coût de licence élevé",
+        "L'obligation d'avoir un Mac",
+        "Des problèmes de stabilité, des interfaces lourdes et des animations saccadées"
+      ],
+      "reponse": 3,
+      "explication": "La partie native est très simple : un seul composant natif, une WebView (une instance du navigateur).",
+      "id": "envmob-ide-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que partagent les IDE basés sur l'interface native (Titanium, Rhomobile, Corona) ?",
+      "choix": [
+        "Ils affichent tout dans une WebView",
+        "Ils n'utilisent aucun composant natif",
+        "Ils utilisent le kit de développement natif de chaque OS, manipulé via un seul langage pour toutes les plateformes",
+        "Ils imposent un langage différent par plateforme"
+      ],
+      "reponse": 2,
+      "explication": "Ils se rapprochent davantage du développement natif : la gestion de l'interface est la même que pour le langage natif.",
+      "id": "envmob-ide-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fournit Titanium Appcelerator ?",
+      "choix": [
+        "Une API C# et le framework .NET",
+        "Une API JavaScript unifiée et le framework Alloy MVC",
+        "Un compilateur Objective-C",
+        "Un moteur WebView sans API"
+      ],
+      "reponse": 1,
+      "explication": "Les développeurs écrivent du JavaScript et réutilisent des composants d'interface natifs, ce qui améliore les performances.",
+      "id": "envmob-ide-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle association IDE → approche est correcte ?",
+      "choix": [
+        "PhoneGap : hybride (WebView) ; Xamarin : multiplateforme en C# ; Xcode : natif iOS",
+        "PhoneGap : natif ; Xamarin : web ; Xcode : hybride",
+        "PhoneGap : multiplateforme en C# ; Xamarin : web ; Xcode : Android",
+        "Xcode : web ; PhoneGap : natif Android ; Xamarin : hybride en Java"
+      ],
+      "reponse": 0,
+      "explication": "Cette question réutilise les approches vues en séquence 5.",
+      "id": "envmob-ide-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Un étudiant n'a qu'un PC Windows. Peut-il utiliser Xcode ?",
+      "choix": [
+        "Oui, Xcode est fourni avec Visual Studio",
+        "Oui, avec le pack NetBeans Mobile",
+        "Oui, c'est le même outil qu'Android Studio",
+        "Non : Xcode est un environnement pour Mac OS X"
+      ],
+      "reponse": 3,
+      "explication": "Pour iOS, il faut un Mac. Pour Android, Android Studio fonctionne sur plusieurs systèmes.",
+      "id": "envmob-ide-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que contient BlackBerry Java Development Environment pour travailler avec des IDE tiers ?",
+      "choix": [
+        "Un compilateur C#",
+        "Un émulateur iOS",
+        "Des outils pour développer dans des environnements comme NetBeans ou Eclipse",
+        "Un magasin d'applications"
+      ],
+      "reponse": 2,
+      "explication": "C'est une suite logicielle avec des outils de modification et de débogage.",
+      "id": "envmob-ide-20"
+    }
+  ]
+}

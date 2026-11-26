@@ -1,0 +1,53 @@
+{
+  "matiere": "html-css",
+  "module": "styles-couleurs",
+  "titre": "TD – Les styles et couleurs en HTML",
+  "exercices": [
+    {
+      "id": "htmlcss-s4-td-01",
+      "type": "exercice",
+      "titre": "L'attribut style",
+      "source": "TP 04 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise la page « Liste des universités du Sénégal » : fond jaune, bordure noire, et des titres de couleurs différentes (vert, bleu, rouge), uniquement avec l'attribut style.",
+      "indices": [
+        "background-color pour le fond.",
+        "color pour la couleur du texte.",
+        "border pour la bordure."
+      ],
+      "solution": "<body style=\"background-color:yellow; border:1px solid black;\">\n<h1>Liste des universités du Sénégal</h1>\n<hr />\n<h2 style=\"color:green;\">Université Cheikh Anta Diop de Dakar</h2>\n<p>L'université Cheikh-Anta-Diop (UCAD) est la principale université de Dakar.</p>\n<hr />\n<h2 style=\"color:blue;\">Université Gaston Berger de Saint-Louis</h2>\n<p>L'université Gaston Berger est une université du Sénégal située à Saint-Louis.</p>\n<hr />\n<h2 style=\"color:red;\">Université Virtuelle du Sénégal</h2>\n<p>L'université Virtuelle du Sénégal est la dernière des universités du Sénégal.</p>\n</body>",
+      "explication_simple": "Chaque style est écrit directement dans la balise concernée : propriété:valeur;",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s4-td-02",
+      "type": "exercice",
+      "titre": "Balises de formatage et de sortie d'ordinateur",
+      "source": "TP 04 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "1) Une université barrée, une autre surlignée en jaune, et « Ctrl+b » comme une touche de clavier. 2) Écris a² + 2ab + b² = (a+b)² et S1 + S2 + S3 = 0.",
+      "indices": [
+        "Barré : <del>. Surligné : <mark>. Touche : <kbd>.",
+        "Exposant : <sup>. Indice : <sub>."
+      ],
+      "solution": "<div style=\"border:1px solid black; padding:5px;\">\n<p><del><b>Université Assane Seck de Ziguinchor</b></del></p>\n<p><mark><b>Université Alioune Diop de Bambey</b></mark></p>\n<p><kbd>Ctrl+b</kbd> <b>permet de mettre du texte en gras</b></p>\n</div>\n\n<p>a<sup>2</sup> + 2ab + b<sup>2</sup> = (a+b)<sup>2</sup></p>\n<p>S<sub>1</sub> + S<sub>2</sub> + S<sub>3</sub> = 0</p>",
+      "explication_simple": "Chaque balise de formatage a un sens : del = supprimé, mark = surligné, kbd = touche du clavier.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    },
+    {
+      "id": "htmlcss-s4-td-03",
+      "type": "exercice",
+      "titre": "Couleurs rgb et hsl avec transparence",
+      "source": "TP 04 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Réalise un titre et un paragraphe : d'abord avec rgb (paragraphe transparent), puis avec hsl (paragraphe transparent).",
+      "indices": [
+        "rgba et hsla ont un 4e paramètre : la transparence (0 à 1).",
+        "La teinte hsl du vert est 120."
+      ],
+      "solution": "<h2 style=\"background-color:rgb(255,99,71);\">Université Cheikh Anta Diop de Dakar</h2>\n<p style=\"background-color:rgba(255,99,71,0.5);\">L'université Cheikh-Anta-Diop (UCAD) est la principale université de Dakar.</p>\n\n<h2 style=\"background-color:hsl(120,100%,64%);\">Université Gaston Berger de Saint-Louis</h2>\n<p style=\"background-color:hsla(120,100%,64%,0.3);\">L'université Gaston Berger est une université du Sénégal située à Saint-Louis.</p>",
+      "explication_simple": "Alpha = 1 : couleur pleine ; alpha = 0,5 : moitié transparente ; alpha = 0 : invisible.",
+      "attention": "La figure de l'énoncé est reproduite de façon approchante : adaptez couleurs et dimensions à l'image du TP."
+    }
+  ]
+}

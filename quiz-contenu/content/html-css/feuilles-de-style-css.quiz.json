@@ -1,0 +1,271 @@
+{
+  "matiere": "html-css",
+  "module": "feuilles-de-style-css",
+  "titre": "Les feuilles de style CSS",
+  "sources": [
+    "Séquence 5- LES FEUILLES DE STYLE CSS.pdf",
+    "TP 05 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie CSS ?",
+      "choix": [
+        "Colored Style System",
+        "Cascading Style Sheets (feuilles de styles en cascade)",
+        "Creative Site Scripts",
+        "Content Server Syntax"
+      ],
+      "reponse": 1,
+      "explication": "CSS décrit comment les éléments HTML doivent être affichés à l'écran, sur du papier ou dans d'autres médias.",
+      "id": "htmlcss-s5-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "De quelles deux parties une règle CSS est-elle composée ?",
+      "choix": [
+        "D'un sélecteur et d'une déclaration",
+        "D'une balise et d'un attribut",
+        "D'un titre et d'un paragraphe",
+        "D'un nom de fichier et d'une extension"
+      ],
+      "reponse": 0,
+      "explication": "Dans h1 {color: blue;} : le sélecteur est h1, la déclaration est color: blue.",
+      "id": "htmlcss-s5-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "De quelles deux parties une déclaration CSS est-elle composée ?",
+      "choix": [
+        "D'un sélecteur et d'une classe",
+        "D'une balise et d'une adresse",
+        "D'un id et d'un nom",
+        "D'une propriété et d'une valeur"
+      ],
+      "reponse": 3,
+      "explication": "Dans color: blue : la propriété est color et la valeur est blue.",
+      "id": "htmlcss-s5-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelles sont les trois méthodes pour placer une feuille de style ?",
+      "choix": [
+        "En haut, au milieu et en bas",
+        "En local, en réseau et sur le cloud",
+        "En ligne, en interne et en externe",
+        "En HTML, en XML et en SGML"
+      ],
+      "reponse": 2,
+      "explication": "En ligne : attribut style. En interne : élément <style> dans <head>. En externe : fichier CSS séparé.",
+      "id": "htmlcss-s5-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle méthode est la plus courante pour ajouter du CSS ?",
+      "choix": [
+        "Le style en ligne",
+        "La feuille de style externe",
+        "Le style interne",
+        "Aucune, toutes sont égales"
+      ],
+      "reponse": 1,
+      "explication": "Le cours utilise surtout les styles en ligne et internes pour des raisons pratiques, mais la méthode externe est la plus courante.",
+      "id": "htmlcss-s5-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise lie une feuille de style externe à une page ?",
+      "choix": [
+        "<link rel=\"stylesheet\" href=\"styles.css\">",
+        "<style src=\"styles.css\">",
+        "<css href=\"styles.css\">",
+        "<script href=\"styles.css\">"
+      ],
+      "reponse": 0,
+      "explication": "Elle se place dans <head>.",
+      "id": "htmlcss-s5-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est un avantage des feuilles de style ?",
+      "choix": [
+        "Elles rendent les pages illisibles pour les moteurs de recherche",
+        "Elles remplacent complètement HTML",
+        "Elles rendent le site inaccessible",
+        "Elles séparent la forme du fond, ce qui simplifie la conception et la maintenance"
+      ],
+      "reponse": 3,
+      "explication": "Elles améliorent aussi l'accessibilité des sites, sans altérer la qualité visuelle.",
+      "id": "htmlcss-s5-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Où place-t-on un style interne ?",
+      "choix": [
+        "Dans l'attribut class de body",
+        "Dans un fichier .html séparé",
+        "Dans un élément <style> de la section <head>",
+        "Après </html>"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <head><style> body {background-color: powderblue;} </style></head>.",
+      "id": "htmlcss-s5-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment regroupe-t-on plusieurs sélecteurs dans une règle ?",
+      "choix": [
+        "En les séparant par des points-virgules",
+        "En les séparant par des virgules : h1, p { color: red }",
+        "En les séparant par des deux-points",
+        "On ne peut pas les regrouper"
+      ],
+      "reponse": 1,
+      "explication": "Les points-virgules séparent les déclarations.",
+      "id": "htmlcss-s5-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment sépare-t-on plusieurs déclarations dans une même règle ?",
+      "choix": [
+        "Par des points-virgules",
+        "Par des virgules",
+        "Par des points",
+        "Par des barres obliques"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : p { margin-left: 1cm; font-style: italic; }.",
+      "id": "htmlcss-s5-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment applique-t-on un style à tous les éléments de classe « rouge » ?",
+      "choix": [
+        "Avec le sélecteur #rouge { color: red }",
+        "Avec le sélecteur rouge() { color: red }",
+        "Avec la balise <rouge>",
+        "Avec le sélecteur .rouge { color: red }"
+      ],
+      "reponse": 3,
+      "explication": "En HTML : <p class=\"rouge\">. Le point précède un nom de classe.",
+      "id": "htmlcss-s5-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que désigne le sélecteur p.entete ?",
+      "choix": [
+        "Tous les éléments de classe « entete »",
+        "Tous les paragraphes de la page",
+        "Seulement les éléments <p> de classe « entete »",
+        "L'élément d'id « entete »"
+      ],
+      "reponse": 2,
+      "explication": "Sans le p, .entete s'appliquerait à tous les éléments de cette classe, quels qu'ils soient.",
+      "id": "htmlcss-s5-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment applique-t-on un style à l'élément dont l'id est « entete » ?",
+      "choix": [
+        ".entete { color: red }",
+        "Avec le sélecteur #entete { color: red }",
+        "p.entete { color: red }",
+        "entete::id { color: red }"
+      ],
+      "reponse": 1,
+      "explication": "Le dièse # désigne un identifiant. L'identifiant d'un élément doit être unique dans une page.",
+      "id": "htmlcss-s5-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle déclaration met un texte en majuscules ?",
+      "choix": [
+        "text-transform: uppercase;",
+        "text-decoration: uppercase;",
+        "font-style: uppercase;",
+        "text-align: uppercase;"
+      ],
+      "reponse": 0,
+      "explication": "text-transform accepte capitalize, uppercase, lowercase, none.",
+      "id": "htmlcss-s5-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles valeurs la propriété font-weight peut-elle prendre ?",
+      "choix": [
+        "italic, oblique, normal",
+        "left, right, center",
+        "solid, dotted, dashed",
+        "normal, bold, bolder, lighter, ou 100, 200 jusqu'à 900"
+      ],
+      "reponse": 3,
+      "explication": "font-style prend italic, normal ou oblique ; font-weight gère l'épaisseur.",
+      "id": "htmlcss-s5-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle déclaration souligne et barre un texte à la fois ?",
+      "choix": [
+        "text-style: underline strike;",
+        "font-weight: underline line-through;",
+        "text-decoration: underline line-through;",
+        "text-transform: underline line-through;"
+      ],
+      "reponse": 2,
+      "explication": "Les valeurs de text-decoration peuvent être combinées : none, underline, overline, line-through. (Le cours écrit une fois « text-style : italic » : c'est une erreur, la propriété est font-style.)",
+      "id": "htmlcss-s5-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que signifie margin-left: 12px ?",
+      "choix": [
+        "Une bordure de 12 pixels",
+        "Une marge de 12 pixels à gauche de l'élément",
+        "Une police de 12 points",
+        "Un espacement de 12 cm sous le texte"
+      ],
+      "reponse": 1,
+      "explication": "Unités citées : em, ex, px, in, cm, mm, pt (1pt = 1/72 inch), pc (1pc = 12pt).",
+      "id": "htmlcss-s5-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle déclaration produit une bordure pleine de 3 pixels rouge ?",
+      "choix": [
+        "border-style: solid; border-width: 3px; border-color: red;",
+        "border-type: full; border-size: 3; border-color: red;",
+        "border: pleine 3 rouge;",
+        "border-line: solid; border-thick: 3px;"
+      ],
+      "reponse": 0,
+      "explication": "border-style : none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset. border-width : thin, medium, thick ou une longueur.",
+      "id": "htmlcss-s5-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Peut-on utiliser le même id sur plusieurs éléments d'une même page ?",
+      "choix": [
+        "Oui, sans limite",
+        "Oui, mais seulement pour des paragraphes",
+        "Non, sauf dans les tableaux",
+        "Non : l'identifiant doit être unique"
+      ],
+      "reponse": 3,
+      "explication": "Pour réutiliser un style, on utilise plutôt une classe (class).",
+      "id": "htmlcss-s5-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle déclaration met un texte en italique ?",
+      "choix": [
+        "text-style: italic;",
+        "font-weight: italic;",
+        "font-style: italic;",
+        "text-decoration: italic;"
+      ],
+      "reponse": 2,
+      "explication": "font-style : normal, italic ou oblique. Exemple du cours : p.entete { font-style: italic }.",
+      "id": "htmlcss-s5-20"
+    }
+  ]
+}

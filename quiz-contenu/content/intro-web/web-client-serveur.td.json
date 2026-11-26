@@ -1,0 +1,23 @@
+{
+  "matiere": "intro-web",
+  "module": "web-client-serveur",
+  "titre": "TD – Le Web et le concept client/serveur",
+  "exercices": [
+    {
+      "id": "web-s2-td-01",
+      "type": "exercice",
+      "titre": "Installer XAMPP et tester un site local",
+      "source": "Travaux Dirigés_2.pdf – exercice 2.1",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe XAMPP, démarre le serveur Apache, crée un dossier « monsite » et affiche-le dans ton navigateur.",
+      "indices": [
+        "XAMPP se télécharge sur apachefriends.org.",
+        "Les sites se placent dans le dossier htdocs de XAMPP.",
+        "L'adresse locale commence par http://localhost/."
+      ],
+      "solution": "1. Télécharger XAMPP sur https://www.apachefriends.org/download.html et l'installer (étapes : https://www.wikihow.com/Install-XAMPP-for-Windows).\n2. Ouvrir le panneau de contrôle XAMPP et cliquer sur Start en face de Apache.\n3. Créer un dossier « monsite » dans c:\\xampp\\htdocs.\n4. (Pour voir quelque chose) y placer un fichier index.html.\n5. Ouvrir un navigateur et aller à http://localhost/monsite : la page s'affiche.",
+      "explication_simple": "XAMPP installe sur ton ordinateur un petit serveur web (Apache) : ton ordinateur devient à la fois le serveur et le client. localhost signifie « cet ordinateur ».",
+      "attention": "L'énoncé écrit « c:\\xampp\\hdocs » : le dossier s'appelle htdocs. Sans fichier index.html, le navigateur affiche la liste des fichiers du dossier."
+    }
+  ]
+}

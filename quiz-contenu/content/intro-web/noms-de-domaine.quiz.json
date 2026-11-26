@@ -1,0 +1,271 @@
+{
+  "matiere": "intro-web",
+  "module": "noms-de-domaine",
+  "titre": "Les noms de domaine",
+  "sources": [
+    "Séquence 6_Les noms de domaine.pdf",
+    "Séquence 1_Réseau informatique et internet.pdf (références)"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un nom de domaine ?",
+      "choix": [
+        "Le nom du navigateur",
+        "Le « nomdusite » d'une adresse comme http://www.nomdusite.com ou .sn",
+        "Le nom de l'ordinateur du visiteur",
+        "Le nom du fichier HTML"
+      ],
+      "reponse": 1,
+      "explication": "Il remplace une adresse difficile à mémoriser du type http://www.votre-fournisseur.com/votrenom.",
+      "id": "web-s6-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie URL ?",
+      "choix": [
+        "Uniform Resource Locator, c'est-à-dire l'adresse d'un site",
+        "Universal Reading Language",
+        "User Routing List",
+        "Unique Register Link"
+      ],
+      "reponse": 0,
+      "explication": "Pour accéder à un site, il est essentiel de connaître son URL.",
+      "id": "web-s6-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est l'intérêt d'un nom de domaine ?",
+      "choix": [
+        "Le site devient gratuit",
+        "Le site devient invisible",
+        "Le site n'a plus besoin d'hébergement",
+        "Un site est plus simple à mémoriser et paraît plus professionnel et plus crédible"
+      ],
+      "reponse": 3,
+      "explication": "Le nom de domaine conditionne parfois même le nom de la marque.",
+      "id": "web-s6-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle organisation coordonne les noms de domaine à l'échelle mondiale ?",
+      "choix": [
+        "Le W3C",
+        "Le CERN",
+        "L'ICANN",
+        "L'AfriNIC"
+      ],
+      "reponse": 2,
+      "explication": "ICANN : Internet Corporation for Assigned Names and Numbers.",
+      "id": "web-s6-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel organisme gère les noms de domaine en .sn ?",
+      "choix": [
+        "AfriNIC",
+        "NIC Sénégal",
+        "Network Solutions",
+        "Le W3C"
+      ],
+      "reponse": 1,
+      "explication": "Son adresse web est www.nic.sn.",
+      "id": "web-s6-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel est le sous-domaine le plus connu et le plus utilisé ?",
+      "choix": [
+        "www",
+        "ftp",
+        "mail",
+        "http"
+      ],
+      "reponse": 0,
+      "explication": "Syntaxe : sousdomaine.votre-domaine.extension.",
+      "id": "web-s6-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'une extension d'adresse (.com, .sn…) ?",
+      "choix": [
+        "La partie qui précède le nom de domaine",
+        "Le nom du fichier",
+        "Le protocole utilisé",
+        "La partie de l'adresse qui succède le nom de domaine"
+      ],
+      "reponse": 3,
+      "explication": "Exemple : dans uvs.sn, « .sn » est l'extension.",
+      "id": "web-s6-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle règle s'applique pour obtenir un nom de domaine ?",
+      "choix": [
+        "Le plus offrant l'emporte toujours",
+        "Les marques sont toujours prioritaires",
+        "Le premier arrivé est le premier servi",
+        "Le plus ancien site l'emporte"
+      ],
+      "reponse": 2,
+      "explication": "L'antériorité de la marque peut parfois permettre de récupérer un nom, mais il est capital de réserver le nom au plus tôt.",
+      "id": "web-s6-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Combien de caractères un nom de domaine peut-il avoir (sans l'extension) ?",
+      "choix": [
+        "Entre 1 et 10",
+        "Entre 2 et 63",
+        "Entre 10 et 100",
+        "Exactement 8"
+      ],
+      "reponse": 1,
+      "explication": "Un nom trop long rendrait l'accès au site fastidieux.",
+      "id": "web-s6-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels caractères sont permis dans un nom de domaine ?",
+      "choix": [
+        "Les chiffres de 0 à 9, les lettres de a à z et le tiret comme séparateur",
+        "Les espaces et les accents",
+        "Tous les caractères spéciaux",
+        "Uniquement des lettres majuscules"
+      ],
+      "reponse": 0,
+      "explication": "Ni signe spécifique ni espace, excepté le tiret. (Le cours dit aussi que le tiret peut commencer ou finir le nom : c'est en réalité interdit.)",
+      "id": "web-s6-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment s'écrit un sous-domaine et quel exemple le cours donne-t-il ?",
+      "choix": [
+        "domaine.sousdomaine.extension ; http://uvs.formation.sn",
+        "extension.domaine.sousdomaine ; sn.uvs.formation",
+        "sousdomaine/votre-domaine/extension ; http://formation/uvs/sn",
+        "sousdomaine.votre-domaine.extension ; http://formation.uvs.sn"
+      ],
+      "reponse": 3,
+      "explication": "Les sous-domaines servent à scinder un site en sections distinctes, chacune avec une adresse bien définie.",
+      "id": "web-s6-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce que le cybersquatting ?",
+      "choix": [
+        "Pirater un serveur",
+        "Envoyer des spams",
+        "Réserver un nom de domaine propre à une marque pour altérer sa visibilité",
+        "Copier des pages web"
+      ],
+      "reponse": 2,
+      "explication": "Pour s'en protéger, on peut enregistrer le nom sous plusieurs extensions.",
+      "id": "web-s6-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment se protéger du cybersquatting ?",
+      "choix": [
+        "En n'achetant jamais de nom de domaine",
+        "En enregistrant le nom sous plusieurs extensions et en les redirigeant vers l'adresse principale",
+        "En créant un site par extension",
+        "En changeant de navigateur"
+      ],
+      "reponse": 1,
+      "explication": "Cela ne nécessite pas plusieurs sites : une redirection suffit. Exemple : uvs.sn, uvs.com, uvs.net.",
+      "id": "web-s6-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi correspondent .edu, .gov et .org ?",
+      "choix": [
+        "Organismes éducatifs, gouvernementaux et entreprises à but non lucratif",
+        "Entreprises commerciales, militaires et réseaux",
+        "Pays, régions et villes",
+        "Hébergeurs, clients et serveurs"
+      ],
+      "reponse": 0,
+      "explication": "Aussi : .com commerciales (aujourd'hui international), .mil militaires, .net réseaux, .arpa machines du réseau originel.",
+      "id": "web-s6-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle est la nature juridique de l'ICANN, et quand a-t-elle été fondée ?",
+      "choix": [
+        "Une entreprise commerciale européenne, fondée en 1990",
+        "Une agence militaire américaine, fondée en 1969",
+        "Une ONG sénégalaise, fondée en 2010",
+        "Une société californienne à but non lucratif, fondée le 18 septembre 1998"
+      ],
+      "reponse": 3,
+      "explication": "Elle administre les ressources numériques d'Internet : adressage IP et domaines de premier niveau.",
+      "id": "web-s6-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel organisme est le registre régional d'adresses IP pour l'Afrique ?",
+      "choix": [
+        "NIC Sénégal",
+        "Network Solutions",
+        "AfriNIC",
+        "ICANN uniquement"
+      ],
+      "reponse": 2,
+      "explication": "Cette information figure dans la liste des références du cours.",
+      "id": "web-s6-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que signifie TLD ?",
+      "choix": [
+        "Total Link Directory",
+        "Top Level Domain : domaine de plus haut niveau",
+        "Top List Domain",
+        "Trusted Local Database"
+      ],
+      "reponse": 1,
+      "explication": "Le TLD classe le domaine selon l'activité du site et correspond généralement à une répartition géographique.",
+      "id": "web-s6-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Par quels outils vérifie-t-on la disponibilité d'un nom en .com et en .sn ?",
+      "choix": [
+        "Network Solutions pour .com/.net/.org ; NIC Sénégal pour .sn",
+        "NIC Sénégal pour .com ; Network Solutions pour .sn",
+        "AfriNIC pour les deux",
+        "Un navigateur pour les deux"
+      ],
+      "reponse": 0,
+      "explication": "Ces outils peuvent aussi indiquer le propriétaire d'un nom.",
+      "id": "web-s6-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi toute adresse doit-elle être unique ?",
+      "choix": [
+        "Pour réduire le coût des sites",
+        "Pour accélérer le wifi",
+        "Pour empêcher les images",
+        "Pour que les ordinateurs puissent s'identifier entre eux ; l'ICANN coordonne ces identifiants"
+      ],
+      "reponse": 3,
+      "explication": "Sans cette coordination, il n'y aurait pas un réseau Internet mondial unique.",
+      "id": "web-s6-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Une université enregistre uvs.sn, uvs.com et uvs.net. Quel est l'intérêt ?",
+      "choix": [
+        "Avoir trois sites différents",
+        "Avoir trois serveurs",
+        "Se protéger du cybersquatting, en redirigeant les trois adresses vers le site principal",
+        "Éviter d'utiliser un hébergeur"
+      ],
+      "reponse": 2,
+      "explication": "Il n'est pas nécessaire d'avoir plusieurs sites : une simple redirection suffit.",
+      "id": "web-s6-20"
+    }
+  ]
+}

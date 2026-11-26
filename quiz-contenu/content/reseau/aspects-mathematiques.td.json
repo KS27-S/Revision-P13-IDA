@@ -1,0 +1,55 @@
+{
+  "matiere": "reseau",
+  "module": "aspects-mathematiques",
+  "titre": "TD – Aspects mathématiques des réseaux",
+  "exercices": [
+    {
+      "id": "reseau-s2-td-01",
+      "type": "exercice",
+      "titre": "Convertir des nombres décimaux en binaire (8 positions)",
+      "source": "TP 2.1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Convertis chaque nombre décimal en binaire sur 8 positions. Pour une adresse (avec des points), convertis chaque nombre séparément.",
+      "indices": [
+        "Utilise le tableau 128, 64, 32, 16, 8, 4, 2, 1.",
+        "Pour chaque rang : si le nombre est au moins égal à la valeur du rang, écris 1 et soustrais.",
+        "Exemple du TP : 207 = 128 + 64 + 15, donc 11001111."
+      ],
+      "solution": "123  →  01111011\n202  →  11001010\n67  →  01000011\n7  →  00000111\n252  →  11111100\n91  →  01011011\n116.127.71.3  →  01110100.01111111.01000111.00000011\n255.255.255.0  →  11111111.11111111.11111111.00000000\n192.143.255.255  →  11000000.10001111.11111111.11111111\n12.101.9.16  →  00001100.01100101.00001001.00010000\n\nVérification : addition des rangs à 1. Exemple : 123 = 64 + 32 + 16 + 8 + 2 + 1 → 01111011.",
+      "explication_simple": "Chaque nombre d'une adresse IP est un octet : on le convertit séparément en 8 bits. Les résultats ont été calculés avec un programme puis vérifiés par la méthode des soustractions."
+    },
+    {
+      "id": "reseau-s2-td-02",
+      "type": "exercice",
+      "titre": "Convertir des nombres binaires en décimal",
+      "source": "TP 2.2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Convertis chaque nombre binaire en décimal. Pour les adresses, convertis chaque octet séparément.",
+      "indices": [
+        "Écris les rangs : 128, 64, 32, 16, 8, 4, 2, 1 (de gauche à droite pour un octet).",
+        "Additionne les rangs où il y a un 1.",
+        "Pour un nombre court comme 1110, les rangs sont 8, 4, 2, 1."
+      ],
+      "solution": "1110  →  14\n100110  →  38\n11111111  →  255\n11010011  →  211\n01000001  →  65\n11001110  →  206\n01110101  →  117\n10001111  →  143\n11101001.00011011.10000000.10100100  →  233.27.128.164\n11111111.00000001.10000001.11000001  →  255.1.129.193\n\nExemple détaillé : 11010011 = 128 + 64 + 16 + 2 + 1 = 211.",
+      "explication_simple": "On additionne les puissances de 2 correspondant aux bits à 1. Les adresses sont converties octet par octet.",
+      "attention": "« 1110 » et « 100110 » ont moins de 8 bits : on lit leurs rangs à partir de la droite (1110 = 8 + 4 + 2 = 14 ; 100110 = 32 + 4 + 2 = 38)."
+    },
+    {
+      "id": "reseau-s2-td-03",
+      "type": "exercice",
+      "titre": "Conversions hexadécimal – décimal – binaire",
+      "source": "TP 2.3 (exercice corrigé)",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Pour chaque valeur, trouve les équivalents dans les deux autres formats (décimal, hexadécimal, binaire).",
+      "indices": [
+        "Un caractère hexadécimal vaut 4 bits.",
+        "Hexadécimal → décimal : multiplie le premier caractère par 16 et ajoute le second.",
+        "Décimal → hexadécimal : divise par 16 ; le quotient est le 1er caractère, le reste le 2e (10 = A … 15 = F).",
+        "Les valeurs séparées par un tiret ou un point sont traitées octet par octet."
+      ],
+      "solution": "1. A9 (hexadécimal)  →  décimal 169 ; binaire 10101001\n2. BAD1 (hexadécimal)  →  décimal 47825 ; binaire 1011101011010001  (en deux octets : 10111010 11010001)\n3. E7-63-1C (hexadécimal)  →  décimal 231.99.28 ; binaire 11100111.01100011.00011100\n4. 53 (décimal)  →  hexadécimal 35 ; binaire 00110101\n5. 115 (décimal)  →  hexadécimal 73 ; binaire 01110011\n6. 19 (décimal)  →  hexadécimal 13 ; binaire 00010011\n7. 212.65.119.45 (décimal)  →  hexadécimal D4-41-77-2D ; binaire 11010100.01000001.01110111.00101101\n8. 10101010 (binaire)  →  décimal 170 ; hexadécimal AA\n9. 110 (binaire)  →  décimal 6 ; hexadécimal 6\n10. 00001100.10000000.11110000.11111111 (binaire)  →  décimal 12.128.240.255 ; hexadécimal 0C-80-F0-FF",
+      "explication_simple": "On passe par les groupes de 4 bits : 1010 = A, 1110 = E, etc. Exemple du cours : 209 ÷ 16 = 13 reste 1, donc D1. Résultats calculés par programme.",
+      "attention": "« Bad1 » est écrit tel quel dans l'énoncé : j'ai pris BAD1 en hexadécimal (deux octets, soit 16 bits). La valeur décimale 47825 est celle du nombre entier BAD1."
+    }
+  ]
+}

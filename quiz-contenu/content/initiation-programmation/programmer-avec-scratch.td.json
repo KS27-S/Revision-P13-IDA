@@ -1,0 +1,143 @@
+{
+  "matiere": "initiation-programmation",
+  "module": "programmer-avec-scratch",
+  "titre": "TD – Programmer avec Scratch 2",
+  "exercices": [
+    {
+      "id": "prog-s2-td-01",
+      "type": "exercice",
+      "titre": "Présentation du logiciel et blocs de début et de fin",
+      "source": "TD_Séquence2.pdf – partie 1 et 2",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Quelles sont les trois colonnes de l'écran de Scratch ? Par quels blocs peut commencer un programme ? Par quels blocs peut-il finir ?",
+      "indices": [
+        "Palette, zone de construction, scène.",
+        "Les blocs de début sont dans la catégorie Événements."
+      ],
+      "solution": "Colonne de gauche : la palette de blocs, rangés par catégories (mouvement, apparence, sons, variables…).\nColonne centrale : l'aire des scripts, où l'on fait glisser et assemble les instructions (leur forme empêche de les imbriquer n'importe comment).\nColonne de droite : la scène, où l'on voit les effets du programme (le chat, appelé Scratch).\n\nUn programme commence forcément par l'un de ces trois blocs : « quand [espace] est pressé » (touche), « quand drapeau vert pressé », « quand l'icône (lutin) est pressée ».\nIl se termine par « arrêter le script » ou « arrêter tout ».",
+      "explication_simple": "Les blocs de début sont des « chapeaux » : ils déclenchent le script. Les blocs de fin l'arrêtent. Entre les deux, on empile les instructions."
+    },
+    {
+      "id": "prog-s2-td-02",
+      "type": "exercice",
+      "titre": "Faire bouger Scratch",
+      "source": "TD_Séquence2.pdf – 2.1",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "1) Que fait le script suivant quand on clique sur le drapeau ? 2) Crée un script qui met Scratch tête en bas, à 30 pas sur la droite, quand on appuie sur la barre d'espace.\n\nquand drapeau vert pressé\navancer de 10 pas\ntourner ↻ de 15 degrés\navancer de 10 pas\narrêter le script",
+      "indices": [
+        "Lis les blocs de haut en bas.",
+        "Pour la 2e question, avance d'abord à droite, puis retourne le chat.",
+        "Tête en bas = direction 180°."
+      ],
+      "solution": "1) Le chat avance de 10 pas, tourne de 15° vers la droite, puis avance encore de 10 pas dans sa nouvelle direction : il décrit un petit coude.\n2) quand [espace] est pressé\n   avancer de 30 pas\n   s'orienter à 180\n   arrêter le script",
+      "explication_simple": "Le programme s'exécute dans l'ordre, un bloc après l'autre. On avance avant de s'orienter à 180°, sinon le chat descendrait au lieu d'aller à droite.",
+      "attention": "Pour que le chat se retourne vraiment, son « style de rotation » doit être « en tous sens » (sinon il ne bascule pas). Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-03",
+      "type": "exercice",
+      "titre": "Un peu de calcul : la variable a",
+      "source": "TD_Séquence2.pdf – 2.2",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée une variable a. 1) Quelle est sa valeur initiale ? 2) Saisis ce programme. 3) Quelle est la valeur de a après un premier appui sur la barre d'espace ? Après deux appuis ?\n\nquand [espace] est pressé\nmettre a à (a + 2)\narrêter le script",
+      "indices": [
+        "Une variable qu'on vient de créer vaut 0.",
+        "À chaque appui, on ajoute 2."
+      ],
+      "solution": "1) La valeur initiale de a est 0 (valeur par défaut d'une variable qu'on vient de créer).\n3) Après un appui : a = 2. Après deux appuis : a = 4.",
+      "explication_simple": "Le programme ne remet pas a à 0 : à chaque appui, la nouvelle valeur part de l'ancienne. Pour recommencer à zéro, il faut ajouter « mettre a à 0 »."
+    },
+    {
+      "id": "prog-s2-td-04",
+      "type": "exercice",
+      "titre": "Une première boucle",
+      "source": "TD_Séquence2.pdf – 2.3",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Saisis le programme ci-dessous. Associe chaque partie de l'algorithme à un bloc Scratch. Que calcule cet algorithme ?\n\nquand drapeau vert pressé\nmettre s à 0\nrépéter 10 fois\n   mettre s à (s + 1)\nafficher la variable s\narrêter le script\n\nAlgorithme :\nInitialisation : s = 0\npour i de 1 jusqu'à 10 faire\n   s = s + 1\nfin\nSortie : afficher s",
+      "indices": [
+        "« pour i de 1 jusqu'à 10 » = répéter 10 fois.",
+        "À chaque tour, s augmente de 1."
+      ],
+      "solution": "• Initialisation s = 0 → mettre s à 0\n• pour i de 1 jusqu'à 10 faire … fin → répéter 10 fois\n• s = s + 1 → mettre s à (s + 1) (ou « ajouter à s 1 »)\n• Sortie : afficher s → afficher la variable s\nCalcul : s compte le nombre de répétitions, donc s vaut 10 à la fin.",
+      "explication_simple": "On n'utilise pas i dans le calcul : la boucle sert uniquement à répéter 10 fois. C'est pourquoi s vaut 10, et non 55.",
+      "attention": "Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-05",
+      "type": "exercice",
+      "titre": "Répéter un mouvement et un virage 5 fois",
+      "source": "TD_Séquence2.pdf – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Fais bouger Scratch de 30 pas sur la droite, puis pivoter de 30°, et ceci 5 fois de suite.",
+      "indices": [
+        "Les deux actions sont répétées : mets-les dans le même bloc RÉPÉTER."
+      ],
+      "solution": "quand drapeau vert pressé\nrépéter 5 fois\n   avancer de 30 pas\n   tourner ↻ de 30 degrés\narrêter le script",
+      "explication_simple": "Un bloc RÉPÉTER évite de copier 5 fois les mêmes blocs. À la fin, le chat a décrit une courbe.",
+      "attention": "Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-06",
+      "type": "exercice",
+      "titre": "Que calcule ce programme ? Écris l'algorithme",
+      "source": "TD_Séquence2.pdf – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Que calcule le programme suivant (a vaut 0 au départ) ? Écris l'algorithme en français.\n\nquand drapeau vert pressé\nmettre s à 1\nrépéter 5 fois\n   mettre a à (a + 1)\n   mettre s à (s × a)\nafficher la variable s\narrêter le script",
+      "indices": [
+        "Suis les valeurs de a et s à chaque tour.",
+        "Tour 1 : a = 1, s = 1. Tour 2 : a = 2, s = 2…"
+      ],
+      "solution": "Suivi : (a, s) → (1, 1), (2, 2), (3, 6), (4, 24), (5, 120). Le programme calcule la factorielle de 5 : 5! = 1×2×3×4×5 = 120.\n\nAlgorithme :\nInitialisation : s ← 1 ; a ← 0\npour i de 1 jusqu'à 5 faire\n   a ← a + 1\n   s ← s × a\nfin\nSortie : afficher s",
+      "explication_simple": "Quand on multiplie s par 1, puis 2, puis 3, 4 et 5, on obtient 120.",
+      "attention": "Le script de l'énoncé ne remet pas a à 0. Si on le lance deux fois de suite sans réinitialiser a, le résultat est faux : il faut ajouter « mettre a à 0 » au début. Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-07",
+      "type": "exercice",
+      "titre": "Atelier 1 : des mots et des lettres",
+      "source": "Atelier 1.pdf",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Programme le lutin pour : 1) dire si une lettre est une voyelle ou une consonne ; 2) donner le nombre de lettres d'un mot ; 3) dire si un mot est un palindrome ; 4) donner le pluriel d'un mot.",
+      "indices": [
+        "Utilise « demander … et attendre » puis le bloc « réponse ».",
+        "Les blocs « longueur de » et « lettre n de » sont dans la catégorie Opérateurs.",
+        "Palindrome : compare la lettre i avec la lettre (longueur − i + 1)."
+      ],
+      "solution": "1) Voyelle ou consonne :\ndemander [Donne une lettre] et attendre\nsi <<réponse = a> ou <<réponse = e> ou <<réponse = i> ou <<réponse = o> ou <<réponse = u> ou <réponse = y>>>>>> alors\n   dire [voyelle]\nsinon\n   dire [consonne]\n\n2) Nombre de lettres :\ndemander [Donne un mot] et attendre\ndire (longueur de (réponse))\n\n3) Palindrome :\ndemander [Donne un mot] et attendre\nmettre mot à (réponse) ; mettre n à (longueur de mot) ; mettre i à 1 ; mettre pal à [oui]\nrépéter jusqu'à <(i > (n / 2)) ou (pal = [non])>\n   si <non <(lettre i de mot) = (lettre ((n − i) + 1) de mot)>> alors\n      mettre pal à [non]\n   ajouter à i 1\ndire (pal)\n\n4) Pluriel simple :\ndemander [Donne un mot] et attendre\nsi <((lettre (longueur de réponse) de réponse) = s) ou (… = x) ou (… = z)> alors dire (réponse)\nsinon dire (regroupe (réponse) [s])",
+      "explication_simple": "Pour la voyelle, on enchaîne les comparaisons avec « ou ». Pour le palindrome, on compare les lettres symétriques : 1re et dernière, 2e et avant-dernière… et on s'arrête dès qu'une paire est différente.",
+      "attention": "Solution de base : les accents (é, è, à…) ne sont pas gérés, et le pluriel ignore les exceptions (cheval → chevaux, bateau → bateaux). Scratch 2 n'a pas d'opérateur « ≠ » : on utilise « non ». Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-08",
+      "type": "exercice",
+      "titre": "Atelier 2 : le jeu du Ping Pong",
+      "source": "Atelier 2.pdf",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée un jeu avec une raquette et une balle. La raquette se déplace à droite et à gauche, la balle part au hasard et rebondit sur les bords et sur la raquette. Fais jouer un joueur, puis deux.",
+      "indices": [
+        "La raquette utilise « touche [flèche droite] pressée ? ».",
+        "La balle utilise « rebondir si le bord est atteint ».",
+        "Pour rebondir sur une surface horizontale, la nouvelle direction est 180 − direction."
+      ],
+      "solution": "Lutin Raquette :\nquand drapeau vert pressé\naller à x: 0 y: -150\nrépéter indéfiniment\n   si <touche [flèche droite] pressée ?> alors ajouter 10 à x\n   si <touche [flèche gauche] pressée ?> alors ajouter -10 à x\n\nLutin Balle :\nquand drapeau vert pressé\naller à x: 0 y: 100\ns'orienter à (nombre aléatoire entre 120 et 240)\nrépéter indéfiniment\n   avancer de 5 pas\n   rebondir si le bord est atteint\n   si <touche [Raquette] ?> alors\n      s'orienter à (180 − direction)\n      avancer de 10 pas\n   si <touche [Ligne rouge] ?> alors\n      dire [Perdu !] pendant 2 secondes\n      stop [tout]\n\nLutin Ligne rouge : un rectangle rouge fin, placé en bas de la scène, juste au-dessus du bord.\n\nDeux joueurs : ajouter une 2e raquette en haut de la scène, avec les touches a et d, un second lutin « Ligne » en haut, et le test « touche [Raquette 2] ? » dans le script de la balle.",
+      "explication_simple": "La balle avance par petits pas : à chaque tour, elle teste si elle touche le bord, la raquette ou la ligne de défaite. Pour améliorer le jeu : une variable vitesse (augmentée à chaque rebond) et un arrière-plan.",
+      "attention": "Solution de base à améliorer (énoncé volontairement ouvert). Direction : 0 = haut, 90 = droite, 180 = bas. Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    },
+    {
+      "id": "prog-s2-td-09",
+      "type": "exercice",
+      "titre": "Atelier 3 : le labyrinthe",
+      "source": "Atelier 3.pdf",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Un chevalier doit sauver la princesse en évitant le dragon, dans un labyrinthe dessiné sur la scène. Le chevalier recule s'il touche un mur.",
+      "indices": [
+        "Dessine les murs d'une couleur unique, par exemple noir.",
+        "« couleur [...] touchée ? » détecte les murs.",
+        "Mémorise la position avant le déplacement pour pouvoir revenir en arrière."
+      ],
+      "solution": "Lutin Chevalier :\nquand drapeau vert pressé\naller à x: -200 y: 150\nrépéter indéfiniment\n   mettre ox à (x position)\n   mettre oy à (y position)\n   si <touche [flèche droite] pressée ?> alors ajouter 5 à x\n   si <touche [flèche gauche] pressée ?> alors ajouter -5 à x\n   si <touche [flèche haut] pressée ?> alors ajouter 5 à y\n   si <touche [flèche bas] pressée ?> alors ajouter -5 à y\n   si <couleur [noir] touchée ?> alors aller à x: (ox) y: (oy)\n\nLutin Princesse :\nquand drapeau vert pressé\nrépéter indéfiniment\n   si <touche [Chevalier] ?> alors\n      dire [Merci, tu m'as sauvée !] pendant 3 secondes\n      stop [tout]\n\nLutin Dragon :\nquand drapeau vert pressé\nrépéter indéfiniment\n   glisser en 2 secondes à x: (nombre aléatoire entre -200 et 200) y: (nombre aléatoire entre -150 et 150)\n   si <touche [Chevalier] ?> alors\n      dire [Perdu !] pendant 2 secondes\n      stop [tout]",
+      "explication_simple": "Quand le chevalier touche un mur, on le replace à la position qu'il avait avant le mouvement : il a l'air de reculer. Amélioration possible : un objet d'invincibilité.",
+      "attention": "Solution de base ; le dragon peut traverser les murs dans cette version. La couleur à tester doit être exactement celle des murs. Les scripts sont donnés en texte (un bloc par ligne, retrait = bloc imbriqué), avec les noms de blocs de Scratch 2 en français."
+    }
+  ]
+}

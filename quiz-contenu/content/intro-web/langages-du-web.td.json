@@ -1,0 +1,23 @@
+{
+  "matiere": "intro-web",
+  "module": "langages-du-web",
+  "titre": "TD – Les langages du web",
+  "exercices": [
+    {
+      "id": "web-s5-td-01",
+      "type": "exercice",
+      "titre": "Réaliser son CV avec Google Sites",
+      "source": "Séquence 5 – exercice (Google Sites)",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée un site web représentant ton CV avec Google Sites.",
+      "indices": [
+        "Il faut un compte Google.",
+        "Va sur sites.google.com.",
+        "Prévois des pages ou des sections : profil, formation, expérience, compétences, contact."
+      ],
+      "solution": "1. Créer un compte Google si besoin.\n2. Aller sur https://sites.google.com et créer un nouveau site.\n3. Donner un titre au site (ton nom) et choisir un thème.\n4. Créer les sections ou les pages : Profil, Formation, Expériences, Compétences, Contact.\n5. Ajouter du texte, une photo et des liens.\n6. Prévisualiser le site puis le publier.",
+      "explication_simple": "Google Sites est un outil en ligne : tu construis le site sans écrire de code. C'est l'une des manières de réaliser un site vues dans la séquence 4.",
+      "attention": "L'énoncé mentionne une « version classique » et une « nouvelle version » de Google Sites ; l'interface a probablement beaucoup changé depuis 2018 : adapte les étapes à ce que tu vois."
+    }
+  ]
+}

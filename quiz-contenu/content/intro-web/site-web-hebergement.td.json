@@ -1,0 +1,23 @@
+{
+  "matiere": "intro-web",
+  "module": "site-web-hebergement",
+  "titre": "TD – Site web et hébergement",
+  "exercices": [
+    {
+      "id": "web-s3-td-01",
+      "type": "exercice",
+      "titre": "Créer un site web simple et choisir un hébergeur gratuit",
+      "source": "Séquence 3 – exercice (créer un site web simple)",
+      "statut_corrige": "corrigé rédigé par Claude (les supports ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe un éditeur simple, crée un site d'une seule page, regarde-le dans un navigateur, puis crée un compte chez un hébergeur gratuit et conserve les paramètres reçus par e-mail.",
+      "indices": [
+        "Notepad++ est un éditeur simple.",
+        "Enregistre la page avec l'extension .html.",
+        "L'hébergeur t'envoie des paramètres de connexion par e-mail."
+      ],
+      "solution": "1. Télécharger et installer Notepad++.\n2. Créer un fichier index.html avec ce code :\n<!DOCTYPE html>\n<html>\n<head>\n<title>Titre de la page</title>\n</head>\n<body>\n<h1>Ma premiere entête</h1>\n<p>Mon premier paragraphe.</p>\n</body>\n</html>\n3. Double-cliquer sur le fichier : le navigateur affiche la page web.\n4. Créer un compte chez un hébergeur gratuit.\n5. Garder les paramètres envoyés par e-mail (nom du serveur, identifiant, mot de passe) : ils serviront à mettre le site en ligne avec un client FTP.",
+      "explication_simple": "Tu passes d'un document HTML (le fichier) à une page web (ce que le navigateur affiche). Pour que d'autres la voient, il faut l'héberger.",
+      "attention": "Les hébergeurs gratuits cités dans le cours (2018) peuvent avoir changé ou disparu : vérifie leur disponibilité."
+    }
+  ]
+}

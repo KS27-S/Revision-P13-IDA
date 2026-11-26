@@ -1,0 +1,272 @@
+{
+  "matiere": "html-css",
+  "module": "mise-en-page",
+  "titre": "La mise en page en HTML",
+  "sources": [
+    "Séquence 8- MISE EN PAGE HTML.pdf",
+    "TP 08 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est la nature de l'élément <div> ?",
+      "choix": [
+        "Un élément de niveau ligne qui affiche une image",
+        "Un élément de niveau bloc qui sert à regrouper d'autres éléments",
+        "Un élément vide",
+        "Un élément de métadonnées"
+      ],
+      "reponse": 1,
+      "explication": "Il n'a aucune signification particulière, mais le navigateur affiche un saut de ligne avant et après.",
+      "id": "htmlcss-s8-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est la nature de l'élément <span> ?",
+      "choix": [
+        "Un élément de niveau ligne utilisable comme conteneur de texte",
+        "Un élément de niveau bloc",
+        "Un élément vide",
+        "Un élément de formulaire"
+      ],
+      "reponse": 0,
+      "explication": "Avec CSS, il permet de définir des styles pour des parties d'un texte.",
+      "id": "htmlcss-s8-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que fait un élément de niveau bloc dans l'affichage ?",
+      "choix": [
+        "Il s'affiche sans nouvelle ligne",
+        "Il disparaît de la page",
+        "Il se place toujours à droite",
+        "Il commence (et termine) avec une nouvelle ligne"
+      ],
+      "reponse": 3,
+      "explication": "Exemples : h1, p, ul, table.",
+      "id": "htmlcss-s8-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Lequel de ces éléments est de niveau ligne ?",
+      "choix": [
+        "<h1>",
+        "<p>",
+        "<a>",
+        "<ul>"
+      ],
+      "reponse": 2,
+      "explication": "Exemples du cours : b, td, a, img. Ils s'affichent sans démarrer une nouvelle ligne.",
+      "id": "htmlcss-s8-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise sémantique HTML5 définit l'en-tête d'un document ou d'une section ?",
+      "choix": [
+        "<top>",
+        "<header>",
+        "<head-bar>",
+        "<title-page>"
+      ],
+      "reponse": 1,
+      "explication": "À ne pas confondre avec <head>, qui contient les métadonnées.",
+      "id": "htmlcss-s8-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise sémantique HTML5 définit un conteneur de liens de navigation ?",
+      "choix": [
+        "<nav>",
+        "<menu-nav>",
+        "<links>",
+        "<aside>"
+      ],
+      "reponse": 0,
+      "explication": "<nav> regroupe les liens de navigation.",
+      "id": "htmlcss-s8-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise sémantique HTML5 définit le pied de page ?",
+      "choix": [
+        "<bottom>",
+        "<end>",
+        "<foot-page>",
+        "<footer>"
+      ],
+      "reponse": 3,
+      "explication": "<footer> définit un pied de page d'un document ou d'une section.",
+      "id": "htmlcss-s8-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que définit <article> ?",
+      "choix": [
+        "Une barre latérale",
+        "Un en-tête",
+        "Un article indépendant",
+        "Un pied de page"
+      ],
+      "reponse": 2,
+      "explication": "<section> définit une section dans un document ; <article> un contenu indépendant, par exemple un article de journal.",
+      "id": "htmlcss-s8-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que définit <aside> ?",
+      "choix": [
+        "Un pied de page",
+        "Un contenu à part dans un contenu, comme une barre latérale",
+        "Un menu de navigation",
+        "Une image de fond"
+      ],
+      "reponse": 1,
+      "explication": "C'est le contenu « à côté ».",
+      "id": "htmlcss-s8-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi servent <details> et <summary> ?",
+      "choix": [
+        "<details> définit des détails supplémentaires ; <summary> en définit l'entête",
+        "<details> définit un tableau ; <summary> une liste",
+        "<details> définit une image ; <summary> son texte alternatif",
+        "Ce sont deux balises de métadonnées"
+      ],
+      "reponse": 0,
+      "explication": "Ensemble, ils permettent d'afficher ou de masquer des détails.",
+      "id": "htmlcss-s8-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les quatre techniques de mise en page en plusieurs colonnes citées ?",
+      "choix": [
+        "div, span, p et h1",
+        "Les iframes, les images, les liens et les listes",
+        "XAMPP, Dreamweaver, Notepad++ et Bootstrap",
+        "Les tableaux HTML, la propriété float, les frameworks CSS et FlexBox"
+      ],
+      "reponse": 3,
+      "explication": "Chaque technique a ses avantages et ses inconvénients.",
+      "id": "htmlcss-s8-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Pourquoi déconseille-t-on la mise en page avec des tableaux ?",
+      "choix": [
+        "Parce qu'ils sont obsolètes depuis HTML5",
+        "Parce qu'ils ne supportent pas les couleurs",
+        "Les tableaux servent à afficher des données tabulaires ; les utiliser pour la mise en page rend le code désordonné et difficile à mettre à jour",
+        "Parce qu'ils ne s'affichent pas dans Firefox"
+      ],
+      "reponse": 2,
+      "explication": "Même si le TP 7 demande un CV en tableau, c'est un exercice : en pratique, on privilégie div + CSS.",
+      "id": "htmlcss-s8-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels frameworks CSS le cours cite-t-il pour créer rapidement des mises en page ?",
+      "choix": [
+        "XAMPP et Apache",
+        "W3.CSS et Bootstrap",
+        "Dreamweaver et Notepad++",
+        "YouTube et Mosaic"
+      ],
+      "reponse": 1,
+      "explication": "Ils permettent de créer rapidement des mises en page.",
+      "id": "htmlcss-s8-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel inconvénient le cours attribue-t-il à la mise en page avec float ?",
+      "choix": [
+        "Les éléments flottants sont liés au flux du document, ce qui peut nuire à la flexibilité",
+        "Elle ne fonctionne qu'avec Internet Explorer",
+        "Elle impose d'utiliser des tableaux",
+        "Elle interdit les images"
+      ],
+      "reponse": 0,
+      "explication": "La propriété float est facile à apprendre : il faut retenir comment float et clear fonctionnent.",
+      "id": "htmlcss-s8-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel est l'avantage et l'inconvénient de FlexBox, selon le cours ?",
+      "choix": [
+        "Il est compatible avec tous les navigateurs ; mais il est très lent",
+        "Il n'a aucun inconvénient",
+        "Il remplace HTML ; mais il est payant",
+        "Les éléments se comportent de façon prévisible selon la taille d'écran ; mais il ne fonctionne pas avec IE10 et antérieurs"
+      ],
+      "reponse": 3,
+      "explication": "FlexBox est un nouveau mode de mise en page de CSS3.",
+      "id": "htmlcss-s8-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que permet le Responsive Web Design ?",
+      "choix": [
+        "Compresser les images pour le téléchargement",
+        "Chiffrer les pages",
+        "Faire paraître une page correctement sur tout type d'appareil en redimensionnant, cachant, rétrécissant, agrandissant ou déplaçant le contenu",
+        "Traduire automatiquement la page"
+      ],
+      "reponse": 2,
+      "explication": "On utilise HTML et CSS pour adapter la page aux PC, tablettes et téléphones.",
+      "id": "htmlcss-s8-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel élément n'a aucune signification particulière et sert à colorer une partie d'un texte ?",
+      "choix": [
+        "<div>",
+        "<span>",
+        "<section>",
+        "<article>"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : <h1>Le <span style=\"color:green\">vert</span> est ma couleur préférée</h1>.",
+      "id": "htmlcss-s8-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le code du TP 8, comment le menu et le contenu s'affichent-ils côte à côte ?",
+      "code": "<div id=\"menu\" style=\"... width:100px; float:left\">…</div>\n<div id=\"content\" style=\"... width:400px; float:left\">…</div>",
+      "choix": [
+        "Les deux blocs ont style=\"float:left\"",
+        "Ils sont dans un tableau",
+        "Ils sont dans une iframe",
+        "Ils utilisent <span>"
+      ],
+      "reponse": 0,
+      "explication": "Le bloc menu (width 100px) et le bloc content (width 400px) flottent tous deux à gauche dans un conteneur de 500px.",
+      "id": "htmlcss-s8-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans le code du TP 8, quelles sont les deux erreurs visibles ?",
+      "choix": [
+        "L'absence du doctype et de l'élément body",
+        "Des guillemets autour des valeurs d'attribut et des id uniques",
+        "L'usage de float et de div",
+        "<b />Menu</b> (au lieu de <b>Menu</b>) et width=\"500px\" en attribut sur le div (au lieu d'un style)"
+      ],
+      "reponse": 3,
+      "explication": "<b /> n'est pas une écriture correcte (b n'est pas un élément vide) et la largeur d'un div se fixe par CSS : style=\"width:500px\".",
+      "id": "htmlcss-s8-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pour que le bloc occupe toute la largeur de l'écran (TP 8, exercice 3), que faut-il changer ?",
+      "choix": [
+        "Ajouter un tableau autour des blocs",
+        "Utiliser <hr> à la place des div",
+        "Remplacer width:500px par width:100% dans les styles des blocs",
+        "Supprimer l'attribut id"
+      ],
+      "reponse": 2,
+      "explication": "Un pourcentage s'adapte à la largeur disponible, contrairement à une taille fixe en pixels.",
+      "id": "htmlcss-s8-20"
+    }
+  ]
+}

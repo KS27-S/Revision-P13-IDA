@@ -1,0 +1,270 @@
+{
+  "matiere": "intro-web",
+  "module": "reseau-internet",
+  "titre": "Réseau informatique et Internet",
+  "sources": [
+    "Séquence 1_Réseau informatique et internet.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un réseau informatique ?",
+      "choix": [
+        "Un seul ordinateur très puissant",
+        "Un ensemble d'éléments informatiques (ordinateur, imprimante, hub, modem…) connectés pour échanger des informations",
+        "Un logiciel de navigation",
+        "Un type de câble électrique"
+      ],
+      "reponse": 1,
+      "explication": "Les éléments du réseau échangent des informations par des connexions physiques ou sans fil.",
+      "id": "web-s1-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment les éléments d'un réseau peuvent-ils être connectés ?",
+      "choix": [
+        "Par une connexion filaire (prise Ethernet) ou par ondes radio (wifi)",
+        "Uniquement par satellite",
+        "Uniquement par câble Ethernet",
+        "Uniquement par Bluetooth"
+      ],
+      "reponse": 0,
+      "explication": "Connexion physique (filaire) ou sans fil (ondes radio, wifi).",
+      "id": "web-s1-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'appelle-t-on un réseau local ?",
+      "choix": [
+        "Le réseau mondial public",
+        "Un réseau réservé aux militaires",
+        "Un site web personnel",
+        "L'installation de périphériques dans un espace défini (maison, entreprise…)"
+      ],
+      "reponse": 3,
+      "explication": "Deux ordinateurs reliés entre eux constituent déjà un mini-réseau.",
+      "id": "web-s1-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Par quel équipement un réseau local peut-il être connecté à un réseau externe comme Internet ?",
+      "choix": [
+        "Une imprimante",
+        "Un clavier",
+        "Un routeur ou une box",
+        "Un écran"
+      ],
+      "reponse": 2,
+      "explication": "C'est le rôle du routeur ou de la box.",
+      "id": "web-s1-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que permet de partager un réseau informatique ?",
+      "choix": [
+        "Uniquement des photos",
+        "Des données, des documents, des applications et des imprimantes",
+        "Uniquement des mots de passe",
+        "Rien : un réseau sert seulement à jouer"
+      ],
+      "reponse": 1,
+      "explication": "Le partage de ressources est l'un des intérêts principaux d'un réseau.",
+      "id": "web-s1-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'Internet ?",
+      "choix": [
+        "Le réseau informatique mondial qui rend accessibles au public des services comme le courrier électronique et le World Wide Web",
+        "Un navigateur web",
+        "Un moteur de recherche",
+        "Un langage de programmation"
+      ],
+      "reponse": 0,
+      "explication": "Internet est un réseau ; le courrier électronique et le Web sont des services (applications) qui fonctionnent dessus.",
+      "id": "web-s1-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment appelle-t-on les utilisateurs d'Internet ?",
+      "choix": [
+        "Les webmasters",
+        "Les hébergeurs",
+        "Les routeurs",
+        "Les internautes"
+      ],
+      "reponse": 3,
+      "explication": "« Internaute » est un néologisme désignant un utilisateur d'Internet.",
+      "id": "web-s1-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Comment Internet se définit-il techniquement ?",
+      "choix": [
+        "Comme un réseau privé d'entreprise",
+        "Comme un ensemble de pages HTML",
+        "Comme le réseau public mondial utilisant le protocole de communication IP",
+        "Comme un réseau utilisant uniquement le wifi"
+      ],
+      "reponse": 2,
+      "explication": "IP = Internet Protocol.",
+      "id": "web-s1-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un intranet ?",
+      "choix": [
+        "Un réseau public mondial",
+        "Un réseau privé au sein d'une entreprise ou d'une administration",
+        "Un moteur de recherche",
+        "Un site web personnel"
+      ],
+      "reponse": 1,
+      "explication": "Du point de vue de la confidentialité, on distingue Internet (public), les intranets (privés) et les extranets.",
+      "id": "web-s1-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle était l'idée de départ du réseau ARPANET, selon le cours ?",
+      "choix": [
+        "Un réseau décentralisé qui continue de fonctionner même si des machines sont détruites",
+        "Un réseau réservé au commerce en ligne",
+        "Un réseau pour partager des jeux vidéo",
+        "Un réseau de télévision"
+      ],
+      "reponse": 0,
+      "explication": "L'US Air Force voulait un réseau de communication pouvant résister à une attaque : d'où un système décentralisé.",
+      "id": "web-s1-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "En quoi consiste la commutation de paquets ?",
+      "choix": [
+        "À fusionner tous les fichiers en un seul",
+        "À chiffrer les messages",
+        "À relier deux ordinateurs par un câble unique",
+        "À diviser les données en paquets, avec un en-tête pour le routage"
+      ],
+      "reponse": 3,
+      "explication": "Le premier réseau de ce type est créé par Donald Davies au Royaume-Uni (années 60).",
+      "id": "web-s1-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que signifie ARPANET ?",
+      "choix": [
+        "Advanced Router Protocol Access Network",
+        "American Radio Program Network",
+        "Advanced Research Projects Agency Network",
+        "Applied Research Protocol Net"
+      ],
+      "reponse": 2,
+      "explication": "Selon le cours, ARPANET est créé par le US Department of Defense et est le premier réseau à utiliser TCP/IP.",
+      "id": "web-s1-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qui a créé TCP/IP, selon le cours ?",
+      "choix": [
+        "Tim Berners-Lee et Ted Nelson",
+        "Robert Kahn et Vint Cerf",
+        "Donald Davies et Vannevar Bush",
+        "Bill Gates et Steve Jobs"
+      ],
+      "reponse": 1,
+      "explication": "Attention : Tim Berners-Lee est le créateur du Web, pas de TCP/IP.",
+      "id": "web-s1-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles applications d'Internet le cours cite-t-il comme les plus populaires ?",
+      "choix": [
+        "Le Web, la messagerie électronique, la messagerie instantanée, le partage de fichiers poste à poste et le transfert de fichiers (FTP)",
+        "Uniquement le Web",
+        "Le traitement de texte et le tableur",
+        "Les jeux vidéo hors ligne"
+      ],
+      "reponse": 0,
+      "explication": "Internet propose plusieurs applications ; le Web n'en est qu'une.",
+      "id": "web-s1-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Le Web et Internet sont-ils la même chose ?",
+      "choix": [
+        "Oui, ce sont deux noms du même réseau",
+        "Non : Internet est une application du Web",
+        "Oui, car Internet n'existait pas avant le Web",
+        "Non : le Web est une application d'Internet, mais le public non averti les confond parfois"
+      ],
+      "reponse": 3,
+      "explication": "Internet a été popularisé par l'apparition du World Wide Web, d'où la confusion.",
+      "id": "web-s1-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quand les premiers fournisseurs d'accès sont-ils apparus, selon le cours ?",
+      "choix": [
+        "Après l'apparition du Web",
+        "Dans les années 2000",
+        "À la fin des années 80, donc avant le Web",
+        "Avant la création d'ARPANET"
+      ],
+      "reponse": 2,
+      "explication": "De plus en plus d'universités étaient connectées : « tout ceci avant le web ».",
+      "id": "web-s1-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Deux entreprises relient leurs intranets en passant par Internet. Comment appelle-t-on cette interconnexion ?",
+      "choix": [
+        "Un réseau local",
+        "Un extranet",
+        "Un routeur",
+        "Un hébergeur"
+      ],
+      "reponse": 1,
+      "explication": "Extranet : interconnexion d'intranets pouvant emprunter Internet.",
+      "id": "web-s1-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "De quel concept le terme « Internet » est-il dérivé ?",
+      "choix": [
+        "Le concept d'internetting (interconnecter des réseaux)",
+        "Le concept de routage",
+        "Le concept d'hypertexte",
+        "Le concept de navigateur"
+      ],
+      "reponse": 0,
+      "explication": "Internet = interconnexion de réseaux.",
+      "id": "web-s1-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Qu'est-ce qui a popularisé Internet auprès du grand public ?",
+      "choix": [
+        "Le protocole FTP",
+        "La messagerie instantanée",
+        "Les routeurs",
+        "Le World Wide Web"
+      ],
+      "reponse": 3,
+      "explication": "Le Web a rendu les médias grand public attentifs à Internet.",
+      "id": "web-s1-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle différence de confidentialité y a-t-il entre Internet et un intranet ?",
+      "choix": [
+        "Internet est privé ; un intranet est public",
+        "Il n'y en a aucune",
+        "Internet est public ; un intranet est un réseau privé",
+        "Internet est local ; un intranet est mondial"
+      ],
+      "reponse": 2,
+      "explication": "Un intranet est réservé à l'organisation qui l'exploite.",
+      "id": "web-s1-20"
+    }
+  ]
+}

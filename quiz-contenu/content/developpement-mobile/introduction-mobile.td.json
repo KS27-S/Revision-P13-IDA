@@ -1,0 +1,808 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "introduction-mobile",
+  "titre": "TD – Introduction au génie logiciel mobile (QCM)",
+  "note": "Les questions reprennent le TD d'origine ; l'ordre des choix est mélangé (dans le document d'origine, la bonne réponse est presque toujours la lettre A).",
+  "exercices": [
+    {
+      "id": "devmob-intro-td-01",
+      "type": "qcm",
+      "numero_original": 1,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel est l'objectif principal de la séquence 1 ?",
+      "choix": [
+        "Apprendre Java",
+        "Introduction au génie logiciel mobile",
+        "Créer un site web",
+        "Administration réseau"
+      ],
+      "reponse": 1,
+      "explication": "La séquence présente l'état de l'art des applications mobiles, leurs spécificités, les technologies et les tendances."
+    },
+    {
+      "id": "devmob-intro-td-02",
+      "type": "qcm",
+      "numero_original": 2,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Combien de terminaux mobiles ont été vendus fin 2014 ?",
+      "choix": [
+        "6,9 milliards",
+        "1,76 milliards",
+        "12,63 millions",
+        "395 millions"
+      ],
+      "reponse": 0,
+      "explication": "6,9 milliards de terminaux. Attention : 1,76 milliard, c'est le nombre d'utilisateurs de smartphones."
+    },
+    {
+      "id": "devmob-intro-td-03",
+      "type": "qcm",
+      "numero_original": 3,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel taux de couverture de la population mondiale les mobiles atteignent-ils ?",
+      "choix": [
+        "75 %",
+        "85 %",
+        "100 %",
+        "95 %"
+      ],
+      "reponse": 3,
+      "explication": "Environ 95 % de la population mondiale."
+    },
+    {
+      "id": "devmob-intro-td-04",
+      "type": "qcm",
+      "numero_original": 4,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Combien d'utilisateurs de smartphones en 2014 ?",
+      "choix": [
+        "6,9 milliards",
+        "395 millions",
+        "1,76 milliard",
+        "12,63 millions"
+      ],
+      "reponse": 2,
+      "explication": "1,76 milliard d'utilisateurs de smartphones."
+    },
+    {
+      "id": "devmob-intro-td-05",
+      "type": "qcm",
+      "numero_original": 5,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle est l'augmentation du nombre d'utilisateurs de smartphones par rapport à 2013 ?",
+      "choix": [
+        "12 %",
+        "23 %",
+        "48 %",
+        "115 %"
+      ],
+      "reponse": 1,
+      "explication": "+23 %. Les 48 % correspondent à l'augmentation des données transférées."
+    },
+    {
+      "id": "devmob-intro-td-06",
+      "type": "qcm",
+      "numero_original": 6,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Combien de Go de données ont été transférées ?",
+      "choix": [
+        "395 millions",
+        "1,76 milliard",
+        "6,9 milliards",
+        "12,63 millions"
+      ],
+      "reponse": 0,
+      "explication": "395 millions de Go, soit +48 % par rapport à 2013."
+    },
+    {
+      "id": "devmob-intro-td-07",
+      "type": "qcm",
+      "numero_original": 7,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "En Tunisie, combien de cartes SIM ont été vendues ?",
+      "choix": [
+        "1,76 million",
+        "115 millions",
+        "395 millions",
+        "12,63 millions"
+      ],
+      "reponse": 3,
+      "explication": "Plus de 12,63 millions de cartes SIM."
+    },
+    {
+      "id": "devmob-intro-td-08",
+      "type": "qcm",
+      "numero_original": 8,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel est le taux de pénétration des cartes SIM en Tunisie ?",
+      "choix": [
+        "95 %",
+        "12 %",
+        "115 %",
+        "23 %"
+      ],
+      "reponse": 2,
+      "explication": "115 % : il y a plus de cartes SIM que d'habitants."
+    },
+    {
+      "id": "devmob-intro-td-09",
+      "type": "qcm",
+      "numero_original": 9,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel pourcentage des Tunisiens abonnés à la téléphonie mobile ont des smartphones ?",
+      "choix": [
+        "23 %",
+        "12 %",
+        "48 %",
+        "95 %"
+      ],
+      "reponse": 1,
+      "explication": "Seulement 12 % des abonnés."
+    },
+    {
+      "id": "devmob-intro-td-10",
+      "type": "qcm",
+      "numero_original": 10,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "En quelle année Motorola a-t-il lancé le téléphone portable ?",
+      "choix": [
+        "1983",
+        "1990",
+        "2001",
+        "2005"
+      ],
+      "reponse": 0,
+      "explication": "Le téléphone portable date de 1983 (Motorola)."
+    },
+    {
+      "id": "devmob-intro-td-11",
+      "type": "qcm",
+      "numero_original": 11,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quand sont apparus les assistants numériques personnels (PDA) ?",
+      "choix": [
+        "1983",
+        "2001",
+        "2005",
+        "1990"
+      ],
+      "reponse": 3,
+      "explication": "Les PDA datent de 1990 : agenda, carnet d'adresses, bloc-notes, synchronisation avec un PC."
+    },
+    {
+      "id": "devmob-intro-td-12",
+      "type": "qcm",
+      "numero_original": 12,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Un smartphone est la combinaison de :",
+      "choix": [
+        "Ordinateur + PDA",
+        "Téléphone + console",
+        "Téléphone portable + PDA",
+        "PDA + GPS"
+      ],
+      "reponse": 2,
+      "explication": "Smartphone = téléphone portable + PDA."
+    },
+    {
+      "id": "devmob-intro-td-13",
+      "type": "qcm",
+      "numero_original": 13,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "En quelle année le premier smartphone a-t-il été lancé par Sagem ?",
+      "choix": [
+        "1983",
+        "2001",
+        "1990",
+        "2005"
+      ],
+      "reponse": 1,
+      "explication": "2001. (Le TD écrit « Saqem » : c'est une faute de frappe pour Sagem.)"
+    },
+    {
+      "id": "devmob-intro-td-14",
+      "type": "qcm",
+      "numero_original": 14,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel événement a marqué l'essor des smartphones en 2005 ?",
+      "choix": [
+        "Sortie de l'iPhone et rachat d'Android par Google",
+        "Sortie de Symbian",
+        "Lancement de Blackberry",
+        "Création de Windows Mobile"
+      ],
+      "reponse": 0,
+      "explication": "C'est ce que dit le cours."
+    },
+    {
+      "id": "devmob-intro-td-15",
+      "type": "qcm",
+      "numero_original": 15,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel est un ancien système d'exploitation mobile de Nokia ?",
+      "choix": [
+        "iOS",
+        "Android",
+        "Windows Phone 7",
+        "Symbian"
+      ],
+      "reponse": 3,
+      "explication": "Symbian est de Nokia, de l'ancienne génération."
+    },
+    {
+      "id": "devmob-intro-td-16",
+      "type": "qcm",
+      "numero_original": 16,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Blackberry OS appartient à :",
+      "choix": [
+        "Nokia",
+        "Microsoft",
+        "RIM",
+        "Samsung"
+      ],
+      "reponse": 2,
+      "explication": "Blackberry OS est de RIM."
+    },
+    {
+      "id": "devmob-intro-td-17",
+      "type": "qcm",
+      "numero_original": 17,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Bada est un OS mobile de :",
+      "choix": [
+        "Apple",
+        "Samsung",
+        "Google",
+        "RIM"
+      ],
+      "reponse": 1,
+      "explication": "Bada est de Samsung."
+    },
+    {
+      "id": "devmob-intro-td-18",
+      "type": "qcm",
+      "numero_original": 18,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel OS tactile est développé par Apple ?",
+      "choix": [
+        "iOS",
+        "Android",
+        "Windows Phone 7",
+        "Symbian"
+      ],
+      "reponse": 0,
+      "explication": "iOS est l'OS tactile d'Apple."
+    },
+    {
+      "id": "devmob-intro-td-19",
+      "type": "qcm",
+      "numero_original": 19,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel OS mobile est développé par Google ?",
+      "choix": [
+        "iOS",
+        "Bada",
+        "Blackberry OS",
+        "Android"
+      ],
+      "reponse": 3,
+      "explication": "Android est développé par Google."
+    },
+    {
+      "id": "devmob-intro-td-20",
+      "type": "qcm",
+      "numero_original": 20,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "D'après le graphique, quel OS avait la plus grande part de marché en 2016 ?",
+      "choix": [
+        "iOS",
+        "Microsoft",
+        "Android",
+        "Symbian"
+      ],
+      "reponse": 2,
+      "explication": "Android domine avec environ 84,8 %."
+    },
+    {
+      "id": "devmob-intro-td-21",
+      "type": "qcm",
+      "numero_original": 21,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle tendance observe-t-on pour Symbian entre 2009 et 2016 ?",
+      "choix": [
+        "Augmentation",
+        "Forte diminution",
+        "Stabilité",
+        "Disparition puis retour"
+      ],
+      "reponse": 1,
+      "explication": "Symbian passe d'environ 47 % en 2009 à presque rien en 2016."
+    },
+    {
+      "id": "devmob-intro-td-22",
+      "type": "qcm",
+      "numero_original": 22,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle contrainte matérielle est citée pour les smartphones ?",
+      "choix": [
+        "Processeur lent (et mémoire limitée)",
+        "Mémoire illimitée",
+        "Écran holographique",
+        "Batterie infinie"
+      ],
+      "reponse": 0,
+      "explication": "Mémoire limitée et processeur lent : il faut éviter les traitements complexes."
+    },
+    {
+      "id": "devmob-intro-td-23",
+      "type": "qcm",
+      "numero_original": 23,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle capacité de RAM les hauts de gamme atteignent-ils selon le cours ?",
+      "choix": [
+        "512 Mo",
+        "1 Go",
+        "8 Go",
+        "3 Go (4 Go prévus pour 2015)"
+      ],
+      "reponse": 3,
+      "explication": "3 Go, avec 4 Go prévus pour 2015."
+    },
+    {
+      "id": "devmob-intro-td-24",
+      "type": "qcm",
+      "numero_original": 24,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle solution est conseillée pour le stockage limité ?",
+      "choix": [
+        "Augmenter la RAM",
+        "Changer de processeur",
+        "Le stockage sur le cloud",
+        "Utiliser des disquettes"
+      ],
+      "reponse": 2,
+      "explication": "S'orienter vers le stockage sur le cloud."
+    },
+    {
+      "id": "devmob-intro-td-25",
+      "type": "qcm",
+      "numero_original": 25,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Pour l'autonomie, il faut éviter :",
+      "choix": [
+        "Les applications légères",
+        "Les applications gourmandes en énergie",
+        "Le mode avion",
+        "Les écrans OLED"
+      ],
+      "reponse": 1,
+      "explication": "Exemple du cours : la caméra vidéo, nécessaire pour la réalité augmentée."
+    },
+    {
+      "id": "devmob-intro-td-26",
+      "type": "qcm",
+      "numero_original": 26,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle approche est recommandée pour les tailles d'écran variables ?",
+      "choix": [
+        "Le responsive design",
+        "Une taille fixe",
+        "Uniquement les tablettes",
+        "Ignorer l'écran"
+      ],
+      "reponse": 0,
+      "explication": "Le responsive design s'adapte à la taille de l'écran."
+    },
+    {
+      "id": "devmob-intro-td-27",
+      "type": "qcm",
+      "numero_original": 27,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle bonne pratique IHM est citée pour faciliter la navigation ?",
+      "choix": [
+        "Beaucoup de texte",
+        "Des menus cachés",
+        "Aucun bouton",
+        "Un header fixe et des icônes"
+      ],
+      "reponse": 3,
+      "explication": "Un header fixe et des icônes à la place des mots."
+    },
+    {
+      "id": "devmob-intro-td-28",
+      "type": "qcm",
+      "numero_original": 28,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Qu'est-ce que le « FAT FINGER » ?",
+      "choix": [
+        "Un virus",
+        "Un type d'écran",
+        "Un clic invalide dû à l'utilisation des doigts",
+        "Une méthode de saisie"
+      ],
+      "reponse": 2,
+      "explication": "Les doigts sont gros par rapport aux éléments cliquables : attention à leur taille et à leur proximité."
+    },
+    {
+      "id": "devmob-intro-td-29",
+      "type": "qcm",
+      "numero_original": 29,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Que faut-il favoriser pour limiter les erreurs de frappe ?",
+      "choix": [
+        "Plus de champs texte",
+        "Les champs préremplis et l'auto-complétion",
+        "Un clavier physique",
+        "La saisie vocale uniquement"
+      ],
+      "reponse": 1,
+      "explication": "Minimiser les champs de texte, favoriser les champs préremplis, l'auto-complétion et la correction d'orthographe."
+    },
+    {
+      "id": "devmob-intro-td-30",
+      "type": "qcm",
+      "numero_original": 30,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle fonctionnalité est recommandée un peu partout ?",
+      "choix": [
+        "Annuler",
+        "Supprimer",
+        "Recharger",
+        "Partager"
+      ],
+      "reponse": 0,
+      "explication": "Penser à une fonction « Annuler » disponible un peu partout."
+    },
+    {
+      "id": "devmob-intro-td-31",
+      "type": "qcm",
+      "numero_original": 31,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "L'absence de quel effet est une contrainte mobile ?",
+      "choix": [
+        "Le clic",
+        "Le scroll",
+        "Le zoom",
+        "Le survol (hover)"
+      ],
+      "reponse": 3,
+      "explication": "Pas de survol sur écran tactile : il faut plus de liens et de boutons."
+    },
+    {
+      "id": "devmob-intro-td-32",
+      "type": "qcm",
+      "numero_original": 32,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelles conventions de conception mobile sont citées ?",
+      "choix": [
+        "Double clic et clic droit",
+        "Ctrl+C et Ctrl+V",
+        "Swipe et shake",
+        "Hover et drag"
+      ],
+      "reponse": 2,
+      "explication": "Balayer l'écran (swipe) et secouer le téléphone (shake)."
+    },
+    {
+      "id": "devmob-intro-td-33",
+      "type": "qcm",
+      "numero_original": 33,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "L'UX est définie comme :",
+      "choix": [
+        "Un langage de programmation",
+        "Le comportement, l'attitude et les émotions de l'utilisateur face à un produit",
+        "Un système d'exploitation",
+        "Une base de données"
+      ],
+      "reponse": 1,
+      "explication": "L'UX inclut les aspects pratiques, expérimentaux et affectifs de l'interaction homme-machine."
+    },
+    {
+      "id": "devmob-intro-td-34",
+      "type": "qcm",
+      "numero_original": 34,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "L'UX concerne :",
+      "choix": [
+        "L'utilité, la facilité d'utilisation et l'efficacité",
+        "La vitesse du processeur",
+        "La taille de la RAM",
+        "Le prix de l'appareil"
+      ],
+      "reponse": 0,
+      "explication": "Ce sont les trois aspects cités."
+    },
+    {
+      "id": "devmob-intro-td-35",
+      "type": "qcm",
+      "numero_original": 35,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "L'UX est une notion :",
+      "choix": [
+        "Objective et figée",
+        "Uniquement technique",
+        "Uniquement financière",
+        "Subjective et dynamique"
+      ],
+      "reponse": 3,
+      "explication": "Subjective (dépend de la personne) et dynamique (évolue avec les usages)."
+    },
+    {
+      "id": "devmob-intro-td-36",
+      "type": "qcm",
+      "numero_original": 36,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Dans quelles situations utilise-t-on smartphones et tablettes selon les icônes ?",
+      "choix": [
+        "Uniquement au travail",
+        "Uniquement à la maison",
+        "Salle de bain, lit, bus, courses, stade, etc.",
+        "Uniquement en voiture"
+      ],
+      "reponse": 2,
+      "explication": "La réponse attendue est la plus large : on utilise son mobile dans de très nombreuses situations."
+    },
+    {
+      "id": "devmob-intro-td-37",
+      "type": "qcm",
+      "numero_original": 37,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle est une spécificité de la monétisation mobile ?",
+      "choix": [
+        "Uniquement la vente en magasin physique",
+        "La vente via les plateformes de téléchargement",
+        "Il est impossible de monétiser",
+        "Uniquement par abonnement TV"
+      ],
+      "reponse": 1,
+      "explication": "App Store, Google Play… mais ce n'est pas la seule manière de monétiser."
+    },
+    {
+      "id": "devmob-intro-td-38",
+      "type": "qcm",
+      "numero_original": 38,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel est un moyen de monétisation classique ?",
+      "choix": [
+        "L'application payante",
+        "La publicité sauvage",
+        "La vente de matériel",
+        "La location d'appareil"
+      ],
+      "reponse": 0,
+      "explication": "L'application payante est le moyen classique."
+    },
+    {
+      "id": "devmob-intro-td-39",
+      "type": "qcm",
+      "numero_original": 39,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel problème peut poser la version d'essai ?",
+      "choix": [
+        "Trop de revenus",
+        "Trop facile à développer",
+        "Aucun problème",
+        "La maintenabilité pour les développeurs"
+      ],
+      "reponse": 3,
+      "explication": "Il faut maintenir deux versions. Elle est bien adaptée aux jeux."
+    },
+    {
+      "id": "devmob-intro-td-40",
+      "type": "qcm",
+      "numero_original": 40,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "La publicité mobile rémunère généralement :",
+      "choix": [
+        "À l'installation",
+        "Au temps passé",
+        "Au clic",
+        "À la data"
+      ],
+      "reponse": 2,
+      "explication": "Rémunération au clic, donc revenu difficile à estimer."
+    },
+    {
+      "id": "devmob-intro-td-41",
+      "type": "qcm",
+      "numero_original": 41,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel inconvénient de la publicité est cité ?",
+      "choix": [
+        "Elle améliore toujours l'UX",
+        "Elle peut altérer l'UX",
+        "Elle réduit la taille de l'écran",
+        "Elle augmente la RAM"
+      ],
+      "reponse": 1,
+      "explication": "Lenteur, appui par erreur… La publicité doit être bien ciblée."
+    },
+    {
+      "id": "devmob-intro-td-42",
+      "type": "qcm",
+      "numero_original": 42,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Le sponsoring incite l'utilisateur à :",
+      "choix": [
+        "Effectuer une action en échange d'un bien virtuel",
+        "Acheter un téléphone",
+        "Désinstaller l'application",
+        "Payer une amende"
+      ],
+      "reponse": 0,
+      "explication": "Bien adapté aux jeux."
+    },
+    {
+      "id": "devmob-intro-td-43",
+      "type": "qcm",
+      "numero_original": 43,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Le freemium propose :",
+      "choix": [
+        "Uniquement des applications payantes",
+        "Uniquement des publicités",
+        "Des téléphones gratuits",
+        "Du contenu virtuel contre de l'argent"
+      ],
+      "reponse": 3,
+      "explication": "Achats intégrés dans une application payante ou gratuite."
+    },
+    {
+      "id": "devmob-intro-td-44",
+      "type": "qcm",
+      "numero_original": 44,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Chez Apple, l'achat intégré s'appelle :",
+      "choix": [
+        "In-app billing",
+        "Google Play",
+        "In-app purchase",
+        "App Store"
+      ],
+      "reponse": 2,
+      "explication": "Apple : in-app purchase."
+    },
+    {
+      "id": "devmob-intro-td-45",
+      "type": "qcm",
+      "numero_original": 45,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Chez Google, la facturation intégrée s'appelle :",
+      "choix": [
+        "In-app purchase",
+        "In-app billing",
+        "Apple Pay",
+        "PayPal"
+      ],
+      "reponse": 1,
+      "explication": "Google : in-app billing."
+    },
+    {
+      "id": "devmob-intro-td-46",
+      "type": "qcm",
+      "numero_original": 46,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Une application native est écrite :",
+      "choix": [
+        "Dans un langage spécifique à une plateforme",
+        "Uniquement en HTML",
+        "Uniquement en CSS",
+        "En langage naturel"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : Objective C pour iOS, Java pour Android."
+    },
+    {
+      "id": "devmob-intro-td-47",
+      "type": "qcm",
+      "numero_original": 47,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel langage est associé à iOS pour les applications natives ?",
+      "choix": [
+        "Java",
+        "Python",
+        "Ruby",
+        "Objective C"
+      ],
+      "reponse": 3,
+      "explication": "Objective C pour iOS (selon le cours)."
+    },
+    {
+      "id": "devmob-intro-td-48",
+      "type": "qcm",
+      "numero_original": 48,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel langage est associé à Android pour les applications natives ?",
+      "choix": [
+        "Objective C",
+        "Swift",
+        "Java",
+        "C#"
+      ],
+      "reponse": 2,
+      "explication": "Java pour Android (selon le cours)."
+    },
+    {
+      "id": "devmob-intro-td-49",
+      "type": "qcm",
+      "numero_original": 49,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quel avantage ont les applications natives ?",
+      "choix": [
+        "Elles sont moins chères à développer",
+        "Une performance accrue et l'accès aux fonctionnalités du téléphone",
+        "Leur code est portable entre plateformes",
+        "Elles n'ont pas besoin de store"
+      ],
+      "reponse": 1,
+      "explication": "Performance, fiabilité, accès à la caméra, aux contacts, utilisables sans connexion. Mais plus chères à développer."
+    },
+    {
+      "id": "devmob-intro-td-50",
+      "type": "qcm",
+      "numero_original": 50,
+      "source": "TD-Chapitre 1.pdf (QCM)",
+      "statut_corrige": "corrigé établi à partir du cours (le TD ne fournit pas de corrigé)",
+      "enonce": "Quelle tendance Gartner concerne les objets connectés en 2020 ?",
+      "choix": [
+        "L'Internet of Things",
+        "LTE",
+        "HTML5",
+        "Monitoring"
+      ],
+      "reponse": 0,
+      "explication": "Internet of Things : en 2020, on vivra autour d'objets connectés."
+    }
+  ]
+}

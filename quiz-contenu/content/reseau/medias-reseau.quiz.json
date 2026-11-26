@@ -1,0 +1,272 @@
+{
+  "matiere": "reseau",
+  "module": "medias-reseau",
+  "titre": "Les médias réseau : cuivre, fibre optique, sans fil et Packet Tracer",
+  "sources": [
+    "Chapitre4-IntroductionAuxReseaux.pdf (diapos en images, lues par OCR)",
+    "PriseEnMainPacketTracer.pdf",
+    "Travaux-Pratiques4"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quels matériaux laissent circuler les électrons facilement, et lesquels difficilement ?",
+      "choix": [
+        "Isolants facilement ; conducteurs difficilement",
+        "Conducteurs (cuivre, argent, or) facilement ; isolants (plastique, caoutchouc, verre) difficilement",
+        "Tous les matériaux de la même façon",
+        "Seulement l'eau et l'air"
+      ],
+      "reponse": 1,
+      "explication": "Les semi-conducteurs (carbone, silicium, germanium) permettent de contrôler précisément le flux d'électrons.",
+      "id": "reseau-s4-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Dans quelle unité le courant électrique est-il mesuré ?",
+      "choix": [
+        "En ampères (A)",
+        "En volts (V)",
+        "En ohms",
+        "En watts"
+      ],
+      "reponse": 0,
+      "explication": "Le courant électrique est représenté par le symbole I.",
+      "id": "reseau-s4-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Dans l'analogie avec l'eau, à quoi correspond la tension ?",
+      "choix": [
+        "Au débit d'eau",
+        "Au robinet",
+        "À la pompe",
+        "À la hauteur d'eau"
+      ],
+      "reponse": 3,
+      "explication": "Hauteur d'eau = tension ; tuyau = fil ; robinet = résistance ; débit d'eau = courant ; pompe = batterie.",
+      "id": "reseau-s4-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie 10BaseT ?",
+      "choix": [
+        "10 Gbits/s, large bande, câble coaxial",
+        "10 mètres, bande passante, fibre",
+        "10 Mbits/s, transmission en bande de base, câble à paires torsadées",
+        "10 ports, base de données, tunnel"
+      ],
+      "reponse": 2,
+      "explication": "BASE = bande de base ; Broad = large bande. Le « T » indique le type de câble.",
+      "id": "reseau-s4-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est la longueur maximale d'un segment de câble coaxial indiquée dans le cours ?",
+      "choix": [
+        "100 m",
+        "500 m",
+        "10 m",
+        "2 km"
+      ],
+      "reponse": 1,
+      "explication": "Câble coaxial : 10 à 100 Mbits/s, économique, connecteur BNC.",
+      "id": "reseau-s4-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle est la longueur maximale d'un câble UTP (paires torsadées non blindées) ?",
+      "choix": [
+        "100 m",
+        "500 m",
+        "10 m",
+        "1 km"
+      ],
+      "reponse": 0,
+      "explication": "L'UTP est le type de câble le moins onéreux et ses connecteurs sont de petite taille.",
+      "id": "reseau-s4-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce que Cisco Packet Tracer ?",
+      "choix": [
+        "Un navigateur web",
+        "Un système d'exploitation",
+        "Un langage de programmation",
+        "Un logiciel de simulation de réseaux, avec lequel on place du matériel, on le câble et on teste les échanges"
+      ],
+      "reponse": 3,
+      "explication": "Le guide de prise en main décrit l'écran principal, le placement du matériel et des connexions, et la simulation.",
+      "id": "reseau-s4-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les caractéristiques du câble à paires torsadées blindées (STP) ?",
+      "choix": [
+        "Débit de 10 Gbits/s, coût très élevé, 10 m maximum",
+        "Débit de 1 kbit/s, gratuit, 1 km maximum",
+        "Débit jusqu'à 100 Mbits/s, coût modéré, connecteur de taille moyenne à grande, 100 m maximum",
+        "Il n'a aucun blindage"
+      ],
+      "reponse": 2,
+      "explication": "Le STP comporte un blindage tressé et une feuille métallique autour des paires.",
+      "id": "reseau-s4-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quelles vitesses un câble UTP peut-il fonctionner ?",
+      "choix": [
+        "Uniquement 1 Mbit/s",
+        "10, 100 ou 1000 Mbits/s, selon la qualité (catégorie) du câble",
+        "Uniquement 10 Gbits/s",
+        "Toujours 100 Mbits/s"
+      ],
+      "reponse": 1,
+      "explication": "Comparaison : coaxial 10 à 100 Mbits/s ; STP et ScTP 0 à 100 Mbits/s.",
+      "id": "reseau-s4-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert un câble droit ?",
+      "choix": [
+        "À relier des équipements différents, par exemple un PC à un commutateur : les extrémités ont le même brochage",
+        "À relier deux PC directement",
+        "À relier deux commutateurs",
+        "À configurer un routeur"
+      ],
+      "reponse": 0,
+      "explication": "Les extrémités des fils du câble sont dans le même ordre.",
+      "id": "reseau-s4-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Combien de fils sont actifs dans un câble Ethernet 10BaseT ou 100BaseTX, et lesquels ?",
+      "choix": [
+        "Huit : toutes les broches",
+        "Deux : les broches 1 et 2",
+        "Six : les broches 1 à 6",
+        "Quatre : les broches 1, 2, 3 et 6"
+      ],
+      "reponse": 3,
+      "explication": "Ces quatre fils forment deux paires : une pour émettre, une pour recevoir.",
+      "id": "reseau-s4-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels paramètres de port COM utilise-t-on pour une connexion à la console d'un équipement ?",
+      "choix": [
+        "115 200 bits/s, 7 bits, parité paire, 2 bits d'arrêt",
+        "1 200 bits/s, 8 bits, avec parité, sans bit d'arrêt",
+        "9 600 bits/s, 8 bits de données, sans parité, 1 bit d'arrêt, sans contrôle de flux",
+        "9 600 bits/s, 16 bits de données, avec contrôle de flux"
+      ],
+      "reponse": 2,
+      "explication": "Le câble console (RJ-45 vers RJ-45, avec adaptateur RJ-45 vers DB-9) fournit un accès hors bande à la console.",
+      "id": "reseau-s4-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles sont les tailles de cœur des fibres monomode et multimode ?",
+      "choix": [
+        "Monomode : 50 microns ; multimode : 8 microns",
+        "Monomode : environ 8,3 à 10 microns ; multimode : 50 ou 62,5 microns",
+        "Les deux : 125 mètres",
+        "Monomode : 1 mm ; multimode : 1 cm"
+      ],
+      "reponse": 1,
+      "explication": "L'enveloppe de verre fait 125 microns de diamètre dans les deux cas.",
+      "id": "reseau-s4-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels connecteurs de fibre optique le cours présente-t-il ?",
+      "choix": [
+        "Les connecteurs ST et SC",
+        "BNC et AUI uniquement",
+        "RJ-11 et DB-9 uniquement",
+        "USB et FireWire"
+      ],
+      "reponse": 0,
+      "explication": "BNC est un connecteur de câble coaxial ; RJ-45 un connecteur de paires torsadées.",
+      "id": "reseau-s4-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle différence y a-t-il entre fibre monomode et fibre multimode ?",
+      "choix": [
+        "La monomode a plusieurs chemins et plus de dispersion",
+        "Il n'y a aucune différence",
+        "La monomode est en cuivre",
+        "La monomode a un cœur plus petit, un seul chemin direct et moins de dispersion ; la multimode a un cœur plus large avec plusieurs chemins"
+      ],
+      "reponse": 3,
+      "explication": "La dispersion plus forte de la multimode entraîne un plus grand affaiblissement du signal.",
+      "id": "reseau-s4-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels éléments servent d'émetteur et de récepteur de lumière sur une liaison optique ?",
+      "choix": [
+        "Émetteur : photodiode PIN ; récepteur : LASER",
+        "Émetteur : modem ; récepteur : routeur",
+        "Émetteur : LASER ou LED ; récepteur : photodiode PIN",
+        "Émetteur : haut-parleur ; récepteur : micro"
+      ],
+      "reponse": 2,
+      "explication": "La lumière est confinée dans un guide d'ondes (la fibre) et convertie en signal électrique à l'arrivée.",
+      "id": "reseau-s4-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles normes de LAN sans fil le cours cite-t-il ?",
+      "choix": [
+        "802.3, 802.3u et 802.3z",
+        "802.11, 802.11a, 802.11b et 802.11g",
+        "802.1, 802.2 et 802.5",
+        "802.20 et 802.40"
+      ],
+      "reponse": 1,
+      "explication": "802.3, 802.3u et 802.3z sont les normes Ethernet filaires.",
+      "id": "reseau-s4-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait un point d'accès, et que signifie le roaming ?",
+      "choix": [
+        "Il relie les clients sans fil au backbone Ethernet ; le roaming permet de passer d'un point d'accès à un autre en se déplaçant",
+        "Il chiffre les câbles ; le roaming est un virus",
+        "Il remplace le routeur ; le roaming est une mise à jour",
+        "Il alimente les PC ; le roaming est une carte"
+      ],
+      "reponse": 0,
+      "explication": "La sécurité d'un LAN sans fil repose sur l'authentification de l'utilisateur, le cryptage et l'authentification des données (EAP-MD5, LEAP).",
+      "id": "reseau-s4-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel outil de Packet Tracer permet de faire rapidement un ping entre deux ordinateurs ?",
+      "choix": [
+        "Set Background",
+        "New City",
+        "Edit Filter",
+        "Add Simple PDU : le ping utilise ICMP (message n°8, demande d'écho)"
+      ],
+      "reponse": 3,
+      "explication": "On sélectionne l'outil, on clique sur l'ordinateur émetteur puis sur le destinataire : une fenêtre indique la réussite (Successful) ou l'échec (Failed).",
+      "id": "reseau-s4-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que signifient les points de couleur (rouge, orange ou vert) aux extrémités d'une connexion dans Packet Tracer ?",
+      "choix": [
+        "Le type de câble utilisé",
+        "La vitesse du processeur",
+        "Ils informent de l'état de la liaison",
+        "Le nom de l'utilisateur"
+      ],
+      "reponse": 2,
+      "explication": "Le guide indique aussi qu'on peut renommer les éléments en double-cliquant sur leur nom et annoter le schéma avec l'outil Note.",
+      "id": "reseau-s4-20"
+    }
+  ]
+}

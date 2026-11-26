@@ -1,0 +1,271 @@
+{
+  "matiere": "reseau",
+  "module": "presentation-reseaux",
+  "titre": "Présentation des réseaux : connexion à Internet",
+  "sources": [
+    "Chapitre1-IntroductionAuxReseaux.pdf",
+    "Travaux-Pratiques1-IntroductionAuxReseaux.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quels trois éléments comprend une connexion à Internet ?",
+      "choix": [
+        "Le routeur, le serveur et le navigateur",
+        "La connexion physique, la connexion logique et les applications",
+        "Le clavier, l'écran et la souris",
+        "Le modem, le câble et la prise"
+      ],
+      "reponse": 1,
+      "explication": "La connexion physique relie le PC au réseau ; la connexion logique utilise des protocoles ; les applications interprètent et affichent les données.",
+      "id": "reseau-s1-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert la connexion physique ?",
+      "choix": [
+        "À relier une carte d'interface du PC (modem ou carte réseau) à un réseau pour transférer les signaux",
+        "À définir les règles de communication",
+        "À afficher les pages web",
+        "À traduire les noms de domaine"
+      ],
+      "reponse": 0,
+      "explication": "La connexion physique assure le transfert des signaux entre les PC d'un réseau local et les équipements distants.",
+      "id": "reseau-s1-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'un protocole ?",
+      "choix": [
+        "Un câble de cuivre",
+        "Un type de carte réseau",
+        "Un navigateur",
+        "Un ensemble formel de règles et de conventions régissant la communication entre unités réseau"
+      ],
+      "reponse": 3,
+      "explication": "La connexion logique utilise des normes appelées protocoles.",
+      "id": "reseau-s1-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quels protocoles sont les plus largement utilisés pour les connexions à Internet ?",
+      "choix": [
+        "FTP uniquement",
+        "HTML",
+        "TCP/IP",
+        "ICMP uniquement"
+      ],
+      "reponse": 2,
+      "explication": "TCP/IP (Transmission Control Protocol / Internet Protocol) forme un ensemble de protocoles qui assurent conjointement la transmission des données.",
+      "id": "reseau-s1-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert le protocole FTP ?",
+      "choix": [
+        "À afficher le code HTML",
+        "À télécharger des fichiers et des programmes à partir d'Internet",
+        "À tester la connexion",
+        "À envoyer du courrier"
+      ],
+      "reponse": 1,
+      "explication": "FTP = File Transfer Protocol.",
+      "id": "reseau-s1-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Qu'est-ce qu'une carte réseau ?",
+      "choix": [
+        "Une carte d'extension installée dans un ordinateur pour le connecter à un réseau",
+        "Un type de mémoire",
+        "Un logiciel de navigation",
+        "Un câble"
+      ],
+      "reponse": 0,
+      "explication": "Elle est aussi appelée adaptateur réseau. Tout équipement d'un réseau doit en avoir une.",
+      "id": "reseau-s1-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert un modem ?",
+      "choix": [
+        "À stocker des données",
+        "À afficher des vidéos",
+        "À alimenter l'ordinateur",
+        "À relier l'ordinateur à une ligne téléphonique (modulateur-démodulateur)"
+      ],
+      "reponse": 3,
+      "explication": "Modem : modulateur-démodulateur.",
+      "id": "reseau-s1-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait un modem avec les signaux ?",
+      "choix": [
+        "Il chiffre les signaux",
+        "Il compresse les signaux",
+        "Il convertit les signaux numériques en signaux analogiques pour la ligne téléphonique, et inversement à la réception",
+        "Il ne fait que les amplifier"
+      ],
+      "reponse": 2,
+      "explication": "Le modem de l'ordinateur récepteur démodule les signaux, c'est-à-dire les retransforme en données numériques.",
+      "id": "reseau-s1-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel est le rôle du processeur ?",
+      "choix": [
+        "Il stocke les données de façon permanente",
+        "C'est l'unité de contrôle et de calcul : il interprète et exécute les instructions et effectue les opérations logiques et mathématiques",
+        "Il affiche les images",
+        "Il alimente la carte mère"
+      ],
+      "reponse": 1,
+      "explication": "Le microprocesseur est un processeur de très petite taille, fixé sur une puce de silicium.",
+      "id": "reseau-s1-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre la RAM et la ROM ?",
+      "choix": [
+        "La RAM perd ses données à la mise hors tension ; la ROM contient des données pré-enregistrées accessibles en lecture seule",
+        "La RAM est en lecture seule ; la ROM perd ses données",
+        "Aucune",
+        "La RAM est un disque ; la ROM est un écran"
+      ],
+      "reponse": 0,
+      "explication": "La RAM permet l'enregistrement de nouvelles données et la lecture des données stockées.",
+      "id": "reseau-s1-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce que la carte mère ?",
+      "choix": [
+        "Une carte réseau externe",
+        "Un type de disque dur",
+        "Un connecteur USB",
+        "La principale carte de circuits imprimés d'un ordinateur : elle contient le bus, le microprocesseur et les circuits de contrôle des périphériques"
+      ],
+      "reponse": 3,
+      "explication": "Le fond de panier est généralement synonyme de la carte mère.",
+      "id": "reseau-s1-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce que le bus ?",
+      "choix": [
+        "Un câble réseau externe",
+        "Un logiciel système",
+        "Un ensemble de lignes électriques sur la carte mère qui transfèrent données et signaux de synchronisation entre les éléments de l'ordinateur",
+        "Une application web"
+      ],
+      "reponse": 2,
+      "explication": "On peut considérer les composants internes d'un PC comme un réseau d'équipements tous reliés au bus système.",
+      "id": "reseau-s1-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels critères faut-il considérer pour choisir une carte réseau ?",
+      "choix": [
+        "La couleur et le poids",
+        "Le protocole (Ethernet, Token Ring, FDDI), le type de média et le type de bus système (PCI ou ISA)",
+        "Le prix du système d'exploitation",
+        "La marque de l'écran"
+      ],
+      "reponse": 1,
+      "explication": "Types de média : paires torsadées, coaxial ou fibre optique.",
+      "id": "reseau-s1-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'une carte PCMCIA ?",
+      "choix": [
+        "Une carte réseau de la taille d'une carte de crédit pour ordinateurs portables",
+        "Un type de câble",
+        "Un logiciel",
+        "Un port parallèle"
+      ],
+      "reponse": 0,
+      "explication": "PCMCIA = Personal Computer Memory Card International Association ; ces cartes sont aussi appelées cartes PC.",
+      "id": "reseau-s1-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment la carte réseau communique-t-elle avec le réseau et avec l'ordinateur ?",
+      "choix": [
+        "Avec le réseau par le bus, avec l'ordinateur par une connexion série",
+        "Uniquement par ondes radio",
+        "Uniquement par le port parallèle",
+        "Avec le réseau via une connexion série, et avec l'ordinateur par le bus interne"
+      ],
+      "reponse": 3,
+      "explication": "Pour communiquer avec le système d'exploitation, elle utilise une demande d'interruption (IRQ), une adresse d'E/S et de l'espace en mémoire haute.",
+      "id": "reseau-s1-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "À quoi sert une valeur d'IRQ ?",
+      "choix": [
+        "À donner l'adresse IP du périphérique",
+        "À mesurer la vitesse du disque",
+        "À permettre à un périphérique d'interrompre le processeur pour lui envoyer des signaux ; elle doit être unique pour chaque périphérique",
+        "À chiffrer les données"
+      ],
+      "reponse": 2,
+      "explication": "Exemple du cours : l'imprimante envoie un signal d'interruption quand elle termine un travail.",
+      "id": "reseau-s1-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que teste la commande ping 127.0.0.1 ?",
+      "choix": [
+        "La connexion à Internet",
+        "La boucle locale interne : elle vérifie la configuration TCP/IP de la machine",
+        "L'accessibilité du routeur",
+        "Le débit de la ligne"
+      ],
+      "reponse": 1,
+      "explication": "ping vers la passerelle par défaut teste le routeur ; ping vers un hôte distant teste la connectivité avec cet hôte.",
+      "id": "reseau-s1-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que vérifie un ping vers la passerelle par défaut ?",
+      "choix": [
+        "Que le routeur reliant le réseau local aux autres réseaux est accessible",
+        "Que la carte réseau est installée",
+        "Que le navigateur est à jour",
+        "Que le DNS fonctionne"
+      ],
+      "reponse": 0,
+      "explication": "La passerelle par défaut est le routeur qui relie le LAN à d'autres réseaux.",
+      "id": "reseau-s1-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quels paquets la commande ping utilise-t-elle ?",
+      "choix": [
+        "Des segments TCP",
+        "Des trames Token Ring",
+        "Des messages HTTP",
+        "Des datagrammes ICMP (demande d'écho)"
+      ],
+      "reponse": 3,
+      "explication": "La réponse indique le taux de réussite et le temps de parcours aller-retour. La commande tire son nom du sonar.",
+      "id": "reseau-s1-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle différence y a-t-il entre un port série et un port parallèle ?",
+      "choix": [
+        "Le port série est réservé au son ; le parallèle à l'image",
+        "Il n'y en a aucune",
+        "Le port série transmet un seul bit à la fois ; le port parallèle plusieurs bits à la fois",
+        "Le port série transmet plusieurs bits ; le parallèle un seul"
+      ],
+      "reponse": 2,
+      "explication": "Le port parallèle sert par exemple à connecter des imprimantes.",
+      "id": "reseau-s1-20"
+    }
+  ]
+}

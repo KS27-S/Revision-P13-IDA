@@ -1,0 +1,270 @@
+{
+  "matiere": "developpement-mobile",
+  "module": "notions-android",
+  "titre": "Notions essentielles d'une application Android",
+  "sources": [
+    "sequence 3 notions essentielle dune application android.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Dans le cours, quel langage est utilisé pour développer sur la plateforme Android ?",
+      "choix": [
+        "Objective C",
+        "Java",
+        "C#",
+        "Python"
+      ],
+      "reponse": 1,
+      "explication": "Java est l'un des langages de programmation les plus répandus : le développeur n'a pas à apprendre un langage spécifique.",
+      "id": "devmob-notions-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Pourquoi dit-on qu'Android est une plateforme « ouverte » ?",
+      "choix": [
+        "Parce qu'elle est fournie sous licence open source",
+        "Parce qu'elle est gratuite sur tous les téléphones",
+        "Parce qu'elle fonctionne sans Internet",
+        "Parce qu'elle n'a pas de manifeste"
+      ],
+      "reponse": 0,
+      "explication": "Tous les développeurs et constructeurs peuvent consulter les sources et les modifier. Autres points clés : innovante (écran tactile, GPS, accéléromètre…) et accessible.",
+      "id": "devmob-notions-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Autour de quel noyau l'architecture d'Android est-elle construite ?",
+      "choix": [
+        "Le noyau Windows",
+        "Le noyau macOS",
+        "Le noyau Symbian",
+        "Le noyau Linux"
+      ],
+      "reponse": 3,
+      "explication": "Le noyau Linux offre les services fondamentaux (pilotes, mémoire, sécurité, réseau, énergie) et une couche d'abstraction entre le matériel et le reste de la pile logicielle.",
+      "id": "devmob-notions-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel composant constitue le bloc de base d'une application et correspond à sa partie présentation ?",
+      "choix": [
+        "Le service",
+        "Le fournisseur de contenu",
+        "L'activité",
+        "Le gadget"
+      ],
+      "reponse": 2,
+      "explication": "Toute application, sauf celles de type service, a au moins une activité. La première est celle qu'on voit au démarrage.",
+      "id": "devmob-notions-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Un service Android est un composant qui…",
+      "choix": [
+        "affiche l'interface graphique",
+        "fonctionne en tâche de fond, de manière invisible",
+        "stocke les images de l'application",
+        "compile le code"
+      ],
+      "reponse": 1,
+      "explication": "Il sert notamment à mettre à jour des sources de données ou des activités visibles et à déclencher des notifications.",
+      "id": "devmob-notions-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi sert une notification ?",
+      "choix": [
+        "À signaler une information à l'utilisateur sans interrompre ses actions en cours",
+        "À fermer l'application",
+        "À échanger des données entre deux applications",
+        "À déclarer un service dans le manifeste"
+      ],
+      "reponse": 0,
+      "explication": "La classe concernée est android.app.Notification.",
+      "id": "devmob-notions-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment Android exécute-t-il le code d'une activité ?",
+      "choix": [
+        "En exécutant une méthode main au démarrage",
+        "En lisant directement le fichier XML",
+        "En redémarrant le téléphone",
+        "En appelant des callbacks, car il n'y a pas de méthode main"
+      ],
+      "reponse": 3,
+      "explication": "Les callbacks correspondent aux phases de la vie d'une activité. Il n'est pas nécessaire de les implémenter toutes.",
+      "id": "devmob-notions-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que faut-il faire pour implanter une activité ?",
+      "choix": [
+        "Écrire une méthode main dans le manifeste",
+        "Installer un service Gradle",
+        "Créer une classe qui étend android.app.Activity, la déclarer dans le manifeste et créer son fichier de layout",
+        "Copier le fichier layout dans le dossier mipmap"
+      ],
+      "reponse": 2,
+      "explication": "Android Studio crée heureusement le squelette de l'activité, son entrée dans le manifeste et le layout d'un seul coup.",
+      "id": "devmob-notions-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que se passe-t-il si un service n'est pas déclaré dans le manifeste ?",
+      "choix": [
+        "Il s'exécute quand même",
+        "Le système ne le voit pas et il n'est jamais exécuté",
+        "Il devient une activité",
+        "Il est exécuté seulement au démarrage du téléphone"
+      ],
+      "reponse": 1,
+      "explication": "Tous les services doivent être représentés par des éléments <service> dans le manifeste.",
+      "id": "devmob-notions-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert un fournisseur de contenu (ContentProvider) ?",
+      "choix": [
+        "À gérer et partager des informations au sein d'une application et entre applications",
+        "À afficher des widgets sur le bureau",
+        "À écouter les Intents des autres applications",
+        "À dessiner des boutons"
+      ],
+      "reponse": 0,
+      "explication": "Classe associée : android.content.ContentProvider. Le gadget (widget), lui, est un composant graphique installé sur le bureau, comme un calendrier.",
+      "id": "devmob-notions-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Qu'est-ce qu'un Intent ?",
+      "choix": [
+        "Une image de l'interface",
+        "Un fichier de ressources",
+        "Un type d'émulateur",
+        "Un objet qui diffuse un message demandant la réalisation d'une action"
+      ],
+      "reponse": 3,
+      "explication": "Il permet à une application de fournir ou demander des services ou des données, en ciblant éventuellement une activité ou un service précis.",
+      "id": "devmob-notions-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle est la différence entre une View et un ViewGroup ?",
+      "choix": [
+        "Une View est un service ; un ViewGroup est une activité",
+        "Une View est un fichier XML ; un ViewGroup est un dossier",
+        "Une View est un composant graphique élémentaire ; un ViewGroup regroupe plusieurs vues dans une structure arborescente",
+        "Il n'y a aucune différence"
+      ],
+      "reponse": 2,
+      "explication": "Boutons, images, cases à cocher… héritent tous de View. Un gabarit (layout) est une extension de ViewGroup.",
+      "id": "devmob-notions-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel gabarit aligne les éléments de gauche à droite ou de haut en bas selon la propriété orientation ?",
+      "choix": [
+        "FrameLayout",
+        "LinearLayout",
+        "TableLayout",
+        "RelativeLayout"
+      ],
+      "reponse": 1,
+      "explication": "orientation = horizontal : de gauche à droite ; vertical : de haut en bas. C'est le gabarit le plus commun dans les interfaces Android.",
+      "id": "devmob-notions-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle callback est appelée quand l'activité est créée pour la première fois, et laquelle quand elle est visible et interactive ?",
+      "choix": [
+        "onCreate() puis onResume()",
+        "onStart() puis onDestroy()",
+        "onPause() puis onCreate()",
+        "onStop() puis onRestart()"
+      ],
+      "reponse": 0,
+      "explication": "onCreate : première création. onStart : l'activité commence à devenir visible. onResume : visible et l'utilisateur peut interagir.",
+      "id": "devmob-notions-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment le gabarit FrameLayout positionne-t-il ses enfants ?",
+      "choix": [
+        "Ils sont alignés les uns à côté des autres",
+        "Ils sont positionnés en lignes et colonnes",
+        "Ils sont positionnés relativement au premier enfant",
+        "Chaque enfant est placé en haut à gauche, par-dessus les précédents qu'il peut cacher"
+      ],
+      "reponse": 3,
+      "explication": "C'est le gabarit le plus basique, utilisé surtout pour afficher un seul élément, comme un cadre où charger des images. RelativeLayout positionne par rapport au premier enfant ; TableLayout en lignes et colonnes.",
+      "id": "devmob-notions-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment réagit-on au clic sur un bouton dans une activité ?",
+      "choix": [
+        "On écrit une méthode main",
+        "On déclare le bouton dans le fichier Gradle",
+        "On associe un écouteur (listener) au bouton avec setOnClickListener et on redéfinit onClick()",
+        "On crée un fichier dans le dossier mipmap"
+      ],
+      "reponse": 2,
+      "explication": "Toute action de l'utilisateur est un événement. Les événements interceptables et leurs méthodes sont imposés : pour OnClick, la méthode associée est onClick().",
+      "id": "devmob-notions-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans l'exemple du cours, quel élément déclenche l'« alerte visuelle » dans onClick() ?",
+      "choix": [
+        "Un service",
+        "Un toast",
+        "Un fragment",
+        "Un ContentProvider"
+      ],
+      "reponse": 1,
+      "explication": "Un toast est un message bref affiché à l'écran. Dans le cours, il affiche par exemple « Bouton cliqué ! ».",
+      "id": "devmob-notions-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle machine virtuelle remplace Dalvik à partir de la version Lollipop ?",
+      "choix": [
+        "ART (Android Runtime)",
+        "JVM d'Oracle",
+        "Mono",
+        "WebView"
+      ],
+      "reponse": 0,
+      "explication": "L'Android Runtime inclut les librairies fondamentales et la machine virtuelle. Il permet l'exécution des applications et représente la base du framework applicatif. Mono est le runtime de Xamarin.",
+      "id": "devmob-notions-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle callback est appelée lorsque l'activité n'est plus visible parce qu'une autre activité l'a remplacée ?",
+      "choix": [
+        "onCreate()",
+        "onResume()",
+        "onRestart()",
+        "onStop()"
+      ],
+      "reponse": 3,
+      "explication": "Selon le tableau du cours, onStop() est appelée quand l'activité n'est plus visible car remplacée. onRestart() est appelée quand l'utilisateur revient sur une activité arrêtée.",
+      "id": "devmob-notions-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quel composant permet à une application d'écouter les Intents envoyés par d'autres composants pour y répondre ?",
+      "choix": [
+        "Le fournisseur de contenu",
+        "Le toast",
+        "Le récepteur d'Intents (BroadcastReceiver)",
+        "Le fragment"
+      ],
+      "reponse": 2,
+      "explication": "Classe associée : android.content.BroadcastReceiver. L'Intent est le message ; le récepteur est celui qui l'écoute.",
+      "id": "devmob-notions-20"
+    }
+  ]
+}

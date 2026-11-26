@@ -1,0 +1,272 @@
+{
+  "matiere": "html-css",
+  "module": "formulaires",
+  "titre": "Les formulaires HTML",
+  "sources": [
+    "Séquence 9-FORMULAIRE HTML.pdf",
+    "TP 09 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise déclare un formulaire ?",
+      "choix": [
+        "<input>",
+        "<form>",
+        "<formulaire>",
+        "<fieldset>"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : <form action=\"page.php\" method=\"post\">…</form>.",
+      "id": "htmlcss-s9-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "À quoi servent les formulaires HTML ?",
+      "choix": [
+        "À saisir des données utilisateur et à les transmettre vers un serveur",
+        "À afficher des images",
+        "À mettre en forme du texte",
+        "À créer des tableaux"
+      ],
+      "reponse": 0,
+      "explication": "Ils peuvent contenir des champs de texte, cases à cocher, boutons radio, boutons submit…",
+      "id": "htmlcss-s9-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel type d'input crée un champ de texte simple ?",
+      "choix": [
+        "type=\"string\"",
+        "type=\"line\"",
+        "type=\"field\"",
+        "type=\"text\""
+      ],
+      "reponse": 3,
+      "explication": "Exemple : Prénoms: <input type=\"text\" name=\"prenoms\">.",
+      "id": "htmlcss-s9-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel type d'input masque les caractères saisis ?",
+      "choix": [
+        "type=\"hidden\"",
+        "type=\"secret\"",
+        "type=\"password\"",
+        "type=\"mask\""
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <input type=\"password\" name=\"mdp\">.",
+      "id": "htmlcss-s9-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel type d'input crée des cases à cocher à choix multiple ?",
+      "choix": [
+        "type=\"radio\"",
+        "type=\"checkbox\"",
+        "type=\"select\"",
+        "type=\"check\""
+      ],
+      "reponse": 1,
+      "explication": "Plusieurs cases peuvent être cochées en même temps.",
+      "id": "htmlcss-s9-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel type d'input crée des boutons à choix unique ?",
+      "choix": [
+        "type=\"radio\"",
+        "type=\"checkbox\"",
+        "type=\"submit\"",
+        "type=\"option\""
+      ],
+      "reponse": 0,
+      "explication": "Un seul bouton radio d'un groupe peut être sélectionné.",
+      "id": "htmlcss-s9-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise crée une zone de saisie de texte libre sur plusieurs lignes ?",
+      "choix": [
+        "<text>",
+        "<textbox>",
+        "<input type=\"area\">",
+        "<textarea>"
+      ],
+      "reponse": 3,
+      "explication": "On précise sa taille avec rows et cols.",
+      "id": "htmlcss-s9-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que font respectivement les types submit et reset ?",
+      "choix": [
+        "submit efface ; reset envoie",
+        "Les deux envoient le formulaire",
+        "submit envoie le formulaire ; reset efface les données saisies",
+        "Les deux effacent les données"
+      ],
+      "reponse": 2,
+      "explication": "Exemples : <input type=\"reset\" value=\"Effacer\"> et <input type=\"submit\" value=\"Submit\">.",
+      "id": "htmlcss-s9-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi servent les attributs action et method de <form> ?",
+      "choix": [
+        "action : le nom du formulaire ; method : le style du formulaire",
+        "action : l'URL de destination ; method : la méthode HTTP d'envoi (GET par défaut)",
+        "action : l'encodage ; method : l'URL",
+        "action : le bouton d'envoi ; method : la police"
+      ],
+      "reponse": 1,
+      "explication": "La valeur par défaut de action est la page de soumission.",
+      "id": "htmlcss-s9-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "En combien de classes les éléments de formulaire sont-ils répartis ?",
+      "choix": [
+        "Trois : input, select et textarea",
+        "Deux : input et output",
+        "Quatre : form, input, button et label",
+        "Une seule : input"
+      ],
+      "reponse": 0,
+      "explication": "Input : champs de saisie et boutons ; select : listes ; textarea : texte libre.",
+      "id": "htmlcss-s9-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi sert l'attribut name d'un élément de formulaire ?",
+      "choix": [
+        "À afficher le nom du champ à l'écran",
+        "À définir la couleur du champ",
+        "À choisir le type de champ",
+        "À identifier les données lors de l'envoi ; il doit être unique, sauf pour un ensemble comme les boutons radio"
+      ],
+      "reponse": 3,
+      "explication": "L'attribut value est commun à ces balises mais son rôle dépend du type d'élément.",
+      "id": "htmlcss-s9-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles balises créent un menu déroulant ?",
+      "choix": [
+        "<dropdown> avec des <item>",
+        "<list> avec des <li>",
+        "<select> avec des éléments <option>",
+        "<menu> avec des <choice>"
+      ],
+      "reponse": 2,
+      "explication": "L'attribut selected sur une option la sélectionne par défaut.",
+      "id": "htmlcss-s9-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "À quoi servent <fieldset> et <legend> ?",
+      "choix": [
+        "<fieldset> crée une liste ; <legend> trie les champs",
+        "<fieldset> regroupe des champs associés ; <legend> en donne la légende",
+        "<fieldset> envoie le formulaire ; <legend> l'efface",
+        "<fieldset> masque un champ ; <legend> le révèle"
+      ],
+      "reponse": 1,
+      "explication": "Dans le cours, la légende s'appelle « Informations personnelles ».",
+      "id": "htmlcss-s9-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels exemples de nouveaux types d'input HTML5 le cours cite-t-il ?",
+      "choix": [
+        "color et date",
+        "flash et applet",
+        "bold et italic",
+        "page et frame"
+      ],
+      "reponse": 0,
+      "explication": "<input type=\"color\"> pour une couleur, <input type=\"date\"> pour choisir une date.",
+      "id": "htmlcss-s9-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelles sont les trois techniques de traitement d'un formulaire ?",
+      "choix": [
+        "Un tableau, une liste ou une iframe",
+        "Un style interne, externe ou en ligne",
+        "Un div, un span ou un bloc",
+        "Un programme côté serveur (PHP, CGI…), un script côté client (JavaScript) ou l'envoi par mail"
+      ],
+      "reponse": 3,
+      "explication": "Un script côté client permet de réaliser de petites applications sans interaction avec le serveur.",
+      "id": "htmlcss-s9-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait <form action=\"mailto:nom@adresse.fr\" method=\"post\"> ?",
+      "choix": [
+        "Il crée un lien hypertexte",
+        "Il bloque l'envoi",
+        "Il expédie les données par mail (un serveur mail est requis)",
+        "Il envoie les données vers PHP"
+      ],
+      "reponse": 2,
+      "explication": "C'est la troisième technique de traitement du cours.",
+      "id": "htmlcss-s9-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment crée-t-on un ascenseur à choix multiple avec <select> ?",
+      "choix": [
+        "<select name=\"universite\" size=\"1\">",
+        "<select name=\"universite\" size=\"4\" multiple>",
+        "<select name=\"universite\" selected>",
+        "<select name=\"universite\" type=\"scroll\">"
+      ],
+      "reponse": 1,
+      "explication": "size définit le nombre de lignes visibles, multiple autorise plusieurs choix. Sans multiple, c'est un ascenseur à choix unique.",
+      "id": "htmlcss-s9-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait l'attribut novalidate de <form> ?",
+      "choix": [
+        "Il indique que le navigateur ne doit pas valider le formulaire",
+        "Il interdit les champs vides",
+        "Il valide plus rapidement",
+        "Il désactive les boutons"
+      ],
+      "reponse": 0,
+      "explication": "Autres attributs : autocomplete (par défaut on), enctype (par défaut url-encoded), target (par défaut _self).",
+      "id": "htmlcss-s9-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi les boutons radio d'un même groupe partagent-ils le même attribut name ?",
+      "code": "<input type=\"radio\" name=\"genre\" value=\"Feminin\" checked> Féminin<br>\n<input type=\"radio\" name=\"genre\" value=\"Masculin\"> Masculin<br>",
+      "choix": [
+        "Pour qu'ils aient la même couleur",
+        "Parce que le nom doit toujours être unique",
+        "Pour envoyer le formulaire plusieurs fois",
+        "Pour que le navigateur ne laisse sélectionner qu'un seul bouton dans le groupe"
+      ],
+      "reponse": 3,
+      "explication": "L'attribut name doit être unique, sauf pour un ensemble composé de plusieurs éléments comme les boutons radio.",
+      "id": "htmlcss-s9-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que fait l'attribut checked sur une case à cocher ou un bouton radio ?",
+      "choix": [
+        "Il l'empêche d'être cochée",
+        "Il vérifie la valeur saisie",
+        "Il la coche par défaut",
+        "Il la cache"
+      ],
+      "reponse": 2,
+      "explication": "Dans l'exemple du cours, la case « Android » est cochée au chargement de la page.",
+      "id": "htmlcss-s9-20"
+    }
+  ]
+}

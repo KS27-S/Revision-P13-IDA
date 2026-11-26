@@ -1,0 +1,272 @@
+{
+  "matiere": "html-css",
+  "module": "styles-couleurs",
+  "titre": "Les styles et couleurs en HTML",
+  "sources": [
+    "Séquence 4-LES STYLES ET COULEURS EN HTML.pdf",
+    "TP 04 INTRODUCTION AUX LANGAGES HTML ET CSS.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Comment ajoute-t-on un style directement à un élément ?",
+      "choix": [
+        "Avec l'attribut css : <p css=\"color:blue;\">",
+        "Avec l'attribut style : <p style=\"color:blue;\">",
+        "Avec une balise <color>",
+        "Avec un commentaire"
+      ],
+      "reponse": 1,
+      "explication": "Syntaxe : <nomelement style=\"propriete:valeur;\">.",
+      "id": "htmlcss-s4-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété CSS change la couleur de fond ?",
+      "choix": [
+        "background-color",
+        "color",
+        "font-color",
+        "bgcolor"
+      ],
+      "reponse": 0,
+      "explication": "Exemple : <body style=\"background-color:yellow;\">. bgcolor est un attribut obsolète.",
+      "id": "htmlcss-s4-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété CSS change la couleur du texte ?",
+      "choix": [
+        "text-color",
+        "background-color",
+        "font-family",
+        "color"
+      ],
+      "reponse": 3,
+      "explication": "Exemple : <h1 style=\"color:blue;\">.",
+      "id": "htmlcss-s4-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété CSS change la police du texte ?",
+      "choix": [
+        "font-size",
+        "text-align",
+        "font-family",
+        "font-style"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <p style=\"font-family:courier;\">.",
+      "id": "htmlcss-s4-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété CSS change l'alignement du texte ?",
+      "choix": [
+        "font-align",
+        "text-align",
+        "align-text",
+        "text-position"
+      ],
+      "reponse": 1,
+      "explication": "Exemple : text-align:center;.",
+      "id": "htmlcss-s4-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise met le texte en gras ?",
+      "choix": [
+        "<b>",
+        "<g>",
+        "<bold>",
+        "<fat>"
+      ],
+      "reponse": 0,
+      "explication": "<strong> s'affiche de la même façon, mais marque un texte important.",
+      "id": "htmlcss-s4-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle balise met un texte en exposant, comme le 2 de a² ?",
+      "choix": [
+        "<exp>",
+        "<sub>",
+        "<up>",
+        "<sup>"
+      ],
+      "reponse": 3,
+      "explication": "<sub> met en indice (comme le 1 de S1). Ces balises ont servi au TP 4 pour écrire a²+2ab+b²=(a+b)².",
+      "id": "htmlcss-s4-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Lesquelles de ces balises sont obsolètes en HTML5 ?",
+      "choix": [
+        "<b> et <i>",
+        "<strong> et <em>",
+        "<center> et <font>",
+        "<code> et <kbd>"
+      ],
+      "reponse": 2,
+      "explication": "Balises à éviter : <center>, <font>, <basefont>, <s>, <strike>, <u>. Attributs à éviter : align, bgcolor, color.",
+      "id": "htmlcss-s4-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre <b> et <strong> ?",
+      "choix": [
+        "<b> marque un texte important, <strong> met en italique",
+        "<b> met en gras, alors que <strong> marque un texte important ; ils s'affichent de la même façon",
+        "<strong> est obsolète",
+        "Aucune, c'est exactement la même balise"
+      ],
+      "reponse": 1,
+      "explication": "De même, <i> définit l'italique alors que <em> met le texte en valeur.",
+      "id": "htmlcss-s4-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles balises marquent respectivement un texte supprimé et un texte inséré ?",
+      "choix": [
+        "<del> et <ins>",
+        "<ins> et <del>",
+        "<sub> et <sup>",
+        "<mark> et <small>"
+      ],
+      "reponse": 0,
+      "explication": "Dans le TP 4 : une université « supprimée » apparaît barrée avec <del>, une autre est surlignée avec <mark>.",
+      "id": "htmlcss-s4-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle balise définit une courte citation, et laquelle une longue citation ?",
+      "choix": [
+        "<blockquote> et <q>",
+        "<cite> et <dfn>",
+        "<abbr> et <bdo>",
+        "<q> et <blockquote>"
+      ],
+      "reponse": 3,
+      "explication": "Le cours cite aussi <abbr> (abréviation), <cite> (une citation) et <dfn> (un terme à définir).",
+      "id": "htmlcss-s4-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle balise affiche du texte comme du code informatique ?",
+      "choix": [
+        "<kbd>",
+        "<var>",
+        "<code>",
+        "<mark>"
+      ],
+      "reponse": 2,
+      "explication": "<kbd> : texte du clavier ; <samp> : sortie d'un programme ; <var> : une variable ; <pre> : texte préformaté. Le TP utilise <kbd>Ctrl+b</kbd>.",
+      "id": "htmlcss-s4-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Combien de noms de couleurs sont pris en charge par tous les navigateurs ?",
+      "choix": [
+        "16",
+        "140",
+        "256",
+        "1 000"
+      ],
+      "reponse": 1,
+      "explication": "140 noms : 16 noms de couleurs de base et 124 autres.",
+      "id": "htmlcss-s4-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelles méthodes le cours cite-t-il pour spécifier une couleur ?",
+      "choix": [
+        "Noms prédéfinis, valeurs RGB, HEX, HSL, RGBA et HSLA",
+        "Uniquement les noms prédéfinis",
+        "Uniquement les codes HEX",
+        "Uniquement RGB"
+      ],
+      "reponse": 0,
+      "explication": "Exemple (tomate) : rgb(255, 99, 71), #ff6347, hsl(9, 100%, 64%), rgba(255, 99, 71, 0.5), hsla(9, 100%, 64%, 0.5).",
+      "id": "htmlcss-s4-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle couleur donne rgb(255, 0, 0) ?",
+      "choix": [
+        "Vert",
+        "Bleu",
+        "Noir",
+        "Rouge"
+      ],
+      "reponse": 3,
+      "explication": "Les valeurs R, V et B vont de 0 à 255 : ici le rouge est au maximum, le vert et le bleu sont à zéro.",
+      "id": "htmlcss-s4-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Que signifie la valeur 0.5 dans rgba(255, 99, 71, 0.5) ?",
+      "choix": [
+        "Un rouge à 0,5 % ",
+        "Une teinte de 0,5°",
+        "Une opacité de 50 % (couleur à moitié transparente)",
+        "Une saturation de 0,5 %"
+      ],
+      "reponse": 2,
+      "explication": "La valeur alpha va de 0 (transparent) à 1 (visible). C'est ainsi que le TP 4 rend un paragraphe transparent.",
+      "id": "htmlcss-s4-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans hsl(H, S, L), quelle couleur correspond à une teinte de 240° ?",
+      "choix": [
+        "Jaune",
+        "Bleu",
+        "Vert",
+        "Magenta"
+      ],
+      "reponse": 1,
+      "explication": "Cercle chromatique : 0° rouge, 60° jaune, 120° vert, 180° cyan, 240° bleu, 300° magenta, 360° rouge.",
+      "id": "htmlcss-s4-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Dans hsl(), que signifie une luminance de 100 % ?",
+      "choix": [
+        "Entièrement blanc",
+        "Entièrement noir",
+        "La teinte de base",
+        "Une transparence totale"
+      ],
+      "reponse": 0,
+      "explication": "La lumière va de 0 (entièrement noir) à 100 % (entièrement blanc) ; 50 % correspond à la teinte de base.",
+      "id": "htmlcss-s4-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Sachant que rgb(255, 99, 71) équivaut à #ff6347, à quelle composante correspond « 63 » dans le code hexadécimal ?",
+      "code": "rgb(255, 99, 71)   =   #ff6347",
+      "choix": [
+        "Le rouge",
+        "Le bleu",
+        "La transparence",
+        "Le vert (99 en décimal)"
+      ],
+      "reponse": 3,
+      "explication": "ff = 255 (rouge), 63 en hexadécimal = 99 (vert), 47 = 71 (bleu).",
+      "id": "htmlcss-s4-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle propriété CSS modifie la taille de la police, par exemple à 160 % ?",
+      "choix": [
+        "font-family",
+        "text-align",
+        "font-size",
+        "font-weight"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : <h1 style=\"font-size:160%;\">. (Dans le cours, un intitulé indique « couleur du texte » pour font-size : c'est une coquille.)",
+      "id": "htmlcss-s4-20"
+    }
+  ]
+}

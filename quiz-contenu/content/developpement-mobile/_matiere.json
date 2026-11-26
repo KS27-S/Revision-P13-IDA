@@ -1,0 +1,30 @@
+{
+  "id": "developpement-mobile",
+  "titre": "Développement mobile",
+  "modules": [
+    {
+      "id": "introduction-mobile",
+      "titre": "Introduction au génie logiciel mobile",
+      "quiz": "introduction-mobile.quiz.json",
+      "td": "introduction-mobile.td.json"
+    },
+    {
+      "id": "android-studio",
+      "titre": "Prise en main d'Android Studio",
+      "quiz": "android-studio.quiz.json",
+      "td": "android-studio.td.json"
+    },
+    {
+      "id": "notions-android",
+      "titre": "Notions essentielles d'une application Android",
+      "quiz": "notions-android.quiz.json",
+      "td": null
+    },
+    {
+      "id": "hybrides-ionic",
+      "titre": "Les applications hybrides et Ionic",
+      "quiz": "hybrides-ionic.quiz.json",
+      "td": null
+    }
+  ]
+}

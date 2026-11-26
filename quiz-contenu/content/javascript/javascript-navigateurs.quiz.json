@@ -1,0 +1,270 @@
+{
+  "matiere": "javascript",
+  "module": "javascript-navigateurs",
+  "titre": "JavaScript et les navigateurs : DOM, CSS et événements",
+  "sources": [
+    "Chapitre3.pdf"
+  ],
+  "questions": [
+    {
+      "niveau": "facile",
+      "enonce": "Qu'appelle-t-on « JavaScript côté client » ?",
+      "choix": [
+        "Le JavaScript qui s'exécute uniquement sur un serveur",
+        "Le JavaScript utilisé dans les navigateurs web",
+        "Un langage différent de JavaScript",
+        "Le JavaScript d'un éditeur de texte"
+      ],
+      "reponse": 1,
+      "explication": "Le chapitre 3 donne un contexte aux fragments vus jusque-là : le navigateur.",
+      "id": "js-s3-01"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quel objet est le point d'entrée principal des API JavaScript côté client ?",
+      "choix": [
+        "L'objet Window",
+        "L'objet Array",
+        "L'objet JSON",
+        "L'objet Date"
+      ],
+      "reponse": 0,
+      "explication": "Il représente une fenêtre ou un cadre de navigateur, et c'est aussi l'objet global.",
+      "id": "js-s3-02"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que signifie DOM ?",
+      "choix": [
+        "Data Object Management",
+        "Display Order Mode",
+        "Document Online Module",
+        "Document Object Model"
+      ],
+      "reponse": 3,
+      "explication": "C'est l'API de base pour représenter et manipuler le contenu des documents HTML et XML.",
+      "id": "js-s3-03"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Comment le DOM représente-t-il un document HTML ?",
+      "choix": [
+        "Sous la forme d'un tableau à une dimension",
+        "Sous la forme d'une chaîne de caractères",
+        "Sous la forme d'une arborescence d'objets (nœuds)",
+        "Sous la forme d'une image"
+      ],
+      "reponse": 2,
+      "explication": "Il y a des nœuds pour les éléments (comme body et p) et pour les textes.",
+      "id": "js-s3-04"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle méthode renvoie l'élément ayant un identifiant donné ?",
+      "choix": [
+        "document.getElementByName()",
+        "document.getElementById()",
+        "document.getElementByClass()",
+        "document.getId()"
+      ],
+      "reponse": 1,
+      "explication": "var section1 = document.getElementById(\"section1\"); C'est la manière la plus simple et la plus utilisée.",
+      "id": "js-s3-05"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Que doit être la valeur d'un attribut id dans un document ?",
+      "choix": [
+        "Unique : aucun autre élément du document ne peut avoir le même id",
+        "Toujours un nombre",
+        "Identique pour tous les éléments",
+        "Écrite en majuscules"
+      ],
+      "reponse": 0,
+      "explication": "C'est pourquoi getElementById() renvoie un seul élément.",
+      "id": "js-s3-06"
+    },
+    {
+      "niveau": "facile",
+      "enonce": "Quelle propriété de window fait référence au contenu affiché dans la fenêtre ?",
+      "choix": [
+        "location",
+        "history",
+        "screen",
+        "document"
+      ],
+      "reponse": 3,
+      "explication": "document est un objet Document ; window.location, lui, contient l'URL affichée.",
+      "id": "js-s3-07"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quelle différence y a-t-il entre setTimeout() et setInterval() ?",
+      "choix": [
+        "setTimeout() répète la fonction ; setInterval() l'appelle une fois",
+        "Il n'y en a aucune",
+        "setTimeout() appelle la fonction une seule fois après un délai ; setInterval() la rappelle à intervalles réguliers",
+        "setTimeout() est réservé aux nombres ; setInterval() aux chaînes"
+      ],
+      "reponse": 2,
+      "explication": "Les délais sont en millisecondes. setInterval() continue jusqu'à l'appel de clearInterval() ou la fermeture de la fenêtre.",
+      "id": "js-s3-08"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quand l'événement onload de window se déclenche-t-il ?",
+      "choix": [
+        "Quand l'utilisateur ferme la page",
+        "Quand le contenu du document est prêt à être manipulé",
+        "Quand l'utilisateur clique",
+        "Quand le serveur redémarre"
+      ],
+      "reponse": 1,
+      "explication": "Le code JavaScript est généralement encapsulé dans un gestionnaire onload.",
+      "id": "js-s3-09"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quels sont les trois types de nœuds principaux cités pour le DOM ?",
+      "choix": [
+        "Document, Element et Text",
+        "Window, Array et Date",
+        "Parent, enfant et frère",
+        "Head, body et footer"
+      ],
+      "reponse": 0,
+      "explication": "Document, Element et Text sont des sous-classes de Node.",
+      "id": "js-s3-10"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Dans l'arbre du DOM, comment appelle-t-on les nœuds qui ont le même parent ?",
+      "choix": [
+        "Des descendants",
+        "Des ancêtres",
+        "Des racines",
+        "Des frères et sœurs"
+      ],
+      "reponse": 3,
+      "explication": "Le DOM emprunte la terminologie des arbres généalogiques : parent, enfants, frères et sœurs, descendants, ancêtres.",
+      "id": "js-s3-11"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que renvoie document.getElementsByTagName(\"p\")[0] ?",
+      "choix": [
+        "Tous les éléments <p>",
+        "Le dernier élément <p>",
+        "Le premier élément <p> du document",
+        "Le nombre de <p>"
+      ],
+      "reponse": 2,
+      "explication": "getElementsByTagName renvoie un objet de type NodeList, dans l'ordre du document.",
+      "id": "js-s3-12"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Que fait document.querySelector(\"#nav\") ?",
+      "choix": [
+        "Il renvoie tous les éléments correspondants",
+        "Il renvoie le premier élément correspondant au sélecteur CSS, ou null s'il n'y en a pas",
+        "Il supprime l'élément #nav",
+        "Il renvoie toujours un tableau"
+      ],
+      "reponse": 1,
+      "explication": "querySelectorAll() renvoie une NodeList (non active) de tous les éléments correspondants.",
+      "id": "js-s3-13"
+    },
+    {
+      "niveau": "moyen",
+      "enonce": "Quel événement correspond à un double-clic ?",
+      "choix": [
+        "dblclick",
+        "click",
+        "mouseup",
+        "doubleclick"
+      ],
+      "reponse": 0,
+      "explication": "click : appuyer puis relâcher. mousedown : appuyer sans relâcher. mouseup : relâcher.",
+      "id": "js-s3-14"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle différence y a-t-il entre innerHTML et textContent ?",
+      "choix": [
+        "innerHTML est du texte brut ; textContent contient des balises",
+        "Aucune, ce sont deux noms de la même propriété",
+        "innerHTML n'existe que pour XML",
+        "innerHTML manipule le contenu comme chaîne de balises HTML ; textContent le manipule comme texte brut"
+      ],
+      "reponse": 3,
+      "explication": "Pour le <p> « This is a <i>simple</i> document. » : innerHTML contient la balise <i> ; textContent donne « This is a simple document. ».",
+      "id": "js-s3-15"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Comment écrire la propriété CSS font-size (ou border-left-width) en JavaScript ?",
+      "choix": [
+        "e.style.font-size",
+        "e.style.fontsize()",
+        "e.style.fontSize (et e.style.borderLeftWidth)",
+        "e.style(\"font-size\")"
+      ],
+      "reponse": 2,
+      "explication": "On supprime les traits d'union et on met en majuscule la lettre suivante (camelCase).",
+      "id": "js-s3-16"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi e.style.font-size = \"24pt\" provoque-t-il une erreur de syntaxe ?",
+      "choix": [
+        "Parce que 24pt n'est pas une valeur valide",
+        "Parce que le trait d'union est interprété comme un signe moins",
+        "Parce que style n'existe pas",
+        "Parce qu'il manque un point-virgule"
+      ],
+      "reponse": 1,
+      "explication": "On écrit donc e.style.fontSize = \"24pt\".",
+      "id": "js-s3-17"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Quelle valeur faut-il écrire pour positionner e à 300 pixels de la gauche ?",
+      "choix": [
+        "e.style.left = \"300px\";",
+        "e.style.left = 300;",
+        "e.style.left = \"300\";",
+        "e.style.left = 300px;"
+      ],
+      "reponse": 0,
+      "explication": "Les valeurs sont des chaînes, et les propriétés de positionnement nécessitent des unités.",
+      "id": "js-s3-18"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi écrit-on elm.onmouseout = normal; et non elm.onmouseout = normal(); ?",
+      "choix": [
+        "Parce que les parenthèses sont interdites en JavaScript",
+        "Parce que normal() est une fonction native",
+        "Il n'y a aucune différence",
+        "Parce qu'avec les parenthèses, la fonction serait exécutée dès l'affectation au lieu d'être appelée lors de l'événement"
+      ],
+      "reponse": 3,
+      "explication": "On affecte la fonction elle-même (sans parenthèses) : le navigateur l'appelle quand l'événement se produit.",
+      "id": "js-s3-19"
+    },
+    {
+      "niveau": "difficile",
+      "enonce": "Pourquoi utilise-t-on la propriété className pour lire l'attribut HTML class ?",
+      "choix": [
+        "Parce que className est plus court",
+        "Parce que class n'existe pas en HTML",
+        "Parce que class est un mot réservé en JavaScript",
+        "Parce que className est un événement"
+      ],
+      "reponse": 2,
+      "explication": "Exemple : timestamp.className = \"highlight\".",
+      "id": "js-s3-20"
+    }
+  ]
+}

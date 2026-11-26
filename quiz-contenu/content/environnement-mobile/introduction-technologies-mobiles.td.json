@@ -1,0 +1,156 @@
+{
+  "matiere": "environnement-mobile",
+  "module": "introduction-technologies-mobiles",
+  "titre": "TD – Introduction aux technologies mobiles",
+  "exercices": [
+    {
+      "id": "envmob-intro-td-01",
+      "type": "exercice",
+      "titre": "Définir un environnement mobile",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Explique avec tes mots ce qu'est un environnement mobile.",
+      "indices": [
+        "Pense à tout ce qui « entoure » le téléphone.",
+        "Il y a 5 éléments à citer."
+      ],
+      "solution": "Un environnement mobile est l'ensemble des éléments autour du mobile qui contribuent à maintenir son écosystème : les périphériques mobiles, les systèmes d'exploitation mobiles, les applications mobiles, les approches de développement d'applications et le marché du mobile.",
+      "explication_simple": "Le mobile ne vit pas seul : il dépend de son système, de ses applications, de la façon dont on les crée et du marché qui les achète."
+    },
+    {
+      "id": "envmob-intro-td-02",
+      "type": "exercice",
+      "titre": "Qu'est-ce qu'une application mobile ?",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Donne une définition simple d'une application mobile.",
+      "indices": [
+        "Sur quels appareils fonctionne-t-elle ?"
+      ],
+      "solution": "Une application mobile est une application logicielle conçue pour fonctionner sur les smartphones, les tablettes et autres appareils mobiles.",
+      "explication_simple": "C'est un programme fait pour un petit écran tactile, qu'on installe depuis un magasin d'applications."
+    },
+    {
+      "id": "envmob-intro-td-03",
+      "type": "exercice",
+      "titre": "Où sont stockées les applications mobiles ?",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Où trouve-t-on les applications mobiles ? Cite quelques magasins.",
+      "indices": [
+        "Chaque propriétaire d'OS a son magasin."
+      ],
+      "solution": "Dans des App Stores (magasins d'applications), exploités par les propriétaires du système d'exploitation mobile : App Store d'Apple, Google Play, Windows Phone Store, BlackBerry App World.",
+      "explication_simple": "Un App Store, c'est une boutique en ligne gérée par le créateur du système du téléphone."
+    },
+    {
+      "id": "envmob-intro-td-04",
+      "type": "exercice",
+      "titre": "Quelques acteurs de l'écosystème mobile",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite quelques acteurs de l'écosystème mobile.",
+      "indices": [
+        "Pense à ceux qui créent les systèmes, les magasins et le matériel."
+      ],
+      "solution": "Apple (iOS, App Store), Google (Android, Google Play), Microsoft (Windows Phone, Windows Phone Store), BlackBerry (BlackBerry OS, App World), Nokia (Symbian), Samsung (Bada, constructeur), et les membres de l'Open Handset Alliance (opérateurs, fabricants, éditeurs).",
+      "explication_simple": "Les acteurs majeurs sont ceux qui possèdent un système d'exploitation et son magasin d'applications.",
+      "attention": "Les noms Nokia et Samsung viennent du cours Développement mobile ; l'exercice demande aussi des acteurs lus sur la diapo 7 (logos)."
+    },
+    {
+      "id": "envmob-intro-td-05",
+      "type": "exercice",
+      "titre": "Les domaines d'intervention du panorama 2016",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Regarde le « Mobile Foundations Landscape » (diapo 7). Liste les domaines où interviennent les acteurs et, pour chaque domaine, au moins trois acteurs.",
+      "indices": [
+        "Chaque cadre de la diapo est un domaine, avec le nombre d'acteurs entre parenthèses."
+      ],
+      "solution": "Domaines (nombre d'acteurs) : User Acquisition (81), Monetization (78), Development (76), User Engagement (68), Analytics (62), UX (34), Geolocation (26), API Layer (21), Attribution (15), Monitoring (7). Pour les acteurs, relève au moins trois logos dans chaque cadre de la diapo (de grandes entreprises comme Google, Facebook ou Twitter apparaissent dans plusieurs domaines).",
+      "explication_simple": "Un acteur peut intervenir dans plusieurs domaines à la fois : c'est pourquoi la somme des acteurs dépasse 350.",
+      "attention": "Je n'ai pas pu lire de façon fiable les logos de la diapo : les noms d'acteurs sont à compléter et vérifier directement sur l'image."
+    },
+    {
+      "id": "envmob-intro-td-06",
+      "type": "exercice",
+      "titre": "Les enjeux financiers du développement mobile",
+      "source": "TD 1 – Introduction aux technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Quels chiffres montrent l'importance financière du mobile en 2016 ?",
+      "indices": [
+        "Téléchargements, revenus, investissement, valorisation."
+      ],
+      "solution": "Plus de 90 milliards de nouvelles applications téléchargées sur l'App Store et Google Play ; 35 milliards de dollars de revenus pour les éditeurs (19 444 milliards de francs CFA) ; plus de 350 sociétés, 28 milliards de dollars d'investissement et une valorisation estimée à 405 milliards de dollars pour l'écosystème.",
+      "explication_simple": "Beaucoup de téléchargements, beaucoup d'argent et beaucoup d'entreprises : c'est un marché énorme."
+    },
+    {
+      "id": "envmob-intro-td-07",
+      "type": "exercice",
+      "titre": "Qu'est-ce que la GSMA ?",
+      "source": "TD 2 – Généralités sur les technologies mobiles",
+      "statut_corrige": "réponse issue de connaissances générales : le support fourni ne la définit pas",
+      "enonce_simple": "Dis ce qu'est la GSMA.",
+      "indices": [
+        "GSM + association."
+      ],
+      "solution": "La GSMA (GSM Association) est l'association mondiale qui regroupe les opérateurs mobiles et les entreprises du secteur.",
+      "explication_simple": "C'est un grand « club » international des opérateurs de téléphonie mobile."
+    },
+    {
+      "id": "envmob-intro-td-08",
+      "type": "exercice",
+      "titre": "Quelle part de la population mondiale est couverte par le mobile ?",
+      "source": "TD 2 – Généralités sur les technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours Développement mobile (le support de cette séquence est absent du dossier)",
+      "enonce_simple": "Quelle proportion de la population mondiale est atteinte par les mobiles ?",
+      "indices": [
+        "Le chiffre est dans le cours Développement mobile."
+      ],
+      "solution": "Environ 95 % de la population mondiale (6,9 milliards de terminaux vendus fin 2014).",
+      "explication_simple": "Presque tout le monde est couvert par un réseau mobile.",
+      "attention": "Le cours parle d'un taux de couverture ; l'énoncé du TD dit « possède un téléphone ». La question sur le parc de téléphonie au Sénégal n'est pas traitée : les données ne figurent pas dans les supports fournis."
+    },
+    {
+      "id": "envmob-intro-td-09",
+      "type": "exercice",
+      "titre": "Lister 5 plateformes mobiles",
+      "source": "TD 2 – Généralités sur les technologies mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      "enonce_simple": "Cite cinq plateformes mobiles existantes.",
+      "indices": [
+        "Pense aux OS des téléphones."
+      ],
+      "solution": "Android, iOS, Windows Phone, BlackBerry OS, Symbian (ou Bada).",
+      "explication_simple": "Android et iOS dominent, les autres sont minoritaires ou abandonnés."
+    },
+    {
+      "id": "envmob-intro-td-10",
+      "type": "exercice",
+      "titre": "Qu'est-ce qu'un smartphone ?",
+      "source": "TD 3 – Évolution des périphériques mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours Développement mobile (le support de cette séquence est absent du dossier)",
+      "enonce_simple": "Explique ce qu'est un smartphone.",
+      "indices": [
+        "Un mélange de deux appareils anciens."
+      ],
+      "solution": "Un smartphone est la combinaison d'un téléphone portable et d'un assistant numérique personnel (PDA) : un mini-ordinateur portable sur lequel on peut télécharger des applications.",
+      "explication_simple": "C'est un téléphone qui fait aussi agenda, carnet d'adresses et applications."
+    },
+    {
+      "id": "envmob-intro-td-11",
+      "type": "exercice",
+      "titre": "Qui domine le marché ? Qui a lancé le premier smartphone ?",
+      "source": "TD 3 – Évolution des périphériques mobiles",
+      "statut_corrige": "corrigé rédigé à partir du cours Développement mobile (le support de cette séquence est absent du dossier)",
+      "enonce_simple": "Quel système domine le marché des smartphones ? Qui a lancé le premier smartphone, et quand ?",
+      "indices": [
+        "Regarde les parts de marché 2016.",
+        "Le premier smartphone est cité dans le cours Développement mobile."
+      ],
+      "solution": "Android domine (près de 9 smartphones sur 10 ; environ 84,8 % en 2016). Selon le cours Développement mobile, le premier smartphone a été lancé par Sagem en 2001.",
+      "explication_simple": "Android est le leader du marché depuis plusieurs années.",
+      "attention": "Beaucoup de sources citent plutôt l'IBM Simon (1994) comme premier smartphone : à confirmer avec l'enseignant. Les exercices 1 à 3 du TD 3 (définition d'un appareil mobile, fonctions des décennies 1980-2000) ne sont pas couverts par les supports fournis."
+    }
+  ]
+}

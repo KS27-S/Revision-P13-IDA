@@ -1,0 +1,38 @@
+{
+  "matiere": "reseau",
+  "module": "notions-de-base",
+  "titre": "TD – Modèles OSI et TCP/IP",
+  "exercices": [
+    {
+      "id": "reseau-s3-td-01",
+      "type": "exercice",
+      "titre": "Comparer le modèle OSI et la pile TCP/IP",
+      "source": "TP 3-1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Remplis le tableau : pour chaque couche OSI (7 à 1), donne son nom, le numéro et le nom de la couche TCP/IP correspondante, l'unité d'encapsulation et des protocoles.",
+      "indices": [
+        "TCP/IP a 4 couches ; plusieurs couches OSI correspondent à une couche TCP/IP.",
+        "Les unités d'encapsulation : données, segments, paquets, trames, bits.",
+        "Protocoles : HTTP, FTP, SMTP, DNS, TFTP (application) ; TCP, UDP (transport) ; IP (internet)."
+      ],
+      "solution": "OSI 7 Application   → TCP/IP 4 Application   | Données  | HTTP, FTP, SMTP, DNS, TFTP, Telnet\nOSI 6 Présentation  → TCP/IP 4 Application   | Données  | (formats de données, chiffrement, compression)\nOSI 5 Session       → TCP/IP 4 Application   | Données  | (gestion des sessions)\nOSI 4 Transport     → TCP/IP 3 Transport     | Segments | TCP, UDP\nOSI 3 Réseau        → TCP/IP 2 Internet      | Paquets  | IP, ICMP, ARP, RARP\nOSI 2 Liaison de données → TCP/IP 1 Accès réseau | Trames | Ethernet\nOSI 1 Physique      → TCP/IP 1 Accès réseau  | Bits     | média, signaux",
+      "explication_simple": "Le modèle OSI sert à décrire et comparer les logiciels et matériels de divers fournisseurs ; le modèle TCP/IP est celui qui est réellement utilisé sur Internet.",
+      "attention": "Le cours montre les deux modèles et le schéma des protocoles (FTP, HTTP, SMTP, DNS sur TCP ; DNS, TFTP sur UDP ; IP en dessous). La numérotation 1 à 4 des couches TCP/IP et les unités d'encapsulation (segments, paquets, trames, bits) viennent de la référence CCNA 1, pas des diapos lisibles."
+    },
+    {
+      "id": "reseau-s3-td-02",
+      "type": "exercice",
+      "titre": "Caractéristiques des couches OSI, aide-mémoire et équipements",
+      "source": "TP 3-2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Classe les 7 couches OSI, invente un aide-mémoire, donne les mots-clés de chaque couche, l'unité d'encapsulation et les équipements qui fonctionnent à chaque couche.",
+      "indices": [
+        "Un aide-mémoire est une phrase dont les initiales rappellent les couches.",
+        "Hubs et câbles : couche 1. Ponts et commutateurs : couche 2. Routeurs : couche 3."
+      ],
+      "solution": "Aide-mémoire (de la couche 7 à la couche 1) : « All People Seem To Need Data Processing » (Application, Presentation, Session, Transport, Network, Data link, Physical).\n\n7 Application : services aux applications (courrier, transfert de fichiers, terminal) — Données — passerelles d'application, logiciels.\n6 Présentation : représentation et syntaxe des données — Données — logiciels, formats.\n5 Session : dialogue entre applications — Données — logiciels.\n4 Transport : connexions de bout en bout, fiabilité — Segments — pare-feu, passerelles.\n3 Réseau : adressage, meilleur chemin — Paquets — routeurs.\n2 Liaison de données : accès au média, trames — Trames — ponts, commutateurs, cartes réseau.\n1 Physique : transmission binaire (fils, tensions, débits) — Bits — câbles, concentrateurs, répéteurs, cartes réseau.",
+      "explication_simple": "Retiens : câbles, hubs et répéteurs = couche 1 ; ponts et commutateurs = couche 2 ; routeurs = couche 3.",
+      "attention": "Les mots-clés de la couche 1 à 4 et la couche 7 sont lisibles dans le cours (transmission binaire, adressage et meilleur chemin, connexions de bout en bout, représentation des données, services applicatifs). Les équipements des couches 4 à 7, l'aide-mémoire et l'unité « segment » ne figurent pas dans le cours : ils viennent des références usuelles CCNA, à valider. Le cours place répéteurs et concentrateurs au niveau physique et ponts et commutateurs au niveau liaison de données."
+    }
+  ]
+}

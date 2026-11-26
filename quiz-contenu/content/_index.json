@@ -1,0 +1,76 @@
+{
+  "matieres": [
+    {
+      "id": "algorithmique",
+      "titre": "Algorithmique",
+      "dossier": "algorithmique",
+      "fichier": "_matiere.json",
+      "modules": 4,
+      "questions": 80,
+      "td": 33
+    },
+    {
+      "id": "developpement-mobile",
+      "titre": "Développement mobile",
+      "dossier": "developpement-mobile",
+      "fichier": "_matiere.json",
+      "modules": 4,
+      "questions": 80,
+      "td": 53
+    },
+    {
+      "id": "environnement-mobile",
+      "titre": "Environnement mobile",
+      "dossier": "environnement-mobile",
+      "fichier": "_matiere.json",
+      "modules": 4,
+      "questions": 80,
+      "td": 38
+    },
+    {
+      "id": "html-css",
+      "titre": "HTML et CSS",
+      "dossier": "html-css",
+      "fichier": "_matiere.json",
+      "modules": 9,
+      "questions": 180,
+      "td": 32
+    },
+    {
+      "id": "initiation-programmation",
+      "titre": "Initiation à la programmation",
+      "dossier": "initiation-programmation",
+      "fichier": "_matiere.json",
+      "modules": 2,
+      "questions": 40,
+      "td": 10
+    },
+    {
+      "id": "intro-web",
+      "titre": "Introduction au web",
+      "dossier": "intro-web",
+      "fichier": "_matiere.json",
+      "modules": 6,
+      "questions": 120,
+      "td": 5
+    },
+    {
+      "id": "javascript",
+      "titre": "JavaScript",
+      "dossier": "javascript",
+      "fichier": "_matiere.json",
+      "modules": 3,
+      "questions": 60,
+      "td": 6
+    },
+    {
+      "id": "reseau",
+      "titre": "Réseau",
+      "dossier": "reseau",
+      "fichier": "_matiere.json",
+      "modules": 5,
+      "questions": 100,
+      "td": 13
+    }
+  ]
+}

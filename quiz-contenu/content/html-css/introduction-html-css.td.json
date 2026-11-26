@@ -1,0 +1,51 @@
+{
+  "matiere": "html-css",
+  "module": "introduction-html-css",
+  "titre": "TD – Introduction à HTML et CSS",
+  "exercices": [
+    {
+      "id": "htmlcss-s1-td-01",
+      "type": "exercice",
+      "titre": "Installer un serveur web local avec XAMPP",
+      "source": "TP 01 – exercice 1",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe XAMPP, démarre Apache, crée un site « monsite » et vérifie qu'il s'affiche dans le navigateur.",
+      "indices": [
+        "XAMPP se télécharge sur apachefriends.org.",
+        "Le dossier des sites s'appelle htdocs, dans le dossier d'installation de XAMPP.",
+        "L'adresse locale commence par http://localhost/."
+      ],
+      "solution": "1. Télécharger XAMPP (apachefriends.org) et l'installer.\n2. Ouvrir le panneau de contrôle XAMPP et démarrer Apache (Start).\n3. Créer un dossier « monsite » dans c:\\xampp\\htdocs.\n4. Y placer une page index.html.\n5. Ouvrir http://localhost/monsite dans un navigateur : la page s'affiche.",
+      "explication_simple": "XAMPP installe un petit serveur web sur ton ordinateur. Tout ce que tu mets dans htdocs devient accessible par l'adresse http://localhost/.",
+      "attention": "Le TP écrit « c:\\xampp\\hdocs » : le dossier s'appelle htdocs."
+    },
+    {
+      "id": "htmlcss-s1-td-02",
+      "type": "exercice",
+      "titre": "Choisir et configurer un éditeur HTML",
+      "source": "TP 01 – exercice 2",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Installe un éditeur HTML et règle-le pour créer des pages HTML5.",
+      "indices": [
+        "Il y a des éditeurs WYSIWYG et des éditeurs de code.",
+        "Une page HTML5 commence par <!DOCTYPE html>."
+      ],
+      "solution": "• Éditeurs WYSIWYG (« ce que tu vois est ce que tu obtiens ») : Dreamweaver, BlueGriffon.\n• Éditeurs de code : Notepad++, Sublime Text.\n• Le TP utilise Dreamweaver CS6 : installer, créer le site « monsite » puis aller dans Édition > Préférences > Nouveau document et choisir le type de document HTML 5.\n• Vérification : une nouvelle page doit commencer par <!DOCTYPE html>.",
+      "explication_simple": "Peu importe l'éditeur : l'important est qu'il crée des fichiers texte .html encodés correctement. Pour apprendre, un simple éditeur de texte suffit."
+    },
+    {
+      "id": "htmlcss-s1-td-03",
+      "type": "exercice",
+      "titre": "Créer et tester une première page HTML",
+      "source": "TP 01 – exercice 3",
+      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      "enonce_simple": "Crée un fichier exple1.html avec un titre, un gros titre et un paragraphe, puis ouvre-le dans plusieurs navigateurs.",
+      "indices": [
+        "Structure : DOCTYPE, html, head, body.",
+        "Enregistre avec l'extension .html."
+      ],
+      "solution": "<!DOCTYPE html>\n<html>\n<head>\n<title>Titre de la page</title>\n</head>\n<body>\n<h1>Ma premiere entête</h1>\n<p>Mon premier paragraphe.</p>\n</body>\n</html>",
+      "explication_simple": "Le title apparaît dans l'onglet ; le h1 et le p apparaissent dans la page. Teste dans Chrome, Firefox, etc. pour voir que le rendu est le même."
+    }
+  ]
+}
