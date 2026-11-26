@@ -7,7 +7,7 @@
       "id": "algo-tableaux-structures-td-01",
       "titre": "Trois traitements sur un tableau t de n entiers",
       "source": "TD4.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "a) Compte les éléments égaux à 0.\nb) Trouve la position et la valeur du premier élément qui n'est pas 0.\nc) Remplace chaque nombre négatif par sa valeur absolue et chaque nombre positif par son carré.",
       "indices": [
         "a) Un compteur qui augmente de 1 à chaque fois que t[i] = 0.",
@@ -23,7 +23,7 @@
       "id": "algo-tableaux-structures-td-02",
       "titre": "Totaux par ligne et par colonne d'un tableau 10 × 20",
       "source": "TD4.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Saisis des entiers dans un tableau à deux dimensions TAB de 10 lignes et 20 colonnes. Calcule le total de chaque ligne (dans TOTLIG) et de chaque colonne (dans TOTCOL).",
       "indices": [
         "Une double boucle parcourt toutes les cases : i pour les lignes, j pour les colonnes.",
@@ -38,7 +38,7 @@
       "id": "algo-tableaux-structures-td-03",
       "titre": "Mot ou phrase palindrome",
       "source": "TD4.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Un palindrome se lit pareil dans les deux sens (ANNA, ou ESOPE RESTE ICI ET SE REPOSE). Dis si un mot ou une phrase est un palindrome.",
       "indices": [
         "Compare le 1er caractère avec le dernier, le 2e avec l'avant-dernier, etc.",
@@ -55,7 +55,7 @@
       "id": "algo-tableaux-structures-td-04",
       "titre": "Maximum, minimum et moyenne d'un tableau de réels",
       "source": "TD_seq3_algo_ida.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Affiche le plus grand, le plus petit et la moyenne des éléments d'un tableau de n réels. (L'exercice 3 du TD demande la même chose pour un tableau de 100 réels : il suffit de prendre n = 100.)",
       "indices": [
         "Démarre max et min avec le premier élément t[1].",
@@ -70,7 +70,7 @@
       "id": "algo-tableaux-structures-td-05",
       "titre": "Somme de deux vecteurs",
       "source": "TD_seq3_algo_ida.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Deux vecteurs U et V ont la même taille n. Calcule le vecteur S dont chaque élément est la somme des éléments de même position : S[i] = U[i] + V[i].",
       "indices": [
         "Les deux tableaux ont les mêmes indices.",
@@ -84,7 +84,7 @@
       "id": "algo-tableaux-structures-td-06",
       "titre": "Nombre d'occurrences d'un élément",
       "source": "TD_seq3_algo_ida.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Pour un tableau t de n éléments, compte combien de fois apparaît une valeur x donnée par l'utilisateur, puis affiche ce nombre.",
       "indices": [
         "Un compteur nb, initialisé à 0.",
@@ -99,7 +99,7 @@
       "id": "algo-tableaux-structures-td-07",
       "titre": "Produit scalaire de deux vecteurs (fonction)",
       "source": "TD_seq3_algo_ida.pdf",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une fonction qui calcule le produit scalaire de deux vecteurs d'entiers U et V de même dimension n : U[1]×V[1] + U[2]×V[2] + … + U[n]×V[n].",
       "indices": [
         "Comme une somme, mais on additionne des produits.",

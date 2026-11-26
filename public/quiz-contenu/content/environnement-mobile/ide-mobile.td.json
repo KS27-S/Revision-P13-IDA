@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce qu'un IDE pour le mobile ?",
       "source": "TD 6 – Environnements de développement intégré pour le mobile",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Qu'est-ce qu'un IDE pour le mobile ?",
       "indices": [
         "IDE = environnement de développement intégré. Que contient-il ?"
@@ -21,7 +21,7 @@
       "type": "exercice",
       "titre": "Trois IDE caractérisés selon l'approche",
       "source": "TD 6 – Environnements de développement intégré pour le mobile",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Cite trois exemples d'IDE et dis à quelle approche ils correspondent.",
       "indices": [
         "Natif, multiplateforme, hybride."
@@ -34,7 +34,7 @@
       "type": "exercice",
       "titre": "Langages associés aux IDE",
       "source": "TD 6 – Environnements de développement intégré pour le mobile",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Cite les langages associés aux IDE.",
       "indices": [
         "Un langage par outil."
@@ -47,7 +47,7 @@
       "type": "exercice",
       "titre": "Les IDE de l'approche web",
       "source": "TD 6 – Environnements de développement intégré pour le mobile",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Quels IDE sont associés à l'approche web ?",
       "indices": [
         "Basés sur HTML5."
@@ -60,7 +60,7 @@
       "type": "exercice",
       "titre": "Résumé des IDE selon les approches",
       "source": "TD 6 – Environnements de développement intégré pour le mobile",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Résume les IDE selon les approches de développement.",
       "indices": [
         "Natif, multiplateforme, hybride/web, interface native."

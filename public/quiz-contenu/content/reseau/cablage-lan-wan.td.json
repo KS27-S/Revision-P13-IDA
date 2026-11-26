@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Étape 1 : un réseau de deux ordinateurs (câble croisé)",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais le réseau le plus simple : deux ordinateurs reliés par un câble croisé.",
       "indices": [
         "Deux équipements de même nature se relient avec un câble croisé."
@@ -22,7 +22,7 @@
       "type": "exercice",
       "titre": "Étape 2 : un réseau local avec un concentrateur (hub)",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais un réseau avec 4 ordinateurs et un concentrateur (hub), avec des câbles droits.",
       "indices": [
         "PC vers hub : câble droit."
@@ -35,7 +35,7 @@
       "type": "exercice",
       "titre": "Étape 3 : un réseau local avec un pont (bridge)",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais un réseau avec 4 ordinateurs, 2 concentrateurs et un pont, avec des câbles droits et croisés.",
       "indices": [
         "Chaque hub avec ses 2 PC forme un segment.",
@@ -50,7 +50,7 @@
       "type": "exercice",
       "titre": "Étape 4 : un réseau local avec un commutateur (switch)",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais un réseau avec 4 ordinateurs et un commutateur, avec des câbles droits.",
       "indices": [
         "PC vers commutateur : câble droit."
@@ -63,7 +63,7 @@
       "type": "exercice",
       "titre": "Étape 5 : un réseau distant avec deux routeurs",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais le réseau distant : deux réseaux locaux, un réseau étendu (WAN), 2 routeurs, 2 commutateurs et 4 ordinateurs, avec des câbles droits et des câbles série.",
       "indices": [
         "Chaque LAN : 2 PC + 1 commutateur + 1 routeur.",
@@ -79,7 +79,7 @@
       "type": "exercice",
       "titre": "Étape 6 : un réseau local sans fil",
       "source": "TP 5 – Mise en place de réseaux locaux et distants avec Packet Tracer",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Fais un réseau avec 3 ordinateurs, une tablette, un smartphone et une antenne (point d'accès).",
       "indices": [
         "Un point d'accès relie les clients sans fil au réseau filaire.",

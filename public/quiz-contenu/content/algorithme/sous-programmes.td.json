@@ -7,7 +7,7 @@
       "id": "algo-sous-programmes-td-01",
       "titre": "Fonction : le cube d'un entier",
       "source": "Exercices de Travaux Dirigés 2",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une fonction qui reçoit un entier et renvoie son cube.",
       "indices": [
         "Une fonction renvoie une seule valeur avec retourner.",
@@ -21,7 +21,7 @@
       "id": "algo-sous-programmes-td-02",
       "titre": "Fonction : le maximum de deux entiers",
       "source": "Exercices de Travaux Dirigés 2",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une fonction qui reçoit deux entiers et renvoie le plus grand.",
       "indices": [
         "Compare a et b avec un Si.",
@@ -35,7 +35,7 @@
       "id": "algo-sous-programmes-td-03",
       "titre": "Fonction : factorielle",
       "source": "Exercices de Travaux Dirigés 2",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une fonction factorielle qui renvoie n! (par exemple 1! = 1 et 5! = 120).",
       "indices": [
         "Démarre un résultat à 1.",
@@ -49,7 +49,7 @@
       "id": "algo-sous-programmes-td-04",
       "titre": "Partie entière d'un nombre positif",
       "source": "Exercices de Travaux Dirigés 2",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une fonction qui renvoie la partie entière d'un nombre positif (la partie entière de 7,8 est 7).",
       "indices": [
         "Compte combien d'entiers « tiennent » dans x.",
@@ -64,7 +64,7 @@
       "id": "algo-sous-programmes-td-05",
       "titre": "Procédure : table de multiplication",
       "source": "Exercices de Travaux Dirigés 2",
-      "statut_corrige": "corrigé rédigé (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Écris une procédure qui affiche la table de multiplication d'un entier positif x (de 1 à 10).",
       "indices": [
         "Une procédure ne renvoie rien : elle affiche directement.",

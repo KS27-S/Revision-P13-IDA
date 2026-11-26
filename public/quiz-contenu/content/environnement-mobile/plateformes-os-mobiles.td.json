@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Définir un système d'exploitation mobile",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Qu'est-ce qu'un système d'exploitation mobile ?",
       "indices": [
         "Il « gère » l'appareil."
@@ -21,7 +21,7 @@
       "type": "exercice",
       "titre": "Plateformes, environnement de développement et market",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quel lien y a-t-il entre une plateforme mobile, un environnement de développement et un market ?",
       "indices": [
         "Une plateforme offre trois choses."
@@ -34,7 +34,7 @@
       "type": "exercice",
       "titre": "Critères de choix d'une plateforme",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quels critères permettent de choisir une plateforme pour développer ?",
       "indices": [
         "Pense à qui vise l'application, à la taille du marché et aux fonctions spécifiques."
@@ -47,7 +47,7 @@
       "type": "exercice",
       "titre": "Principales plateformes mobiles en 2017",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quelles sont les principales plateformes mobiles en 2017 ?",
       "indices": [
         "Il y en a quatre."
@@ -60,7 +60,7 @@
       "type": "exercice",
       "titre": "Situation début 2017 de chaque OS",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Décris brièvement la situation de chaque OS mobile début 2017.",
       "indices": [
         "Dates de lancement, base installée, état du développement."
@@ -73,7 +73,7 @@
       "type": "exercice",
       "titre": "Pourquoi Windows Phone et BlackBerry ont-ils échoué ?",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Qu'est-ce qui explique l'échec de Windows Phone et de BlackBerry ?",
       "indices": [
         "Pense au nombre d'utilisateurs, aux marques compatibles et aux applications disponibles."
@@ -87,7 +87,7 @@
       "type": "exercice",
       "titre": "Comment sont distribuées les applications mobiles ?",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Comment les applications mobiles sont-elles distribuées ?",
       "indices": [
         "Pense aux stores."
@@ -100,7 +100,7 @@
       "type": "exercice",
       "titre": "Qui a créé Android ? Sous quelle licence ? Qui gère son évolution ?",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quelle entreprise a créé Android ? Sous quelle licence est-il distribué ? Quelle structure gère son évolution ?",
       "indices": [
         "Une société nommée Android a été rachetée en 2005.",
@@ -114,7 +114,7 @@
       "type": "exercice",
       "titre": "Dernière version d'Android",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quelle est la dernière version de l'OS Android ?",
       "indices": [
         "Regarde la diapo « Évolution des versions »."
@@ -128,7 +128,7 @@
       "type": "exercice",
       "titre": "Architecture du framework Android",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Décris l'architecture du framework Android.",
       "indices": [
         "Il y a des couches, du bas vers le haut."
@@ -141,7 +141,7 @@
       "type": "exercice",
       "titre": "Comparer iOS, Android et Windows Phone",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Compare les trois plateformes.",
       "indices": [
         "Prix de la licence, IDE, langage, avantages, inconvénients."
@@ -154,7 +154,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce qui motiverait le choix d'Android ou d'iOS ?",
       "source": "TD 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Qu'est-ce qui peut pousser à choisir Android ou iOS ?",
       "indices": [
         "Pense au coût, au matériel nécessaire, au public visé."
@@ -167,7 +167,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce qui fait le succès d'Android ?",
       "source": "Séquence 4 – Plateformes et applications mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Pourquoi Android a-t-il eu autant de succès ?",
       "indices": [
         "Licence et langage."

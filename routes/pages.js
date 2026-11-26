@@ -35,6 +35,21 @@ router.get(
   envoyerPage("espace-etudiant.html")
 );
 
+// Quiz et TD : le contenu est protégé par l'API, mais on protège aussi la page
+// elle-même pour qu'un visiteur non validé ne puisse pas l'ouvrir directement.
+router.get(
+  "/quiz.html",
+  exigerConnexion,
+  exigerStatutValide,
+  envoyerPage("quiz.html")
+);
+router.get(
+  "/td.html",
+  exigerConnexion,
+  exigerStatutValide,
+  envoyerPage("td.html")
+);
+
 // Page d'administration : réservée au rôle admin, en plus du statut valide.
 router.get(
   "/admin.html",

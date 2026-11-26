@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Comparer le modèle OSI et la pile TCP/IP",
       "source": "TP 3-1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Remplis le tableau : pour chaque couche OSI (7 à 1), donne son nom, le numéro et le nom de la couche TCP/IP correspondante, l'unité d'encapsulation et des protocoles.",
       "indices": [
         "TCP/IP a 4 couches ; plusieurs couches OSI correspondent à une couche TCP/IP.",
@@ -24,7 +24,7 @@
       "type": "exercice",
       "titre": "Caractéristiques des couches OSI, aide-mémoire et équipements",
       "source": "TP 3-2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Classe les 7 couches OSI, invente un aide-mémoire, donne les mots-clés de chaque couche, l'unité d'encapsulation et les équipements qui fonctionnent à chaque couche.",
       "indices": [
         "Un aide-mémoire est une phrase dont les initiales rappellent les couches.",

@@ -18,67 +18,155 @@ body {
   line-height: 1.5;
   color: var(--color-black);
 }
-/* Barre de navigation : logo à gauche, liens à droite */
-nav {
-  background-color: var(--color-primary);
-  color: var(--color-near-black);
-  padding: 10px 30px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* L'en-tête reste visible quand on fait défiler la page. */
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
+/* Barre de navigation : identité à gauche, liens à droite. Le fond clair, le
+   filet bas et l'ombre douce remplacent l'ancien bandeau bleu plat. */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 50px;
+  padding: 10px clamp(16px, 4vw, 40px);
+  background: var(--color-white);
+  border-bottom: 1px solid #d8ecfa;
+  box-shadow: 0 6px 20px rgba(32, 64, 80, 0.07);
+}
+/* Logo UNCHK : un anneau bleu discret remplace l'ancienne bordure noire. */
 nav img {
-  border: var(--color-black) solid 1px;
+  width: 46px;
+  height: 46px;
+  border: 0;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 0 3px rgba(7, 136, 217, 0.14),
+    0 4px 10px rgba(32, 64, 80, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+nav img:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 4px rgba(7, 136, 217, 0.2),
+    0 6px 14px rgba(32, 64, 80, 0.16);
 }
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 4px;
 }
-nav a {
-  text-decoration: none;
-  color: var(--color-black);
+/* Liens et bouton de déconnexion partagent la même base : zone de clic
+   confortable, typographie resserrée et survol en bleu clair. */
+nav a,
+nav .lien-menu {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20px;
+  padding: 8px 13px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--color-blue-dark);
+  font: inherit;
+  font-size: 0.9rem;
   font-weight: 600;
-  /* Un peu de marge interne donne une zone de survol confortable autour du texte. */
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    box-shadow 0.2s ease, transform 0.2s ease;
 }
-/* Avant, le survol utilisait la même couleur que la barre : on ne le voyait pas.
-   On prend donc le bleu foncé, déjà présent dans les variables, pour contraster. */
+/* Petit trait animé au survol : plus lisible qu'un simple changement de fond. */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 13px;
+  right: 13px;
+  bottom: 6px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.2s ease;
+}
 nav a:hover,
-nav a:focus-visible {
-  color: var(--color-white);
-  background-color: var(--color-blue-dark);
+nav a:focus-visible,
+nav .lien-menu:hover,
+nav .lien-menu:focus-visible {
+  color: var(--color-primary);
+  background: var(--color-soft-blue);
 }
-/* La page en cours reste visible en permanence grâce à cette classe ajoutée par
-   script.js ; le petit trait orange rappelle la couleur d'accent du site. */
+nav a:hover::after,
+nav a:focus-visible::after {
+  transform: scaleX(1);
+}
+/* La page en cours garde un fond plein et le trait orange d'origine. */
 nav a.actif {
   color: var(--color-white);
-  background-color: var(--color-blue-dark);
-  box-shadow: inset 0 -3px 0 var(--color-orange);
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-blue-dark)
+  );
+  box-shadow: inset 0 -3px 0 var(--color-orange),
+    0 4px 12px rgba(7, 136, 217, 0.22);
 }
-/* Bouton du menu mobile : les trois barres sont des <span> créés dans script.js.
-   Il reste masqué sur ordinateur car tous les liens tiennent sur une ligne. */
+nav a.actif::after {
+  display: none;
+}
+/* Zone "compte" : un séparateur fin et un léger décalage rendent les actions
+   liées au profil immédiatement identifiables. */
+nav .session-debut {
+  margin-left: 10px;
+  padding-left: 18px;
+  border-left: 1px solid #d8ecfa;
+}
+nav .lien-inscription a {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(7, 136, 217, 0.25);
+}
+nav .lien-inscription a::after {
+  display: none;
+}
+nav .lien-inscription a:hover,
+nav .lien-inscription a:focus-visible {
+  background: var(--color-blue-dark);
+  color: var(--color-white);
+}
+nav .lien-inscription a.actif {
+  box-shadow: inset 0 -3px 0 var(--color-orange),
+    0 4px 12px rgba(7, 136, 217, 0.25);
+}
+/* Bouton du menu mobile : trois barres en CSS, animées en croix à l'ouverture. */
 .menu-burger {
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 5px;
   width: 44px;
   height: 40px;
-  padding: 8px;
-  border: 1px solid var(--color-blue-dark);
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.85);
+  padding: 9px;
+  border: 1px solid #d8ecfa;
+  border-radius: 12px;
+  background: var(--color-soft-blue);
   cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.menu-burger:hover {
+  background: #d9efff;
+  border-color: var(--color-primary);
 }
 .menu-burger span {
   display: block;
@@ -86,10 +174,54 @@ nav a.actif {
   height: 3px;
   border-radius: 3px;
   background: var(--color-blue-dark);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+nav.menu-ouvert .menu-burger span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+nav.menu-ouvert .menu-burger span:nth-child(2) {
+  opacity: 0;
+}
+nav.menu-ouvert .menu-burger span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 .menu-burger:focus-visible {
   outline: 3px solid var(--color-orange);
   outline-offset: 2px;
+}
+/* Sur écran moyen, le menu se replie pour garder tous les liens lisibles. */
+@media (max-width: 1100px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    margin-top: 2px;
+    padding-top: 12px;
+    border-top: 1px solid #d8ecfa;
+  }
+  nav.menu-ouvert ul {
+    display: flex;
+  }
+  nav a,
+  nav .lien-menu {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  nav .session-debut {
+    margin: 8px 0 0;
+    padding: 12px 0 0;
+    border-left: 0;
+    border-top: 1px solid #d8ecfa;
+  }
+  .menu-burger {
+    display: flex;
+  }
 }
 /* Titre principal commun aux pages */
 h1 {
@@ -719,26 +851,7 @@ footer a.actif {
 
 /* Adaptation de la mise en page aux écrans étroits (mobile/tablette) */
 @media (max-width: 768px) {
-  /* Sur mobile, logo et burger restent sur la même ligne. La liste des liens
-     est masquée par défaut et n'apparaît qu'après un clic sur le burger. */
-  nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  nav ul {
-    display: none;
-    width: 100%;
-    flex-direction: column;
-    gap: 8px;
-    padding-top: 10px;
-  }
-  nav.menu-ouvert ul {
-    display: flex;
-  }
-  .menu-burger {
-    display: flex;
-  }
+  /* La navigation a déjà ses propres règles responsive plus haut dans le fichier. */
   .rappel details > .rappel {
     padding: 16px;
   }
@@ -1248,28 +1361,21 @@ footer a.actif {
   }
 }
 
-/* Comptes et administration : ces règles reprennent les couleurs et les
-   arrondis déjà utilisés par les conditions d'utilisation. Le design des
-   pages existantes n'est pas modifié. */
-.lien-menu {
-  border: 0;
-  background: transparent;
-  color: var(--color-black);
-  font: inherit;
-  font-weight: 600;
-  padding: 8px 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.lien-menu:hover,
-.lien-menu:focus-visible {
-  color: var(--color-white);
-  background-color: var(--color-blue-dark);
+/* Compléments de la barre de navigation : le pseudo devient une pastille et le
+   bouton de déconnexion garde une taille de texte discrète. La base de ces
+   éléments est définie avec les autres règles de nav, en haut du fichier. */
+nav .lien-menu {
+  font-size: 0.85rem;
 }
 .menu-pseudo {
-  display: inline-block;
-  padding: 8px 12px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--color-soft-blue);
+  color: var(--color-blue-dark);
+  font-size: 0.85rem;
   font-weight: 700;
 }
 .formulaire-page {
@@ -1289,15 +1395,18 @@ footer a.actif {
   color: var(--color-blue-dark);
   font-weight: 700;
 }
-.champ input {
+.champ input,
+.champ select {
   width: 100%;
   box-sizing: border-box;
   padding: 12px 14px;
   border: 1px solid #bfe0f5;
   border-radius: 10px;
+  background: var(--color-white);
   font: inherit;
 }
-.champ input:focus-visible {
+.champ input:focus-visible,
+.champ select:focus-visible {
   outline: 3px solid var(--color-orange);
   outline-offset: 2px;
 }
@@ -1361,6 +1470,11 @@ footer a.actif {
   color: var(--color-white);
   cursor: pointer;
 }
+/* Ligne d'abonnement qui arrive à échéance : simple repère visuel pour l'admin. */
+.proche-expiration {
+  box-shadow: inset 4px 0 0 var(--color-orange);
+  background: #fffaf2;
+}
 .btn-valider {
   background: var(--color-green);
 }
@@ -1385,4 +1499,121 @@ footer a.actif {
 }
 .bouton-secondaire:hover {
   box-shadow: none;
+}
+
+/* Attribut HTML "hidden" : on le force ici, car .btn impose display:inline-flex. */
+[hidden] {
+  display: none !important;
+}
+
+/* Quiz : une carte par question, lisible sur petit écran. */
+.quiz-form,
+.liste-exercices {
+  margin-top: 20px;
+}
+.question-bloc,
+.exercice-bloc {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #cfe3f3;
+  border-radius: 16px;
+  background: var(--color-white);
+  box-shadow: 0 8px 20px rgba(32, 64, 80, 0.06);
+}
+.question-bloc legend {
+  padding: 0 6px;
+  color: var(--color-blue-dark);
+  font-weight: 700;
+}
+.option-reponse {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 10px 12px;
+  border: 1px solid #d8ecfa;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.option-reponse:hover {
+  border-color: var(--color-primary);
+  background: var(--color-soft-blue);
+}
+.option-reponse input {
+  margin-top: 3px;
+  accent-color: var(--color-primary);
+}
+.extrait-code {
+  overflow-x: auto;
+  padding: 12px;
+  border-radius: 10px;
+  background: #0d2436;
+  color: #eaf6ff;
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+}
+.resultat-score {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-blue-dark);
+}
+.correction-ligne {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--color-orange);
+  border-radius: 0 12px 12px 0;
+  background: #fffaf2;
+}
+.correction-ligne h3,
+.correction-ligne h4 {
+  margin-top: 0;
+  color: var(--color-blue-dark);
+}
+
+/* TD : chaque exercice se déplie quand l'étudiant veut travailler dessus. */
+.exercice-bloc summary {
+  color: var(--color-blue-dark);
+  font-weight: 700;
+  cursor: pointer;
+}
+.note-source {
+  color: #5b7181;
+  font-size: 0.86rem;
+}
+.liste-indices {
+  margin: 8px 0;
+  padding-left: 22px;
+  color: #35566d;
+}
+.zone-saisie-td textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #cfe3f3;
+  border-radius: 12px;
+  font-family: inherit;
+  resize: vertical;
+}
+.message-local {
+  min-height: 1em;
+  color: var(--color-green);
+  font-size: 0.9rem;
+}
+
+/* Suivi admin : couleurs simples pour distinguer les trois états. */
+.etat-badge--vide {
+  background: #eceff2;
+  color: #52606d;
+}
+.etat-badge--brouillon {
+  background: #fff2d9;
+  color: #a85a0b;
+}
+.etat-badge--publie {
+  background: #e5f7ec;
+  color: #176b3a;
+}
+.tableau-contenus td:last-child {
+  white-space: nowrap;
 }

@@ -18,8 +18,8 @@
         <h1>Révision P13 IDA</h1>
         <p>
           Choisissez une matière, puis un module. Chaque module propose un quiz
-          et un travail dirigé (TD). Pour l'instant, l'interface est statique :
-          les boutons montrent les états prévus, sans lancer d'exercice.
+          et un travail dirigé (TD). Les états Disponible / Verrouillé viennent
+          du serveur ; les exercices eux-mêmes ne sont pas encore développés.
         </p>
       </div>
 
@@ -40,8 +40,8 @@
         <li><span class="offert-badge">Offert</span> Premier TD de la matière.</li>
       </ul>
 
-      <!-- Chaque attribut data-... est une étiquette lisible par le futur backend :
-           il pourra changer data-etat ou ajouter "disabled" sans réécrire le HTML. -->
+      <!-- Chaque attribut data-... est une étiquette lisible par le backend :
+           revision.js change data-etat et "disabled" sans réécrire le HTML. -->
       <div class="grille-matieres">
         <!-- Carte d'Algorithmique : premier module réussi, deuxième disponible,
              les deux derniers verrouillés. -->
@@ -502,7 +502,8 @@
 
     <!-- Pied de page commun : script.js remplit ce conteneur -->
     <footer id="site-footer"></footer>
-    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
+    <!-- Script commun, puis script qui applique les états renvoyés par l'API -->
     <script src="script.js" defer></script>
+    <script src="revision.js" defer></script>
   </body>
 </html>

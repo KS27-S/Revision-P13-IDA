@@ -7,7 +7,11 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
-    "creer-admin": "node scripts/creer-admin.js"
+    "creer-admin": "node scripts/creer-admin.js",
+    "init-contenu": "node scripts/init-contenu.js",
+    "importer-rappels": "node scripts/importer-rappels.js",
+    "importer-contenu": "node scripts/importer-contenu.js",
+    "test": "node --test tests"
   },
   "engines": {
     "node": ">=22"

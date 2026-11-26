@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Définir un environnement mobile",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Explique avec tes mots ce qu'est un environnement mobile.",
       "indices": [
         "Pense à tout ce qui « entoure » le téléphone.",
@@ -22,7 +22,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce qu'une application mobile ?",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Donne une définition simple d'une application mobile.",
       "indices": [
         "Sur quels appareils fonctionne-t-elle ?"
@@ -35,7 +35,7 @@
       "type": "exercice",
       "titre": "Où sont stockées les applications mobiles ?",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Où trouve-t-on les applications mobiles ? Cite quelques magasins.",
       "indices": [
         "Chaque propriétaire d'OS a son magasin."
@@ -48,7 +48,7 @@
       "type": "exercice",
       "titre": "Quelques acteurs de l'écosystème mobile",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Cite quelques acteurs de l'écosystème mobile.",
       "indices": [
         "Pense à ceux qui créent les systèmes, les magasins et le matériel."
@@ -62,7 +62,7 @@
       "type": "exercice",
       "titre": "Les domaines d'intervention du panorama 2016",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Regarde le « Mobile Foundations Landscape » (diapo 7). Liste les domaines où interviennent les acteurs et, pour chaque domaine, au moins trois acteurs.",
       "indices": [
         "Chaque cadre de la diapo est un domaine, avec le nombre d'acteurs entre parenthèses."
@@ -76,7 +76,7 @@
       "type": "exercice",
       "titre": "Les enjeux financiers du développement mobile",
       "source": "TD 1 – Introduction aux technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Quels chiffres montrent l'importance financière du mobile en 2016 ?",
       "indices": [
         "Téléchargements, revenus, investissement, valorisation."
@@ -116,7 +116,7 @@
       "type": "exercice",
       "titre": "Lister 5 plateformes mobiles",
       "source": "TD 2 – Généralités sur les technologies mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+     
       "enonce_simple": "Cite cinq plateformes mobiles existantes.",
       "indices": [
         "Pense aux OS des téléphones."

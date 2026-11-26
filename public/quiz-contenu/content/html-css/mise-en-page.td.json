@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Schémas de mise en page avec des div",
       "source": "TP 08 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Réalise les schémas du TP (grilles de rectangles) avec des div. Montre la méthode sur un exemple : un en-tête sur toute la largeur, puis deux colonnes.",
       "indices": [
         "Les div de niveau bloc se placent l'un sous l'autre.",
@@ -24,7 +24,7 @@
       "type": "exercice",
       "titre": "Un CV mis en page avec des div",
       "source": "TP 08 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Réalise le CV du TP 7 avec des div : un bloc en-tête (identité à gauche, photo à droite, titre en dessous) puis un bloc par rubrique.",
       "indices": [
         "Un div par zone.",
@@ -40,7 +40,7 @@
       "type": "exercice",
       "titre": "Corriger et modifier le code du bloc CFPP-UGB",
       "source": "TP 08 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Dans le code du TP : 1) le bloc occupe toute la largeur ; 2) « Copyright@ugb » est centré dans le bloc gris ; 3) le texte CFPP-UGB devient une image ; 4) les textes de menu et content ont une marge de 5px.",
       "indices": [
         "Largeur : width:100% au lieu de 500px.",
@@ -57,7 +57,7 @@
       "type": "exercice",
       "titre": "Un CV en 4 blocs avec float et iframe",
       "source": "TP 08 – exercice 4",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Avec div et iframe, réalise une page de CV découpée en 4 blocs : logo (logo + description), menu (liens vers les parties du CV), content (une iframe qui affiche la partie choisie) et copyright (« Copyright@UGB 2016 »).",
       "indices": [
         "Menu à gauche (float:left), content à droite (float:left).",

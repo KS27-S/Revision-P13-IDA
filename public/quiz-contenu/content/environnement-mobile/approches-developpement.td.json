@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce qu'une approche de développement ?",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Qu'appelle-t-on une approche de développement mobile ?",
       "indices": [
         "C'est la manière de fabriquer l'application."
@@ -21,7 +21,7 @@
       "type": "exercice",
       "titre": "Lister et décrire les approches",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Cite les approches de développement mobile et décris-les en une phrase.",
       "indices": [
         "Il y en a quatre."
@@ -47,7 +47,7 @@
       "type": "exercice",
       "titre": "L'approche multiplateforme et son succès",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Explique l'approche multiplateforme et donne des raisons de son succès.",
       "indices": [
         "Un seul code, plusieurs systèmes."
@@ -60,7 +60,7 @@
       "type": "exercice",
       "titre": "5 défis du développement mobile",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Cite cinq défis du développement mobile.",
       "indices": [
         "Appareils, réseau, écran, connexion, services cloud."
@@ -73,7 +73,7 @@
       "type": "exercice",
       "titre": "Les supports du développement d'applications mobiles",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Quels sont les supports du développement d'applications mobiles ?",
       "indices": [
         "Langages, scripts, outils multiplateformes, frameworks."
@@ -86,7 +86,7 @@
       "type": "exercice",
       "titre": "Qu'est-ce que Xamarin ?",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Explique ce qu'est Xamarin.",
       "indices": [
         "C# et .NET."
@@ -99,7 +99,7 @@
       "type": "exercice",
       "titre": "Origine de l'essor de l'Internet mobile",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Qu'est-ce qui est à l'origine de l'essor des marchés de l'Internet mobile ?",
       "indices": [
         "Deux systèmes ont réussi là où le WAP avait échoué."
@@ -112,7 +112,7 @@
       "type": "exercice",
       "titre": "Résumé des points clés",
       "source": "TD 5 – Approches de développement pour les environnements mobiles",
-      "statut_corrige": "corrigé rédigé à partir du cours (à faire valider par l'enseignant)",
+      
       "enonce_simple": "Fais un résumé des points clés sur les plateformes mobiles.",
       "indices": [
         "Reprends les diapos « Points clés » et « À retenir »."

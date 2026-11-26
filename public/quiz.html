@@ -1,0 +1,33 @@
+<!doctype html>
+<!-- Quiz : page mobile, les questions arrivent du serveur sans les réponses -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="quiz.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main class="terms-page quiz-page">
+      <div class="page-intro">
+        <h1 id="titre-quiz">Quiz</h1>
+        <p id="sous-titre-quiz">Chargement du quiz…</p>
+      </div>
+
+      <p id="message-quiz" class="message-erreur" role="alert"></p>
+      <p id="offres-quiz"></p>
+
+      <!-- Le formulaire est construit par quiz.js avec les données du serveur. -->
+      <form id="formulaire-quiz" class="quiz-form" hidden></form>
+
+      <!-- L'écran de résultat reste vide jusqu'à la correction côté serveur. -->
+      <section id="resultat-quiz" class="terms-article resultat-quiz" hidden></section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

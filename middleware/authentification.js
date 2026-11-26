@@ -43,7 +43,11 @@ function chargerUtilisateur(req, res, suite) {
 // Une requête pour une page HTML doit être redirigée ; une requête API reçoit
 // du JSON. On distingue les deux pour garder une interface agréable.
 function estUnePage(req) {
-  return req.path.endsWith(".html") || req.path === "/";
+  // req.path est relatif au point de montage Express : dans /api/rappels il
+  // vaut "/" pour la liste, ce qui déclencherait une redirection HTML.
+  // originalUrl garde l'adresse complète, donc une requête API reçoit du JSON.
+  const chemin = req.originalUrl.split("?")[0];
+  return chemin.endsWith(".html") || chemin === "/";
 }
 
 function refuser(req, res, statut, message, redirection) {

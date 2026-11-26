@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "L'attribut style",
       "source": "TP 04 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Réalise la page « Liste des universités du Sénégal » : fond jaune, bordure noire, et des titres de couleurs différentes (vert, bleu, rouge), uniquement avec l'attribut style.",
       "indices": [
         "background-color pour le fond.",
@@ -24,7 +24,7 @@
       "type": "exercice",
       "titre": "Balises de formatage et de sortie d'ordinateur",
       "source": "TP 04 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "1) Une université barrée, une autre surlignée en jaune, et « Ctrl+b » comme une touche de clavier. 2) Écris a² + 2ab + b² = (a+b)² et S1 + S2 + S3 = 0.",
       "indices": [
         "Barré : <del>. Surligné : <mark>. Touche : <kbd>.",
@@ -39,7 +39,7 @@
       "type": "exercice",
       "titre": "Couleurs rgb et hsl avec transparence",
       "source": "TP 04 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Réalise un titre et un paragraphe : d'abord avec rgb (paragraphe transparent), puis avec hsl (paragraphe transparent).",
       "indices": [
         "rgba et hsla ont un 4e paramètre : la transparence (0 à 1).",

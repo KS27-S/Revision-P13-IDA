@@ -15,14 +15,15 @@
 
 // Liste unique des entrées du menu visibles par tout le monde. Pourquoi un
 // tableau : c'est la "source de vérité". Ajouter une page ici suffit à la faire
-// apparaître partout.
+// apparaître partout. L'ordre suit le parcours de l'étudiant : accueil, contenu
+// de révision, outils d'aide, puis espace personnel et présentation du projet.
 let LIENS_NAVIGATION = [
   { page: "accueil.html", libelle: "Accueil" },
   { page: "revision.html", libelle: "Révision" },
-  { page: "assistant.html", libelle: "Assistant de révision" },
   { page: "rappel.html", libelle: "Rappel de cours" },
-  { page: "projet.html", libelle: "Projet" },
+  { page: "assistant.html", libelle: "Assistant de révision" },
   { page: "espace-etudiant.html", libelle: "Espace étudiant" },
+  { page: "projet.html", libelle: "Projet" },
 ];
 
 /*
@@ -63,8 +64,9 @@ async function recupererSession() {
 }
 
 // Fabrique un <li><a> du menu. textContent (et non innerHTML) empêche
-// qu'un pseudo contenant du HTML modifie la page.
-function creerLienMenu(page, libelle, pageCourante) {
+// qu'un pseudo contenant du HTML modifie la page. La classe facultative sert
+// à distinguer certaines actions, comme le bouton "Inscription".
+function creerLienMenu(page, libelle, pageCourante, classe = "") {
   let elementListe = document.createElement("li");
   let ancre = document.createElement("a");
   ancre.href = page;
@@ -75,7 +77,18 @@ function creerLienMenu(page, libelle, pageCourante) {
     ancre.setAttribute("aria-current", "page");
   }
 
+  if (classe) {
+    elementListe.className = classe;
+  }
+
   elementListe.appendChild(ancre);
+  return elementListe;
+}
+
+// Enveloppe un élément de session (pseudo, déconnexion) dans un <li> du menu.
+function creerElementSession(enfant) {
+  let elementListe = document.createElement("li");
+  elementListe.appendChild(enfant);
   return elementListe;
 }
 
@@ -110,8 +123,9 @@ function creerNavigation(session) {
 
   let pageCourante = recupererPageCourante();
 
-  // On recrée la balise <nav> pour garder exactement le même CSS qu'avant.
+  // On recrée la balise <nav> pour garder le même sélecteur CSS qu'avant.
   let barre = document.createElement("nav");
+  barre.setAttribute("aria-label", "Navigation principale");
 
   // Le logo UNCHK reste à gauche, avec ses classes et son identifiant d'origine.
   let logo = document.createElement("img");
@@ -142,30 +156,49 @@ function creerNavigation(session) {
 
   // Liens qui dépendent de la session. Le serveur a déjà vérifié le cookie :
   // le front ne fait qu'afficher le résultat, il ne décide pas des droits.
+  // On les rassemble d'abord dans un tableau : le CSS peut ainsi séparer la
+  // zone "compte" du reste du menu grâce à la classe "session-debut".
+  let elementsSession = [];
+
   if (session.connecte) {
     if (session.role === "admin") {
-      liste.appendChild(creerLienMenu("admin.html", "Administration", pageCourante));
+      elementsSession.push(
+        creerLienMenu("admin.html", "Administration", pageCourante)
+      );
     }
 
-    let elementPseudo = document.createElement("li");
     let affichagePseudo = document.createElement("span");
     affichagePseudo.className = "menu-pseudo";
     affichagePseudo.textContent = session.pseudo;
-    elementPseudo.appendChild(affichagePseudo);
-    liste.appendChild(elementPseudo);
+    elementsSession.push(creerElementSession(affichagePseudo));
 
-    let elementDeconnexion = document.createElement("li");
     let boutonDeconnexion = document.createElement("button");
     boutonDeconnexion.type = "button";
     boutonDeconnexion.className = "lien-menu";
     boutonDeconnexion.textContent = "Déconnexion";
     boutonDeconnexion.addEventListener("click", deconnecter);
-    elementDeconnexion.appendChild(boutonDeconnexion);
-    liste.appendChild(elementDeconnexion);
+    elementsSession.push(creerElementSession(boutonDeconnexion));
   } else {
-    liste.appendChild(creerLienMenu("connexion.html", "Connexion", pageCourante));
-    liste.appendChild(creerLienMenu("inscription.html", "Inscription", pageCourante));
+    elementsSession.push(
+      creerLienMenu("connexion.html", "Connexion", pageCourante, "lien-connexion")
+    );
+    elementsSession.push(
+      creerLienMenu(
+        "inscription.html",
+        "Inscription",
+        pageCourante,
+        "lien-inscription"
+      )
+    );
   }
+
+  elementsSession.forEach(function (element, index) {
+    element.classList.add("element-session");
+    if (index === 0) {
+      element.classList.add("session-debut");
+    }
+    liste.appendChild(element);
+  });
 
   barre.appendChild(logo);
   barre.appendChild(boutonBurger);

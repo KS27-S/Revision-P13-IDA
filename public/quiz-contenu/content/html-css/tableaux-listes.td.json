@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Tableau des universités",
       "source": "TP 07 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Réalise un tableau de 3 lignes : nom de l'université, image, liste de ses facultés (numérotée ou en lettres) et lien vers son site. Chaque ligne a sa couleur de fond.",
       "indices": [
         "<tr> pour chaque ligne, <td> pour chaque cellule.",
@@ -23,7 +23,7 @@
       "type": "exercice",
       "titre": "Listes imbriquées",
       "source": "TP 07 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Réalise une liste numérotée qui commence à 3 : « UFR SAT » (avec trois sections en lettres sur fond vert), « UFR SEG », « UFR SJP », « UFR LSH ».",
       "indices": [
         "start=\"3\" pour commencer à 3.",
@@ -38,7 +38,7 @@
       "type": "exercice",
       "titre": "Fusionner des cellules : colspan et rowspan",
       "source": "TP 07 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Les schémas du TP sont des tableaux avec des cellules fusionnées. Montre comment fusionner des colonnes et des lignes.",
       "indices": [
         "colspan fusionne vers la droite, rowspan vers le bas.",
@@ -53,7 +53,7 @@
       "type": "exercice",
       "titre": "Un CV mis en page avec des tableaux",
       "source": "TP 07 – exercice 4",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Réalise un CV : en haut, une zone identité (nom, statut, adresse, email, tél) et une photo ; puis les rubriques Formation, Expériences professionnelles et Connaissances informatiques. Cache les bordures à la fin.",
       "indices": [
         "Un tableau pour l'en-tête, un autre pour les rubriques.",

@@ -43,6 +43,109 @@
           </table>
         </div>
       </section>
+
+      <!-- Abonnements : activation manuelle après vérification du paiement Wave. -->
+      <section class="terms-article">
+        <h2>Abonnements</h2>
+        <p id="message-abonnement" class="message-erreur" role="alert"></p>
+        <p class="points-legende">
+          Le paiement est vérifié manuellement : c'est cette activation qui ouvre
+          l'accès aux modules non offerts.
+        </p>
+
+        <!-- Le formulaire est rempli par admin.js avec les étudiants validés
+             et les offres du cahier des charges. -->
+        <form id="formulaire-abonnement" class="formulaire-compte">
+          <div class="champ">
+            <label for="abonnement-etudiant">Étudiant validé</label>
+            <select id="abonnement-etudiant" name="utilisateurId" required></select>
+          </div>
+          <div class="champ">
+            <label for="abonnement-offre">Offre</label>
+            <select id="abonnement-offre" name="offreId" required></select>
+          </div>
+          <div class="champ">
+            <label for="abonnement-duree">Durée (mois)</label>
+            <input
+              id="abonnement-duree"
+              name="dureeMois"
+              type="number"
+              min="1"
+              max="12"
+              value="1"
+              required
+            />
+          </div>
+          <div class="champ">
+            <label for="abonnement-reference">Référence Wave (facultative)</label>
+            <input
+              id="abonnement-reference"
+              name="referencePaiement"
+              type="text"
+              maxlength="100"
+            />
+          </div>
+          <button type="submit" class="btn">Activer l'abonnement</button>
+        </form>
+
+        <!-- Résumé calculé par le serveur : abonnements actifs qui expirent
+             dans les 7 prochains jours. -->
+        <p id="expiration-proche" class="points-legende"></p>
+
+        <div class="tableau-admin">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Étudiant</th>
+                <th scope="col">Offre</th>
+                <th scope="col">Début</th>
+                <th scope="col">Fin</th>
+                <th scope="col">Jours restants</th>
+                <th scope="col">Statut</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="corps-abonnements">
+              <!-- admin.js remplit ce tableau avec l'historique complet. -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Suivi des contenus : un état par module et par type de contenu.
+           Les statuts viennent de la base ; le front ne publie rien lui-même. -->
+      <section class="terms-article">
+        <h2>Suivi des contenus</h2>
+        <p id="message-contenu" class="message-erreur" role="alert"></p>
+        <p id="resume-contenu" class="points-legende">
+          Chargement du suivi des contenus…
+        </p>
+        <p class="points-legende">
+          Les quiz sont importés en brouillon. Rien n'est publié automatiquement.
+          « Tout publier » ignore les fiches vides, incomplètes ou verrouillées.
+        </p>
+        <button id="bouton-tout-publier" type="button" class="btn">
+          Tout publier (contenus complets uniquement)
+        </button>
+
+        <div class="tableau-admin tableau-contenus">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Matière</th>
+                <th scope="col">Module</th>
+                <th scope="col">Contenu</th>
+                <th scope="col">État</th>
+                <th scope="col">Vérification</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="corps-contenus">
+              <!-- admin.js remplit ce tableau avec /api/admin/contenus. -->
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
 
     <footer id="site-footer"></footer>

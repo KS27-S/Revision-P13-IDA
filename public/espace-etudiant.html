@@ -82,11 +82,9 @@
         <!-- Abonnement : l'offre en cours et ce qu'elle donne accès. -->
         <section class="panneau">
           <h2>Mon abonnement</h2>
-          <div class="abonnement-offre">
-            <h3>Offre gratuite</h3>
-            <p>Valable jusqu'au 15 décembre 2026.</p>
-            <p>Premier module de chaque matière : quiz, TD et rappel offerts.</p>
-            <p>Assistant IA : 10 messages par jour.</p>
+          <!-- espace-etudiant.js remplace ce contenu par les données du serveur. -->
+          <div class="abonnement-offre" id="abonnement-contenu">
+            <p>Chargement de votre abonnement…</p>
           </div>
           <p class="points-legende">
             Le détail des offres et des règles est indiqué dans les
@@ -98,7 +96,8 @@
 
     <!-- Pied de page commun : script.js remplit ce conteneur -->
     <footer id="site-footer"></footer>
-    <!-- Script commun chargé après l'analyse du document (attribut defer) -->
+    <!-- Script commun, puis script qui charge « Mon abonnement » depuis l'API -->
     <script src="script.js" defer></script>
+    <script src="espace-etudiant.js" defer></script>
   </body>
 </html>

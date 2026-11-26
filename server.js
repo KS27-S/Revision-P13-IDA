@@ -28,6 +28,15 @@ const {
 const apiRoutes = require("./routes/api");
 const adminRoutes = require("./routes/admin");
 const pagesRoutes = require("./routes/pages");
+const contenuRoutes = require("./routes/contenu");
+const rappelsRoutes = require("./routes/rappels");
+const quizRoutes = require("./routes/quiz");
+const tdRoutes = require("./routes/td");
+const adminContenuRoutes = require("./routes/admin-contenu");
+const abonnementRoutes = require("./routes/abonnements");
+const {
+  mettreAJourAbonnementsExpires,
+} = require("./services/abonnements");
 
 // Sans clé secrète, express-session ne peut pas signer le cookie. On s'arrête
 // immédiatement plutôt que de mettre une valeur prévisible dans le code.
@@ -78,13 +87,36 @@ app.use(
 
 // L'API publique et l'API admin reçoivent l'utilisateur courant (s'il y en a).
 app.use("/api", chargerUtilisateur, apiRoutes);
+app.use("/api", chargerUtilisateur, contenuRoutes);
+// Express retire le préfixe de montage avant de passer la requête au routeur.
+// Le routeur des rappels déclare "/" : il doit donc être monté sur le chemin
+// complet, sinon "/" ne correspondrait jamais à "/api/rappels".
+// chargerUtilisateur doit rester ici : il remplit req.utilisateur avant que le
+// routeur applique exigerConnexion / exigerStatutValide.
+app.use("/api/rappels", chargerUtilisateur, rappelsRoutes);
+// Le moteur de quiz et les TD ont leurs propres contrôles d'accès dans le routeur.
+app.use("/api/quiz", chargerUtilisateur, quizRoutes);
+app.use("/api/td", chargerUtilisateur, tdRoutes);
+// Le routeur des abonnements déclare déjà "/mon-abonnement" : on le monte sur
+// "/api" pour obtenir "/api/mon-abonnement" une seule fois.
+app.use("/api", chargerUtilisateur, abonnementRoutes);
 app.use("/api/admin", chargerUtilisateur, adminRoutes);
+app.use("/api/admin", chargerUtilisateur, adminContenuRoutes);
 
 // Les pages protégées sont déclarées avant le dossier statique : c'est le
 // serveur qui décide si l'accès est autorisé.
 app.use(pagesRoutes);
 
-// Tout le reste du front est servi normalement (HTML, CSS, images, JSON des quiz).
+/*
+ * Les fichiers JSON d'origine contiennent les bonnes réponses et les corrigés.
+ * Express.static les rendrait publics ; on bloque donc ce dossier avant lui.
+ * L'import lit ces fichiers sur le disque, il n'a pas besoin de les servir.
+ */
+app.use("/quiz-contenu/content", function (req, res) {
+  return res.status(404).type("text/plain").send("Contenu indisponible.");
+});
+
+// Tout le reste du front est servi normalement (HTML, CSS, images).
 app.use(
   express.static(path.join(__dirname, "public"), {
     index: "index.html",
@@ -110,10 +142,36 @@ app.use((erreur, req, res, suite) => {
   return res.status(500).json({ erreur: "Erreur interne du serveur." });
 });
 
-app.listen(port, () => {
-  console.log(`Serveur IDA P13 démarré sur http://localhost:${port}`);
-  console.log(`Base de données : ${process.env.DB_PATH || "./donnees/revision-p13.db"}`);
+// Un abonnement expire automatiquement à sa date de fin : au démarrage puis
+// toutes les heures. Les routes qui lisent un abonnement refont aussi le check,
+// au cas où cette tâche n'aurait pas tourné (serveur éteint la veille par ex.).
+try {
+  mettreAJourAbonnementsExpires();
+} catch (erreur) {
+  console.error("Expiration des abonnements impossible :", erreur.message);
+}
+const minuteurExpiration = setInterval(() => {
+  try {
+    mettreAJourAbonnementsExpires();
+  } catch (erreur) {
+    console.error("Expiration des abonnements impossible :", erreur.message);
+  }
+}, 60 * 60 * 1000);
+// unref() : cette tâche ne doit pas empêcher le processus de s'arrêter.
+minuteurExpiration.unref();
 
-  // base est chargée au démarrage : cela crée les tables avant la première requête.
-  void base;
-});
+// base est chargée au démarrage : cela crée les tables avant la première requête.
+void base;
+
+// On exporte l'application pour que les tests puissent la démarrer sur un port
+// temporaire sans ouvrir le serveur "réel" (voir tests/api.test.js).
+module.exports = app;
+
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Serveur IDA P13 démarré sur http://localhost:${port}`);
+    console.log(
+      `Base de données : ${process.env.DB_PATH || "./donnees/revision-p13.db"}`
+    );
+  });
+}

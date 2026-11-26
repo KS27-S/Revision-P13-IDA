@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Installer et prendre en main Packet Tracer",
       "source": "TP 4",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Télécharge et installe Packet Tracer, lis le guide de prise en main, puis construis un petit schéma (placer du matériel et des connexions).",
       "indices": [
         "Place-toi dans l'onglet Logical.",

@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Ma première boîte de dialogue (balise script, puis fichier externe)",
       "source": "td 1.pdf – exercice 1.1",
-      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Installe Visual Studio Code. Crée exo111.html qui affiche la boîte de dialogue « Je viens de débuter le cours de JS » avec la balise script. Refais-le avec exo112.html et exo112.js.",
       "indices": [
         "alert() affiche une boîte de dialogue.",
@@ -23,7 +23,7 @@
       "type": "exercice",
       "titre": "Découvrir la console du navigateur",
       "source": "td 1.pdf – exercice 1.3",
-      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Ouvre la console de développement de Chrome et essaie quelques instructions.",
       "indices": [
         "Raccourci : Ctrl+Shift+J.",
@@ -38,7 +38,7 @@
       "type": "exercice",
       "titre": "Demander un nombre et répéter un affichage",
       "source": "td 1.pdf – exercice 1.4",
-      "statut_corrige": "corrigé rédigé par Claude (les TD ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Avec prompt(), demande un nombre entre 1 et 10. S'il n'est pas dans cet intervalle, affiche un message avec alert(). Sinon, fais une boucle de 1 au nombre saisi et affiche dans la console « affichage no 1 : ceci est un exercice » (en changeant le numéro). À la fin, affiche « Affichage terminé » dans une boîte de dialogue.",
       "indices": [
         "prompt() renvoie du texte : convertis-le avec parseInt().",

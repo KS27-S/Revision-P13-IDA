@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Convertir des nombres décimaux en binaire (8 positions)",
       "source": "TP 2.1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Convertis chaque nombre décimal en binaire sur 8 positions. Pour une adresse (avec des points), convertis chaque nombre séparément.",
       "indices": [
         "Utilise le tableau 128, 64, 32, 16, 8, 4, 2, 1.",
@@ -23,7 +23,7 @@
       "type": "exercice",
       "titre": "Convertir des nombres binaires en décimal",
       "source": "TP 2.2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Convertis chaque nombre binaire en décimal. Pour les adresses, convertis chaque octet séparément.",
       "indices": [
         "Écris les rangs : 128, 64, 32, 16, 8, 4, 2, 1 (de gauche à droite pour un octet).",
@@ -39,7 +39,7 @@
       "type": "exercice",
       "titre": "Conversions hexadécimal – décimal – binaire",
       "source": "TP 2.3 (exercice corrigé)",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+       
       "enonce_simple": "Pour chaque valeur, trouve les équivalents dans les deux autres formats (décimal, hexadécimal, binaire).",
       "indices": [
         "Un caractère hexadécimal vaut 4 bits.",

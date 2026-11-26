@@ -100,10 +100,24 @@ function validerIdentifiant(valeur) {
   return Number(texte);
 }
 
+/*
+ * Durée d'un abonnement, choisie par l'administrateur. Le cahier prévoit une
+ * offre valable 1 mois ; on autorise jusqu'à 12 mois pour un paiement fait
+ * d'avance, mais jamais zéro ni une valeur bizarre envoyée par le navigateur.
+ */
+function validerDureeMois(valeur) {
+  const nombre = Number(valeur);
+  if (!Number.isInteger(nombre) || nombre < 1 || nombre > 12) {
+    return null;
+  }
+  return nombre;
+}
+
 module.exports = {
   nettoyerNumero,
   validerInscription,
   validerConnexion,
   validerCode,
   validerIdentifiant,
+  validerDureeMois,
 };

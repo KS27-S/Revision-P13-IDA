@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- Travaux dirigés : énoncés, dépôt du travail puis correction après envoi -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TD | Révision P13 IDA</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="td.js" defer></script>
+  </head>
+  <body>
+    <header id="site-header"></header>
+
+    <main class="terms-page td-page">
+      <div class="page-intro">
+        <h1 id="titre-td">Travaux dirigés</h1>
+        <p id="sous-titre-td">Chargement du TD…</p>
+      </div>
+
+      <p id="message-td" class="message-erreur" role="alert"></p>
+      <p id="offres-td"></p>
+
+      <!-- Les exercices (<details>) sont construits par td.js. -->
+      <div id="liste-exercices" class="liste-exercices"></div>
+
+      <section id="correction-td" class="terms-article resultat-quiz" hidden></section>
+    </main>
+
+    <footer id="site-footer"></footer>
+  </body>
+</html>

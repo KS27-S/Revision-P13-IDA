@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Un formulaire mis en page avec un tableau",
       "source": "TP 09 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Réalise le formulaire : civilité (3 boutons radio, Madame coché), nom/prénom, adresse (zone de texte), n° postal et localité (« Dakar »), pays (liste, « Senegal »), plateformes (3 cases, Windows et Macintosh cochées), boutons « Soumettre formulaire » et « Effacer ». Mets tous les champs dans un tableau.",
       "indices": [
         "radio : même name pour les 3 boutons.",
@@ -25,7 +25,7 @@
       "type": "exercice",
       "titre": "Un formulaire d'inscription avec div et CSS",
       "source": "TP 09 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Réalise un formulaire d'inscription du type Facebook (prénom et nom côte à côte, e-mail, mot de passe, date de naissance, sexe, bouton « Inscription ») avec des div et du CSS.",
       "indices": [
         "Un div autour du formulaire, avec une largeur fixe.",

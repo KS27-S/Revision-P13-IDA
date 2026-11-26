@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Afficher des caractères réservés avec des entités",
       "source": "TP 03 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Reproduis la page qui explique les entités, en affichant réellement les signes <, > et le texte « &entity_name; ».",
       "indices": [
         "Pour < écris &lt; ; pour > écris &gt; ; pour & écris &amp;.",
@@ -22,7 +22,7 @@
       "type": "exercice",
       "titre": "Tableau des symboles monétaires",
       "source": "TP 03 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Crée un document en UTF-8 avec le tableau des devises (CFA, livre, yen, yuan, euro, dollar) et leurs symboles.",
       "indices": [
         "Place <meta charset=\"UTF-8\"> dans le head.",
@@ -36,7 +36,7 @@
       "type": "exercice",
       "titre": "Écrire des formules mathématiques",
       "source": "TP 03 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Avec UTF-8 et les bonnes balises, écris des formules : x = (−b ± √(b² − 4ac)) / 2a ; a² + 2ab + b² = (a+b)² ; S1 + … + Sn = ΣSi.",
       "indices": [
         "Exposant : <sup>. Indice : <sub>.",
@@ -51,7 +51,7 @@
       "type": "exercice",
       "titre": "Les balises de métadonnées et le viewport",
       "source": "TP 03 – exercice 4",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Dans le code du TP : quelles balises décrivent des métadonnées ? Y en a-t-il d'autres possibles ? Comment adapter la page à l'écran de l'appareil ?",
       "indices": [
         "Elles sont toutes dans <head>.",
@@ -65,7 +65,7 @@
       "type": "exercice",
       "titre": "Encoder des URL",
       "source": "TP 03 – exercice 5",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Encode ces deux adresses : 1) http://www.uvs.sn/index.php?q=kébémer   2) http://www.uvs.sn/fichier 12.html",
       "indices": [
         "é devient %E9 dans la table du cours.",

@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Installer un serveur web local avec XAMPP",
       "source": "TP 01 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Installe XAMPP, démarre Apache, crée un site « monsite » et vérifie qu'il s'affiche dans le navigateur.",
       "indices": [
         "XAMPP se télécharge sur apachefriends.org.",
@@ -24,7 +24,7 @@
       "type": "exercice",
       "titre": "Choisir et configurer un éditeur HTML",
       "source": "TP 01 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Installe un éditeur HTML et règle-le pour créer des pages HTML5.",
       "indices": [
         "Il y a des éditeurs WYSIWYG et des éditeurs de code.",
@@ -38,7 +38,7 @@
       "type": "exercice",
       "titre": "Créer et tester une première page HTML",
       "source": "TP 01 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Crée un fichier exple1.html avec un titre, un gros titre et un paragraphe, puis ouvre-le dans plusieurs navigateurs.",
       "indices": [
         "Structure : DOCTYPE, html, head, body.",

@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Les composants d'un document HTML",
       "source": "TP 02 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Pour chaque élément du code du TP (html, head, title, meta, body, p, pre), donne : son nom, sa balise de début et de fin, son contenu, ses attributs et son rôle. Quels éléments sont imbriqués ?",
       "indices": [
         "Pense aux éléments vides (pas de balise de fin).",
@@ -22,7 +22,7 @@
       "type": "exercice",
       "titre": "Rubriques et paragraphes",
       "source": "TP 02 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Écris le code de la page « Liste des universités du Sénégal » : un grand titre, puis pour chaque université un titre de niveau 2, un paragraphe et une ligne de séparation.",
       "indices": [
         "h1 pour le titre principal, h2 pour chaque université.",
@@ -37,7 +37,7 @@
       "type": "exercice",
       "titre": "Commenter un document HTML",
       "source": "TP 02 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Ajoute un commentaire avec ton nom et la date de création. Puis fais disparaître « Université de Matam » en le mettant en commentaire.",
       "indices": [
         "Un commentaire s'écrit <!-- … -->."

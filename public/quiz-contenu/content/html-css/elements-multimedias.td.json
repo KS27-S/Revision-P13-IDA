@@ -8,7 +8,7 @@
       "type": "exercice",
       "titre": "Liens hypertextes et signets",
       "source": "TP 06 – exercice 1",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Fais un long document avec une liste d'universités. Chaque titre porte un signet ; un menu en haut et un menu en bas permettent d'y aller.",
       "indices": [
         "Un signet = un id sur le titre.",
@@ -23,7 +23,7 @@
       "type": "exercice",
       "titre": "Afficher une image à droite du paragraphe",
       "source": "TP 06 – exercice 2",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Reprends l'exercice 1 et affiche le logo de chaque université à droite du paragraphe correspondant.",
       "indices": [
         "La balise est <img>.",
@@ -38,7 +38,7 @@
       "type": "exercice",
       "titre": "Intégrer une vidéo YouTube",
       "source": "TP 06 – exercice 3",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Sous le paragraphe de chaque université, affiche une vidéo YouTube sur cette université.",
       "indices": [
         "Sur YouTube : Partager > Intégrer, puis copier le code.",
@@ -53,7 +53,7 @@
       "type": "exercice",
       "titre": "Découper le document avec des iframes",
       "source": "TP 06 – exercice 4",
-      "statut_corrige": "corrigé rédigé par Claude (les TP ne fournissent pas de corrigé) : à faire valider par l'enseignant",
+      
       "enonce_simple": "Découpe la page en plusieurs pages (une par université). Un menu en haut affiche chaque page dans une iframe, sous le menu.",
       "indices": [
         "La cible du lien doit avoir le même nom que l'iframe : target = name.",
