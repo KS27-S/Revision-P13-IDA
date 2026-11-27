@@ -24,7 +24,9 @@ const Database = require("better-sqlite3");
 
 // Par défaut la base est dans donnees/ : ce dossier est ignoré par Git car il
 // contient des données personnelles (numéros de téléphone).
-const cheminRelatif = process.env.DB_PATH || "./donnees/revision-p13.db";
+const cheminRelatif =
+  process.env.DB_PATH ||
+  (process.env.VERCEL === "1" ? "/tmp/revision-p13.db" : "./donnees/revision-p13.db");
 const cheminBase = path.resolve(__dirname, "..", cheminRelatif);
 
 // recursive: true évite une erreur si le dossier n'existe pas encore.

@@ -50,6 +50,7 @@ if (!process.env.SESSION_SECRET || process.env.SESSION_SECRET.length < 16) {
 const app = express();
 const port = Number(process.env.PORT) || 3000;
 const production = process.env.NODE_ENV === "production";
+const cookieSecure = process.env.COOKIE_SECURE === "false" ? false : production;
 
 // Les en-têtes de helmet activent plusieurs protections du navigateur (anti-
 // clickjacking, refus de deviner le type d'un fichier, etc.).
@@ -79,7 +80,7 @@ app.use(
     cookie: {
       httpOnly: true, // le JavaScript du navigateur ne peut pas lire le cookie.
       sameSite: "lax", // le cookie n'est pas envoyé depuis un autre site.
-      secure: production, // HTTPS obligatoire en production.
+      secure: cookieSecure, // HTTPS obligatoire en production, sauf override explicite.
       maxAge: 2 * 60 * 60 * 1000, // 2 heures.
     },
   })
